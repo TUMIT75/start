@@ -74,72 +74,118 @@ everything sitting inside separate boxes" asked for.
 
 ## Illustration library
 
-Source: **`assets/illustrations.svg`** — 16 illustrations as SVG `<symbol>`s.
-The same file is inlined near the top of `<body>` in `index.html` so the
-prototype works when opened straight from disk.
+**`assets/illustrations/`** — thirty illustrations cut from the two approved
+reference sheets. These are the artwork; the site does not draw its own.
 
-### Drawing rules
+They come in two sets:
+
+- **`topic-*`** — the ten from the sheet that names an illustration per subject
+  (Human Development, Career & Employability, Communication & Professional
+  English, and so on). Each of these goes to its own section, which is what "a
+  different visual story for each topic" asks for.
+- **`01-`…`20-`** — the twenty unnamed ones, for everything else: programme
+  cards, supporting sections, dashboard tiles.
+
+Across 32 places on the site, 30 different illustrations are used. The only two
+that appear twice do so on different pages.
+
+Both sheets were cut on measured panel boundaries rather than an even grid — the
+rows are not evenly spaced, and an even split clipped the bottom of every scene.
+On the titled sheet the text sits over the artwork (the signpost in "Career &
+Employability" is level with its own subtitle), so a horizontal cut cannot
+separate them; the text blocks are painted out first, then whole cells are
+cropped. Every file is keyed so the sheet's white background is transparent,
+which is why each one drops onto white or off-white without showing a box.
+
+### What the style is
+
+Worth stating so anything added later matches:
 
 - Flat line art. No gradients, no glows, no drop shadows.
-- Stroke `#2E2E2E`, 2.6px, round caps and joins.
-- **Faceless.** No eyes, no mouths, no identifiable portraits.
-- Solid charcoal for hair, abaya and trousers; white for thobes, shirts, panels.
-- **One green accent per illustration**, not several.
-- Saudi and GCC dress — thobe with ghutra and agal, abaya — used naturally
-  alongside international business dress, men and women, at different career
-  stages.
-- Few elements, generously spaced. One idea per illustration.
+- Thin charcoal outlines; solid charcoal for hair, abaya, trousers and laptops.
+- **Faceless.** A profile line, never eyes or a mouth.
+- **One green accent** per illustration — a laptop screen, an arrow, a bulb, a
+  puzzle piece. Green is never the whole scene.
+- Saudi and GCC dress (thobe with ghutra and agal, abaya) alongside
+  international business dress, men and women, at different career stages.
+- One idea per illustration, with room around it.
 
-Limbs are drawn as two stacked strokes — a charcoal one at 14px with a white one
-at 9px over it — which is what gives them the outlined-tube look without needing
-to hand-trace outlines.
+### The ten topic illustrations
 
-### The 16 illustrations
+Each of these belongs to one subject and is used only there.
 
-| Symbol | What it shows |
+| File | Section it serves |
 | --- | --- |
-| `il-human-development` | A mentor in thobe and ghutra reaching down to help a colleague up the last step |
-| `il-career-pathways` | One person weighing employment, specialisation, entrepreneurship and leadership |
-| `il-communication` | Two colleagues across a table, one speech bubble answering another |
-| `il-personal-growth` | Clearing a barrier and landing on the step past it |
-| `il-leadership` | A leader tracing an upward line for two colleagues |
-| `il-training` | A trainer presenting results at a board to a seated group |
-| `il-coaching` | A coach and a colleague working an idea through together |
-| `il-organisational` | Three colleagues joining two interlocking pieces |
-| `il-teamwork` | Three colleagues side by side at a shared table |
-| `il-train-trainer` | A trainer developing other trainers at a flip chart |
-| `il-professional-english` | Work going out into the wider world from a laptop |
-| `il-vision` | Sighting the route to a flag on the summit |
-| `il-learning` | A learner on a stack of books under a graduation cap |
-| `il-partnership` | Two colleagues in abaya shaking hands over an agreement |
-| `il-focus` | A completed checklist beside a target struck in the centre |
-| `il-momentum` | Stepping up onto the tallest of three rising columns |
+| `topic-human-development` | Homepage hero — Developing People. Unlocking Potential. |
+| `topic-career-employability` | Career & Employability |
+| `topic-communication-english` | Communication & Professional English |
+| `topic-personal-development` | Personal Development & Executive Presence |
+| `topic-leadership-workplace` | Leadership & Workplace Skills |
+| `topic-training-development` | Training & Development |
+| `topic-coaching-mentoring-topic` | Coaching & Mentoring |
+| `topic-organisational-development` | Organisational Development |
+| `topic-teamwork-culture` | Teamwork & Organisational Culture |
+| `topic-train-the-trainer` | Train the Trainer |
+
+### The twenty supporting illustrations
+
+| File | What it shows |
+| --- | --- |
+| `01-growth-momentum` | Working on a laptop on rising steps, a green arrow sweeping up behind |
+| `02-career-pathways` | Pausing at a signpost, weighing which direction to take |
+| `03-communication` | Two colleagues across a table, one speech bubble answering another |
+| `04-training-delivery` | A trainer in thobe and ghutra presenting results to a seated group |
+| `05-new-ideas` | Reaching up towards a lit idea from a laptop |
+| `06-teamwork` | Three colleagues working together around one laptop |
+| `07-coaching-mentoring` | A mentor in thobe and ghutra guiding a colleague at her laptop |
+| `08-learning` | Working on a stack of books beneath a graduation cap |
+| `09-problem-solving` | Considering two puzzle pieces not yet joined |
+| `10-career-progression` | Stepping up onto rising blocks, briefcase in hand |
+| `11-time-focus` | Working to time at a laptop beside a clock |
+| `12-goals-outcomes` | Ticking off a checklist beside a target struck in the centre |
+| `13-network-community` | At a laptop, connected out to a network of colleagues |
+| `14-idea-leadership` | Holding up a lit idea |
+| `15-balance-wellbeing` | Working calmly and in balance |
+| `16-partnership` | Two colleagues in abaya shaking hands over an agreement |
+| `17-insights-analysis` | Talking a seated group through charts |
+| `18-next-step` | Stepping onto the next block, towards the one after it |
+| `19-global-english` | Sending work out into the wider world |
+| `20-vision-direction` | Sighting the route to a flag on the summit |
 
 ### Placing one
 
 ```html
-<div class="ill-stage ill-stage--green">
-  <svg class="ill ill-lg" viewBox="0 0 440 320" role="img"
-       aria-label="Line illustration: …">
-    <use href="#il-coaching"/>
-  </svg>
+<div class="ill-stage">
+  <img src="assets/illustrations/topic-coaching-mentoring-topic.png"
+       alt="Illustration: a coach and a colleague working an idea through together"
+       class="ill ill-lg" loading="lazy" decoding="async">
 </div>
 ```
 
-- `.ill-stage` draws one soft organic shape behind the artwork — the replacement
-  for the old framed, gradient-filled panels.
-  `--green` tints that shape; `--bare` removes it.
-- `.ill-lg` / `.ill-xl` / `.ill-md` cap the width. Illustrations are meant to be
-  **large** — around 500–640px on a desktop hero, not thumbnail-sized.
-- Always give a real `aria-label`. The artwork carries meaning, so it is not
-  decorative.
+- `.ill-lg` / `.ill-xl` / `.ill-md` cap the width (500 / 620 / 380px).
+  Illustrations are meant to be **large** — a desktop hero, not a thumbnail.
+- Never give one a fixed height. `.ill` sets `object-fit: contain` so a tight
+  slot letterboxes rather than squashing the artwork, but a natural height is
+  better.
+- Always write a real `alt`. The artwork carries meaning; it is not decorative.
 
-### Adding a new one
+### On a charcoal band
 
-Add a `<symbol>` to `assets/illustrations.svg` using the existing class
-primitives (`il-s`, `il-w`, `il-l`, `il-gf`, `il-d`, `il-g`, `il-lo`/`il-li`),
-then re-inline the file into `index.html`. The colour tokens resolve through CSS
-custom properties, so a new illustration inverts on charcoal for free.
+The line work is charcoal, so it disappears on a dark background. Any container
+that is dark — `.on-ink`, `.band-ink`, or a charcoal `bg-[…]` class — puts the
+illustration on an off-white rounded panel automatically. Do not place artwork
+directly on charcoal.
+
+### Two things to settle before launch
+
+1. **Resolution.** Both sheets are 1536 × 1024, so each illustration is roughly
+   290 × 230 before upscaling. That reads cleanly on a standard screen and looks
+   soft on a retina one at hero size. Ask for each illustration to be re-exported
+   on its own at 1024px or larger; the files here can then be swapped one for one
+   without touching any markup.
+2. **Weight.** 30 transparent PNGs come to about 5 MB. They are lazy-loaded, so
+   no page pays for all of them, but the WordPress build should convert them to
+   WebP and serve responsive sizes.
 
 ---
 
@@ -152,6 +198,7 @@ feedback, so they should not come back in the WordPress build:
 - Framed gradient panels around illustrations, and dashed decorative frames.
 - Overlapping floating badges stacked on top of hero visuals.
 - Rows of small illustrations — one large illustration does more work than four
-  small ones.
+  small ones. An illustration squeezed into a banner strip is clutter; use an
+  icon there instead.
 - Portrait photography. Where photography is used later, prefer meetings,
   training and workspaces where faces are not the focus.
