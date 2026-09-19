@@ -1,4 +1,4 @@
-# Start SAH — website prototype
+﻿# Start SAH — website prototype
 
 Developing People. Unlocking Potential.
 
@@ -22,7 +22,7 @@ The prototype is one static page and also opens fine by double-clicking
 | Path | |
 | --- | --- |
 | `index.html` | The whole prototype — all eleven pages, styles and behaviour |
-| `assets/illustrations/` | The twenty approved illustrations, cut from the reference sheet |
+| `assets/illustrations/` | The thirty approved illustrations, cut from the reference sheets |
 | `assets/logo.svg`, `logo-dark.svg` | Logo, on light and dark backgrounds |
 | `DESIGN-SYSTEM.md` | Colour, type, section rhythm, illustration rules |
 
@@ -54,3 +54,4 @@ They are sections of one HTML file rather than separate files — the switcher i
   end of `DESIGN-SYSTEM.md`.
 - Copy and course content is still indicative. The 16 September note set the
   order explicitly: visual identity first, wording and course detail afterwards.
+

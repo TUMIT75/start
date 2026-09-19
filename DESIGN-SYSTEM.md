@@ -74,14 +74,28 @@ everything sitting inside separate boxes" asked for.
 
 ## Illustration library
 
-**`assets/illustrations/`** — the twenty illustrations from the approved
-reference sheet, cut into individual files. These are the artwork; the site does
-not draw its own.
+**`assets/illustrations/`** — thirty illustrations cut from the two approved
+reference sheets. These are the artwork; the site does not draw its own.
 
-They were cut from the sheet on the measured panel boundaries rather than an
-even grid (the rows are not evenly spaced, and an even split clipped the bottom
-of every scene), then keyed so the sheet's white background is transparent. That
-is why each one drops onto white or off-white without showing a box.
+They come in two sets:
+
+- **`topic-*`** — the ten from the sheet that names an illustration per subject
+  (Human Development, Career & Employability, Communication & Professional
+  English, and so on). Each of these goes to its own section, which is what "a
+  different visual story for each topic" asks for.
+- **`01-`…`20-`** — the twenty unnamed ones, for everything else: programme
+  cards, supporting sections, dashboard tiles.
+
+Across 32 places on the site, 30 different illustrations are used. The only two
+that appear twice do so on different pages.
+
+Both sheets were cut on measured panel boundaries rather than an even grid — the
+rows are not evenly spaced, and an even split clipped the bottom of every scene.
+On the titled sheet the text sits over the artwork (the signpost in "Career &
+Employability" is level with its own subtitle), so a horizontal cut cannot
+separate them; the text blocks are painted out first, then whole cells are
+cropped. Every file is keyed so the sheet's white background is transparent,
+which is why each one drops onto white or off-white without showing a box.
 
 ### What the style is
 
@@ -96,7 +110,24 @@ Worth stating so anything added later matches:
   international business dress, men and women, at different career stages.
 - One idea per illustration, with room around it.
 
-### The twenty
+### The ten topic illustrations
+
+Each of these belongs to one subject and is used only there.
+
+| File | Section it serves |
+| --- | --- |
+| `topic-human-development` | Homepage hero — Developing People. Unlocking Potential. |
+| `topic-career-employability` | Career & Employability |
+| `topic-communication-english` | Communication & Professional English |
+| `topic-personal-development` | Personal Development & Executive Presence |
+| `topic-leadership-workplace` | Leadership & Workplace Skills |
+| `topic-training-development` | Training & Development |
+| `topic-coaching-mentoring-topic` | Coaching & Mentoring |
+| `topic-organisational-development` | Organisational Development |
+| `topic-teamwork-culture` | Teamwork & Organisational Culture |
+| `topic-train-the-trainer` | Train the Trainer |
+
+### The twenty supporting illustrations
 
 | File | What it shows |
 | --- | --- |
@@ -121,15 +152,12 @@ Worth stating so anything added later matches:
 | `19-global-english` | Sending work out into the wider world |
 | `20-vision-direction` | Sighting the route to a flag on the summit |
 
-`11-time-focus` and `14-idea-leadership` are not placed on the site yet; they are
-there for pages still to come.
-
 ### Placing one
 
 ```html
 <div class="ill-stage">
-  <img src="assets/illustrations/07-coaching-mentoring.png"
-       alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop"
+  <img src="assets/illustrations/topic-coaching-mentoring-topic.png"
+       alt="Illustration: a coach and a colleague working an idea through together"
        class="ill ill-lg" loading="lazy" decoding="async">
 </div>
 ```
@@ -150,12 +178,12 @@ directly on charcoal.
 
 ### Two things to settle before launch
 
-1. **Resolution.** The sheet is 1536 × 1024, so each illustration is roughly
+1. **Resolution.** Both sheets are 1536 × 1024, so each illustration is roughly
    290 × 230 before upscaling. That reads cleanly on a standard screen and looks
    soft on a retina one at hero size. Ask for each illustration to be re-exported
    on its own at 1024px or larger; the files here can then be swapped one for one
    without touching any markup.
-2. **Weight.** 20 transparent PNGs come to about 3.7 MB. They are lazy-loaded, so
+2. **Weight.** 30 transparent PNGs come to about 5 MB. They are lazy-loaded, so
    no page pays for all of them, but the WordPress build should convert them to
    WebP and serve responsive sizes.
 
