@@ -1,0 +1,8 @@
+# Keep line endings stable across machines. index.html is edited on Windows and
+# on Linux CI; mixed endings there previously broke exact-string tooling.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.woff  binary
+*.woff2 binary
