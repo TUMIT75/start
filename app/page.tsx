@@ -52,7 +52,7 @@ export default function HomePage() {
               {/* Right Side Visual: one large illustration, unframed, with room around it */}
               <div className="lg:col-span-5 relative">
                 <div className="ill-stage ill-stage--green mx-auto max-w-xl lg:max-w-none">
-                  <Illustration src="/illustrations/topic-human-development.png" alt="Illustration: a mentor in thobe and ghutra reaching down to help a colleague up onto the next step" className="ill ill-xl" />
+                  <Illustration src="/illustrations/topic-human-development.svg" alt="Illustration: a mentor in thobe and ghutra reaching down to help a colleague up onto the next step" className="ill ill-xl" />
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ export default function HomePage() {
                   {/* Left: Large Prominent Visual Storytelling (Person Considering Different Pathways) */}
                   <div className="lg:col-span-6 order-2 lg:order-1">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/topic-career-employability.png" alt="Illustration: a professional in thobe and ghutra at a crossroads, weighing employment, specialisation, entrepreneurship and leadership" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/topic-career-employability.svg" alt="Illustration: a professional in thobe and ghutra at a crossroads, weighing employment, specialisation, entrepreneurship and leadership" className="ill w-full h-auto" />
                     </div>
                   </div>
 
@@ -206,7 +206,7 @@ export default function HomePage() {
                   {/* Right: Large Prominent Visual Storytelling (Two People Interacting) */}
                   <div className="lg:col-span-6">
                     <div className="ill-stage ill-stage--bare">
-                      <Illustration src="/illustrations/topic-communication-english.png" alt="Illustration: two colleagues in conversation, one speech bubble answering another" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/topic-communication-english.svg" alt="Illustration: two colleagues in conversation, one speech bubble answering another" className="ill w-full h-auto" />
                     </div>
                   </div>
 
@@ -222,7 +222,7 @@ export default function HomePage() {
                   {/* Left: Large Prominent Visual Storytelling (Overcoming Obstacle / Progressing) */}
                   <div className="lg:col-span-6 order-2 lg:order-1">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/topic-personal-development.png" alt="Illustration: a professional with a briefcase stepping up towards growth" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/topic-personal-development.svg" alt="Illustration: a professional with a briefcase stepping up towards growth" className="ill w-full h-auto" />
                     </div>
                   </div>
 
@@ -318,7 +318,7 @@ export default function HomePage() {
                   {/* Right: Large Prominent Visual Storytelling (Helping Others Progress) */}
                   <div className="lg:col-span-6">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/topic-leadership-workplace.png" alt="Illustration: a leader in thobe and ghutra setting the direction for two colleagues" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/topic-leadership-workplace.svg" alt="Illustration: a leader in thobe and ghutra setting the direction for two colleagues" className="ill w-full h-auto" />
                     </div>
                   </div>
 
@@ -334,7 +334,7 @@ export default function HomePage() {
                   {/* Left: Large Prominent Visual Storytelling (People Working Toward Shared Goal) */}
                   <div className="lg:col-span-6 order-2 lg:order-1">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/topic-organisational-development.png" alt="Illustration: three colleagues bringing the pieces of an organisation together" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/topic-organisational-development.svg" alt="Illustration: three colleagues bringing the pieces of an organisation together" className="ill w-full h-auto" />
                     </div>
                   </div>
 
@@ -413,7 +413,7 @@ export default function HomePage() {
               {/* Left: the inflection point, drawn large and left unframed */}
               <div className="lg:col-span-6">
                 <div className="ill-stage">
-                  <Illustration src="/illustrations/20-vision-direction.png" alt="Illustration: a professional in thobe and ghutra sighting the route to a flag on the summit" className="ill ill-lg" />
+                  <Illustration src="/illustrations/20-vision-direction.svg" alt="Illustration: a professional in thobe and ghutra sighting the route to a flag on the summit" className="ill ill-lg" />
                 </div>
 
                 <p className="mt-8 text-sm text-gray-600 border-t hairline pt-5">
@@ -546,7 +546,7 @@ export default function HomePage() {
 
                 {/* Large-Scale Hand-Drawn Workshop SVG Illustration */}
                 <div className="on-ink ill-stage ill-stage--bare mt-4">
-                  <Illustration src="/illustrations/topic-training-development.png" alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group" className="ill w-full h-auto" />
+                  <Illustration src="/illustrations/topic-training-development.svg" alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group" className="ill w-full h-auto" />
                 </div>
               </div>
 
@@ -637,7 +637,7 @@ export default function HomePage() {
                 <div>
                   {/* Hand-Drawn Illustration Banner */}
                   <Link href="/programmes/english-for-professional-success" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
-                    <Illustration src="/illustrations/19-global-english.png" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain" />
+                    <Illustration src="/illustrations/19-global-english.svg" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain" />
 
                     <span className="absolute top-4 left-4 bg-[#242424] text-emerald-300 px-3 py-1 rounded-full text-xs font-bold border border-charcoal-700">
                       Communication
@@ -675,7 +675,7 @@ export default function HomePage() {
                 <div>
                   {/* Hand-Drawn Illustration Banner */}
                   <Link href="/coaching" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
-                    <Illustration src="/illustrations/07-coaching-mentoring.png" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop" className="ill w-full h-auto object-contain" />
+                    <Illustration src="/illustrations/07-coaching-mentoring.svg" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop" className="ill w-full h-auto object-contain" />
 
                     <span className="absolute top-4 left-4 bg-[#242424] text-emerald-300 px-3 py-1 rounded-full text-xs font-bold border border-charcoal-700">
                       1-on-1 Coaching
@@ -713,7 +713,7 @@ export default function HomePage() {
                 <div>
                   {/* Hand-Drawn Illustration Banner */}
                   <Link href="/programmes?focus=Leadership" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
-                    <Illustration src="/illustrations/14-idea-leadership.png" alt="Illustration: a professional holding up a lit idea" className="ill w-full h-auto object-contain" />
+                    <Illustration src="/illustrations/14-idea-leadership.svg" alt="Illustration: a professional holding up a lit idea" className="ill w-full h-auto object-contain" />
 
                     <span className="absolute top-4 left-4 bg-[#242424] text-emerald-300 px-3 py-1 rounded-full text-xs font-bold border border-charcoal-700">
                       Leadership
@@ -776,7 +776,7 @@ export default function HomePage() {
 
                     {/* Large TeachFlex Coach & Mentee Interactive Dialogue SVG */}
                     <div className="my-auto py-2 flex items-center justify-center">
-                      <Illustration src="/illustrations/topic-coaching-mentoring-topic.png" alt="Illustration: a coach and a colleague working an idea through together" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/topic-coaching-mentoring-topic.svg" alt="Illustration: a coach and a colleague working an idea through together" className="ill w-full h-auto" />
                     </div>
 
                     {/* Clean Overlay Badge */}
@@ -864,7 +864,7 @@ export default function HomePage() {
 
                   {/* Hand-drawn Illustration: Individual ascending pathway */}
                   <div className="ill-stage mb-8">
-                    <Illustration src="/illustrations/02-career-pathways.png" alt="Illustration: a professional pausing at a signpost, weighing which direction to take" className="ill w-full h-auto max-h-44" />
+                    <Illustration src="/illustrations/02-career-pathways.svg" alt="Illustration: a professional pausing at a signpost, weighing which direction to take" className="ill w-full h-auto max-h-44" />
                   </div>
                 </div>
 
@@ -895,7 +895,7 @@ export default function HomePage() {
 
                   {/* Hand-drawn Illustration: Collaborative Team around Table */}
                   <div className="on-ink ill-stage ill-stage--bare mb-8">
-                    <Illustration src="/illustrations/topic-teamwork-culture.png" alt="Illustration: a team working side by side around a shared table" className="ill w-full h-auto max-h-44" />
+                    <Illustration src="/illustrations/topic-teamwork-culture.svg" alt="Illustration: a team working side by side around a shared table" className="ill w-full h-auto max-h-44" />
                   </div>
                 </div>
 
@@ -1113,7 +1113,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Hand-drawn Duo Stepping Forward Illustration */}
             <div className="flex justify-center mb-6">
-              <Illustration src="/illustrations/18-next-step.png" alt="Illustration: a professional stepping up onto the next block towards the one after it" className="ill w-full h-auto max-h-36" />
+              <Illustration src="/illustrations/18-next-step.svg" alt="Illustration: a professional stepping up onto the next block towards the one after it" className="ill w-full h-auto max-h-36" />
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">

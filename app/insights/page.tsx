@@ -219,7 +219,7 @@ export default function InsightsPage() {
                   {/* Appearance 1 */}
                   <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
                     <div className="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                      <Illustration src="/illustrations/17-insights-analysis.png" alt="Illustration: a presenter talking a seated group through charts" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/17-insights-analysis.svg" alt="Illustration: a presenter talking a seated group through charts" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('On Purpose with Jay Shetty', 'Unlocking Quiet Executive Presence Under Pressure') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
@@ -233,7 +233,7 @@ export default function InsightsPage() {
                   {/* Appearance 2 */}
                   <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
                     <div className="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                      <Illustration src="/illustrations/04-training-delivery.png" alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/04-training-delivery.svg" alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('The Diary of a CEO Masterclass', 'The Science of Non-Verbal Gravitas & Executive Presence') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
@@ -247,7 +247,7 @@ export default function InsightsPage() {
                   {/* Appearance 3 */}
                   <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
                     <div className="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                      <Illustration src="/illustrations/08-learning.png" alt="Illustration: a learner working on a laptop on a stack of books beneath a graduation cap" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/08-learning.svg" alt="Illustration: a learner working on a laptop on a stack of books beneath a graduation cap" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('BBC World Service Business', 'Breaking the Non-Native English Ceiling') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>

@@ -1,122 +1,122 @@
 {
-  "/illustrations/01-growth-momentum.png": {
-    "w": 795,
-    "h": 669
+  "/illustrations/01-growth-momentum.svg": {
+    "w": 1060,
+    "h": 892
   },
-  "/illustrations/02-career-pathways.png": {
-    "w": 774,
-    "h": 669
+  "/illustrations/02-career-pathways.svg": {
+    "w": 1032,
+    "h": 892
   },
-  "/illustrations/03-communication.png": {
-    "w": 786,
-    "h": 669
+  "/illustrations/03-communication.svg": {
+    "w": 1048,
+    "h": 892
   },
-  "/illustrations/04-training-delivery.png": {
-    "w": 798,
-    "h": 669
+  "/illustrations/04-training-delivery.svg": {
+    "w": 1064,
+    "h": 892
   },
-  "/illustrations/05-new-ideas.png": {
-    "w": 792,
-    "h": 669
+  "/illustrations/05-new-ideas.svg": {
+    "w": 1056,
+    "h": 892
   },
-  "/illustrations/06-teamwork.png": {
-    "w": 795,
-    "h": 618
+  "/illustrations/06-teamwork.svg": {
+    "w": 1060,
+    "h": 824
   },
-  "/illustrations/07-coaching-mentoring.png": {
-    "w": 774,
-    "h": 618
+  "/illustrations/07-coaching-mentoring.svg": {
+    "w": 1032,
+    "h": 824
   },
-  "/illustrations/08-learning.png": {
-    "w": 786,
-    "h": 618
+  "/illustrations/08-learning.svg": {
+    "w": 1048,
+    "h": 824
   },
-  "/illustrations/09-problem-solving.png": {
-    "w": 798,
-    "h": 618
+  "/illustrations/09-problem-solving.svg": {
+    "w": 1064,
+    "h": 824
   },
-  "/illustrations/10-career-progression.png": {
-    "w": 792,
-    "h": 618
+  "/illustrations/10-career-progression.svg": {
+    "w": 1056,
+    "h": 824
   },
-  "/illustrations/11-time-focus.png": {
-    "w": 795,
-    "h": 591
+  "/illustrations/11-time-focus.svg": {
+    "w": 1060,
+    "h": 788
   },
-  "/illustrations/12-goals-outcomes.png": {
-    "w": 774,
-    "h": 591
+  "/illustrations/12-goals-outcomes.svg": {
+    "w": 1032,
+    "h": 788
   },
-  "/illustrations/13-network-community.png": {
-    "w": 786,
-    "h": 591
+  "/illustrations/13-network-community.svg": {
+    "w": 1048,
+    "h": 788
   },
-  "/illustrations/14-idea-leadership.png": {
-    "w": 798,
-    "h": 591
+  "/illustrations/14-idea-leadership.svg": {
+    "w": 1064,
+    "h": 788
   },
-  "/illustrations/15-balance-wellbeing.png": {
-    "w": 792,
-    "h": 591
+  "/illustrations/15-balance-wellbeing.svg": {
+    "w": 1056,
+    "h": 788
   },
-  "/illustrations/16-partnership.png": {
-    "w": 795,
-    "h": 585
+  "/illustrations/16-partnership.svg": {
+    "w": 1060,
+    "h": 780
   },
-  "/illustrations/17-insights-analysis.png": {
-    "w": 774,
-    "h": 585
+  "/illustrations/17-insights-analysis.svg": {
+    "w": 1032,
+    "h": 780
   },
-  "/illustrations/18-next-step.png": {
-    "w": 786,
-    "h": 585
+  "/illustrations/18-next-step.svg": {
+    "w": 1048,
+    "h": 780
   },
-  "/illustrations/19-global-english.png": {
-    "w": 798,
-    "h": 585
+  "/illustrations/19-global-english.svg": {
+    "w": 1064,
+    "h": 780
   },
-  "/illustrations/20-vision-direction.png": {
-    "w": 792,
-    "h": 585
+  "/illustrations/20-vision-direction.svg": {
+    "w": 1056,
+    "h": 780
   },
-  "/illustrations/topic-career-employability.png": {
-    "w": 1068,
-    "h": 942
+  "/illustrations/topic-career-employability.svg": {
+    "w": 1424,
+    "h": 1256
   },
-  "/illustrations/topic-coaching-mentoring-topic.png": {
-    "w": 1005,
-    "h": 819
+  "/illustrations/topic-coaching-mentoring-topic.svg": {
+    "w": 1340,
+    "h": 1092
   },
-  "/illustrations/topic-communication-english.png": {
-    "w": 1005,
-    "h": 942
+  "/illustrations/topic-communication-english.svg": {
+    "w": 1340,
+    "h": 1256
   },
-  "/illustrations/topic-human-development.png": {
-    "w": 918,
-    "h": 942
+  "/illustrations/topic-human-development.svg": {
+    "w": 1224,
+    "h": 1256
   },
-  "/illustrations/topic-leadership-workplace.png": {
-    "w": 918,
-    "h": 819
+  "/illustrations/topic-leadership-workplace.svg": {
+    "w": 1224,
+    "h": 1092
   },
-  "/illustrations/topic-organisational-development.png": {
-    "w": 840,
-    "h": 819
+  "/illustrations/topic-organisational-development.svg": {
+    "w": 1120,
+    "h": 1092
   },
-  "/illustrations/topic-personal-development.png": {
-    "w": 840,
-    "h": 942
+  "/illustrations/topic-personal-development.svg": {
+    "w": 1120,
+    "h": 1256
   },
-  "/illustrations/topic-teamwork-culture.png": {
-    "w": 918,
-    "h": 756
+  "/illustrations/topic-teamwork-culture.svg": {
+    "w": 1224,
+    "h": 1008
   },
-  "/illustrations/topic-train-the-trainer.png": {
-    "w": 1068,
-    "h": 756
+  "/illustrations/topic-train-the-trainer.svg": {
+    "w": 1424,
+    "h": 1008
   },
-  "/illustrations/topic-training-development.png": {
-    "w": 1068,
-    "h": 819
+  "/illustrations/topic-training-development.svg": {
+    "w": 1424,
+    "h": 1092
   }
 }

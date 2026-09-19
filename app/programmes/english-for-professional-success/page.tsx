@@ -107,7 +107,7 @@ export default function CoursePage() {
                 <div className="lg:col-span-4 hidden lg:block">
                   <div className="bg-charcoal-900 border border-charcoal-800 rounded-2xl p-5 shadow-2xl relative overflow-hidden">
                     <div className="on-ink relative aspect-video rounded-xl overflow-hidden mb-4 group cursor-pointer bg-charcoal-800 ill-stage ill-stage--bare p-3" onClick={() => { openModal('English for Professional Success') }}>
-                      <Illustration src="/illustrations/12-goals-outcomes.png" alt="Illustration: a professional ticking off a checklist beside a target struck in the centre" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/12-goals-outcomes.svg" alt="Illustration: a professional ticking off a checklist beside a target struck in the centre" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
                       <div className="absolute inset-0 bg-charcoal-950/20 flex items-center justify-center">
                         <div className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                           <Icon name="play" className="text-sm ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
@@ -499,7 +499,7 @@ export default function CoursePage() {
 
                             {/* Hand-Drawn Mentorship Canvas SVG */}
                             <div className="my-auto py-2 flex items-center justify-center">
-                              <Illustration src="/illustrations/topic-train-the-trainer.png" alt="Illustration: a trainer developing other trainers at a flip chart" className="ill w-full h-auto max-h-56" />
+                              <Illustration src="/illustrations/topic-train-the-trainer.svg" alt="Illustration: a trainer developing other trainers at a flip chart" className="ill w-full h-auto max-h-56" />
                             </div>
 
                             <div className="bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-gray-100 shadow-xs text-center">

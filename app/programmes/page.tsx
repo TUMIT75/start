@@ -88,7 +88,7 @@ export default function ProgrammesPage() {
                 <div className="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Communication">
                   <div>
                     <Link href="/programmes/english-for-professional-success" className="relative aspect-video overflow-hidden cursor-pointer ill-stage p-4">
-                      <Illustration src="/illustrations/19-global-english.png" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/19-global-english.svg" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
                       <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Communication</span>
                       <span className="absolute bottom-3 right-3 bg-emerald-600 text-white px-2.5 py-0.5 rounded-full text-xs font-bold shadow-xs">Featured LMS</span>
                     </Link>
@@ -123,7 +123,7 @@ export default function ProgrammesPage() {
                 <div className="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Leadership">
                   <div>
                     <div className="relative aspect-video overflow-hidden ill-stage p-4">
-                      <Illustration src="/illustrations/03-communication.png" alt="Illustration: two colleagues talking across a table, one speech bubble answering another" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/03-communication.svg" alt="Illustration: two colleagues talking across a table, one speech bubble answering another" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
                       <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Leadership</span>
                     </div>
                     <div className="p-6">
@@ -156,7 +156,7 @@ export default function ProgrammesPage() {
                 <div className="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Career & Employability">
                   <div>
                     <div className="relative aspect-video overflow-hidden ill-stage p-4">
-                      <Illustration src="/illustrations/01-growth-momentum.png" alt="Illustration: a professional working on a laptop on ascending steps, a green arrow rising behind" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/01-growth-momentum.svg" alt="Illustration: a professional working on a laptop on ascending steps, a green arrow rising behind" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
                       <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Career</span>
                     </div>
                     <div className="p-6">
@@ -189,7 +189,7 @@ export default function ProgrammesPage() {
                 <div className="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Communication">
                   <div>
                     <div className="relative aspect-video overflow-hidden ill-stage p-4">
-                      <Illustration src="/illustrations/16-partnership.png" alt="Illustration: two colleagues in abaya shaking hands over an agreement" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/16-partnership.svg" alt="Illustration: two colleagues in abaya shaking hands over an agreement" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
                       <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Communication</span>
                     </div>
                     <div className="p-6">
@@ -222,7 +222,7 @@ export default function ProgrammesPage() {
                 <div className="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Leadership">
                   <div>
                     <div className="relative aspect-video overflow-hidden ill-stage p-4">
-                      <Illustration src="/illustrations/13-network-community.png" alt="Illustration: a professional at a laptop connected to a network of colleagues" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/13-network-community.svg" alt="Illustration: a professional at a laptop connected to a network of colleagues" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
                       <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Leadership</span>
                     </div>
                     <div className="p-6">
@@ -255,7 +255,7 @@ export default function ProgrammesPage() {
                 <div className="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="B2B Organisational">
                   <div>
                     <div className="relative aspect-video overflow-hidden ill-stage p-4">
-                      <Illustration src="/illustrations/09-problem-solving.png" alt="Illustration: a professional considering two puzzle pieces that have yet to be joined" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/09-problem-solving.svg" alt="Illustration: a professional considering two puzzle pieces that have yet to be joined" className="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" />
                       <span className="absolute top-3 left-3 bg-emerald-700 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Enterprise B2B</span>
                     </div>
                     <div className="p-6">

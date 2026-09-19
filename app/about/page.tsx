@@ -58,7 +58,7 @@ export default function AboutPage() {
                 <div className="lg:col-span-5">
                   <div className="max-w-lg mx-auto">
                     <div className="ill-stage ill-stage--green">
-                      <Illustration src="/illustrations/07-coaching-mentoring.png" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop" className="ill ill-lg" />
+                      <Illustration src="/illustrations/07-coaching-mentoring.svg" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop" className="ill ill-lg" />
                     </div>
                     <div className="mt-6 flex items-center justify-between gap-4 border-t hairline pt-5">
                       <div>
@@ -81,7 +81,7 @@ export default function AboutPage() {
 
                 <div className="lg:col-span-5">
                   <div className="ill-stage ill-stage--bare">
-                    <Illustration src="/illustrations/10-career-progression.png" alt="Illustration: a professional with a briefcase stepping up onto rising blocks" className="ill ill-lg" />
+                    <Illustration src="/illustrations/10-career-progression.svg" alt="Illustration: a professional with a briefcase stepping up onto rising blocks" className="ill ill-lg" />
                   </div>
                 </div>
 

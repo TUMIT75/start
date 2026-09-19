@@ -61,7 +61,7 @@ export default function OrganisationalPage() {
                 <div className="lg:col-span-5">
                   <div className="max-w-lg mx-auto">
                     <div className="ill-stage ill-stage--green">
-                      <Illustration src="/illustrations/06-teamwork.png" alt="Illustration: three colleagues working together around one laptop" className="ill ill-lg" />
+                      <Illustration src="/illustrations/06-teamwork.svg" alt="Illustration: three colleagues working together around one laptop" className="ill ill-lg" />
                     </div>
 
                     <div className="mt-8">

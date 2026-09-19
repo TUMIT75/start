@@ -46,7 +46,8 @@ Every page is a real route. No hashes, no query-string routing.
 | `components/Icon.tsx` | The icon set, as Lucide components |
 | `components/Illustration.tsx` | Artwork, through `next/image` |
 | `lib/ui.ts` | Behaviour: tabs, accordions, modals, filters, the diagnostic, form stubs |
-| `public/illustrations/` | The thirty approved illustrations |
+| `public/illustrations/` | The thirty approved illustrations, traced to SVG |
+| `scripts/` | Regenerating those illustrations from the reference sheets |
 
 ## What makes it fast
 
@@ -54,9 +55,9 @@ Measured on the home page, against the single-file prototype it replaces:
 
 | | Prototype | This build |
 | --- | --- | --- |
-| Transferred | 1045 KB | **248 KB** |
+| Transferred | 1045 KB | **233 KB** |
 | Third-party bytes | 449 KB | **0 KB** |
-| Images | 523 KB | **29 KB** |
+| Images | 523 KB | **15 KB** |
 | Fonts | 305 KB | **27 KB** |
 | HTML | 73 KB | **23 KB** |
 
@@ -65,8 +66,9 @@ Measured on the home page, against the single-file prototype it replaces:
   Google Fonts. Tailwind now compiles at build time, the icons are Lucide
   components so only the ones used ship, and the font is self-hosted by Next.
 - **Every route is prerendered** to static HTML at build time.
-- **Illustrations go through `next/image`**, so each is served as AVIF or WebP
-  at the size the layout asks for rather than as a 200 KB PNG.
+- **The illustrations are vector.** They were traced from the reference sheets,
+  so they are sharp at any size and on any screen, and the whole set weighs less
+  than the PNGs it replaced.
 
 ## Notes for the WordPress build
 
@@ -74,8 +76,8 @@ Measured on the home page, against the single-file prototype it replaces:
   to the brand palette. Replace them with the real vector artwork.
 - **The illustrations are the deliverable**, not the markup around them. They
   are transparent PNGs in `public/illustrations/` and can go straight into the
-  media library. One thing to settle first — their resolution — is written up at
-  the end of `DESIGN-SYSTEM.md`.
+  media library as SVG. `scripts/` regenerates them from the sheets if the
+  artwork is ever reissued.
 - **`lib/ui.ts` is carried over from the prototype**, working by element id
   rather than React state. It behaves correctly and was ported rather than
   rebuilt so that nothing changed by accident; a WordPress theme will replace it

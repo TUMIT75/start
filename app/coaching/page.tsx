@@ -61,7 +61,7 @@ export default function CoachingPage() {
                 <div className="lg:col-span-5">
                   <div className="max-w-lg mx-auto">
                     <div className="ill-stage ill-stage--green">
-                      <Illustration src="/illustrations/05-new-ideas.png" alt="Illustration: a professional at a laptop reaching up towards a lit idea" className="ill ill-lg" />
+                      <Illustration src="/illustrations/05-new-ideas.svg" alt="Illustration: a professional at a laptop reaching up towards a lit idea" className="ill ill-lg" />
                     </div>
 
                     <div className="mt-8">
@@ -169,7 +169,7 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-5 order-1 lg:order-2">
                   <div className="ill-stage">
-                    <Illustration src="/illustrations/11-time-focus.png" alt="Illustration: a professional working to time at a laptop beside a clock" className="ill ill-lg" />
+                    <Illustration src="/illustrations/11-time-focus.svg" alt="Illustration: a professional working to time at a laptop beside a clock" className="ill ill-lg" />
                   </div>
                 </div>
 
@@ -184,7 +184,7 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-5">
                   <div className="ill-stage ill-stage--bare">
-                    <Illustration src="/illustrations/14-idea-leadership.png" alt="Illustration: a professional holding up a lit idea" className="ill ill-lg" />
+                    <Illustration src="/illustrations/14-idea-leadership.svg" alt="Illustration: a professional holding up a lit idea" className="ill ill-lg" />
                   </div>
                 </div>
 

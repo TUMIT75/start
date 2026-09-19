@@ -274,7 +274,7 @@ export default function DashboardPage() {
                 <div className="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="active">
                   <div>
                     <div className="aspect-video relative overflow-hidden ill-stage p-3">
-                      <Illustration src="/illustrations/19-global-english.png" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain" />
+                      <Illustration src="/illustrations/19-global-english.svg" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain" />
                       <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                         In Progress
                       </span>
@@ -307,7 +307,7 @@ export default function DashboardPage() {
                 <div className="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="completed">
                   <div>
                     <div className="aspect-video relative overflow-hidden ill-stage p-3">
-                      <Illustration src="/illustrations/15-balance-wellbeing.png" alt="Illustration: a professional working calmly and in balance at a laptop" className="ill w-full h-auto object-contain" />
+                      <Illustration src="/illustrations/15-balance-wellbeing.svg" alt="Illustration: a professional working calmly and in balance at a laptop" className="ill w-full h-auto object-contain" />
                       <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                         Completed (Grade: 96%)
                       </span>
@@ -342,7 +342,7 @@ export default function DashboardPage() {
                 <div className="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="completed">
                   <div>
                     <div className="aspect-video relative overflow-hidden ill-stage p-3">
-                      <Illustration src="/illustrations/05-new-ideas.png" alt="Illustration: a professional at a laptop reaching up towards a lit idea" className="ill w-full h-auto object-contain" />
+                      <Illustration src="/illustrations/05-new-ideas.svg" alt="Illustration: a professional at a laptop reaching up towards a lit idea" className="ill w-full h-auto object-contain" />
                       <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                         Completed (Grade: 92%)
                       </span>

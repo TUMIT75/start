@@ -181,31 +181,21 @@ that is dark — `.on-ink`, `.band-ink`, or a charcoal `bg-[…]` class — puts
 illustration on an off-white rounded panel automatically. Do not place artwork
 directly on charcoal.
 
-### Two things to settle before launch
+### How they were made
 
-1. **Resolution.** Both sheets are 1536 x 1024, so each illustration is about
-   290 x 230 in the source. They are cut at 3x and sharpened with an unsharp
-   mask, which holds up at hero size on a high-density screen, but sharpening
-   cannot invent detail that was never captured. If the tool that produced the
-   sheets can export each illustration on its own at 1024px or larger, the
-   files here swap one for one without touching any markup.
-2. **Weight.** The 30 source PNGs come to about 12 MB, but nothing ships them
-   as-is: `next/image` serves AVIF or WebP at the size the layout asks for, and
-   the whole home page transfers 248 KB. A WordPress build will need its own
-   equivalent - an image CDN or a plugin that generates WebP and srcset.
+The sheets are 1536 x 1024, so each illustration holds only about 290 x 230 real
+pixels. Every raster version of them looked soft at hero size, however it was
+upscaled or sharpened, so the shapes were traced into vector instead. The
+artwork is identical; it is simply no longer made of pixels.
 
----
+`scripts/` holds the pipeline, if the sheets are ever reissued:
 
-## What is deliberately absent
+1. `prep-illustrations.ps1` crops each illustration at 4x and snaps every pixel
+   to the four brand colours. This is also where the sheets' own quirks are
+   handled - a light grey fill reads 246 against a 254 ground, with stray white
+   pixels through it, so the salt is filtered out, the anti-aliasing beside each
+   line is opened away, and enclosed gaps are filled.
+2. `trace-illustrations.mjs` traces the result and writes `public/illustrations`.
+   `tune-trace.mjs` compares tracer settings on a single illustration.
 
-These were in the earlier mock-up and were removed against the September
-feedback, so they should not come back in the WordPress build:
-
-- Dark-green section bands.
-- Framed gradient panels around illustrations, and dashed decorative frames.
-- Overlapping floating badges stacked on top of hero visuals.
-- Rows of small illustrations — one large illustration does more work than four
-  small ones. An illustration squeezed into a banner strip is clutter; use an
-  icon there instead.
-- Portrait photography. Where photography is used later, prefer meetings,
-  training and workspaces where faces are not the focus.
+The whole set is about 560 KB of SVG, 210 KB over the wire.
