@@ -22,7 +22,7 @@ The prototype is one static page and also opens fine by double-clicking
 | Path | |
 | --- | --- |
 | `index.html` | The whole prototype — all eleven pages, styles and behaviour |
-| `assets/illustrations.svg` | The illustration library, 16 symbols (also inlined into `index.html`) |
+| `assets/illustrations/` | The twenty approved illustrations, cut from the reference sheet |
 | `assets/logo.svg`, `logo-dark.svg` | Logo, on light and dark backgrounds |
 | `DESIGN-SYSTEM.md` | Colour, type, section rhythm, illustration rules |
 
@@ -49,7 +49,8 @@ They are sections of one HTML file rather than separate files — the switcher i
 - **The logo files are a traced placeholder** whose colours have been corrected
   to the brand palette. Replace them with the real vector artwork.
 - **The illustrations are the deliverable**, not the markup around them. They are
-  plain SVG with no dependencies and can be uploaded to the media library or
-  pasted inline.
+  plain transparent PNGs and can go straight into the media library. Two things
+  to settle before launch — resolution and file weight — are written up at the
+  end of `DESIGN-SYSTEM.md`.
 - Copy and course content is still indicative. The 16 September note set the
   order explicitly: visual identity first, wording and course detail afterwards.

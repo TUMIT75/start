@@ -101,31 +101,32 @@
     .eduma-badge { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
 
     /* ---- Illustration system -------------------------------------------
-       Artwork lives in one sprite at the top of the page body. A host svg
-       carries the palette tokens; `ill--invert` flips them for charcoal
-       sections. Source of the sprite: assets/illustrations.svg */
-    .ill { display: block; width: 100%; height: auto; overflow: visible; }
-    .ill-xl { max-width: 640px; }
-    .ill-lg { max-width: 520px; }
-    .ill-md { max-width: 400px; }
+       The artwork is the client-approved set in assets/illustrations/.
+       The sheet's white background is keyed out, so each file drops onto any
+       light section without showing a box. */
+    .ill { display: block; width: 100%; height: auto; object-fit: contain; }
+    .ill-xl { max-width: 620px; }
+    .ill-lg { max-width: 500px; }
+    .ill-md { max-width: 380px; }
 
     /* Illustrations sit in open space, not inside framed cards. */
     .ill-stage { position: relative; display: flex; align-items: center; justify-content: center; }
-    .ill-stage > .ill { position: relative; z-index: 1; }
-    /* A single soft shape behind the artwork, in place of the old gradient panels. */
-    .ill-stage::before {
-      content: ''; position: absolute; z-index: 0;
-      inset: 12% 6% 14% 6%;
-      background: var(--sah-off);
-      border-radius: 48% 52% 46% 54% / 54% 46% 54% 46%;
-    }
-    .ill-stage--green::before { background: #ECFDF3; }
-    .ill-stage--bare::before { display: none; }
 
-    /* Charcoal sections flip the artwork's ink and paper. Custom properties
-       inherit, so this works on any ancestor of an illustration. */
-    .on-ink { --ill-ink: #FFFFFF; --ill-paper: #2E2E2E; --ill-grey: #4F4F4F; }
-    .on-ink .ill-stage::before { background: rgba(255,255,255,0.05); }
+    /* The line work is charcoal, so a dark band needs a light surface under
+       it. Matching the dark backgrounds as well as .on-ink means a section
+       cannot go dark and quietly swallow its illustration. */
+    .on-ink .ill,
+    .band-ink .ill,
+    [class*="bg-[#2E2E2E]"] .ill,
+    [class*="bg-[#242424]"] .ill,
+    [class*="bg-[#1A1A1A]"] .ill,
+    [class*="bg-charcoal-8"] .ill,
+    [class*="bg-charcoal-9"] .ill {
+      background: var(--sah-off);
+      border-radius: 24px;
+      padding: 20px 24px;
+      box-sizing: border-box;
+    }
 
     /* ---- Section rhythm -------------------------------------------------
        Alternating white / off-white / charcoal bands, joined by soft
@@ -145,643 +146,6 @@
 </head>
 <body class="bg-white text-charcoal-800 antialiased selection:bg-brand-500 selection:text-white">
 
-<!-- START SAH ILLUSTRATION SPRITE -->
-<!--
-  ============================================================================
-  START SAH — ILLUSTRATION LIBRARY
-  ============================================================================
-  Style rules (locked to the client-approved reference sheet):
-    · Flat line art. No gradients, no glows, no drop shadows.
-    · Faceless figures. No eyes, no mouths, no identifiable portraits.
-    · Saudi / GCC dress (thobe + ghutra, abaya) used naturally alongside
-      international business dress.
-    · One large idea per illustration. Few elements, generous white space.
-
-  Palette
-    Ink / Charcoal .... #2E2E2E   line work, hair, abaya, trousers
-    START Green ....... #00C853   one accent per illustration
-    Light Grey ........ #E6E6E6   secondary blocks and fills
-    Paper ............. #FFFFFF   thobes, shirts, panels
-
-  Usage
-    <svg class="ill" viewBox="0 0 440 320"><use href="#il-human-development"/></svg>
-  On a charcoal section add `ill--invert` to the <svg> to flip ink and paper.
-  ============================================================================
--->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
-<style>
-  /* Tokens — overridden by .ill--invert on the host svg element.
-     Keep this block free of angle brackets: inside SVG, style is parsed as
-     foreign content, so a stray one would be read as the start of a tag. */
-  svg[class*="ill"]{
-    --il-ink:var(--ill-ink,#2E2E2E);
-    --il-paper:var(--ill-paper,#FFFFFF);
-    --il-grn:var(--ill-green,#00C853);
-    --il-grey:var(--ill-grey,#E6E6E6);
-  }
-  /* Any ancestor may flip the artwork by setting --ill-ink / --ill-paper;
-     the class below does it explicitly on a single illustration. */
-  svg.ill--invert{--il-ink:#FFFFFF;--il-paper:#2E2E2E;--il-grey:#4F4F4F}
-
-  /* Stroke primitives */
-  .il-s  {fill:none;stroke:var(--il-ink);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
-  .il-t  {fill:none;stroke:var(--il-ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-  .il-go {fill:none;stroke:var(--il-grn);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
-
-  /* Fill primitives */
-  .il-w  {fill:var(--il-paper);stroke:var(--il-ink);stroke-width:2.6;stroke-linejoin:round}
-  .il-l  {fill:var(--il-grey);stroke:var(--il-ink);stroke-width:2.6;stroke-linejoin:round}
-  .il-gf {fill:var(--il-grn);stroke:var(--il-ink);stroke-width:2.6;stroke-linejoin:round}
-  .il-d  {fill:var(--il-ink)}
-  .il-g  {fill:var(--il-grn)}
-
-  /* Limbs read as outlined tubes: a dark stroke with a lighter one laid over it */
-  .il-lo {fill:none;stroke:var(--il-ink);stroke-width:14;stroke-linecap:round;stroke-linejoin:round}
-  .il-li {fill:none;stroke:var(--il-paper);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
-  .il-lgi{fill:none;stroke:var(--il-grn);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
-  .il-ld {fill:none;stroke:var(--il-ink);stroke-width:15;stroke-linecap:round;stroke-linejoin:round}
-
-  /* Labels inside artwork */
-  .il-lbl{fill:var(--il-ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:12px;font-weight:600}
-</style>
-
-<!-- ======================================================================
-     01 · HUMAN DEVELOPMENT — a hand extended to lift someone to the next step
-     ====================================================================== -->
-<symbol id="il-human-development" viewBox="0 0 440 320">
-  <circle class="il-go" cx="82" cy="146" r="23"/>
-  <circle class="il-s"  cx="122" cy="84" r="7" fill="none"/>
-  <path class="il-t" d="M54 216 L90 180"/>
-
-  <!-- ascending platforms -->
-  <rect class="il-w" x="146" y="230" width="80" height="48" rx="3"/>
-  <rect class="il-l" x="226" y="192" width="78" height="86" rx="3"/>
-  <rect class="il-gf" x="304" y="152" width="84" height="126" rx="3"/>
-  <path class="il-s" d="M56 278 H 402"/>
-
-  <!-- mentor on the top platform, in thobe and ghutra -->
-  <path class="il-w" d="M330 100 L 366 100 L 378 152 L 318 152 Z"/>
-  <path class="il-lo" d="M332 114 C 316 124, 300 134, 282 144"/>
-  <path class="il-li" d="M332 114 C 316 124, 300 134, 282 144"/>
-  <path class="il-lo" d="M366 116 C 376 128, 378 140, 374 150"/>
-  <path class="il-li" d="M366 116 C 376 128, 378 140, 374 150"/>
-  <ellipse class="il-w" cx="348" cy="82" rx="16" ry="18"/>
-  <path class="il-w" d="M329 82 C 327 54, 369 54, 367 82 L 375 116 L 357 108 L 339 108 L 321 116 Z"/>
-  <path class="il-s" d="M330 67 C 339 59, 357 59, 366 67" stroke-width="5"/>
-
-  <!-- person climbing, front foot landing on the middle platform -->
-  <path class="il-d" d="M214 146 L 236 146 L 258 186 L 242 196 L 214 164 Z"/>
-  <path class="il-d" d="M194 146 L 216 146 L 202 190 L 198 228 L 180 228 L 184 182 Z"/>
-  <ellipse class="il-d" cx="250" cy="192" rx="13" ry="5.5"/>
-  <ellipse class="il-d" cx="186" cy="229" rx="13" ry="5.5"/>
-  <path class="il-w" d="M198 98 L 234 94 L 242 150 L 194 154 Z"/>
-  <path class="il-lo" d="M234 104 C 250 112, 264 126, 276 142"/>
-  <path class="il-li" d="M234 104 C 250 112, 264 126, 276 142"/>
-  <path class="il-lo" d="M200 106 C 186 120, 180 136, 184 150"/>
-  <path class="il-li" d="M200 106 C 186 120, 180 136, 184 150"/>
-  <ellipse class="il-w" cx="219" cy="74" rx="15" ry="17"/>
-  <path class="il-d" d="M203 72 C 201 48, 235 48, 235 70 C 228 59, 210 59, 203 72 Z"/>
-</symbol>
-
-<!-- ======================================================================
-     02 · CAREER & EMPLOYABILITY — one person weighing several directions
-     ====================================================================== -->
-<symbol id="il-career-pathways" viewBox="0 0 440 320">
-  <circle class="il-go" cx="60" cy="92" r="18"/>
-  <path class="il-t" d="M44 202 L76 170"/>
-
-  <!-- the direction being chosen -->
-  <path class="il-g" d="M120 286 C 144 212, 180 150, 230 108 L 208 92 L 274 72 L 264 140 L 244 122 C 202 162, 172 218, 154 290 Z"/>
-
-  <!-- the directions being set aside -->
-  <path class="il-s" d="M112 260 C 92 252, 74 248, 56 246"/>
-  <path class="il-w" d="M54 246 L 72 235 L 70 257 Z"/>
-  <path class="il-s" d="M182 294 C 208 292, 232 290, 254 286"/>
-  <path class="il-w" d="M256 286 L 238 276 L 240 298 Z"/>
-
-  <!-- the options on the signpost -->
-  <path class="il-s" d="M290 62 V 240"/>
-  <path class="il-w" d="M290 74 H 392 L 406 87 L 392 100 H 290 Z"/>
-  <text class="il-lbl" x="301" y="92">Employment</text>
-  <path class="il-w" d="M290 112 H 392 L 406 125 L 392 138 H 290 Z"/>
-  <text class="il-lbl" x="301" y="130">Specialisation</text>
-  <path class="il-gf" d="M290 150 H 392 L 406 163 L 392 176 H 290 Z"/>
-  <text class="il-lbl" x="301" y="168">Entrepreneurship</text>
-  <path class="il-w" d="M290 188 H 392 L 406 201 L 392 214 H 290 Z"/>
-  <text class="il-lbl" x="301" y="206">Leadership</text>
-
-  <!-- figure in thobe and ghutra, considering -->
-  <path class="il-s" d="M56 294 H 382"/>
-  <path class="il-w" d="M128 170 L 172 170 L 188 294 L 112 294 Z"/>
-  <path class="il-lo" d="M174 184 C 186 192, 184 178, 172 176"/>
-  <path class="il-li" d="M174 184 C 186 192, 184 178, 172 176"/>
-  <path class="il-lo" d="M128 184 C 116 208, 116 234, 122 252"/>
-  <path class="il-li" d="M128 184 C 116 208, 116 234, 122 252"/>
-  <ellipse class="il-w" cx="150" cy="146" rx="17" ry="19"/>
-  <path class="il-w" d="M130 146 C 128 116, 172 116, 170 146 L 179 184 L 159 174 L 141 174 L 121 184 Z"/>
-  <path class="il-s" d="M131 130 C 140 122, 160 122, 169 130" stroke-width="5"/>
-</symbol>
-
-<!-- ======================================================================
-     03 · COMMUNICATION & PROFESSIONAL ENGLISH — an exchange that lands
-     ====================================================================== -->
-<symbol id="il-communication" viewBox="0 0 440 320">
-  <circle class="il-go" cx="394" cy="78" r="16"/>
-  <path class="il-t" d="M44 120 L74 92"/>
-
-  <!-- what was said, and the answer coming back -->
-  <path class="il-w" d="M116 40 H 212 A 14 14 0 0 1 226 54 V 92 A 14 14 0 0 1 212 106 H 150 L 132 124 L 134 106 H 116 A 14 14 0 0 1 102 92 V 54 A 14 14 0 0 1 116 40 Z"/>
-  <circle class="il-d" cx="140" cy="74" r="4.5"/>
-  <circle class="il-d" cx="162" cy="74" r="4.5"/>
-  <circle class="il-d" cx="184" cy="74" r="4.5"/>
-  <path class="il-gf" d="M264 58 H 356 A 14 14 0 0 1 370 72 V 108 A 14 14 0 0 1 356 122 H 302 L 284 140 L 286 122 H 264 A 14 14 0 0 1 250 108 V 72 A 14 14 0 0 1 264 58 Z"/>
-  <path class="il-s" d="M270 82 H 336 M270 100 H 316"/>
-
-  <!-- the table they are working across -->
-  <path class="il-s" d="M92 240 H 352"/>
-  <path class="il-s" d="M122 240 V 294 M322 240 V 294"/>
-  <path class="il-s" d="M50 294 H 392"/>
-
-  <!-- speaker, gesturing -->
-  <path class="il-w" d="M116 172 L 158 168 L 170 240 L 110 240 Z"/>
-  <path class="il-lo" d="M158 180 C 178 186, 196 184, 210 174"/>
-  <path class="il-li" d="M158 180 C 178 186, 196 184, 210 174"/>
-  <ellipse class="il-w" cx="138" cy="142" rx="16" ry="18"/>
-  <path class="il-d" d="M122 140 C 120 114, 156 114, 156 138 C 149 126, 129 126, 122 140 Z"/>
-
-  <!-- listener in abaya, answering -->
-  <path class="il-d" d="M280 168 C 280 152, 332 152, 332 168 L 346 240 L 266 240 Z"/>
-  <path class="il-ld" d="M282 184 C 264 192, 250 200, 242 210"/>
-  <ellipse class="il-w" cx="306" cy="138" rx="16" ry="18"/>
-  <path class="il-d" d="M286 136 C 284 108, 328 108, 326 136 L 334 176 L 320 164 L 292 164 L 278 176 Z"/>
-  <ellipse class="il-w" cx="306" cy="140" rx="10" ry="14"/>
-
-  <!-- laptops -->
-  <path class="il-d" d="M148 238 L 196 238 L 202 210 L 154 210 Z"/>
-  <path class="il-s" d="M142 240 H 208"/>
-  <path class="il-d" d="M246 238 L 294 238 L 288 210 L 240 210 Z"/>
-  <path class="il-s" d="M234 240 H 300"/>
-</symbol>
-
-<!-- ======================================================================
-     04 · PERSONAL DEVELOPMENT — clearing the barrier that was in the way
-     ====================================================================== -->
-<symbol id="il-personal-growth" viewBox="0 0 440 320">
-  <circle class="il-go" cx="76" cy="86" r="20"/>
-  <circle class="il-s" cx="348" cy="46" r="7"/>
-  <path class="il-t" d="M52 178 L82 148"/>
-
-  <!-- what stands in the way, and what lies past it -->
-  <rect class="il-w" x="118" y="236" width="72" height="46" rx="3"/>
-  <rect class="il-l" x="196" y="194" width="46" height="88" rx="3"/>
-  <rect class="il-gf" x="248" y="160" width="76" height="122" rx="3"/>
-  <path class="il-s" d="M48 282 H 398"/>
-
-  <!-- what is being headed for -->
-  <path class="il-s" d="M362 282 V 168"/>
-  <circle class="il-g" cx="362" cy="134" r="36"/>
-
-  <!-- figure mid-stride, clearing the barrier -->
-  <path class="il-d" d="M224 146 L 244 152 L 272 158 L 270 172 L 238 166 L 218 160 Z"/>
-  <path class="il-d" d="M212 146 L 228 154 L 200 178 L 176 194 L 166 182 L 194 162 Z"/>
-  <ellipse class="il-d" cx="274" cy="166" rx="12" ry="6"/>
-  <ellipse class="il-d" cx="170" cy="192" rx="12" ry="6"/>
-  <path class="il-w" d="M198 90 L 236 86 L 246 150 L 196 154 Z"/>
-  <path class="il-lo" d="M238 96 C 256 94, 270 82, 278 66"/>
-  <path class="il-li" d="M238 96 C 256 94, 270 82, 278 66"/>
-  <path class="il-lo" d="M198 96 C 180 102, 168 114, 164 128"/>
-  <path class="il-li" d="M198 96 C 180 102, 168 114, 164 128"/>
-  <ellipse class="il-w" cx="221" cy="66" rx="15" ry="17"/>
-  <path class="il-d" d="M205 64 C 203 40, 237 40, 237 62 C 230 51, 212 51, 205 64 Z"/>
-
-  <!-- the briefcase that travels with them -->
-  <rect class="il-w" x="142" y="122" width="38" height="28" rx="3"/>
-  <path class="il-s" d="M155 122 V 115 A 6 6 0 0 1 167 115 V 122"/>
-</symbol>
-
-<!-- ======================================================================
-     05 · LEADERSHIP & WORKPLACE SKILLS — setting the direction for others
-     ====================================================================== -->
-<symbol id="il-leadership" viewBox="0 0 440 320">
-  <circle class="il-go" cx="378" cy="214" r="15"/>
-  <path class="il-t" d="M50 106 L82 76"/>
-
-  <!-- the line the leader is tracing -->
-  <path class="il-go" d="M104 212 C 172 206, 212 152, 252 102 C 282 62, 324 42, 386 38" stroke-width="4"/>
-  <circle class="il-g" cx="386" cy="38" r="10"/>
-
-  <!-- leader in thobe and ghutra, pointing along it -->
-  <path class="il-s" d="M46 290 H 398"/>
-  <path class="il-w" d="M234 164 L 280 164 L 296 290 L 218 290 Z"/>
-  <path class="il-lo" d="M238 178 C 220 168, 206 154, 198 138"/>
-  <path class="il-li" d="M238 178 C 220 168, 206 154, 198 138"/>
-  <path class="il-lo" d="M280 178 C 294 196, 298 218, 294 238"/>
-  <path class="il-li" d="M280 178 C 294 196, 298 218, 294 238"/>
-  <ellipse class="il-w" cx="257" cy="140" rx="17" ry="19"/>
-  <path class="il-w" d="M237 140 C 235 110, 279 110, 277 140 L 286 178 L 266 168 L 248 168 L 228 178 Z"/>
-  <path class="il-s" d="M238 124 C 247 116, 267 116, 276 124" stroke-width="5"/>
-
-  <!-- two colleagues taking the direction, seen from behind -->
-  <path class="il-w" d="M100 208 C 100 190, 152 190, 152 208 L 162 290 L 90 290 Z"/>
-  <ellipse class="il-w" cx="126" cy="180" rx="16" ry="18"/>
-  <path class="il-d" d="M110 178 C 108 152, 144 152, 144 176 C 137 164, 117 164, 110 178 Z"/>
-
-  <path class="il-d" d="M160 220 C 160 202, 214 202, 214 220 L 224 290 L 150 290 Z"/>
-  <ellipse class="il-w" cx="187" cy="192" rx="16" ry="18"/>
-  <path class="il-d" d="M167 190 C 165 162, 209 162, 207 190 L 215 230 L 201 218 L 173 218 L 159 230 Z"/>
-  <ellipse class="il-w" cx="187" cy="194" rx="10" ry="14"/>
-</symbol>
-
-<!-- ======================================================================
-     06 · TRAINING & DEVELOPMENT — capability, made visible
-     ====================================================================== -->
-<symbol id="il-training" viewBox="0 0 440 320">
-  <circle class="il-go" cx="54" cy="94" r="17"/>
-  <path class="il-t" d="M396 106 L420 82"/>
-
-  <!-- the board -->
-  <rect class="il-w" x="180" y="30" width="216" height="152" rx="6"/>
-  <path class="il-s" d="M202 60 H 302 M202 80 H 264"/>
-  <rect class="il-g" x="214" y="122" width="28" height="38" rx="2"/>
-  <rect class="il-g" x="254" y="102" width="28" height="58" rx="2"/>
-  <rect class="il-g" x="294" y="80" width="28" height="80" rx="2"/>
-  <rect class="il-l" x="334" y="114" width="28" height="46" rx="2"/>
-  <path class="il-s" d="M202 160 H 370"/>
-
-  <!-- trainer in thobe and ghutra presenting -->
-  <path class="il-s" d="M42 292 H 404"/>
-  <path class="il-w" d="M106 154 L 152 154 L 168 292 L 90 292 Z"/>
-  <path class="il-lo" d="M150 168 C 170 170, 188 154, 196 132"/>
-  <path class="il-li" d="M150 168 C 170 170, 188 154, 196 132"/>
-  <path class="il-lo" d="M108 168 C 98 190, 96 212, 100 232"/>
-  <path class="il-li" d="M108 168 C 98 190, 96 212, 100 232"/>
-  <ellipse class="il-w" cx="129" cy="130" rx="17" ry="19"/>
-  <path class="il-w" d="M109 130 C 107 100, 151 100, 149 130 L 158 168 L 138 158 L 120 158 L 100 168 Z"/>
-  <path class="il-s" d="M110 114 C 119 106, 139 106, 148 114" stroke-width="5"/>
-
-  <!-- participants, seen from behind -->
-  <path class="il-d" d="M190 224 C 190 204, 248 204, 248 224 L 258 292 L 180 292 Z"/>
-  <ellipse class="il-w" cx="219" cy="194" rx="17" ry="19"/>
-  <path class="il-d" d="M198 192 C 196 164, 242 164, 240 192 L 248 234 L 234 222 L 204 222 L 190 234 Z"/>
-  <ellipse class="il-w" cx="219" cy="196" rx="10" ry="15"/>
-
-  <path class="il-w" d="M262 234 C 262 214, 318 214, 318 234 L 328 292 L 252 292 Z"/>
-  <ellipse class="il-w" cx="290" cy="204" rx="17" ry="19"/>
-  <path class="il-d" d="M273 202 C 271 174, 307 174, 307 200 C 300 187, 280 187, 273 202 Z"/>
-
-  <path class="il-d" d="M330 244 C 330 226, 382 226, 382 244 L 392 292 L 320 292 Z"/>
-  <ellipse class="il-w" cx="356" cy="216" rx="16" ry="18"/>
-  <path class="il-d" d="M340 214 C 338 188, 374 188, 374 212 C 367 200, 347 200, 340 214 Z"/>
-</symbol>
-
-<!-- ======================================================================
-     07 · COACHING & MENTORING — thinking something through with someone
-     ====================================================================== -->
-<symbol id="il-coaching" viewBox="0 0 440 320">
-  <circle class="il-go" cx="62" cy="220" r="16"/>
-  <path class="il-t" d="M42 94 L70 68"/>
-
-  <!-- the idea that arrives -->
-  <path class="il-gf" d="M266 40 C 288 40, 306 58, 306 80 C 306 94, 296 102, 292 114 L 240 114 C 236 102, 226 94, 226 80 C 226 58, 244 40, 266 40 Z"/>
-  <path class="il-s" d="M242 122 H 290 M248 132 H 284"/>
-  <path class="il-go" d="M266 20 V 8 M320 40 L 330 30 M212 40 L 202 30 M332 84 H 346 M186 84 H 200"/>
-
-  <!-- coach -->
-  <path class="il-s" d="M40 294 H 404"/>
-  <path class="il-s" d="M92 222 H 176 M100 222 V 294 M168 222 V 294"/>
-  <path class="il-w" d="M100 166 L 146 162 L 158 226 L 96 230 Z"/>
-  <path class="il-lo" d="M146 176 C 166 182, 184 182, 198 174"/>
-  <path class="il-li" d="M146 176 C 166 182, 184 182, 198 174"/>
-  <path class="il-ld" d="M134 226 L 170 242 L 172 274"/>
-  <ellipse class="il-d" cx="174" cy="278" rx="13" ry="6"/>
-  <ellipse class="il-w" cx="121" cy="134" rx="17" ry="19"/>
-  <path class="il-w" d="M101 134 C 99 104, 143 104, 141 134 L 150 172 L 130 162 L 112 162 L 92 172 Z"/>
-  <path class="il-s" d="M102 118 C 111 110, 131 110, 140 118" stroke-width="5"/>
-
-  <!-- person being coached, laptop resting on the knee -->
-  <path class="il-s" d="M266 230 H 350 M274 230 V 294 M342 230 V 294"/>
-  <path class="il-w" d="M284 172 L 324 168 L 336 232 L 280 236 Z"/>
-  <path class="il-lo" d="M284 182 C 268 190, 256 192, 244 186"/>
-  <path class="il-li" d="M284 182 C 268 190, 256 192, 244 186"/>
-  <path class="il-ld" d="M306 232 L 272 250 L 270 278"/>
-  <ellipse class="il-d" cx="268" cy="282" rx="13" ry="6"/>
-  <ellipse class="il-w" cx="304" cy="140" rx="16" ry="18"/>
-  <path class="il-d" d="M288 138 C 286 112, 322 112, 322 136 C 315 124, 295 124, 288 138 Z"/>
-  <path class="il-d" d="M242 226 L 292 226 L 298 198 L 248 198 Z"/>
-  <path class="il-s" d="M236 228 H 304"/>
-
-  <!-- plant -->
-  <path class="il-w" d="M368 294 L 374 250 H 412 L 418 294 Z"/>
-  <path class="il-go" d="M393 250 V 206"/>
-  <path class="il-gf" d="M393 226 C 372 224, 366 204, 384 200 C 397 200, 401 220, 393 226 Z"/>
-  <path class="il-gf" d="M393 238 C 414 236, 420 216, 402 212 C 389 212, 385 232, 393 238 Z"/>
-</symbol>
-
-<!-- ======================================================================
-     08 · ORGANISATIONAL DEVELOPMENT — the parts only work once joined
-     ====================================================================== -->
-<symbol id="il-organisational" viewBox="0 0 440 320">
-  <circle class="il-go" cx="58" cy="76" r="19"/>
-  <path class="il-t" d="M390 204 L416 176"/>
-
-  <!-- two pieces that interlock along one shared edge -->
-  <path class="il-l"  d="M124 66 H 208 V 92 C 226 92, 226 122, 208 122 V 148 H 124 Z"/>
-  <path class="il-gf" d="M208 66 H 292 V 148 H 208 V 122 C 226 122, 226 92, 208 92 Z"/>
-
-  <path class="il-s" d="M38 292 H 406"/>
-
-  <!-- left colleague, in abaya, steadying one piece -->
-  <path class="il-d" d="M72 204 C 72 186, 124 186, 124 204 L 136 292 L 60 292 Z"/>
-  <path class="il-lo" d="M120 214 C 134 192, 142 174, 146 158"/>
-  <path class="il-li" d="M120 214 C 134 192, 142 174, 146 158"/>
-  <ellipse class="il-w" cx="98" cy="174" rx="17" ry="19"/>
-  <path class="il-d" d="M78 172 C 76 144, 120 144, 118 172 L 126 212 L 112 200 L 84 200 L 70 212 Z"/>
-  <ellipse class="il-w" cx="98" cy="178" rx="10" ry="15"/>
-
-  <!-- centre colleague, aligning both -->
-  <path class="il-d" d="M196 226 L 216 226 L 220 292 L 204 292 L 206 254 L 200 292 L 184 292 L 190 226 Z"/>
-  <path class="il-w" d="M182 174 L 226 170 L 238 230 L 178 234 Z"/>
-  <path class="il-lo" d="M184 182 C 172 166, 168 152, 170 138"/>
-  <path class="il-li" d="M184 182 C 172 166, 168 152, 170 138"/>
-  <path class="il-lo" d="M226 180 C 238 166, 242 152, 240 138"/>
-  <path class="il-li" d="M226 180 C 238 166, 242 152, 240 138"/>
-  <ellipse class="il-w" cx="205" cy="146" rx="16" ry="18"/>
-  <path class="il-d" d="M189 144 C 187 118, 223 118, 223 142 C 216 130, 196 130, 189 144 Z"/>
-
-  <!-- right colleague, in thobe and ghutra, steadying the other piece -->
-  <path class="il-w" d="M298 200 L 344 200 L 360 292 L 282 292 Z"/>
-  <path class="il-lo" d="M302 212 C 290 190, 288 170, 292 154"/>
-  <path class="il-li" d="M302 212 C 290 190, 288 170, 292 154"/>
-  <ellipse class="il-w" cx="321" cy="176" rx="17" ry="19"/>
-  <path class="il-w" d="M301 176 C 299 146, 343 146, 341 176 L 350 214 L 330 204 L 312 204 L 292 214 Z"/>
-  <path class="il-s" d="M302 160 C 311 152, 331 152, 340 160" stroke-width="5"/>
-</symbol>
-
-<!-- ======================================================================
-     09 · TEAMWORK & CULTURE — different strengths, one shared purpose
-     ====================================================================== -->
-<symbol id="il-teamwork" viewBox="0 0 440 320">
-  <circle class="il-g" cx="334" cy="88" r="30"/>
-  <circle class="il-go" cx="70" cy="110" r="16"/>
-  <path class="il-t" d="M48 222 L76 194"/>
-
-  <!-- the table they share -->
-  <path class="il-s" d="M80 240 H 360"/>
-  <path class="il-s" d="M112 240 V 294 M328 240 V 294"/>
-  <path class="il-s" d="M42 294 H 400"/>
-
-  <!-- left, in abaya -->
-  <path class="il-d" d="M100 184 C 100 166, 152 166, 152 184 L 162 240 L 90 240 Z"/>
-  <ellipse class="il-w" cx="126" cy="154" rx="17" ry="19"/>
-  <path class="il-d" d="M106 152 C 104 124, 148 124, 146 152 L 154 192 L 140 180 L 112 180 L 98 192 Z"/>
-  <ellipse class="il-w" cx="126" cy="158" rx="10" ry="15"/>
-
-  <!-- centre, in business dress -->
-  <path class="il-w" d="M190 178 L 234 174 L 246 240 L 184 240 Z"/>
-  <path class="il-lo" d="M234 188 C 248 194, 256 206, 256 220"/>
-  <path class="il-li" d="M234 188 C 248 194, 256 206, 256 220"/>
-  <ellipse class="il-w" cx="212" cy="148" rx="16" ry="18"/>
-  <path class="il-d" d="M196 146 C 194 120, 230 120, 230 144 C 223 132, 203 132, 196 146 Z"/>
-
-  <!-- right, in thobe and ghutra -->
-  <path class="il-w" d="M284 178 L 328 178 L 342 240 L 270 240 Z"/>
-  <ellipse class="il-w" cx="306" cy="150" rx="17" ry="19"/>
-  <path class="il-w" d="M286 150 C 284 120, 328 120, 326 150 L 335 188 L 315 178 L 297 178 L 277 188 Z"/>
-  <path class="il-s" d="M287 134 C 296 126, 316 126, 325 134" stroke-width="5"/>
-
-  <!-- laptops -->
-  <path class="il-d" d="M138 238 L 184 238 L 190 208 L 144 208 Z"/>
-  <path class="il-s" d="M132 240 H 196"/>
-  <path class="il-d" d="M254 238 L 300 238 L 294 208 L 248 208 Z"/>
-  <path class="il-s" d="M242 240 H 306"/>
-</symbol>
-
-<!-- ======================================================================
-     10 · TRAIN THE TRAINER — developing the people who develop others
-     ====================================================================== -->
-<symbol id="il-train-trainer" viewBox="0 0 440 320">
-  <circle class="il-go" cx="50" cy="80" r="16"/>
-  <path class="il-t" d="M400 64 L424 40"/>
-
-  <!-- flip chart on its easel -->
-  <rect class="il-w" x="198" y="28" width="196" height="160" rx="5"/>
-  <path class="il-s" d="M220 68 H 340 M220 94 H 304 M220 120 H 352"/>
-  <rect class="il-g" x="220" y="142" width="46" height="24" rx="2"/>
-  <path class="il-s" d="M216 188 L 202 290 M376 188 L 390 290"/>
-
-  <!-- trainer in thobe and ghutra -->
-  <path class="il-s" d="M38 290 H 404"/>
-  <path class="il-w" d="M112 158 L 158 158 L 174 290 L 96 290 Z"/>
-  <path class="il-lo" d="M156 172 C 178 172, 196 154, 204 130"/>
-  <path class="il-li" d="M156 172 C 178 172, 196 154, 204 130"/>
-  <path class="il-lo" d="M114 172 C 104 194, 102 216, 106 234"/>
-  <path class="il-li" d="M114 172 C 104 194, 102 216, 106 234"/>
-  <ellipse class="il-w" cx="135" cy="134" rx="17" ry="19"/>
-  <path class="il-w" d="M115 134 C 113 104, 157 104, 155 134 L 164 172 L 144 162 L 126 162 L 106 172 Z"/>
-  <path class="il-s" d="M116 118 C 125 110, 145 110, 154 118" stroke-width="5"/>
-
-  <!-- trainers being developed -->
-  <path class="il-d" d="M206 234 C 206 214, 264 214, 264 234 L 274 290 L 196 290 Z"/>
-  <ellipse class="il-w" cx="235" cy="204" rx="17" ry="19"/>
-  <path class="il-d" d="M214 202 C 212 174, 258 174, 256 202 L 264 244 L 250 232 L 220 232 L 206 244 Z"/>
-  <ellipse class="il-w" cx="235" cy="206" rx="10" ry="15"/>
-
-  <path class="il-w" d="M278 242 C 278 222, 334 222, 334 242 L 344 290 L 268 290 Z"/>
-  <ellipse class="il-w" cx="306" cy="212" rx="17" ry="19"/>
-  <path class="il-d" d="M289 210 C 287 182, 323 182, 323 208 C 316 195, 296 195, 289 210 Z"/>
-</symbol>
-
-<!-- ======================================================================
-     11 · PROFESSIONAL ENGLISH — working confidently across borders
-     ====================================================================== -->
-<symbol id="il-professional-english" viewBox="0 0 440 320">
-  <path class="il-t" d="M42 216 L70 188"/>
-  <circle class="il-go" cx="66" cy="72" r="16"/>
-
-  <!-- the wider world being reached -->
-  <circle class="il-w" cx="318" cy="106" r="64"/>
-  <path class="il-s" d="M254 106 H 382"/>
-  <path class="il-s" d="M318 42 C 351 71, 351 141, 318 170 C 285 141, 285 71, 318 42 Z"/>
-  <path class="il-s" d="M269 69 C 300 86, 336 86, 367 69 M269 143 C 300 126, 336 126, 367 143"/>
-
-  <!-- the message in flight -->
-  <path class="il-go" d="M172 212 C 212 208, 248 192, 272 168" stroke-dasharray="7 9"/>
-  <path class="il-gf" d="M284 128 L 344 156 L 312 166 L 300 192 Z"/>
-
-  <!-- person at a laptop, in abaya -->
-  <path class="il-s" d="M42 294 H 398"/>
-  <path class="il-s" d="M60 250 H 216 M82 250 V 294 M196 250 V 294"/>
-  <path class="il-d" d="M96 184 C 96 164, 152 164, 152 184 L 164 248 L 86 248 Z"/>
-  <path class="il-ld" d="M148 196 C 166 204, 178 216, 182 230"/>
-  <ellipse class="il-w" cx="124" cy="154" rx="17" ry="19"/>
-  <path class="il-d" d="M104 152 C 102 122, 146 122, 144 152 L 152 192 L 138 180 L 110 180 L 96 192 Z"/>
-  <ellipse class="il-w" cx="124" cy="158" rx="10" ry="15"/>
-  <path class="il-d" d="M134 248 L 190 248 L 184 214 L 128 214 Z"/>
-  <path class="il-s" d="M122 250 H 198"/>
-</symbol>
-
-<!-- ======================================================================
-     12 · DIRECTION & VISION — seeing where this is going
-     ====================================================================== -->
-<symbol id="il-vision" viewBox="0 0 440 320">
-  <circle class="il-go" cx="62" cy="70" r="17"/>
-  <path class="il-t" d="M42 190 L70 162"/>
-  <circle class="il-s" cx="206" cy="62" r="7"/>
-
-  <!-- the summit, and the flag on it -->
-  <path class="il-l" d="M226 268 L 318 128 L 410 268 Z"/>
-  <path class="il-gf" d="M318 128 L 358 190 L 278 190 Z"/>
-  <path class="il-s" d="M318 128 V 70"/>
-  <path class="il-g" d="M318 70 L 378 88 L 318 106 Z"/>
-
-  <!-- observer in thobe and ghutra, sighting the route -->
-  <path class="il-s" d="M38 268 H 412"/>
-  <path class="il-w" d="M92 176 L 138 176 L 154 268 L 76 268 Z"/>
-  <path class="il-lo" d="M136 190 C 154 186, 168 176, 178 162"/>
-  <path class="il-li" d="M136 190 C 154 186, 168 176, 178 162"/>
-  <path class="il-lo" d="M96 192 C 110 202, 126 204, 140 198"/>
-  <path class="il-li" d="M96 192 C 110 202, 126 204, 140 198"/>
-  <ellipse class="il-w" cx="115" cy="148" rx="17" ry="19"/>
-  <path class="il-w" d="M95 148 C 93 118, 137 118, 135 148 L 144 186 L 124 176 L 106 176 L 86 186 Z"/>
-  <path class="il-s" d="M96 132 C 105 124, 125 124, 134 132" stroke-width="5"/>
-  <path class="il-gf" d="M132 152 L 202 122 L 210 140 L 140 168 Z"/>
-</symbol>
-
-<!-- ======================================================================
-     13 · LEARNING & RESOURCES — knowledge you can actually pick up
-     ====================================================================== -->
-<symbol id="il-learning" viewBox="0 0 440 320">
-  <circle class="il-go" cx="376" cy="230" r="16"/>
-  <path class="il-t" d="M46 104 L74 76"/>
-
-  <!-- what it adds up to -->
-  <path class="il-g" d="M228 46 L 316 78 L 228 110 L 140 78 Z"/>
-  <path class="il-s" d="M176 94 V 128 C 176 146, 280 146, 280 128 V 94"/>
-  <path class="il-go" d="M316 78 V 130" stroke-width="3"/>
-  <circle class="il-g" cx="316" cy="137" r="8"/>
-
-  <!-- the stack being sat on -->
-  <path class="il-s" d="M38 292 H 402"/>
-  <rect class="il-l" x="128" y="270" width="176" height="22" rx="4"/>
-  <rect class="il-w" x="120" y="248" width="176" height="22" rx="4"/>
-  <path class="il-go" d="M136 248 V 270 M144 270 V 292"/>
-
-  <!-- reader seated on it, laptop on the knee -->
-  <path class="il-d" d="M188 216 L 208 216 L 246 232 L 240 246 L 200 232 Z"/>
-  <path class="il-ld" d="M244 238 L 250 268"/>
-  <ellipse class="il-d" cx="252" cy="272" rx="13" ry="6"/>
-  <path class="il-w" d="M166 152 L 206 148 L 220 222 L 162 226 Z"/>
-  <path class="il-lo" d="M206 162 C 224 170, 238 184, 242 200"/>
-  <path class="il-li" d="M206 162 C 224 170, 238 184, 242 200"/>
-  <ellipse class="il-w" cx="184" cy="122" rx="16" ry="18"/>
-  <path class="il-d" d="M168 120 C 166 94, 202 94, 202 118 C 195 106, 175 106, 168 120 Z"/>
-  <path class="il-d" d="M222 236 L 272 236 L 266 206 L 216 206 Z"/>
-  <path class="il-s" d="M210 238 H 278"/>
-</symbol>
-
-<!-- ======================================================================
-     14 · PARTNERSHIP — an agreement two organisations can both stand behind
-     ====================================================================== -->
-<symbol id="il-partnership" viewBox="0 0 440 320">
-  <circle class="il-g" cx="220" cy="84" r="32"/>
-  <circle class="il-go" cx="62" cy="180" r="16"/>
-  <path class="il-t" d="M386 106 L414 78"/>
-
-  <path class="il-s" d="M38 292 H 406"/>
-
-  <!-- left, in abaya -->
-  <path class="il-d" d="M96 176 C 96 158, 150 158, 150 176 L 162 292 L 84 292 Z"/>
-  <ellipse class="il-w" cx="123" cy="146" rx="17" ry="19"/>
-  <path class="il-d" d="M103 144 C 101 114, 145 114, 143 144 L 151 184 L 137 172 L 109 172 L 95 184 Z"/>
-  <ellipse class="il-w" cx="123" cy="150" rx="10" ry="15"/>
-
-  <!-- right, in abaya -->
-  <path class="il-d" d="M290 176 C 290 158, 344 158, 344 176 L 356 292 L 278 292 Z"/>
-  <ellipse class="il-w" cx="317" cy="146" rx="17" ry="19"/>
-  <path class="il-d" d="M297 144 C 295 114, 339 114, 337 144 L 345 184 L 331 172 L 303 172 L 289 184 Z"/>
-  <ellipse class="il-w" cx="317" cy="150" rx="10" ry="15"/>
-
-  <!-- forearms meeting, hands clasped -->
-  <path class="il-lo" d="M148 190 C 168 194, 184 198, 198 202"/>
-  <path class="il-li" d="M148 190 C 168 194, 184 198, 198 202"/>
-  <path class="il-lo" d="M292 190 C 272 194, 256 198, 242 202"/>
-  <path class="il-li" d="M292 190 C 272 194, 256 198, 242 202"/>
-  <rect class="il-w" x="206" y="186" width="40" height="26" rx="12" transform="rotate(-9 226 199)"/>
-  <rect class="il-w" x="198" y="192" width="38" height="24" rx="11" transform="rotate(7 217 204)"/>
-  <path class="il-t" d="M206 199 H 226 M204 208 H 224"/>
-
-  <!-- what they agreed -->
-  <rect class="il-w" x="186" y="238" width="68" height="48" rx="3"/>
-  <path class="il-s" d="M200 254 H 240 M200 268 H 226"/>
-</symbol>
-
-<!-- ======================================================================
-     15 · FOCUS & OUTCOMES — knowing what counts as progress
-     ====================================================================== -->
-<symbol id="il-focus" viewBox="0 0 440 320">
-  <circle class="il-go" cx="56" cy="88" r="16"/>
-  <path class="il-t" d="M398 212 L424 186"/>
-
-  <!-- what it is aimed at -->
-  <circle class="il-w" cx="318" cy="180" r="70"/>
-  <circle class="il-gf" cx="318" cy="180" r="46"/>
-  <circle class="il-w" cx="318" cy="180" r="22"/>
-  <circle class="il-g" cx="318" cy="180" r="8"/>
-  <path class="il-s" d="M318 180 L 404 104"/>
-  <path class="il-gf" d="M404 104 L 420 88 L 414 114 L 396 118 Z"/>
-
-  <!-- what has been done -->
-  <rect class="il-w" x="122" y="62" width="126" height="156" rx="6"/>
-  <path class="il-go" d="M140 98 L 150 108 L 170 86" stroke-width="3.4"/>
-  <path class="il-s" d="M182 98 H 230"/>
-  <path class="il-go" d="M140 140 L 150 150 L 170 128" stroke-width="3.4"/>
-  <path class="il-s" d="M182 140 H 230"/>
-  <path class="il-go" d="M140 182 L 150 192 L 170 170" stroke-width="3.4"/>
-  <path class="il-s" d="M182 182 H 212"/>
-
-  <!-- person marking it off -->
-  <path class="il-s" d="M38 294 H 404"/>
-  <path class="il-d" d="M64 218 C 64 198, 120 198, 120 218 L 132 294 L 52 294 Z"/>
-  <path class="il-lo" d="M116 228 C 130 220, 138 210, 140 196"/>
-  <path class="il-li" d="M116 228 C 130 220, 138 210, 140 196"/>
-  <ellipse class="il-w" cx="92" cy="188" rx="17" ry="19"/>
-  <path class="il-d" d="M72 186 C 70 156, 114 156, 112 186 L 120 226 L 106 214 L 78 214 L 64 226 Z"/>
-  <ellipse class="il-w" cx="92" cy="192" rx="10" ry="15"/>
-</symbol>
-
-<!-- ======================================================================
-     16 · MOMENTUM — steady, compounding progress
-     ====================================================================== -->
-<symbol id="il-momentum" viewBox="0 0 440 320">
-  <circle class="il-go" cx="54" cy="90" r="17"/>
-  <path class="il-t" d="M42 202 L70 174"/>
-
-  <!-- the trend, kept clear of the figure -->
-  <path class="il-go" d="M318 196 C 344 164, 366 128, 378 84" stroke-width="4"/>
-  <path class="il-g" d="M378 66 L 392 108 L 364 100 Z"/>
-
-  <!-- rising columns -->
-  <path class="il-s" d="M38 292 H 402"/>
-  <rect class="il-w" x="106" y="250" width="56" height="42" rx="3"/>
-  <rect class="il-l" x="170" y="216" width="56" height="76" rx="3"/>
-  <rect class="il-gf" x="234" y="178" width="56" height="114" rx="3"/>
-
-  <!-- person stepping up onto the top column, in abaya -->
-  <path class="il-d" d="M252 158 L 272 158 L 280 174 L 264 180 L 250 172 Z"/>
-  <path class="il-d" d="M238 158 L 254 164 L 232 196 L 216 214 L 204 204 L 226 182 Z"/>
-  <ellipse class="il-d" cx="272" cy="177" rx="12" ry="6"/>
-  <ellipse class="il-d" cx="208" cy="212" rx="12" ry="6"/>
-  <path class="il-d" d="M226 96 C 226 78, 278 78, 278 96 L 288 164 L 218 164 Z"/>
-  <path class="il-lo" d="M278 108 C 294 102, 306 90, 312 76"/>
-  <path class="il-li" d="M278 108 C 294 102, 306 90, 312 76"/>
-  <ellipse class="il-w" cx="252" cy="66" rx="17" ry="19"/>
-  <path class="il-d" d="M232 64 C 230 34, 274 34, 272 64 L 280 104 L 266 92 L 238 92 L 224 104 Z"/>
-  <ellipse class="il-w" cx="252" cy="70" rx="10" ry="15"/>
-</symbol>
-
-</svg>
-<!-- /START SAH ILLUSTRATION SPRITE -->
 
 
   <!-- 1. STICKY HEADER / NAVIGATION BAR (Wide, Centered, Classy Design) -->
@@ -932,10 +296,9 @@
         <!-- Right Side Visual: one large illustration, unframed, with room around it -->
         <div class="lg:col-span-5 relative">
           <div class="ill-stage ill-stage--green mx-auto max-w-xl lg:max-w-none">
-            <svg class="ill ill-xl" viewBox="0 0 440 320" role="img"
-                 aria-label="Line illustration: a mentor in thobe and ghutra reaches down from a green platform to help a colleague up the final step">
-              <use href="#il-human-development"/>
-            </svg>
+            <img src="assets/illustrations/01-growth-momentum.png"
+                 alt="Illustration: a professional working on a laptop on ascending steps, a green arrow rising behind"
+                 class="ill ill-xl" loading="lazy" decoding="async">
           </div>
         </div>
 
@@ -991,10 +354,9 @@
             <!-- Left: Large Prominent Visual Storytelling (Person Considering Different Pathways) -->
             <div class="lg:col-span-6 order-2 lg:order-1">
               <div class="ill-stage">
-                <svg class="ill w-full h-64 sm:h-80" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a professional in thobe and ghutra weighing employment, specialisation, entrepreneurship and leadership">
-                  <use href="#il-career-pathways"/>
-                </svg>
+                <img src="assets/illustrations/02-career-pathways.png"
+                     alt="Illustration: a professional pausing at a signpost, weighing which direction to take"
+                     class="ill w-full h-auto" loading="lazy" decoding="async">
               </div>
             </div>
 
@@ -1092,10 +454,9 @@
             <!-- Right: Large Prominent Visual Storytelling (Two People Interacting) -->
             <div class="lg:col-span-6">
               <div class="ill-stage ill-stage--bare">
-                <svg class="ill w-full h-64 sm:h-80" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: two colleagues in conversation across a table, one speech bubble answering another">
-                  <use href="#il-communication"/>
-                </svg>
+                <img src="assets/illustrations/03-communication.png"
+                     alt="Illustration: two colleagues talking across a table, one speech bubble answering another"
+                     class="ill w-full h-auto" loading="lazy" decoding="async">
               </div>
             </div>
 
@@ -1111,10 +472,9 @@
             <!-- Left: Large Prominent Visual Storytelling (Overcoming Obstacle / Progressing) -->
             <div class="lg:col-span-6 order-2 lg:order-1">
               <div class="ill-stage">
-                <svg class="ill w-full h-64 sm:h-80" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a professional clearing a barrier and landing on the step beyond it">
-                  <use href="#il-personal-growth"/>
-                </svg>
+                <img src="assets/illustrations/10-career-progression.png"
+                     alt="Illustration: a professional with a briefcase stepping up onto rising blocks"
+                     class="ill w-full h-auto" loading="lazy" decoding="async">
               </div>
             </div>
 
@@ -1210,10 +570,9 @@
             <!-- Right: Large Prominent Visual Storytelling (Helping Others Progress) -->
             <div class="lg:col-span-6">
               <div class="ill-stage">
-                <svg class="ill w-full h-64 sm:h-80" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a leader in thobe and ghutra tracing an upward line for two colleagues">
-                  <use href="#il-leadership"/>
-                </svg>
+                <img src="assets/illustrations/07-coaching-mentoring.png"
+                     alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop"
+                     class="ill w-full h-auto" loading="lazy" decoding="async">
               </div>
             </div>
 
@@ -1229,10 +588,9 @@
             <!-- Left: Large Prominent Visual Storytelling (People Working Toward Shared Goal) -->
             <div class="lg:col-span-6 order-2 lg:order-1">
               <div class="ill-stage">
-                <svg class="ill w-full h-64 sm:h-80" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: three colleagues bringing two interlocking pieces together">
-                  <use href="#il-organisational"/>
-                </svg>
+                <img src="assets/illustrations/09-problem-solving.png"
+                     alt="Illustration: a professional considering two puzzle pieces that have yet to be joined"
+                     class="ill w-full h-auto" loading="lazy" decoding="async">
               </div>
             </div>
 
@@ -1311,10 +669,9 @@
         <!-- Left: the inflection point, drawn large and left unframed -->
         <div class="lg:col-span-6">
           <div class="ill-stage">
-            <svg class="ill ill-lg" viewBox="0 0 440 320" role="img"
-                 aria-label="Line illustration: a professional sighting the route to a flag on the summit">
-              <use href="#il-vision"/>
-            </svg>
+            <img src="assets/illustrations/20-vision-direction.png"
+                 alt="Illustration: a professional in thobe and ghutra sighting the route to a flag on the summit"
+                 class="ill ill-lg" loading="lazy" decoding="async">
           </div>
 
           <p class="mt-8 text-sm text-gray-600 border-t hairline pt-5">
@@ -1447,10 +804,9 @@
 
           <!-- Large-Scale Hand-Drawn Workshop SVG Illustration -->
           <div class="on-ink ill-stage ill-stage--bare mt-4">
-            <svg class="ill w-full h-56 sm:h-64" viewBox="0 0 440 320" role="img"
-                 aria-label="Line illustration: a trainer presenting results at a board to a seated group">
-              <use href="#il-training"/>
-            </svg>
+            <img src="assets/illustrations/04-training-delivery.png"
+                 alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group"
+                 class="ill w-full h-auto" loading="lazy" decoding="async">
           </div>
         </div>
 
@@ -1842,10 +1198,9 @@
 
               <!-- Large TeachFlex Coach & Mentee Interactive Dialogue SVG -->
               <div class="my-auto py-2 flex items-center justify-center">
-                <svg class="ill w-full h-64 sm:h-72" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a coach and a colleague working an idea through together">
-                  <use href="#il-coaching"/>
-                </svg>
+                <img src="assets/illustrations/07-coaching-mentoring.png"
+                     alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop"
+                     class="ill w-full h-auto" loading="lazy" decoding="async">
               </div>
 
               <!-- Clean Overlay Badge -->
@@ -1933,10 +1288,9 @@
 
             <!-- Hand-drawn Illustration: Individual ascending pathway -->
             <div class="ill-stage mb-8">
-              <svg class="ill w-full h-24" viewBox="0 0 440 320" role="img"
-                   aria-label="Line illustration: a professional stepping up onto the tallest of three rising columns">
-                <use href="#il-momentum"/>
-              </svg>
+              <img src="assets/illustrations/02-career-pathways.png"
+                   alt="Illustration: a professional pausing at a signpost, weighing which direction to take"
+                   class="ill w-full h-auto max-h-44" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -1967,10 +1321,9 @@
 
             <!-- Hand-drawn Illustration: Collaborative Team around Table -->
             <div class="on-ink ill-stage ill-stage--bare mb-8">
-              <svg class="ill w-full h-24" viewBox="0 0 440 320" role="img"
-                   aria-label="Line illustration: three colleagues working side by side at a shared table">
-                <use href="#il-teamwork"/>
-              </svg>
+              <img src="assets/illustrations/06-teamwork.png"
+                   alt="Illustration: three colleagues working together around one laptop"
+                   class="ill w-full h-auto max-h-44" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -2208,10 +1561,9 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <!-- Hand-drawn Duo Stepping Forward Illustration -->
       <div class="flex justify-center mb-6">
-        <svg class="ill w-48 h-20" viewBox="0 0 440 320" role="img"
-             aria-label="Line illustration: a mentor in thobe and ghutra reaching down to help a colleague up the final step">
-          <use href="#il-human-development"/>
-        </svg>
+        <img src="assets/illustrations/18-next-step.png"
+             alt="Illustration: a professional stepping up onto the next block towards the one after it"
+             class="ill w-full h-auto max-h-36" loading="lazy" decoding="async">
       </div>
 
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
@@ -2336,10 +1688,9 @@
           <div class="lg:col-span-4 hidden lg:block">
             <div class="bg-charcoal-900 border border-charcoal-800 rounded-2xl p-5 shadow-2xl relative overflow-hidden">
               <div class="on-ink relative aspect-video rounded-xl overflow-hidden mb-4 group cursor-pointer bg-charcoal-800 ill-stage ill-stage--bare p-3" onclick="openModal('English for Professional Success')">
-                <svg class="ill w-full h-full opacity-60 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a completed checklist beside a target struck in the centre">
-                  <use href="#il-focus"/>
-                </svg>
+                <img src="assets/illustrations/12-goals-outcomes.png"
+                     alt="Illustration: a professional ticking off a checklist beside a target struck in the centre"
+                     class="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <div class="absolute inset-0 bg-charcoal-950/20 flex items-center justify-center">
                   <div class="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                     <i class="fa-solid fa-play text-sm ml-1"></i>
@@ -2731,10 +2082,9 @@
                       
                       <!-- Hand-Drawn Mentorship Canvas SVG -->
                       <div class="my-auto py-2 flex items-center justify-center">
-                        <svg class="ill w-full h-44" viewBox="0 0 440 320" role="img"
-                             aria-label="Line illustration: a coach and a colleague working an idea through together">
-                          <use href="#il-coaching"/>
-                        </svg>
+                        <img src="assets/illustrations/07-coaching-mentoring.png"
+                             alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop"
+                             class="ill w-full h-auto max-h-56" loading="lazy" decoding="async">
                       </div>
 
                       <div class="bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-gray-100 shadow-xs text-center">
@@ -3061,10 +2411,9 @@
           <div class="lg:col-span-5">
             <div class="max-w-lg mx-auto">
               <div class="ill-stage ill-stage--green">
-                <svg class="ill ill-lg" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: three colleagues working side by side at a shared table">
-                  <use href="#il-teamwork"/>
-                </svg>
+                <img src="assets/illustrations/06-teamwork.png"
+                     alt="Illustration: three colleagues working together around one laptop"
+                     class="ill ill-lg" loading="lazy" decoding="async">
               </div>
 
               <div class="mt-8">
@@ -3518,10 +2867,9 @@
           <div class="lg:col-span-5">
             <div class="max-w-lg mx-auto">
               <div class="ill-stage ill-stage--green">
-                <svg class="ill ill-lg" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a coach and a colleague working an idea through together">
-                  <use href="#il-coaching"/>
-                </svg>
+                <img src="assets/illustrations/07-coaching-mentoring.png"
+                     alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop"
+                     class="ill ill-lg" loading="lazy" decoding="async">
               </div>
               <div class="mt-6 flex items-center justify-between gap-4 border-t hairline pt-5">
                 <div>
@@ -3544,10 +2892,9 @@
 
           <div class="lg:col-span-5">
             <div class="ill-stage ill-stage--bare">
-              <svg class="ill ill-lg" viewBox="0 0 440 320" role="img"
-                   aria-label="Line illustration: a professional sighting the route to a flag on the summit">
-                <use href="#il-vision"/>
-              </svg>
+              <img src="assets/illustrations/20-vision-direction.png"
+                   alt="Illustration: a professional in thobe and ghutra sighting the route to a flag on the summit"
+                   class="ill ill-lg" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -3643,13 +2990,11 @@
           </div>
         </div>
 
-        <!-- Hand-drawn Illustrated Cohort Vignette Banner -->
+        <!-- A note, not a place for artwork: an illustration squeezed to banner
+             height reads as clutter, which is what the feedback asked us to cut. -->
         <div class="mt-8 p-4 bg-[#FAFAFA] rounded-2xl border border-emerald-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div class="flex items-center gap-3">
-            <svg class="ill w-32 h-10 shrink-0" viewBox="0 0 440 320" role="img"
-                 aria-label="Line illustration: three colleagues working side by side at a shared table">
-              <use href="#il-teamwork"/>
-            </svg>
+            <i class="fa-solid fa-users text-emerald-600 text-lg shrink-0"></i>
             <div class="text-left">
               <span class="text-xs font-bold text-gray-900 block">Small Cohorts & Safe Learning Environments</span>
               <span class="text-[11px] text-gray-600">Every programme provides interactive live practice with feedback tailored to your real role.</span>
@@ -3682,10 +3027,9 @@
           <div class="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Communication">
             <div>
               <div class="relative aspect-video overflow-hidden cursor-pointer ill-stage p-4" onclick="navigateTo('course')">
-                <svg class="ill w-full h-full max-h-36 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a professional at a laptop sending work out into the wider world">
-                  <use href="#il-professional-english"/>
-                </svg>
+                <img src="assets/illustrations/19-global-english.png"
+                     alt="Illustration: a professional at a laptop sending work out into the wider world"
+                     class="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Communication</span>
                 <span class="absolute bottom-3 right-3 bg-emerald-600 text-white px-2.5 py-0.5 rounded-full text-xs font-bold shadow-xs">Featured LMS</span>
               </div>
@@ -3720,10 +3064,9 @@
           <div class="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Leadership">
             <div>
               <div class="relative aspect-video overflow-hidden ill-stage p-4">
-                <svg class="ill w-full h-full max-h-36 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: two colleagues in conversation across a table, one speech bubble answering another">
-                  <use href="#il-communication"/>
-                </svg>
+                <img src="assets/illustrations/03-communication.png"
+                     alt="Illustration: two colleagues talking across a table, one speech bubble answering another"
+                     class="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Leadership</span>
               </div>
               <div class="p-6">
@@ -3756,10 +3099,9 @@
           <div class="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Career & Employability">
             <div>
               <div class="relative aspect-video overflow-hidden ill-stage p-4">
-                <svg class="ill w-full h-full max-h-36 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a professional in thobe and ghutra weighing employment, specialisation, entrepreneurship and leadership">
-                  <use href="#il-career-pathways"/>
-                </svg>
+                <img src="assets/illustrations/02-career-pathways.png"
+                     alt="Illustration: a professional pausing at a signpost, weighing which direction to take"
+                     class="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Career</span>
               </div>
               <div class="p-6">
@@ -3792,10 +3134,9 @@
           <div class="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Communication">
             <div>
               <div class="relative aspect-video overflow-hidden ill-stage p-4">
-                <svg class="ill w-full h-full max-h-36 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: two colleagues in abaya shaking hands over an agreement">
-                  <use href="#il-partnership"/>
-                </svg>
+                <img src="assets/illustrations/16-partnership.png"
+                     alt="Illustration: two colleagues in abaya shaking hands over an agreement"
+                     class="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Communication</span>
               </div>
               <div class="p-6">
@@ -3828,10 +3169,9 @@
           <div class="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="Leadership">
             <div>
               <div class="relative aspect-video overflow-hidden ill-stage p-4">
-                <svg class="ill w-full h-full max-h-36 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: three colleagues working side by side at a shared table">
-                  <use href="#il-teamwork"/>
-                </svg>
+                <img src="assets/illustrations/13-network-community.png"
+                     alt="Illustration: a professional at a laptop connected to a network of colleagues"
+                     class="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Leadership</span>
               </div>
               <div class="p-6">
@@ -3864,10 +3204,9 @@
           <div class="programme-card bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 hover:shadow-md transition duration-200 flex flex-col justify-between group" data-category="B2B Organisational">
             <div>
               <div class="relative aspect-video overflow-hidden ill-stage p-4">
-                <svg class="ill w-full h-full max-h-36 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: three colleagues bringing two interlocking pieces together">
-                  <use href="#il-organisational"/>
-                </svg>
+                <img src="assets/illustrations/09-problem-solving.png"
+                     alt="Illustration: a professional considering two puzzle pieces that have yet to be joined"
+                     class="ill w-full h-auto object-contain max-h-40 group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-emerald-700 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Enterprise B2B</span>
               </div>
               <div class="p-6">
@@ -3959,10 +3298,9 @@
           <div class="lg:col-span-5">
             <div class="max-w-lg mx-auto">
               <div class="ill-stage ill-stage--green">
-                <svg class="ill ill-lg" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a coach and a colleague working an idea through together">
-                  <use href="#il-coaching"/>
-                </svg>
+                <img src="assets/illustrations/07-coaching-mentoring.png"
+                     alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop"
+                     class="ill ill-lg" loading="lazy" decoding="async">
               </div>
 
               <div class="mt-8">
@@ -4070,10 +3408,9 @@
 
           <div class="lg:col-span-5 order-1 lg:order-2">
             <div class="ill-stage">
-              <svg class="ill ill-lg" viewBox="0 0 440 320" role="img"
-                   aria-label="Line illustration: a professional clearing a barrier and landing on the step beyond it">
-                <use href="#il-personal-growth"/>
-              </svg>
+              <img src="assets/illustrations/05-new-ideas.png"
+                   alt="Illustration: a professional at a laptop reaching up towards a lit idea"
+                   class="ill ill-lg" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -4088,10 +3425,9 @@
 
           <div class="lg:col-span-5">
             <div class="ill-stage ill-stage--bare">
-              <svg class="ill ill-lg" viewBox="0 0 440 320" role="img"
-                   aria-label="Line illustration: two colleagues in conversation across a table, one speech bubble answering another">
-                <use href="#il-communication"/>
-              </svg>
+              <img src="assets/illustrations/03-communication.png"
+                   alt="Illustration: two colleagues talking across a table, one speech bubble answering another"
+                   class="ill ill-lg" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -4932,10 +4268,9 @@
             <!-- Appearance 1 -->
             <div class="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
               <div class="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                <svg class="ill absolute inset-0 w-full h-full opacity-40 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: two colleagues in conversation across a table, one speech bubble answering another">
-                  <use href="#il-communication"/>
-                </svg>
+                <img src="assets/illustrations/17-insights-analysis.png"
+                     alt="Illustration: a presenter talking a seated group through charts"
+                     class="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <button onclick="playAppearanceVideo('On Purpose with Jay Shetty', 'Unlocking Quiet Executive Presence Under Pressure')" class="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                   <i class="fa-solid fa-play ml-1 text-sm"></i>
                 </button>
@@ -4949,10 +4284,9 @@
             <!-- Appearance 2 -->
             <div class="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
               <div class="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                <svg class="ill absolute inset-0 w-full h-full opacity-40 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a leader in thobe and ghutra tracing an upward line for two colleagues">
-                  <use href="#il-leadership"/>
-                </svg>
+                <img src="assets/illustrations/04-training-delivery.png"
+                     alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group"
+                     class="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <button onclick="playAppearanceVideo('The Diary of a CEO Masterclass', 'The Science of Non-Verbal Gravitas & Executive Presence')" class="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                   <i class="fa-solid fa-play ml-1 text-sm"></i>
                 </button>
@@ -4966,10 +4300,9 @@
             <!-- Appearance 3 -->
             <div class="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
               <div class="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                <svg class="ill absolute inset-0 w-full h-full opacity-40 group-hover:scale-105 transition duration-500" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a trainer presenting results at a board to a seated group">
-                  <use href="#il-training"/>
-                </svg>
+                <img src="assets/illustrations/12-goals-outcomes.png"
+                     alt="Illustration: a professional ticking off a checklist beside a target struck in the centre"
+                     class="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
                 <button onclick="playAppearanceVideo('BBC World Service Business', 'Breaking the Non-Native English Ceiling')" class="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                   <i class="fa-solid fa-play ml-1 text-sm"></i>
                 </button>
@@ -5460,10 +4793,9 @@
           <div class="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="active">
             <div>
               <div class="aspect-video relative overflow-hidden ill-stage p-3">
-                <svg class="ill w-full h-full" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a professional at a laptop sending work out into the wider world">
-                  <use href="#il-professional-english"/>
-                </svg>
+                <img src="assets/illustrations/19-global-english.png"
+                     alt="Illustration: a professional at a laptop sending work out into the wider world"
+                     class="ill w-full h-auto object-contain" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                   In Progress
                 </span>
@@ -5496,10 +4828,9 @@
           <div class="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="completed">
             <div>
               <div class="aspect-video relative overflow-hidden ill-stage p-3">
-                <svg class="ill w-full h-full" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a professional clearing a barrier and landing on the step beyond it">
-                  <use href="#il-personal-growth"/>
-                </svg>
+                <img src="assets/illustrations/08-learning.png"
+                     alt="Illustration: a learner working on a laptop on a stack of books beneath a graduation cap"
+                     class="ill w-full h-auto object-contain" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                   Completed (Grade: 96%)
                 </span>
@@ -5534,10 +4865,9 @@
           <div class="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="completed">
             <div>
               <div class="aspect-video relative overflow-hidden ill-stage p-3">
-                <svg class="ill w-full h-full" viewBox="0 0 440 320" role="img"
-                     aria-label="Line illustration: a leader in thobe and ghutra tracing an upward line for two colleagues">
-                  <use href="#il-leadership"/>
-                </svg>
+                <img src="assets/illustrations/15-balance-wellbeing.png"
+                     alt="Illustration: a professional working calmly and in balance at a laptop"
+                     class="ill w-full h-auto object-contain" loading="lazy" decoding="async">
                 <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                   Completed (Grade: 92%)
                 </span>
