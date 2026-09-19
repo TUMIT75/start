@@ -1,6 +1,6 @@
 # Start SAH — visual identity
 
-This is the visual system the prototype in `index.html` is built from. It exists
+This is the visual system the site is built from. It exists
 so the WordPress build reproduces the same look without guessing, and so Sonia
 can check the direction against the brief before any of it is rebuilt.
 
@@ -21,8 +21,7 @@ Four colours. Nothing else.
 | Off-White | `#FAFAFA` | Quiet section backgrounds, alternating with white. |
 | Light Grey | `#E6E6E6` | Hairline rules, secondary fills inside illustrations. |
 
-Supporting steps (tints of the same four) are declared once in the Tailwind
-config at the top of `index.html`. Two deliberate decisions there:
+Supporting steps (tints of the same four) are declared once in `tailwind.config.ts`. Two deliberate decisions there:
 
 - **`emerald-500` and `emerald-600` are both `#00C853`.** Whichever step a button
   already used, it lands on the exact logo green.
@@ -32,7 +31,7 @@ config at the top of `index.html`. Two deliberate decisions there:
 The dark greens from the earlier mock-up (`#0D2217`, `#16A34A`, `#15803D`,
 `#059669`) are gone. Dark bands are charcoal.
 
-> The logo files in `assets/` and `public/` are a traced placeholder that still
+> The logo files in `public/` are a traced placeholder that still
 > carried the old greens; they have been recoloured to match. **Replace them with
 > the real vector logo before launch.**
 
@@ -74,7 +73,7 @@ everything sitting inside separate boxes" asked for.
 
 ## Illustration library
 
-**`assets/illustrations/`** — thirty illustrations cut from the two approved
+**`public/illustrations/`** — thirty illustrations cut from the two approved
 reference sheets. These are the artwork; the site does not draw its own.
 
 They come in two sets:
@@ -154,13 +153,19 @@ Each of these belongs to one subject and is used only there.
 
 ### Placing one
 
-```html
-<div class="ill-stage">
-  <img src="assets/illustrations/topic-coaching-mentoring-topic.png"
-       alt="Illustration: a coach and a colleague working an idea through together"
-       class="ill ill-lg" loading="lazy" decoding="async">
+```tsx
+<div className="ill-stage">
+  <Illustration
+    src="/illustrations/topic-coaching-mentoring-topic.png"
+    alt="Illustration: a coach and a colleague working an idea through together"
+    className="ill ill-lg"
+  />
 </div>
 ```
+
+`Illustration` wraps `next/image`, so each file goes out as AVIF or WebP at
+the size the layout needs. Pass `priority` on the one illustration above the
+fold; everything else lazy-loads.
 
 - `.ill-lg` / `.ill-xl` / `.ill-md` cap the width (500 / 620 / 380px).
   Illustrations are meant to be **large** — a desktop hero, not a thumbnail.
