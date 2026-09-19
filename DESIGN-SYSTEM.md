@@ -183,14 +183,16 @@ directly on charcoal.
 
 ### Two things to settle before launch
 
-1. **Resolution.** Both sheets are 1536 × 1024, so each illustration is roughly
-   290 × 230 before upscaling. That reads cleanly on a standard screen and looks
-   soft on a retina one at hero size. Ask for each illustration to be re-exported
-   on its own at 1024px or larger; the files here can then be swapped one for one
-   without touching any markup.
-2. **Weight.** 30 transparent PNGs come to about 5 MB. They are lazy-loaded, so
-   no page pays for all of them, but the WordPress build should convert them to
-   WebP and serve responsive sizes.
+1. **Resolution.** Both sheets are 1536 x 1024, so each illustration is about
+   290 x 230 in the source. They are cut at 3x and sharpened with an unsharp
+   mask, which holds up at hero size on a high-density screen, but sharpening
+   cannot invent detail that was never captured. If the tool that produced the
+   sheets can export each illustration on its own at 1024px or larger, the
+   files here swap one for one without touching any markup.
+2. **Weight.** The 30 source PNGs come to about 12 MB, but nothing ships them
+   as-is: `next/image` serves AVIF or WebP at the size the layout asks for, and
+   the whole home page transfers 248 KB. A WordPress build will need its own
+   equivalent - an image CDN or a plugin that generates WebP and srcset.
 
 ---
 

@@ -28,6 +28,9 @@ export default function Illustration({ src, alt, className, priority }: Props) {
       priority={priority}
       loading={priority ? undefined : 'lazy'}
       sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 620px"
+      /* Flat line art: the default 75 smears thin strokes, and these compress
+         so well that a high setting still costs very little. */
+      quality={92}
     />
   );
 }

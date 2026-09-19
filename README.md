@@ -54,9 +54,9 @@ Measured on the home page, against the single-file prototype it replaces:
 
 | | Prototype | This build |
 | --- | --- | --- |
-| Transferred | 1045 KB | **241 KB** |
+| Transferred | 1045 KB | **248 KB** |
 | Third-party bytes | 449 KB | **0 KB** |
-| Images | 523 KB | **22 KB** |
+| Images | 523 KB | **29 KB** |
 | Fonts | 305 KB | **27 KB** |
 | HTML | 73 KB | **23 KB** |
 
