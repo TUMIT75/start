@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 25 285 260" width="100%" height="100%">
+  <!-- Top Green Calligraphic Emblem: 'صَح' (Sah) -->
+  <g id="sah-calligraphy">
+    <!-- Lower flourish & tail swoop -->
+    <path d="M 68 85 C 65 65, 80 50, 110 42 C 145 32, 175 40, 188 52 C 195 59, 185 70, 172 70 C 158 70, 142 58, 120 56 C 98 54, 82 66, 85 85 C 88 108, 112 128, 142 142 C 165 152, 182 170, 178 198 C 176 210, 172 215, 172 215 C 172 215, 182 195, 178 175 C 174 155, 155 138, 130 126 C 95 110, 72 102, 68 85 Z" fill="#22C55E"/>
+    
+    <!-- Upper loop of Sad & flourishing top-right wing -->
+    <path d="M 105 78 C 120 55, 150 48, 178 52 C 198 55, 215 54, 225 60 C 230 63, 218 68, 202 70 C 182 72, 170 76, 158 84 C 148 92, 132 94, 118 90 C 108 87, 102 82, 105 78 Z" fill="#16A34A"/>
+    
+    <!-- Central loop counter (the eye of the Sad) -->
+    <path d="M 125 76 C 132 64, 155 60, 172 66 C 180 70, 178 78, 168 80 C 152 82, 136 82, 125 76 Z" fill="#22C55E"/>
+    
+    <!-- Inner calligraphy diacritic seed / tooth flourish -->
+    <path d="M 148 68 C 154 62, 166 65, 164 74 C 162 82, 148 85, 142 80 C 140 76, 142 72, 148 68 Z" fill="#15803D"/>
+    
+    <!-- Sweeping check accent & leaf flick -->
+    <path d="M 180 50 C 205 45, 222 55, 226 62 C 220 64, 205 60, 188 56 Z" fill="#22C55E"/>
+  </g>
+
+  <!-- Wordmark: 'S T A R T' with Custom Chevron 'A' -->
+  <g id="start-wordmark" fill="#F9FAFB">
+    <!-- S -->
+    <path d="M 45 208 C 43 203, 40 197, 33 197 C 27 197, 23 201, 23 206 C 23 213, 31 216, 41 221 C 51 226, 56 232, 56 242 C 56 253, 46 259, 34 259 C 22 259, 14 251, 12 242 L 20 239 C 22 247, 27 252, 34 252 C 41 252, 47 248, 47 241 C 47 235, 41 231, 30 225 C 20 220, 14 215, 14 205 C 14 195, 23 189, 34 189 C 43 189, 50 195, 52 203 L 45 208 Z"/>
+    
+    <!-- T -->
+    <path d="M 72 191 L 114 191 L 114 198 L 97 198 L 97 257 L 89 257 L 89 198 L 72 198 L 72 191 Z"/>
+    
+    <!-- A (Chevron style, no crossbar, distinct apex) -->
+    <path d="M 148 190 L 157 190 L 180 257 L 170 257 L 152 204 L 135 257 L 125 257 L 148 190 Z"/>
+    
+    <!-- R -->
+    <path d="M 200 191 L 222 191 C 233 191, 241 198, 241 209 C 241 217, 235 224, 226 226 L 243 257 L 233 257 L 217 228 L 208 228 L 208 257 L 200 257 L 200 191 Z M 208 198 L 208 221 L 221 221 C 228 221, 232 217, 232 210 C 232 203, 228 198, 221 198 L 208 198 Z"/>
+    
+    <!-- T -->
+    <path d="M 255 191 L 297 191 L 297 198 L 280 198 L 280 257 L 272 257 L 272 198 L 255 198 L 255 191 Z"/>
+  </g>
+
+  <!-- Tagline: 'لنتيجة أفضل' in Arabic script -->
+  <text x="150" y="280" font-family="'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif" font-size="18" font-weight="600" fill="#D1D5DB" text-anchor="middle" letter-spacing="1">
+    لنتيجة أفضل
+  </text>
+</svg>
