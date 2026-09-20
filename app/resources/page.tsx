@@ -39,7 +39,7 @@ export default function ResourcesPage() {
           </section>
 
           {/* Interactive 2-Minute Diagnostic Quiz */}
-          <section className="py-12 bg-slate-50/60 border-y border-gray-100">
+          <section className="py-12 band-mint">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="bg-white rounded-2xl p-6 sm:p-10 border border-gray-200/80 shadow-xs">
 

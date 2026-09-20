@@ -11,3 +11,7 @@ coverage/
 next-env.d.ts
 .vercel
 tsconfig.tsbuildinfo
+
+# quantised crops, rebuilt by scripts/prep-illustrations*.ps1
+.trace-src/
+.trace-src-v2/

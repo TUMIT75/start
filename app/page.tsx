@@ -16,7 +16,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
               {/* Left Content */}
-              <div className="lg:col-span-7 space-y-6 text-left">
+              <div className="lg:col-span-6 space-y-6 text-left">
                 <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full">
                   Human potential, made possible
                 </div>
@@ -49,10 +49,14 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Right Side Visual: one large illustration, unframed, with room around it */}
-              <div className="lg:col-span-5 relative">
-                <div className="ill-stage ill-stage--green mx-auto max-w-xl lg:max-w-none">
-                  <Illustration src="/illustrations/topic-human-development.svg" alt="Illustration: a mentor in thobe and ghutra reaching down to help a colleague up onto the next step" className="ill ill-xl" />
+              {/* Right Side Visual: one large illustration, unframed, with room
+                   around it. It runs past the container towards the right edge so
+                   the artwork reads as part of the page rather than as a picture
+                   sitting in a column — and so it lands in the 42-48% of desktop
+                   width the 20 September note asked a hero to occupy. */}
+              <div className="lg:col-span-6 relative lg:-mr-10 xl:-mr-16">
+                <div className="ill-stage ill-stage--bare mx-auto max-w-xl lg:max-w-none">
+                  <Illustration src="/illustrations/new-08-thobe-presenting-chart.svg" alt="Illustration: a trainer in thobe and ghutra presenting results to two colleagues" className="ill ill-hero" />
                 </div>
               </div>
 
@@ -75,7 +79,7 @@ export default function HomePage() {
         </section>{/* ========================================================================= */}
         {/* 2.5 5 SIGNATURE DEVELOPMENT DIMENSIONS (TeachFlex Fluid Flow & Large-Scale Art) */}
         {/* ========================================================================= */}
-        <section className="py-24 bg-gradient-to-b from-[#FAFAFA] via-[#FAFAFA] to-white relative overflow-hidden border-b border-gray-200/80">
+        <section className="py-24 bg-white relative overflow-hidden">
 
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -108,7 +112,7 @@ export default function HomePage() {
                   {/* Left: Large Prominent Visual Storytelling (Person Considering Different Pathways) */}
                   <div className="lg:col-span-6 order-2 lg:order-1">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/topic-career-employability.svg" alt="Illustration: a professional in thobe and ghutra at a crossroads, weighing employment, specialisation, entrepreneurship and leadership" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/new-29-abaya-career-path.svg" alt="Illustration: a professional in abaya setting out along a winding path" className="ill ill-section" />
                     </div>
                   </div>
 
@@ -127,15 +131,15 @@ export default function HomePage() {
                     </p>
 
                     {/* Core Pillars List */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                      <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 pt-2">
+                      <div className="flex items-start space-x-2.5">
                         <Icon name="compass" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
                           <div className="text-xs font-semibold text-gray-900">Trajectory Mapping</div>
                           <div className="text-[11px] text-gray-500">Uncover your true career leverage</div>
                         </div>
                       </div>
-                      <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
+                      <div className="flex items-start space-x-2.5">
                         <Icon name="file-contract" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
                           <div className="text-xs font-semibold text-gray-900">Executive Narrative</div>
@@ -207,7 +211,7 @@ export default function HomePage() {
                   {/* Right: Large Prominent Visual Storytelling (Two People Interacting) */}
                   <div className="lg:col-span-6">
                     <div className="ill-stage ill-stage--bare">
-                      <Illustration src="/illustrations/topic-communication-english.svg" alt="Illustration: two colleagues in conversation, one speech bubble answering another" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/new-11-mixed-conversation.svg" alt="Illustration: two colleagues in conversation, one speech bubble answering another" className="ill ill-section" />
                     </div>
                   </div>
 
@@ -223,7 +227,7 @@ export default function HomePage() {
                   {/* Left: Large Prominent Visual Storytelling (Overcoming Obstacle / Progressing) */}
                   <div className="lg:col-span-6 order-2 lg:order-1">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/topic-personal-development.svg" alt="Illustration: a professional with a briefcase stepping up towards growth" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/new-05-suit-portrait.svg" alt="Illustration: a professional in a suit and tie" className="ill ill-section" />
                     </div>
                   </div>
 
@@ -242,15 +246,15 @@ export default function HomePage() {
                     </p>
 
                     {/* Core Pillars List */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                      <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 pt-2">
+                      <div className="flex items-start space-x-2.5">
                         <Icon name="mountain" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
                           <div className="text-xs font-semibold text-gray-900">Barrier Dismantling</div>
                           <div className="text-[11px] text-gray-500">Transform internal friction into momentum</div>
                         </div>
                       </div>
-                      <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
+                      <div className="flex items-start space-x-2.5">
                         <Icon name="shield-halved" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
                           <div className="text-xs font-semibold text-gray-900">Gravitas & Presence</div>
@@ -291,15 +295,15 @@ export default function HomePage() {
                     </p>
 
                     {/* Core Pillars List */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                      <div className="flex items-start space-x-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-2xs">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 pt-2">
+                      <div className="flex items-start space-x-2.5">
                         <Icon name="hands-holding" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
                           <div className="text-xs font-semibold text-gray-900">Coaching-Style Leadership</div>
                           <div className="text-[11px] text-gray-500">Ask powerful questions instead of prescribing</div>
                         </div>
                       </div>
-                      <div className="flex items-start space-x-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-2xs">
+                      <div className="flex items-start space-x-2.5">
                         <Icon name="award" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
                           <div className="text-xs font-semibold text-gray-900">Talent Elevation</div>
@@ -319,7 +323,7 @@ export default function HomePage() {
                   {/* Right: Large Prominent Visual Storytelling (Helping Others Progress) */}
                   <div className="lg:col-span-6">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/topic-leadership-workplace.svg" alt="Illustration: a leader in thobe and ghutra setting the direction for two colleagues" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/new-24-thobe-mentoring.svg" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at a laptop" className="ill ill-section" />
                     </div>
                   </div>
 
@@ -335,7 +339,7 @@ export default function HomePage() {
                   {/* Left: Large Prominent Visual Storytelling (People Working Toward Shared Goal) */}
                   <div className="lg:col-span-6 order-2 lg:order-1">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/topic-organisational-development.svg" alt="Illustration: three colleagues bringing the pieces of an organisation together" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/new-13-abaya-flowchart.svg" alt="Illustration: a professional in abaya mapping out a structure on a board" className="ill ill-section" />
                     </div>
                   </div>
 
@@ -354,15 +358,15 @@ export default function HomePage() {
                     </p>
 
                     {/* Core Pillars List */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                      <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 pt-2">
+                      <div className="flex items-start space-x-2.5">
                         <Icon name="people-group" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
                           <div className="text-xs font-semibold text-gray-900">Cohort Academies</div>
                           <div className="text-[11px] text-gray-500">Shared language and cross-functional synergy</div>
                         </div>
                       </div>
-                      <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
+                      <div className="flex items-start space-x-2.5">
                         <Icon name="bullseye" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
                           <div className="text-xs font-semibold text-gray-900">Cultural Cohesion</div>
@@ -390,7 +394,7 @@ export default function HomePage() {
         {/* ========================================================================= */}
         {/* 3. THE STARTING POINT ("Why People Seek Development" - Fluid Flow Layout) */}
         {/* ========================================================================= */}
-        <section className="py-24 bg-white relative overflow-hidden border-b border-gray-100" id="challenges">
+        <section className="py-24 bg-white relative overflow-hidden" id="challenges">
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -414,7 +418,7 @@ export default function HomePage() {
               {/* Left: the inflection point, drawn large and left unframed */}
               <div className="lg:col-span-6">
                 <div className="ill-stage">
-                  <Illustration src="/illustrations/20-vision-direction.svg" alt="Illustration: a professional in thobe and ghutra sighting the route to a flag on the summit" className="ill ill-lg" />
+                  <Illustration src="/illustrations/new-30-thobe-vision.svg" alt="Illustration: a professional in thobe and ghutra sighting the way ahead" className="ill ill-section" />
                 </div>
 
                 <p className="mt-8 text-sm text-gray-600 border-t hairline pt-5">
@@ -432,7 +436,7 @@ export default function HomePage() {
                   {/* Milestone 1: Career Stagnation */}
                   <div className="relative pl-14 group">
                     <div className="absolute left-4 top-1.5 w-4 h-4 rounded-full bg-white border-2 border-emerald-600 group-hover:scale-125 transition duration-200"></div>
-                    <Link href="/courses?focus=Career%20%26%20Employability" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
+                    <Link href="/courses?focus=Career%20%26%20Employability" className="pb-5 border-b hairline transition duration-200 cursor-pointer">
                       <div className="flex items-center justify-between mb-1.5">
                         <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-800 transition">Career Stagnation</h3>
                         <span className="text-xs font-semibold text-gray-600 flex items-center">
@@ -448,7 +452,7 @@ export default function HomePage() {
                   {/* Milestone 2: Communication Barriers */}
                   <div className="relative pl-14 group">
                     <div className="absolute left-4 top-1.5 w-4 h-4 rounded-full bg-white border-2 border-emerald-600 group-hover:scale-125 transition duration-200"></div>
-                    <Link href="/courses/english-for-professional-success" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
+                    <Link href="/courses/english-for-professional-success" className="pb-5 border-b hairline transition duration-200 cursor-pointer">
                       <div className="flex items-center justify-between mb-1.5">
                         <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-800 transition">Communication Barriers</h3>
                         <span className="text-xs font-semibold text-gray-600 flex items-center">
@@ -464,7 +468,7 @@ export default function HomePage() {
                   {/* Milestone 3: Workplace Confidence */}
                   <div className="relative pl-14 group">
                     <div className="absolute left-4 top-1.5 w-4 h-4 rounded-full bg-white border-2 border-emerald-600 group-hover:scale-125 transition duration-200"></div>
-                    <Link href="/coaching" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
+                    <Link href="/coaching" className="pb-5 border-b hairline transition duration-200 cursor-pointer">
                       <div className="flex items-center justify-between mb-1.5">
                         <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-800 transition">Workplace Confidence</h3>
                         <span className="text-xs font-semibold text-gray-600 flex items-center">
@@ -480,7 +484,7 @@ export default function HomePage() {
                   {/* Milestone 4: Emerging Leadership */}
                   <div className="relative pl-14 group">
                     <div className="absolute left-4 top-1.5 w-4 h-4 rounded-full bg-white border-2 border-emerald-600 group-hover:scale-125 transition duration-200"></div>
-                    <Link href="/courses?focus=Leadership" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
+                    <Link href="/courses?focus=Leadership" className="pb-5 border-b hairline transition duration-200 cursor-pointer">
                       <div className="flex items-center justify-between mb-1.5">
                         <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-800 transition">Emerging Leadership</h3>
                         <span className="text-xs font-semibold text-gray-600 flex items-center">
@@ -528,10 +532,10 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
               {/* Large Showcase Feature Panel (7 cols): Collaborative Workshop Art */}
-              <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-gray-200 shadow-sm flex flex-col justify-between relative overflow-hidden group">
+              <div className="lg:col-span-7 flex flex-col justify-between relative group">
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-white px-3.5 py-1.5 rounded-full border border-emerald-200">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
                       The Startsah Method
                     </span>
                     <span className="text-xs text-gray-600 font-semibold">Vision 2030 & Global Standards</span>
@@ -547,7 +551,7 @@ export default function HomePage() {
 
                 {/* Large-Scale Hand-Drawn Workshop SVG Illustration */}
                 <div className="ill-stage ill-stage--bare mt-4">
-                  <Illustration src="/illustrations/topic-training-development.svg" alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group" className="ill w-full h-auto" />
+                  <Illustration src="/illustrations/new-07-team-laptops.svg" alt="Illustration: three colleagues working together at their laptops" className="ill ill-large" />
                 </div>
               </div>
 
@@ -555,7 +559,7 @@ export default function HomePage() {
               <div className="lg:col-span-5 flex flex-col gap-6">
 
                 {/* Card A: 94% Measurable Growth Metric */}
-                <div className="bg-white rounded-3xl p-7 border border-gray-200 shadow-sm flex items-center justify-between">
+                <div className="flex items-center justify-between">
                   <div>
                     <div className="text-4xl sm:text-5xl font-bold text-emerald-600 tracking-tight">94%</div>
                     <div className="text-base font-bold text-gray-900 mt-1">Promotion & Placement Confidence</div>
@@ -571,7 +575,7 @@ export default function HomePage() {
                 {/* Card B: Dual Accreditation & Standards */}
                 <div className="bg-white rounded-3xl p-7 border border-gray-200 shadow-sm">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-white px-3 py-1 rounded-full border border-gray-200">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
                       Rigorous Frameworks
                     </span>
                     <span className="text-xs text-gray-600 font-semibold">EMCC & CPD Certified</span>
@@ -607,7 +611,7 @@ export default function HomePage() {
         </section>
 
         {/* 5. FEATURED PROGRAMMES (Clean Lovable 3-Card Grid) */}
-        <section className="py-20 bg-slate-50/60 border-t border-gray-100" id="programmes">
+        <section className="py-20 band-off" id="programmes">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
@@ -634,18 +638,18 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
               {/* Course 1: English for Professional Success */}
-              <div className="bg-white rounded-3xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+              <div className="flex flex-col justify-between group">
                 <div>
                   {/* Hand-Drawn Illustration Banner */}
-                  <Link href="/courses/english-for-professional-success" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
-                    <Illustration src="/illustrations/19-global-english.svg" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain" />
+                  <Link href="/courses/english-for-professional-success" className="relative ill-stage ill-stage--green flex items-center justify-center cursor-pointer">
+                    <Illustration src="/illustrations/19-global-english.svg" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill ill-card" />
 
                     <span className="absolute top-4 left-4 bg-emerald-50 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold border border-emerald-100">
                       Communication
                     </span>
                   </Link>
 
-                  <div className="p-6">
+                  <div className="pt-5">
                     <Link href="/courses/english-for-professional-success" className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
                       English for Professional Success
                     </Link>
@@ -654,7 +658,7 @@ export default function HomePage() {
                       Speak with nuanced clarity, contribute effortlessly in executive meetings, and overcome hesitations in English.
                     </p>
 
-                    <div className="flex items-center text-xs text-gray-500 py-3 border-y border-gray-100 mb-2">
+                    <div className="flex items-center text-xs text-gray-500 pt-3 border-t hairline mb-2">
                       <span><Icon name="clock" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />6 weeks</span>
                       <span className="mx-3 text-gray-300">•</span>
                       <span><Icon name="folder-open" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />12 lessons</span>
@@ -662,7 +666,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="px-6 pb-6 pt-0 flex items-center justify-between">
+                <div className="pt-1 flex items-center justify-between">
                   <span className="text-xs font-semibold text-gray-600">Enrolment open</span>
                   <Link href="/courses/english-for-professional-success" className="text-xs font-semibold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
                     <span>Explore Curriculum</span>
@@ -672,18 +676,18 @@ export default function HomePage() {
               </div>
 
               {/* Course 2: Executive & Soft Skills Coaching */}
-              <div className="bg-white rounded-3xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+              <div className="flex flex-col justify-between group">
                 <div>
                   {/* Hand-Drawn Illustration Banner */}
-                  <Link href="/coaching" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
-                    <Illustration src="/illustrations/07-coaching-mentoring.svg" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop" className="ill w-full h-auto object-contain" />
+                  <Link href="/coaching" className="relative ill-stage ill-stage--green flex items-center justify-center cursor-pointer">
+                    <Illustration src="/illustrations/07-coaching-mentoring.svg" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop" className="ill ill-card" />
 
                     <span className="absolute top-4 left-4 bg-emerald-50 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold border border-emerald-100">
                       1-on-1 Coaching
                     </span>
                   </Link>
 
-                  <div className="p-6">
+                  <div className="pt-5">
                     <Link href="/coaching" className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
                       Executive & Soft Skills Coaching
                     </Link>
@@ -692,7 +696,7 @@ export default function HomePage() {
                       A structured, confidential coaching journey to sharpen strategic capability, presence, and career trajectory.
                     </p>
 
-                    <div className="flex items-center text-xs text-gray-500 py-3 border-y border-gray-100 mb-2">
+                    <div className="flex items-center text-xs text-gray-500 pt-3 border-t hairline mb-2">
                       <span><Icon name="clock" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />8 weeks</span>
                       <span className="mx-3 text-gray-300">•</span>
                       <span><Icon name="user-group" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />1:1 sessions</span>
@@ -700,7 +704,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="px-6 pb-6 pt-0 flex items-center justify-between">
+                <div className="pt-1 flex items-center justify-between">
                   <span className="text-xs font-semibold text-gray-500">By application</span>
                   <Link href="/coaching" className="text-xs font-semibold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
                     <span>Learn More</span>
@@ -710,18 +714,18 @@ export default function HomePage() {
               </div>
 
               {/* Course 3: Leadership & Presence Development */}
-              <div className="bg-white rounded-3xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+              <div className="flex flex-col justify-between group">
                 <div>
                   {/* Hand-Drawn Illustration Banner */}
-                  <Link href="/courses?focus=Leadership" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
-                    <Illustration src="/illustrations/14-idea-leadership.svg" alt="Illustration: a professional holding up a lit idea" className="ill w-full h-auto object-contain" />
+                  <Link href="/courses?focus=Leadership" className="relative flex items-center justify-center cursor-pointer">
+                    <Illustration src="/illustrations/new-27-casual-armchair-work.svg" alt="Illustration: a professional in smart casual working from an armchair" className="ill ill-card" />
 
                     <span className="absolute top-4 left-4 bg-emerald-50 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold border border-emerald-100">
                       Leadership
                     </span>
                   </Link>
 
-                  <div className="p-6">
+                  <div className="pt-5">
                     <Link href="/courses?focus=Leadership" className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
                       Leadership & Presence Development
                     </Link>
@@ -730,7 +734,7 @@ export default function HomePage() {
                       Lead conversations, decisions, and teams with emotional intelligence, purpose, and authentic executive gravity.
                     </p>
 
-                    <div className="flex items-center text-xs text-gray-500 py-3 border-y border-gray-100 mb-2">
+                    <div className="flex items-center text-xs text-gray-500 pt-3 border-t hairline mb-2">
                       <span><Icon name="clock" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5 weeks</span>
                       <span className="mx-3 text-gray-300">•</span>
                       <span><Icon name="folder-open" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />10 lessons</span>
@@ -738,7 +742,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="px-6 pb-6 pt-0 flex items-center justify-between">
+                <div className="pt-1 flex items-center justify-between">
                   <span className="text-xs font-semibold text-gray-500">Next cohort soon</span>
                   <Link href="/courses?focus=Leadership" className="text-xs font-semibold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
                     <span>Learn More</span>
@@ -763,13 +767,13 @@ export default function HomePage() {
                 <div className="relative mx-auto max-w-md">
 
                   {/* Organic Hand-Drawn Decorative Backdrop */}
-                  <div className="absolute -top-4 -left-4 w-full h-full rounded-[2.5rem] bg-emerald-50/70 border-2 border-dashed border-emerald-300/80 -z-0"></div>
+                  <div className="absolute -top-4 -left-4 w-full h-full rounded-[2.5rem] bg-emerald-50/70 -z-0"></div>
 
                   {/* Grand Hand-Drawn Mentorship Artwork Canvas */}
-                  <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl border-2 border-white bg-gradient-to-b from-[#FAFAFA] via-[#FAFAFA] to-[#F2F2F2] p-6 flex flex-col justify-between z-10">
+                  <div className="relative flex flex-col justify-between gap-5 z-10">
 
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500 bg-white/90 backdrop-blur-xs px-3 py-1 rounded-full border border-emerald-200">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500">
                         Lead Coach • EMCC Practitioner
                       </span>
                       <span className="text-xs text-gray-600 font-semibold">12+ Years Experience</span>
@@ -777,11 +781,11 @@ export default function HomePage() {
 
                     {/* Large TeachFlex Coach & Mentee Interactive Dialogue SVG */}
                     <div className="my-auto py-2 flex items-center justify-center">
-                      <Illustration src="/illustrations/topic-coaching-mentoring-topic.svg" alt="Illustration: a coach and a colleague working an idea through together" className="ill w-full h-auto" />
+                      <Illustration src="/illustrations/new-10-abaya-armchair-reading.svg" alt="Illustration: a professional in abaya reading in an armchair" className="ill ill-card" />
                     </div>
 
                     {/* Clean Overlay Badge */}
-                    <div className="bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-md border border-gray-100 text-left flex items-center justify-between">
+                    <div className="pt-5 border-t hairline text-left flex items-center justify-between">
                       <div>
                         <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500 block">Founder & Lead Coach</span>
                         <div className="text-base font-bold text-gray-900 mt-0.5">Sonia Ali</div>
@@ -833,7 +837,7 @@ export default function HomePage() {
         </section>
 
         {/* 7. DUAL PATHWAYS (With Hand-Drawn Progression Vignettes) */}
-        <section className="py-20 bg-slate-50/60 border-y border-gray-100" id="coaching">
+        <section className="py-20 band-off" id="coaching">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             {/* Section Header */}
@@ -847,7 +851,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
               {/* Left: For Individuals (Mint Card with Hand-Drawn Person Progressing) */}
-              <div className="bg-[#FAFAFA] border border-emerald-200/80 rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col justify-between group hover:shadow-md transition duration-300">
+              <div className="rounded-3xl p-8 sm:p-10 flex flex-col justify-between group transition duration-300">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-white px-3 py-1 rounded-full border border-emerald-200">
@@ -865,12 +869,12 @@ export default function HomePage() {
 
                   {/* Hand-drawn Illustration: Individual ascending pathway */}
                   <div className="ill-stage mb-8">
-                    <Illustration src="/illustrations/02-career-pathways.svg" alt="Illustration: a professional pausing at a signpost, weighing which direction to take" className="ill w-full h-auto max-h-44" />
+                    <Illustration src="/illustrations/new-06-abaya-goal-flag.svg" alt="Illustration: a professional in abaya pointing to a flag at the top of a climb" className="ill ill-section" />
                   </div>
                 </div>
 
                 <div>
-                  <Link href="/coaching" className="w-full sm:w-auto bg-white hover:bg-emerald-600 text-white hover:text-white border border-gray-200 font-semibold py-3.5 px-8 rounded-full shadow-sm transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
+                  <Link href="/coaching" className="w-full sm:w-auto bg-white hover:bg-emerald-600 text-gray-900 hover:text-white border border-gray-200 font-semibold py-3.5 px-8 rounded-full shadow-sm transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
                     <span>Explore Individual Coaching</span>
                     <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -881,7 +885,7 @@ export default function HomePage() {
               <div className="bg-emerald-50/60 rounded-3xl p-8 sm:p-10 flex flex-col justify-between group transition duration-300" id="organisational">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-white px-3 py-1 rounded-full border border-gray-200">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
                       For Organisations
                     </span>
                     <span className="text-xs font-semibold text-gray-600">Teams • Managers • Workforces</span>
@@ -896,7 +900,7 @@ export default function HomePage() {
 
                   {/* Hand-drawn Illustration: Collaborative Team around Table */}
                   <div className="ill-stage ill-stage--bare mb-8">
-                    <Illustration src="/illustrations/topic-teamwork-culture.svg" alt="Illustration: a team working side by side around a shared table" className="ill w-full h-auto max-h-44" />
+                    <Illustration src="/illustrations/new-28-group-agreement.svg" alt="Illustration: three colleagues reaching an agreement over a document" className="ill ill-section" />
                   </div>
                 </div>
 
@@ -915,11 +919,11 @@ export default function HomePage() {
         {/* 8. LEAD MAGNET / COMMUNITY OPT-IN (With Hand-Drawn Workbook Vignette) */}
         <section className="py-20 bg-white" id="leadMagnetSection">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="p-8 sm:p-12 rounded-3xl border border-gray-200/80 shadow-sm text-center bg-slate-50/50 relative overflow-hidden">
+            <div className="py-8 sm:py-12 text-center relative">
 
               <div className="max-w-2xl mx-auto relative z-10">
                 {/* Hand-drawn Sprout & Booklet Vignette */}
-                <div className="w-20 h-20 mx-auto mb-4 bg-white rounded-2xl border border-emerald-100 shadow-xs flex items-center justify-center">
+                <div className="w-20 h-20 mx-auto mb-4 bg-emerald-50 rounded-2xl flex items-center justify-center">
                   <Icon name="seedling" className="text-emerald-600 text-3xl inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </div>
 
@@ -953,7 +957,7 @@ export default function HomePage() {
         </section>
 
         {/* 9. TRANSFORMATION STORIES (Real growth. Meaningful outcomes .) */}
-        <section className="py-20 bg-slate-50/60 border-y border-gray-100" id="testimonials">
+        <section className="py-20 band-off" id="testimonials">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div className="text-left mb-14">
@@ -969,7 +973,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
               {/* Story 1 */}
-              <div className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between">
+              <div className="flex flex-col justify-between">
                 <div className="space-y-4">
                   <div className="flex text-gray-600 text-xs">
                     <Icon name="star" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
@@ -985,7 +989,7 @@ export default function HomePage() {
               </div>
 
               {/* Story 2 */}
-              <div className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between">
+              <div className="flex flex-col justify-between">
                 <div className="space-y-4">
                   <div className="flex text-gray-600 text-xs">
                     <Icon name="star" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
@@ -1001,7 +1005,7 @@ export default function HomePage() {
               </div>
 
               {/* Story 3 */}
-              <div className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between">
+              <div className="flex flex-col justify-between">
                 <div className="space-y-4">
                   <div className="flex text-gray-600 text-xs">
                     <Icon name="star" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
@@ -1045,11 +1049,11 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
               {/* Insight 1 (Article) */}
-              <Link href="/insights" className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between group cursor-pointer">
+              <Link href="/insights" className="flex flex-col justify-between group cursor-pointer">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-2.5 py-1 rounded-full">Article</span>
-                    <span className="text-xs text-gray-400">5 min read</span>
+                    <span className="text-xs text-gray-500">5 min read</span>
                   </div>
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
                     The Art of Speaking Less to Communicate More
@@ -1065,11 +1069,11 @@ export default function HomePage() {
               </Link>
 
               {/* Insight 2 (Podcast) */}
-              <Link href="/insights" className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between group cursor-pointer">
+              <Link href="/insights" className="flex flex-col justify-between group cursor-pointer">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-2.5 py-1 rounded-full">Podcast • Ep. 24</span>
-                    <span className="text-xs text-gray-400">28 min</span>
+                    <span className="text-xs text-gray-500">28 min</span>
                   </div>
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
                     Overcoming The Silent Wall of Imposter Syndrome
@@ -1085,11 +1089,11 @@ export default function HomePage() {
               </Link>
 
               {/* Insight 3 (Article) */}
-              <Link href="/insights" className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between group cursor-pointer">
+              <Link href="/insights" className="flex flex-col justify-between group cursor-pointer">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-2.5 py-1 rounded-full">Article</span>
-                    <span className="text-xs text-gray-400">7 min read</span>
+                    <span className="text-xs text-gray-500">7 min read</span>
                   </div>
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
                     Navigating Culture and Hierarchy in Global Teams
@@ -1109,12 +1113,12 @@ export default function HomePage() {
         </section>
 
         {/* 11. PRE-FOOTER CALL TO ACTION BANNER (Dark Forest Green with Hand-Drawn Progression Element) */}
-        <section className="py-20 band-off text-center relative overflow-hidden">
+        <section className="py-20 band-mint text-center relative overflow-hidden">
 
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Hand-drawn Duo Stepping Forward Illustration */}
             <div className="flex justify-center mb-6">
-              <Illustration src="/illustrations/18-next-step.svg" alt="Illustration: a professional stepping up onto the next block towards the one after it" className="ill w-full h-auto max-h-36" />
+              <Illustration src="/illustrations/new-12-thobe-city-outlook.svg" alt="Illustration: a professional in thobe and ghutra looking out over the city" className="ill ill-large" />
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-4">

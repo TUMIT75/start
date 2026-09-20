@@ -24,10 +24,10 @@ Every page is a real route. No hashes, no query-string routing.
 | --- | --- |
 | `/` | Home |
 | `/about` | About Sonia Ali |
-| `/programmes` | Catalogue — `?focus=<category>` opens it on one filter |
-| `/programmes/english-for-professional-success` | A single programme |
+| `/courses` | Catalogue — `?focus=<category>` opens it on one filter |
+| `/courses/english-for-professional-success` | A single course |
 | `/coaching` | One-on-one coaching |
-| `/organisational-development` | For organisations |
+| `/for-organisations` | For organisations |
 | `/start-your-development` | Intake form |
 | `/resources` | Free resources and the diagnostic |
 | `/insights` | Insights and podcast |

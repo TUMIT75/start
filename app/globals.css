@@ -23,10 +23,33 @@ body {
   width: 100%;
   height: auto;
   object-fit: contain;
+  margin-inline: auto;
 }
-.ill-xl { max-width: 620px; }
-.ill-lg { max-width: 500px; }
-.ill-md { max-width: 380px; }
+
+/* Four sizes, and only four.
+   Before this the site rendered its thirty-five illustrations at twenty-seven
+   different sizes and twenty-four different aspect ratios, because each slot
+   had picked up its own max-width or max-height over time. The 20 September
+   note asked for a system instead, so the ratio now belongs to the tier and
+   the drawing is contained inside it — a slot can never squash artwork to fit
+   a max-height again, and the percentages below are of a 1440px desktop. */
+.ill-hero { max-width: 660px; aspect-ratio: 16 / 9; }   /* 46% — asked for 42-48% */
+.ill-large { max-width: 600px; aspect-ratio: 3 / 2; }   /* 42% — asked for 40-45% */
+.ill-section { max-width: 540px; aspect-ratio: 4 / 3; } /* 540x405 — asked for 520-560 x 400-440 */
+.ill-card { max-width: 380px; aspect-ratio: 4 / 3; }
+.ill-small { max-width: 220px; aspect-ratio: 1 / 1; }
+
+/* Below the two-column breakpoint a hero at 16:9 leaves the figure tiny, so
+   the wider tiers stand up towards 4:3 on the way down. */
+@media (max-width: 1023px) {
+  .ill-hero,
+  .ill-large { aspect-ratio: 3 / 2; }
+}
+@media (max-width: 639px) {
+  .ill-hero,
+  .ill-large,
+  .ill-section { aspect-ratio: 4 / 3; }
+}
 
 /* Illustrations sit in open space, not inside framed cards. */
 .ill-stage {
@@ -35,6 +58,28 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* A soft mint disc behind the figure — the same device the reference sheets
+   use, and where the 20 September note puts light green: "illustration
+   circles" rather than filled panels. It is a circle, not a card: no border,
+   no shadow, and it runs wider than the drawing so it never reads as a frame. */
+.ill-stage--green::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 86%;
+  padding-bottom: 86%;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  background: radial-gradient(circle, #E6F6EE 0%, #E6F6EE 58%, rgba(230, 246, 238, 0) 72%);
+  z-index: 0;
+}
+.ill-stage--green > * { position: relative; z-index: 1; }
+
+/* --bare opts an illustration out of the disc, for the places where the
+   artwork already carries its own. */
+.ill-stage--bare::before { content: none; }
 
 /* The line work is charcoal, so a dark band needs a light surface under it.
    Matching the dark backgrounds as well as .on-ink means a section cannot go
@@ -55,6 +100,16 @@ body {
    Alternating white / off-white / charcoal bands, joined by soft curves so
    pages read as one flow rather than a stack of cards. */
 .band-off { background: var(--sah-off); }
+
+/* The alternating band is mint rather than grey.
+   The note describes the flow as "open white space, illustration, typography,
+   subtle mint transition, white space, illustration", and lists section
+   transitions as one of the three places light green belongs.
+
+   It is the same #E6F6EE the illustrations use for their discs, deliberately:
+   the note asks us not to introduce several different greens, so the whole
+   site runs on the logo green and this one lighter tint of it. */
+.band-mint { background: #E6F6EE; }
 .band-ink { background: var(--sah-ink); color: #fff; }
 .band-ink h1,
 .band-ink h2,

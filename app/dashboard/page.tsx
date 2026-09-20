@@ -15,7 +15,7 @@ export default function DashboardPage() {
               <nav className="flex text-xs font-medium text-gray-500 items-center space-x-2">
                 <Link href="/" className="hover:text-emerald-600 transition">Home</Link>
                 <span className="text-gray-300">/</span>
-                <span className="text-gray-400">My Account</span>
+                <span className="text-gray-500">My Account</span>
                 <span className="text-gray-300">/</span>
                 <span className="text-gray-900 font-semibold">Student Learning Dashboard (LearnPress LMS)</span>
               </nav>
@@ -45,10 +45,10 @@ export default function DashboardPage() {
                     <p className="text-xs sm:text-sm text-gray-500 font-medium">
                       Senior Director of Operations • FinTech Global UK
                     </p>
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-400 mt-2">
-                      <span><Icon name="id-badge" className="mr-1 text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Learner ID: #SAH-8829</span>
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mt-2">
+                      <span><Icon name="id-badge" className="mr-1 text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Learner ID: #SAH-8829</span>
                       <span>•</span>
-                      <span><Icon name="calendar" className="mr-1 text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Enrolled: Oct 2025</span>
+                      <span><Icon name="calendar" className="mr-1 text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Enrolled: Oct 2025</span>
                       <span>•</span>
                       <span><Icon name="graduation-cap" className="mr-1 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Executive English Cohort</span>
                     </div>
@@ -72,22 +72,22 @@ export default function DashboardPage() {
               {/* 4 Clean Metric Cards (Lovable AI Style) */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8 pt-8 border-t border-gray-100">
                 <div className="bg-slate-50/60 p-5 rounded-2xl border border-gray-200/80">
-                  <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">Enrolled Programmes</span>
+                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Enrolled Programmes</span>
                   <div className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1">3</div>
                   <span className="text-[11px] text-emerald-600 font-semibold">1 Active Cohort</span>
                 </div>
                 <div className="bg-slate-50/60 p-5 rounded-2xl border border-gray-200/80">
-                  <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">Active Progress</span>
+                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Active Progress</span>
                   <div className="text-2xl sm:text-3xl font-bold text-emerald-600 mt-1">64%</div>
                   <span className="text-[11px] text-gray-500 font-semibold">14 of 22 Lessons Completed</span>
                 </div>
                 <div className="bg-slate-50/60 p-5 rounded-2xl border border-gray-200/80">
-                  <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">Completed & Passed</span>
+                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Completed & Passed</span>
                   <div className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1">2</div>
                   <span className="text-[11px] text-emerald-600 font-semibold">Average Grade: 94%</span>
                 </div>
                 <div className="bg-slate-50/60 p-5 rounded-2xl border border-gray-200/80">
-                  <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">CPD Certificates</span>
+                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">CPD Certificates</span>
                   <div className="text-2xl sm:text-3xl font-bold text-emerald-600 mt-1">2</div>
                   <span className="text-[11px] text-gray-500 font-semibold">UK Standards Accredited</span>
                 </div>
@@ -151,7 +151,7 @@ export default function DashboardPage() {
                       <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </Link>
                     <button onClick={() => { downloadCourseSyllabus() }} className="border border-gray-200 hover:bg-gray-50 text-gray-800 font-semibold text-xs px-4 py-2.5 rounded-full transition flex items-center bg-white cursor-pointer" title="Download Course Syllabus PDF">
-                      <Icon name="download" className="mr-1.5 text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Syllabus
+                      <Icon name="download" className="mr-1.5 text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Syllabus
                     </button>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function DashboardPage() {
                   <div className="w-full bg-gray-100 h-2.5 rounded-full overflow-hidden">
                     <div className="bg-emerald-500 h-full w-[64%] rounded-full transition-all duration-500"></div>
                   </div>
-                  <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-gray-400 mt-3 font-medium">
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-gray-500 mt-3 font-medium">
                     <span><Icon name="check" className="text-emerald-500 mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Pass Requirement: 80% on All Module Quizzes</span>
                     <span><Icon name="clock" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Estimated remaining study time: ~4 hours</span>
                     <span><Icon name="shield-halved" className="text-emerald-600 mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />CPD UK Certificate unlocked at 100%</span>
@@ -203,7 +203,7 @@ export default function DashboardPage() {
                       <Icon name="video" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Join Live Zoom Room
                     </button>
                     <button onClick={() => { addToCalendar() }} className="border border-gray-200 hover:bg-gray-50 text-gray-800 font-semibold text-xs px-4 py-2.5 rounded-full transition flex items-center bg-white cursor-pointer">
-                      <Icon name="calendar-plus" className="mr-1.5 text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Add to Calendar
+                      <Icon name="calendar-plus" className="mr-1.5 text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Add to Calendar
                     </button>
                   </div>
                 </div>
@@ -217,7 +217,7 @@ export default function DashboardPage() {
                       </div>
                       <div>
                         <h4 className="font-semibold text-sm text-gray-900">Sonia Ali (Lead Coach)</h4>
-                        <span className="text-[11px] text-gray-400">Audio Feedback on Assignment #3</span>
+                        <span className="text-[11px] text-gray-500">Audio Feedback on Assignment #3</span>
                       </div>
                     </div>
                     <div className="p-4 bg-emerald-50/50 rounded-xl border border-emerald-100 mb-4">
@@ -234,7 +234,7 @@ export default function DashboardPage() {
                         </button>
                         <div>
                           <span className="text-xs font-semibold block">Sonia's Coaching Note</span>
-                          <span className="text-[10px] text-gray-400 font-mono" id="coachAudioTime">0:00 / 0:48</span>
+                          <span className="text-[10px] text-gray-500 font-mono" id="coachAudioTime">0:00 / 0:48</span>
                         </div>
                       </div>
                       <div className="w-24 bg-slate-800 h-1.5 rounded-full overflow-hidden">
@@ -271,10 +271,10 @@ export default function DashboardPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="dashboardCoursesList">
 
                 {/* Course 1: In Progress */}
-                <div className="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="active">
+                <div className="dash-course-card flex flex-col justify-between" data-status="active">
                   <div>
-                    <div className="aspect-video relative overflow-hidden ill-stage p-3">
-                      <Illustration src="/illustrations/19-global-english.svg" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain" />
+                    <div className="relative ill-stage p-3">
+                      <Illustration src="/illustrations/new-15-thobe-window-work.svg" alt="Illustration: a professional in thobe and ghutra working at a laptop by a city window" className="ill ill-card" />
                       <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                         In Progress
                       </span>
@@ -289,7 +289,7 @@ export default function DashboardPage() {
                       <div className="w-full bg-gray-100 h-2 rounded-full overflow-hidden mb-2">
                         <div className="bg-emerald-500 h-full w-[64%]"></div>
                       </div>
-                      <div className="flex justify-between text-[11px] text-gray-400">
+                      <div className="flex justify-between text-[11px] text-gray-500">
                         <span>14 / 22 Lessons</span>
                         <span className="text-emerald-600 font-bold">Passing Grade: 80%</span>
                       </div>
@@ -304,10 +304,10 @@ export default function DashboardPage() {
                 </div>
 
                 {/* Course 2: Completed */}
-                <div className="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="completed">
+                <div className="dash-course-card flex flex-col justify-between" data-status="completed">
                   <div>
-                    <div className="aspect-video relative overflow-hidden ill-stage p-3">
-                      <Illustration src="/illustrations/15-balance-wellbeing.svg" alt="Illustration: a professional working calmly and in balance at a laptop" className="ill w-full h-auto object-contain" />
+                    <div className="relative ill-stage p-3">
+                      <Illustration src="/illustrations/new-22-abaya-study.svg" alt="Illustration: a professional in abaya studying at a laptop on a stack of books" className="ill ill-card" />
                       <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                         Completed (Grade: 96%)
                       </span>
@@ -322,7 +322,7 @@ export default function DashboardPage() {
                       <div className="w-full bg-emerald-100 h-2 rounded-full overflow-hidden mb-2">
                         <div className="bg-emerald-500 h-full w-full"></div>
                       </div>
-                      <div className="flex justify-between text-[11px] text-gray-400">
+                      <div className="flex justify-between text-[11px] text-gray-500">
                         <span>18 / 18 Lessons Finished</span>
                         <span className="text-emerald-600 font-bold">Passed with Distinction</span>
                       </div>
@@ -339,10 +339,10 @@ export default function DashboardPage() {
                 </div>
 
                 {/* Course 3: Completed */}
-                <div className="dash-course-card bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs hover:border-emerald-500 transition flex flex-col justify-between" data-status="completed">
+                <div className="dash-course-card flex flex-col justify-between" data-status="completed">
                   <div>
-                    <div className="aspect-video relative overflow-hidden ill-stage p-3">
-                      <Illustration src="/illustrations/05-new-ideas.svg" alt="Illustration: a professional at a laptop reaching up towards a lit idea" className="ill w-full h-auto object-contain" />
+                    <div className="relative ill-stage p-3">
+                      <Illustration src="/illustrations/new-09-casual-focus-desk.svg" alt="Illustration: a professional in smart casual working at a laptop" className="ill ill-card" />
                       <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                         Completed (Grade: 92%)
                       </span>
@@ -357,7 +357,7 @@ export default function DashboardPage() {
                       <div className="w-full bg-emerald-100 h-2 rounded-full overflow-hidden mb-2">
                         <div className="bg-emerald-500 h-full w-full"></div>
                       </div>
-                      <div className="flex justify-between text-[11px] text-gray-400">
+                      <div className="flex justify-between text-[11px] text-gray-500">
                         <span>12 / 12 Lessons Finished</span>
                         <span className="text-emerald-600 font-bold">Passed</span>
                       </div>
@@ -441,7 +441,7 @@ export default function DashboardPage() {
                           <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-bold text-[10px] uppercase border border-emerald-200">Submitted</span>
                         </td>
                         <td className="py-4 px-6 text-right">
-                          <span className="text-gray-400">Under Review</span>
+                          <span className="text-gray-500">Under Review</span>
                         </td>
                       </tr>
                     </tbody>
@@ -479,11 +479,11 @@ export default function DashboardPage() {
                     </div>
 
                     <div className="text-center py-4 border-y border-emerald-200 my-4">
-                      <p className="text-[11px] uppercase tracking-wider text-gray-400">This is to certify that</p>
+                      <p className="text-[11px] uppercase tracking-wider text-gray-500">This is to certify that</p>
                       <h3 className="text-2xl font-serif font-bold text-gray-900 mt-1 mb-1">Marcus Vance</h3>
                       <p className="text-xs text-gray-600">has successfully completed all competencies and assessments for:</p>
                       <h4 className="text-base font-bold text-emerald-700 mt-1">Workplace Gravitas & Vocal Presence</h4>
-                      <p className="text-[11px] text-gray-400 mt-1">Awarded 24 CPD Continuing Professional Development Credits</p>
+                      <p className="text-[11px] text-gray-500 mt-1">Awarded 24 CPD Continuing Professional Development Credits</p>
                     </div>
 
                     <div className="flex justify-between items-center text-[11px] text-gray-500 pt-2 font-mono">
@@ -523,11 +523,11 @@ export default function DashboardPage() {
                     </div>
 
                     <div className="text-center py-4 border-y border-emerald-200 my-4">
-                      <p className="text-[11px] uppercase tracking-wider text-gray-400">This is to certify that</p>
+                      <p className="text-[11px] uppercase tracking-wider text-gray-500">This is to certify that</p>
                       <h3 className="text-2xl font-serif font-bold text-gray-900 mt-1 mb-1">Marcus Vance</h3>
                       <p className="text-xs text-gray-600">has successfully completed all competencies and assessments for:</p>
                       <h4 className="text-base font-bold text-emerald-700 mt-1">Executive Speech & Stakeholder Influence</h4>
-                      <p className="text-[11px] text-gray-400 mt-1">Awarded 18 CPD Continuing Professional Development Credits</p>
+                      <p className="text-[11px] text-gray-500 mt-1">Awarded 18 CPD Continuing Professional Development Credits</p>
                     </div>
 
                     <div className="flex justify-between items-center text-[11px] text-gray-500 pt-2 font-mono">
@@ -580,7 +580,7 @@ export default function DashboardPage() {
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <span className="bg-gray-100 text-gray-700 font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase">Recording Ready</span>
-                      <span className="text-xs text-gray-400">Held 2 Weeks Ago</span>
+                      <span className="text-xs text-gray-500">Held 2 Weeks Ago</span>
                     </div>
                     <h3 className="text-base font-bold text-gray-900">Vocal Cadence & Strategic Pause Acoustic Feedback Review</h3>
                     <p className="text-xs text-gray-600">Cohort review of submitted audio recordings and pitch deconstructions.</p>
@@ -688,7 +688,7 @@ export default function DashboardPage() {
                   <div>
                     <label className="block text-xs font-semibold text-gray-800 uppercase mb-2">CPD Certificate Name Display</label>
                     <input type="text" value="Marcus Vance, BSc (Hons), MBA" className="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
-                    <span className="text-[11px] text-gray-400 mt-1 block">Exact wording that will be printed on future CPD certificates.</span>
+                    <span className="text-[11px] text-gray-500 mt-1 block">Exact wording that will be printed on future CPD certificates.</span>
                   </div>
 
                   <div className="pt-4 flex items-center justify-between border-t border-gray-100">

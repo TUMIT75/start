@@ -23,7 +23,7 @@ export default function CoursePage() {
           </div>
 
           {/* Course Hero Section */}
-          <section className="band-off pt-12 pb-16 relative overflow-hidden">
+          <section className="band-mint pt-12 pb-16 relative overflow-hidden">
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#00C853_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -106,8 +106,8 @@ export default function CoursePage() {
                 {/* Hero Right Preview Card */}
                 <div className="lg:col-span-4 hidden lg:block">
                   <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm relative overflow-hidden">
-                    <div className="relative aspect-video rounded-xl overflow-hidden mb-4 group cursor-pointer bg-white ill-stage ill-stage--bare p-3" onClick={() => { openModal('English for Professional Success') }}>
-                      <Illustration src="/illustrations/12-goals-outcomes.svg" alt="Illustration: a professional ticking off a checklist beside a target struck in the centre" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
+                    <div className="relative rounded-xl mb-4 group cursor-pointer bg-white ill-stage ill-stage--bare p-3" onClick={() => { openModal('English for Professional Success') }}>
+                      <Illustration src="/illustrations/new-04-abaya-checklist.svg" alt="Illustration: a professional in abaya at a laptop, working through a checklist" className="ill ill-card group-hover:scale-105 transition duration-500" />
                       <div className="absolute inset-0 bg-white/10 flex items-center justify-center">
                         <div className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                           <Icon name="play" className="text-sm ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
@@ -311,7 +311,7 @@ export default function CoursePage() {
                             </div>
                             <div className="flex items-center space-x-3">
                               <span className="text-xs text-gray-500 font-normal hidden sm:inline">4 Lessons • 6 CPD Hours</span>
-                              <Icon name="chevron-down" className="text-xs text-gray-400 transition-transform duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                              <Icon name="chevron-down" className="text-xs text-gray-500 transition-transform duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                             </div>
                           </button>
                           <div id="modContent-1" className="p-4 bg-white space-y-2.5 border-t border-gray-100 text-xs">
@@ -324,24 +324,24 @@ export default function CoursePage() {
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">1.2 Eliminating Apologetic Qualifiers & Hesitation Markers</span>
                               </div>
-                              <span className="text-gray-400">Live Lab (90m)</span>
+                              <span className="text-gray-500">Live Lab (90m)</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">1.3 Pacing Under Stress: Silence Architecture & Cadence Control</span>
                               </div>
-                              <span className="text-gray-400">Live Lab (90m)</span>
+                              <span className="text-gray-500">Live Lab (90m)</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">1.4 Impromptu Speaking Frameworks: PREP & STAR Under Fire</span>
                               </div>
-                              <span className="text-gray-400">Practicum Lab</span>
+                              <span className="text-gray-500">Practicum Lab</span>
                             </div>
                           </div>
                         </div>
@@ -355,37 +355,37 @@ export default function CoursePage() {
                             </div>
                             <div className="flex items-center space-x-3">
                               <span className="text-xs text-gray-500 font-normal hidden sm:inline">4 Lessons • 6 CPD Hours</span>
-                              <Icon name="chevron-down" className="text-xs text-gray-400 transition-transform duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                              <Icon name="chevron-down" className="text-xs text-gray-500 transition-transform duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                             </div>
                           </button>
                           <div id="modContent-2" className="p-4 bg-white space-y-2.5 border-t border-gray-100 text-xs hidden">
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">2.1 The Executive Memo Method: SCQA Framing for C-Suite Briefs</span>
                               </div>
-                              <span className="text-gray-400">Live Lab (90m)</span>
+                              <span className="text-gray-500">Live Lab (90m)</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">2.2 Translating Technical Complexity into Strategic ROI</span>
                               </div>
-                              <span className="text-gray-400">Case Study</span>
+                              <span className="text-gray-500">Case Study</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">2.3 Deflecting Aggressive Counter-Arguments with Composure</span>
                               </div>
-                              <span className="text-gray-400">Live Lab (90m)</span>
+                              <span className="text-gray-500">Live Lab (90m)</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">2.4 Live Pitching Studio: 3-Minute Boardroom Simulation</span>
                               </div>
-                              <span className="text-gray-400">Cohort Practicum</span>
+                              <span className="text-gray-500">Cohort Practicum</span>
                             </div>
                           </div>
                         </div>
@@ -399,37 +399,37 @@ export default function CoursePage() {
                             </div>
                             <div className="flex items-center space-x-3">
                               <span className="text-xs text-gray-500 font-normal hidden sm:inline">4 Lessons • 6 CPD Hours</span>
-                              <Icon name="chevron-down" className="text-xs text-gray-400 transition-transform duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                              <Icon name="chevron-down" className="text-xs text-gray-500 transition-transform duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                             </div>
                           </button>
                           <div id="modContent-3" className="p-4 bg-white space-y-2.5 border-t border-gray-100 text-xs hidden">
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">3.1 High-Context vs. Low-Context Dialects in Multinational Firms</span>
                               </div>
-                              <span className="text-gray-400">Live Lab (90m)</span>
+                              <span className="text-gray-500">Live Lab (90m)</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">3.2 Firm Diplomacy: Softening Disagreement Without Diluting Power</span>
                               </div>
-                              <span className="text-gray-400">Roleplay Simulation</span>
+                              <span className="text-gray-500">Roleplay Simulation</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">3.3 Overcoming Deadlocks: Language of Mutual Concession</span>
                               </div>
-                              <span className="text-gray-400">Live Lab (90m)</span>
+                              <span className="text-gray-500">Live Lab (90m)</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">3.4 Closing Deals in English: Tactical Linguistic Certainty</span>
                               </div>
-                              <span className="text-gray-400">Clinic</span>
+                              <span className="text-gray-500">Clinic</span>
                             </div>
                           </div>
                         </div>
@@ -443,23 +443,23 @@ export default function CoursePage() {
                             </div>
                             <div className="flex items-center space-x-3">
                               <span className="text-xs text-gray-500 font-normal hidden sm:inline">4 Lessons • 6 CPD Hours</span>
-                              <Icon name="chevron-down" className="text-xs text-gray-400 transition-transform duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                              <Icon name="chevron-down" className="text-xs text-gray-500 transition-transform duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                             </div>
                           </button>
                           <div id="modContent-4" className="p-4 bg-white space-y-2.5 border-t border-gray-100 text-xs hidden">
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">4.1 Simulated Executive Board Address (15-Minute Live Capstone)</span>
                               </div>
-                              <span className="text-gray-400">Live Capstone</span>
+                              <span className="text-gray-500">Live Capstone</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
-                                <Icon name="lock" className="text-gray-400 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                                <Icon name="lock" className="text-gray-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">4.2 Peer Review Studio & 360 Feedback Analysis</span>
                               </div>
-                              <span className="text-gray-400">Cohort Studio</span>
+                              <span className="text-gray-500">Cohort Studio</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
@@ -499,7 +499,7 @@ export default function CoursePage() {
 
                             {/* Hand-Drawn Mentorship Canvas SVG */}
                             <div className="my-auto py-2 flex items-center justify-center">
-                              <Illustration src="/illustrations/topic-train-the-trainer.svg" alt="Illustration: a trainer developing other trainers at a flip chart" className="ill w-full h-auto max-h-56" />
+                              <Illustration src="/illustrations/new-19-thobe-desk-work.svg" alt="Illustration: a professional in thobe and ghutra at work on a laptop" className="ill ill-card" />
                             </div>
 
                             <div className="bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-gray-100 shadow-xs text-center">
@@ -617,7 +617,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleFaq(1) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>What is the weekly time commitment required?</span>
-                            <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                            <Icon name="chevron-down" className="text-xs text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
                           <div id="faqAnswer-1" className="p-4 bg-white text-xs text-gray-600 leading-relaxed border-t border-gray-100 hidden">
                             Expect approximately 3.5 to 4 hours per week: one 90-minute live interactive laboratory, one 45-minute asynchronous peer challenge, and brief daily 5-minute vocal acoustics drills.
@@ -628,7 +628,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleFaq(2) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>What if I cannot attend a live laboratory due to business travel?</span>
-                            <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                            <Icon name="chevron-down" className="text-xs text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
                           <div id="faqAnswer-2" className="p-4 bg-white text-xs text-gray-600 leading-relaxed border-t border-gray-100 hidden">
                             All sessions are recorded in ultra-HD with searchable AI transcripts and slide annotations. If you miss a session, you submit an asynchronous audio recording of the module assignment to receive written and voice-note feedback from Sonia Ali.
@@ -639,7 +639,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleFaq(3) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>How do the 1-on-1 sessions with Sonia Ali work?</span>
-                            <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                            <Icon name="chevron-down" className="text-xs text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
                           <div id="faqAnswer-3" className="p-4 bg-white text-xs text-gray-600 leading-relaxed border-t border-gray-100 hidden">
                             You receive two 45-minute private clinical diagnostic sessions. The first occurs in Week 2 to establish your personal acoustic baseline and linguistic goals. The second takes place in Week 8 for a comprehensive review of your capstone board simulation.
@@ -650,7 +650,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleFaq(4) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>Can my organization sponsor or pay via corporate invoice?</span>
-                            <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                            <Icon name="chevron-down" className="text-xs text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
                           <div id="faqAnswer-4" className="p-4 bg-white text-xs text-gray-600 leading-relaxed border-t border-gray-100 hidden">
                             Yes. Over 70% of our participants have their tuition funded by corporate L&D budgets. We provide standard vendor onboarding forms, formal corporate invoices, and post-programme completion certificates.
@@ -661,7 +661,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleFaq(5) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>Will I receive an accredited certification upon completion?</span>
-                            <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                            <Icon name="chevron-down" className="text-xs text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
                           <div id="faqAnswer-5" className="p-4 bg-white text-xs text-gray-600 leading-relaxed border-t border-gray-100 hidden">
                             Yes. Upon successful completion of all live labs and the capstone board address, you will receive an official verifiable CPD UK Certificate documenting 24 Accredited Continuing Professional Development Hours.
@@ -694,7 +694,7 @@ export default function CoursePage() {
                       </div>
 
                       <div className="mb-5">
-                        <div className="text-xs text-gray-400 font-medium">Cohort Availability</div>
+                        <div className="text-xs text-gray-500 font-medium">Cohort Availability</div>
                         <div className="text-xl font-bold text-charcoal-900 mt-0.5">
                           Only 4 Seats Left
                         </div>
@@ -751,10 +751,10 @@ export default function CoursePage() {
                         <Icon name="headset" className="text-brand-400 text-base inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <span className="font-semibold text-sm">Need Corporate Guidance?</span>
                       </div>
-                      <p className="text-gray-400 mb-3 leading-relaxed">
+                      <p className="text-gray-500 mb-3 leading-relaxed">
                         Have questions about aligning this cohort with your corporate L&D framework?
                       </p>
-                      <a href="mailto:contact@startsah.com" className="text-brand-400 font-bold hover:underline flex items-center">
+                      <a href="mailto:contact@startsah.com" className="text-emerald-700 font-bold hover:underline flex items-center">
                         <span>contact@startsah.com</span>
                         <Icon name="arrow-up-right-from-square" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </a>

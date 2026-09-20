@@ -21,7 +21,7 @@ export default function InsightsPage() {
           </div>
 
           {/* Editorial Header with Generous Whitespace */}
-          <section className="py-16 sm:py-24 bg-white border-b border-gray-100">
+          <section className="py-16 sm:py-24 bg-white">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <span className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60 mb-5">
                 Evidence-Based Insights & Podcasts
@@ -81,21 +81,21 @@ export default function InsightsPage() {
                 <p className="text-sm text-gray-500 mt-2">Executive presence is not an innate mystery. It is a measurable communication science.</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="bg-slate-50/50 p-8 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200">
+                <div className="pr-6">
                   <div className="text-4xl font-bold text-emerald-600 mb-3 tracking-tight">2.4×</div>
                   <h3 className="text-base font-bold text-gray-900 mb-2">Career Velocity</h3>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     Professionals combining technical skill with vocal gravitas and diplomatic agility advance 2.4× faster to director appointments.
                   </p>
                 </div>
-                <div className="bg-slate-50/50 p-8 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200">
+                <div className="pr-6">
                   <div className="text-4xl font-bold text-emerald-600 mb-3 tracking-tight">34%</div>
                   <h3 className="text-base font-bold text-gray-900 mb-2">Boardroom Retention</h3>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     Stakeholders retain 34% more key proposal metrics when presenters employ deliberate pauses and controlled pacing.
                   </p>
                 </div>
-                <div className="bg-slate-50/50 p-8 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200">
+                <div className="pr-6">
                   <div className="text-4xl font-bold text-emerald-600 mb-3 tracking-tight">50%</div>
                   <h3 className="text-base font-bold text-gray-900 mb-2">Conflict Reduction</h3>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -107,7 +107,7 @@ export default function InsightsPage() {
           </section>
 
           {/* Dedicated Interactive Podcast Player Section */}
-          <section className="py-16 sm:py-20 bg-slate-50/60 border-y border-gray-150" id="podcastPlayerSection">
+          <section className="py-16 sm:py-20 band-off" id="podcastPlayerSection">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
@@ -217,9 +217,9 @@ export default function InsightsPage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                   {/* Appearance 1 */}
-                  <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
-                    <div className="aspect-video band-off rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                      <Illustration src="/illustrations/17-insights-analysis.svg" alt="Illustration: a presenter talking a seated group through charts" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
+                  <div className="group">
+                    <div className="mb-4 relative ill-stage ill-stage--bare">
+                      <Illustration src="/illustrations/new-18-abaya-document.svg" alt="Illustration: a professional in abaya holding a document" className="ill ill-card group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('On Purpose with Jay Shetty', 'Unlocking Quiet Executive Presence Under Pressure') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
@@ -231,9 +231,9 @@ export default function InsightsPage() {
                   </div>
 
                   {/* Appearance 2 */}
-                  <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
-                    <div className="aspect-video band-off rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                      <Illustration src="/illustrations/04-training-delivery.svg" alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
+                  <div className="group">
+                    <div className="mb-4 relative ill-stage ill-stage--bare">
+                      <Illustration src="/illustrations/new-26-suit-confident.svg" alt="Illustration: a professional in a suit and tie, arms folded" className="ill ill-card group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('The Diary of a CEO Masterclass', 'The Science of Non-Verbal Gravitas & Executive Presence') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
@@ -245,9 +245,9 @@ export default function InsightsPage() {
                   </div>
 
                   {/* Appearance 3 */}
-                  <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
-                    <div className="aspect-video band-off rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
-                      <Illustration src="/illustrations/08-learning.svg" alt="Illustration: a learner working on a laptop on a stack of books beneath a graduation cap" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
+                  <div className="group">
+                    <div className="mb-4 relative ill-stage ill-stage--bare">
+                      <Illustration src="/illustrations/new-21-casual-city-view.svg" alt="Illustration: a professional in smart casual looking out over the city" className="ill ill-card group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('BBC World Service Business', 'Breaking the Non-Native English Ceiling') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
@@ -279,7 +279,7 @@ export default function InsightsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="insightsGrid">
 
                 {/* Article 1: Original Research */}
-                <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="research">
+                <div className="insight-card group flex flex-col justify-between" data-category="research">
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
@@ -307,7 +307,7 @@ export default function InsightsPage() {
                 </div>
 
                 {/* Article 2: Communication Skills */}
-                <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="communication">
+                <div className="insight-card group flex flex-col justify-between" data-category="communication">
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-charcoal-100 text-charcoal-700">
@@ -335,7 +335,7 @@ export default function InsightsPage() {
                 </div>
 
                 {/* Article 3: Leadership & Presence */}
-                <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="presence">
+                <div className="insight-card group flex flex-col justify-between" data-category="presence">
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
@@ -363,7 +363,7 @@ export default function InsightsPage() {
                 </div>
 
                 {/* Article 4: Career Strategy */}
-                <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="career">
+                <div className="insight-card group flex flex-col justify-between" data-category="career">
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
@@ -391,7 +391,7 @@ export default function InsightsPage() {
                 </div>
 
                 {/* Article 5: Career Strategy */}
-                <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="career">
+                <div className="insight-card group flex flex-col justify-between" data-category="career">
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
@@ -419,7 +419,7 @@ export default function InsightsPage() {
                 </div>
 
                 {/* Article 6: Executive Presence */}
-                <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="presence">
+                <div className="insight-card group flex flex-col justify-between" data-category="presence">
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
@@ -451,7 +451,7 @@ export default function InsightsPage() {
           </section>
 
           {/* Executive Newsletter Signup Banner with Airy Spacing */}
-          <section className="py-16 sm:py-20 bg-slate-50/50 border-t border-gray-200">
+          <section className="py-16 sm:py-20 bg-slate-50/50">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <span className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3 py-1 rounded-full mb-3">Weekly Memorandum</span>
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">Join 18,000+ Leaders Receiving Weekly Insights</h3>

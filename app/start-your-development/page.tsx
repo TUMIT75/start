@@ -22,7 +22,7 @@ export default function StartYourDevelopmentPage() {
           </div>
 
           {/* Development Header Banner */}
-          <section className="py-10 sm:py-14 bg-white border-b border-gray-100">
+          <section className="py-10 sm:py-14 bg-white">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <span className="inline-flex items-center space-x-1.5 bg-emerald-50 border border-emerald-200/60 text-gray-500 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
@@ -38,7 +38,7 @@ export default function StartYourDevelopmentPage() {
           </section>
 
           {/* Main Intake Form Section */}
-          <section className="py-10 bg-slate-50/60">
+          <section className="py-10 band-mint">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -148,7 +148,7 @@ export default function StartYourDevelopmentPage() {
                           <span>Submit Application & Schedule Consultation</span>
                           <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </button>
-                        <p className="text-center text-[11px] text-gray-400 mt-2">
+                        <p className="text-center text-[11px] text-gray-500 mt-2">
                           <Icon name="shield-halved" className="text-emerald-600 mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Strictly confidential under EMCC Global ethical standards.
                         </p>
                       </div>
@@ -197,19 +197,19 @@ export default function StartYourDevelopmentPage() {
 
                     <div className="space-y-3 text-xs text-gray-600">
                       <div>
-                        <span className="text-[10px] font-bold text-gray-400 uppercase block mb-0.5">Selected Track</span>
+                        <span className="text-[10px] font-bold text-gray-500 uppercase block mb-0.5">Selected Track</span>
                         <span className="font-semibold text-gray-900 text-sm" id="summaryFocusName">English for Professional Success</span>
                       </div>
                       <div>
-                        <span className="text-[10px] font-bold text-gray-400 uppercase block mb-0.5">Faculty Lead</span>
+                        <span className="text-[10px] font-bold text-gray-500 uppercase block mb-0.5">Faculty Lead</span>
                         <span className="font-medium text-gray-800">Sonia Ali (EMCC Senior Coach)</span>
                       </div>
                       <div>
-                        <span className="text-[10px] font-bold text-gray-400 uppercase block mb-0.5">Format</span>
+                        <span className="text-[10px] font-bold text-gray-500 uppercase block mb-0.5">Format</span>
                         <span className="text-gray-800">8 Weeks Virtual Live Cohort + 1:1 Speech Clinic</span>
                       </div>
                       <div>
-                        <span className="text-[10px] font-bold text-gray-400 uppercase block mb-0.5">Accreditation</span>
+                        <span className="text-[10px] font-bold text-gray-500 uppercase block mb-0.5">Accreditation</span>
                         <span className="inline-flex items-center text-gray-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded text-xs">
                           <Icon name="award" className="mr-1 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> CPD UK Certified (24 Hrs)
                         </span>

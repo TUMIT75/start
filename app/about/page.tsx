@@ -24,7 +24,7 @@ export default function AboutPage() {
             {/* Subtle organic background doodle accents */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div className="lg:col-span-7 space-y-6">
+                <div className="lg:col-span-6 space-y-6">
                   <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60">
                     Our Story & Human Philosophy
                   </div>
@@ -55,10 +55,10 @@ export default function AboutPage() {
 
                 {/* Right: one large illustration, with a single caption under it
                      rather than three overlapping floating badges. */}
-                <div className="lg:col-span-5">
-                  <div className="max-w-lg mx-auto">
-                    <div className="ill-stage ill-stage--green">
-                      <Illustration src="/illustrations/07-coaching-mentoring.svg" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop" className="ill ill-lg" />
+                <div className="lg:col-span-6 lg:-mr-8 xl:-mr-14">
+                  <div className="mx-auto">
+                    <div className="ill-stage ill-stage--bare">
+                      <Illustration src="/illustrations/new-02-abaya-tablet-review.svg" alt="Illustration: a professional in abaya reading on a tablet" className="ill ill-hero" />
                     </div>
                     <div className="mt-6 flex items-center justify-between gap-4 border-t hairline pt-5">
                       <div>
@@ -75,13 +75,13 @@ export default function AboutPage() {
 
           {/* Methodology: one large illustration carries the idea, the four stages
                read as a plain numbered list rather than four small boxed cards. */}
-          <section className="py-20 lg:py-28 band-off border-y hairline">
+          <section className="py-20 lg:py-28 band-off">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
                 <div className="lg:col-span-5">
                   <div className="ill-stage ill-stage--bare">
-                    <Illustration src="/illustrations/10-career-progression.svg" alt="Illustration: a professional with a briefcase stepping up onto rising blocks" className="ill ill-lg" />
+                    <Illustration src="/illustrations/new-14-stepping-up-growth.svg" alt="Illustration: a professional stepping up a rising chart" className="ill ill-section" />
                   </div>
                 </div>
 

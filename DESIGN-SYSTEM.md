@@ -37,15 +37,19 @@ The dark greens from the earlier mock-up (`#0D2217`, `#16A34A`, `#15803D`,
 
 ## Type
 
-Plus Jakarta Sans throughout.
+Manrope throughout, self-hosted through `next/font`.
+
+Plus Jakarta Sans came first and the 20 September note asked us to change it: it
+read rounded and heavy, and made every heading feel bulky. 800 is deliberately
+not loaded — hierarchy comes from size and spacing, not from weight.
 
 | Use | Size | Weight |
 | --- | --- | --- |
-| Page heading | 36–60px, tight tracking | 800 |
-| Section heading | 30–40px | 800 |
-| Sub-heading | 18–20px | 700 |
+| Page heading | 36–60px, tight tracking | 700 |
+| Section heading | 30–40px | 700 |
+| Sub-heading | 18–20px | 600 |
 | Body | 14–18px, relaxed leading | 400 |
-| Eyebrow label | 12px, uppercase, wide tracking | 700, green |
+| Eyebrow label | 12px, uppercase, wide tracking | 600, grey |
 
 Headings are sentence case, not title case. A short green rule (`.rule-green`,
 56 × 3px) sits under a section heading in place of a boxed badge.
@@ -73,105 +77,65 @@ everything sitting inside separate boxes" asked for.
 
 ## Illustration library
 
-**`public/illustrations/`** — thirty illustrations cut from the two approved
+**`public/illustrations/`** — sixty illustrations cut from the three approved
 reference sheets. These are the artwork; the site does not draw its own.
 
-They come in two sets:
+- **`new-01`…`new-30`** — the thirty from the 20 September sheet. Every one
+  carries its own pale mint disc behind the figure.
+- **`01-`…`20-`** and **`topic-*`** — the thirty from the first two sheets, kept
+  in the pool. Five are still in use; they have no mint disc of their own, so
+  their stage supplies one.
 
-- **`topic-*`** — the ten from the sheet that names an illustration per subject
-  (Human Development, Career & Employability, Communication & Professional
-  English, and so on). Each of these goes to its own section, which is what "a
-  different visual story for each topic" asks for.
-- **`01-`…`20-`** — the twenty unnamed ones, for everything else: programme
-  cards, supporting sections, dashboard tiles.
+Thirty-five places on the site use thirty-five different illustrations. Nothing
+repeats.
 
-Across 32 places on the site, 30 different illustrations are used. The only two
-that appear twice do so on different pages.
+### Dress and setting
 
-Both sheets were cut on measured panel boundaries rather than an even grid — the
-rows are not evenly spaced, and an even split clipped the bottom of every scene.
-On the titled sheet the text sits over the artwork (the signpost in "Career &
-Employability" is level with its own subtitle), so a horizontal cut cannot
-separate them; the text blocks are painted out first, then whole cells are
-cropped. Every file is keyed so the sheet's white background is transparent,
-which is why each one drops onto white or off-white without showing a box.
+The 20 September note asked that Saudi professionals not all be the same man in
+a white thobe and ghutra, so the run down each page alternates: thobe with
+ghutra, thobe without, suit and tie, smart casual, abaya, open abaya over
+professional clothing, and mixed groups. No two neighbouring sections wear the
+same thing. The file names say what each one shows — `new-17-suit-desk-clock`,
+`new-29-abaya-career-path` — so a section can be matched to a person and a
+setting rather than to a number.
 
-### What the style is
+### Sizes
 
-Worth stating so anything added later matches:
+Four tiers, and only four. Before the 20 September pass the site rendered its
+thirty-five illustrations at twenty-seven different sizes on twenty-four
+different aspect ratios, because each slot had picked up its own `max-width` or
+`max-height` over time. The ratio now belongs to the tier, so a slot can never
+squash artwork to fit a cap again.
 
-- Flat line art. No gradients, no glows, no drop shadows.
-- Thin charcoal outlines; solid charcoal for hair, abaya, trousers and laptops.
-- **Faceless.** A profile line, never eyes or a mouth.
-- **One green accent** per illustration — a laptop screen, an arrow, a bulb, a
-  puzzle piece. Green is never the whole scene.
-- Saudi and GCC dress (thobe with ghutra and agal, abaya) alongside
-  international business dress, men and women, at different career stages.
-- One idea per illustration, with room around it.
+| Class | Ratio | Max width | On a 1440px desktop | Where |
+| --- | --- | --- | --- | --- |
+| `.ill-hero` | 16:9 | 660px | 46% | one per page, beside the h1 |
+| `.ill-large` | 3:2 | 600px | 42% | full-width set pieces |
+| `.ill-section` | 4:3 | 540px | 540 x 405 | the alternating body sections |
+| `.ill-card` | 4:3 | 380px | — | card and tile grids |
+| `.ill-small` | 1:1 | 220px | — | small inline spots |
 
-### The ten topic illustrations
-
-Each of these belongs to one subject and is used only there.
-
-| File | Section it serves |
-| --- | --- |
-| `topic-human-development` | Homepage hero — Developing People. Unlocking Potential. |
-| `topic-career-employability` | Career & Employability |
-| `topic-communication-english` | Communication & Professional English |
-| `topic-personal-development` | Personal Development & Executive Presence |
-| `topic-leadership-workplace` | Leadership & Workplace Skills |
-| `topic-training-development` | Training & Development |
-| `topic-coaching-mentoring-topic` | Coaching & Mentoring |
-| `topic-organisational-development` | Organisational Development |
-| `topic-teamwork-culture` | Teamwork & Organisational Culture |
-| `topic-train-the-trainer` | Train the Trainer |
-
-### The twenty supporting illustrations
-
-| File | What it shows |
-| --- | --- |
-| `01-growth-momentum` | Working on a laptop on rising steps, a green arrow sweeping up behind |
-| `02-career-pathways` | Pausing at a signpost, weighing which direction to take |
-| `03-communication` | Two colleagues across a table, one speech bubble answering another |
-| `04-training-delivery` | A trainer in thobe and ghutra presenting results to a seated group |
-| `05-new-ideas` | Reaching up towards a lit idea from a laptop |
-| `06-teamwork` | Three colleagues working together around one laptop |
-| `07-coaching-mentoring` | A mentor in thobe and ghutra guiding a colleague at her laptop |
-| `08-learning` | Working on a stack of books beneath a graduation cap |
-| `09-problem-solving` | Considering two puzzle pieces not yet joined |
-| `10-career-progression` | Stepping up onto rising blocks, briefcase in hand |
-| `11-time-focus` | Working to time at a laptop beside a clock |
-| `12-goals-outcomes` | Ticking off a checklist beside a target struck in the centre |
-| `13-network-community` | At a laptop, connected out to a network of colleagues |
-| `14-idea-leadership` | Holding up a lit idea |
-| `15-balance-wellbeing` | Working calmly and in balance |
-| `16-partnership` | Two colleagues in abaya shaking hands over an agreement |
-| `17-insights-analysis` | Talking a seated group through charts |
-| `18-next-step` | Stepping onto the next block, towards the one after it |
-| `19-global-english` | Sending work out into the wider world |
-| `20-vision-direction` | Sighting the route to a flag on the summit |
-
-### Placing one
+The wider tiers stand up towards 4:3 below the two-column breakpoint, so a hero
+does not become a letterbox on a phone.
 
 ```tsx
-<div className="ill-stage">
+<div className="ill-stage ill-stage--green">
   <Illustration
-    src="/illustrations/topic-coaching-mentoring-topic.png"
-    alt="Illustration: a coach and a colleague working an idea through together"
-    className="ill ill-lg"
+    src="/illustrations/new-24-thobe-mentoring.svg"
+    alt="Illustration: a mentor in thobe and ghutra guiding a colleague at a laptop"
+    className="ill ill-section"
   />
 </div>
 ```
 
-`Illustration` wraps `next/image`, so each file goes out as AVIF or WebP at
-the size the layout needs. Pass `priority` on the one illustration above the
-fold; everything else lazy-loads.
-
-- `.ill-lg` / `.ill-xl` / `.ill-md` cap the width (500 / 620 / 380px).
-  Illustrations are meant to be **large** — a desktop hero, not a thumbnail.
-- Never give one a fixed height. `.ill` sets `object-fit: contain` so a tight
-  slot letterboxes rather than squashing the artwork, but a natural height is
-  better.
+- `.ill-stage--green` draws a soft mint disc behind the figure. Use it only on a
+  first-sheet illustration; the thirty from the 20 September sheet already have
+  one, and `--bare` opts out.
+- Never give an illustration a fixed height or a `max-h-*`. The tier owns the
+  ratio and `.ill` sets `object-fit: contain`.
+- Do not put an `aspect-*` class on the wrapper either. It fights the tier, and
+  that is how six course cards ended up at 2.19:1 with the drawing shrunk into
+  the middle of a 16:9 frame.
 - Always write a real `alt`. The artwork carries meaning; it is not decorative.
 
 ### On a charcoal band
@@ -184,18 +148,27 @@ directly on charcoal.
 ### How they were made
 
 The sheets are 1536 x 1024, so each illustration holds only about 290 x 230 real
-pixels. Every raster version of them looked soft at hero size, however it was
-upscaled or sharpened, so the shapes were traced into vector instead. The
-artwork is identical; it is simply no longer made of pixels.
+pixels. Every raster version looked soft at hero size, however it was upscaled
+or sharpened, so the shapes were traced into vector instead. The artwork is
+identical; it is simply no longer made of pixels.
 
 `scripts/` holds the pipeline, if the sheets are ever reissued:
 
-1. `prep-illustrations.ps1` crops each illustration at 4x and snaps every pixel
-   to the four brand colours. This is also where the sheets' own quirks are
-   handled - a light grey fill reads 246 against a 254 ground, with stray white
-   pixels through it, so the salt is filtered out, the anti-aliasing beside each
-   line is opened away, and enclosed gaps are filled.
-2. `trace-illustrations.mjs` traces the result and writes `public/illustrations`.
-   `tune-trace.mjs` compares tracer settings on a single illustration.
+1. `SheetGrid.cs` finds the tile frames. Run this first and read the bands off
+   it rather than guessing or profiling the ink. The 20 September sheet draws
+   each illustration inside a thin grey box and the artwork runs right up to
+   that box, so an ink profile lands about sixteen pixels inside the true top
+   and quietly cuts the top off every figure in the row.
+2. `prep-illustrations.ps1` and `prep-illustrations-v2.ps1` crop each cell at 4x
+   or 5x and snap every pixel to the brand palette. This is also where the
+   sheets' own quirks are handled — a light grey fill reads 246 against a 254
+   ground, with stray white pixels through it, so the salt is filtered out, the
+   anti-aliasing beside each line is opened away, and enclosed gaps are filled.
+3. `trace-illustrations.mjs` traces the result into `public/illustrations`.
+   `TRACE_IN` picks the source folder; `tune-trace.mjs` compares tracer settings
+   on a single illustration.
+4. `gen-illustration-sizes.mjs` records each file's viewBox into
+   `lib/illustration-sizes.json`, which is what puts width and height on the tag
+   so the box is reserved before the file arrives.
 
-The whole set is about 560 KB of SVG, 210 KB over the wire.
+The whole set is about 1.5 MB of SVG; a page loads only the handful it shows.

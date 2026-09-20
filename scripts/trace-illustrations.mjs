@@ -40,8 +40,10 @@ const CONFIG = {
   pathPrecision: 1,
 };
 
-/** the palette the sources were quantised to */
-const PALETTE = ['#FFFFFF', '#E6E6E6', '#B4B4B4', '#2E2E2E', '#00C853'];
+/** the palette the sources were quantised to.
+ *  The two mint tints only appear on the 20 September sheet, which draws soft
+ *  discs behind its figures and a skyline in muted teal. */
+const PALETTE = ['#FFFFFF', '#E6F6EE', '#E6E6E6', '#A9DCC5', '#B4B4B4', '#2E2E2E', '#00C853'];
 const hexToRgb = (h) => [
   parseInt(h.slice(1, 3), 16),
   parseInt(h.slice(3, 5), 16),

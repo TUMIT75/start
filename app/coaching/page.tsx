@@ -23,7 +23,7 @@ export default function CoachingPage() {
           <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div className="lg:col-span-7 space-y-6">
+                <div className="lg:col-span-6 space-y-6">
                   <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60">
                     Personalised Growth
                   </div>
@@ -58,10 +58,10 @@ export default function CoachingPage() {
                 </div>
 
                 {/* Right: one large illustration, with the practical detail beneath it */}
-                <div className="lg:col-span-5">
-                  <div className="max-w-lg mx-auto">
-                    <div className="ill-stage ill-stage--green">
-                      <Illustration src="/illustrations/05-new-ideas.svg" alt="Illustration: a professional at a laptop reaching up towards a lit idea" className="ill ill-lg" />
+                <div className="lg:col-span-6 lg:-mr-8 xl:-mr-14">
+                  <div className="mx-auto">
+                    <div className="ill-stage ill-stage--bare">
+                      <Illustration src="/illustrations/new-03-thobe-shirt-discussion.svg" alt="Illustration: a colleague in thobe and ghutra talking something through with a colleague holding a laptop" className="ill ill-hero" />
                     </div>
 
                     <div className="mt-8">
@@ -169,7 +169,7 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-5 order-1 lg:order-2">
                   <div className="ill-stage">
-                    <Illustration src="/illustrations/11-time-focus.svg" alt="Illustration: a professional working to time at a laptop beside a clock" className="ill ill-lg" />
+                    <Illustration src="/illustrations/new-17-suit-desk-clock.svg" alt="Illustration: a professional in a suit working to time at a laptop" className="ill ill-section" />
                   </div>
                 </div>
 
@@ -184,7 +184,7 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-5">
                   <div className="ill-stage ill-stage--bare">
-                    <Illustration src="/illustrations/14-idea-leadership.svg" alt="Illustration: a professional holding up a lit idea" className="ill ill-lg" />
+                    <Illustration src="/illustrations/new-16-women-shared-idea.svg" alt="Illustration: two colleagues in abaya sharing an idea over a tablet" className="ill ill-section" />
                   </div>
                 </div>
 
@@ -314,7 +314,7 @@ export default function CoachingPage() {
           </section>
 
           {/* Closing CTA ======================================================= */}
-          <section className="py-20 lg:py-28 band-off border-t hairline">
+          <section className="py-20 lg:py-28 band-mint border-t hairline">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Start with a conversation</h2>
               <p className="text-gray-600 mt-4 leading-relaxed">
