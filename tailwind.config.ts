@@ -47,7 +47,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-jakarta)', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-sans)', 'Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
         brand: startGreen,

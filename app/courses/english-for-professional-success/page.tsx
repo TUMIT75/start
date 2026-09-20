@@ -23,100 +23,100 @@ export default function CoursePage() {
           </div>
 
           {/* Course Hero Section */}
-          <section className="bg-charcoal-950 text-white pt-12 pb-16 relative overflow-hidden">
+          <section className="band-off pt-12 pb-16 relative overflow-hidden">
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#00C853_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
                 <div className="lg:col-span-8 space-y-5">
                   <div className="flex flex-wrap items-center gap-2.5">
-                    <span className="bg-brand-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                    <span className="bg-brand-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
                       LearnPress LMS • Executive Cohort
                     </span>
-                    <span className="bg-charcoal-800 text-brand-400 border border-charcoal-700 text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="bg-white text-gray-600 border border-gray-200 text-xs font-semibold px-3 py-1 rounded-full">
                       <Icon name="certificate" className="mr-1.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />CPD UK Certified (24 Hours)
                     </span>
-                    <span className="bg-charcoal-800 text-gray-300 border border-charcoal-700 text-xs font-semibold px-3 py-1 rounded-full">
-                      <Icon name="user-group" className="mr-1.5 text-brand-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Capped at 12 Executives
+                    <span className="bg-white text-gray-600 border border-gray-200 text-xs font-semibold px-3 py-1 rounded-full">
+                      <Icon name="user-group" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Capped at 12 Executives
                     </span>
                   </div>
 
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight">
                     English for Professional Success
                   </h1>
 
-                  <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-3xl">
+                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
                     Master high-stakes boardroom articulation, cross-cultural diplomacy, persuasive pitching, and commanding business English with personalized vocal acoustics and 1:1 executive coaching.
                   </p>
 
                   {/* Course Meta Highlights Bar */}
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-charcoal-800 text-xs">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-gray-200 text-xs">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 rounded-lg bg-charcoal-800 flex items-center justify-center text-brand-400">
+                      <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-emerald-600">
                         <Icon name="clock" className="text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
                       <div>
-                        <div className="text-gray-400">Duration</div>
-                        <div className="font-bold text-white">8 Weeks (16 Labs)</div>
+                        <div className="text-gray-500">Duration</div>
+                        <div className="font-bold text-gray-900">8 Weeks (16 Labs)</div>
                       </div>
                     </div>
 
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 rounded-lg bg-charcoal-800 flex items-center justify-center text-brand-400">
+                      <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-emerald-600">
                         <Icon name="laptop-file" className="text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
                       <div>
-                        <div className="text-gray-400">Delivery Mode</div>
-                        <div className="font-bold text-white">Live Virtual & 1:1 Clinics</div>
+                        <div className="text-gray-500">Delivery Mode</div>
+                        <div className="font-bold text-gray-900">Live Virtual & 1:1 Clinics</div>
                       </div>
                     </div>
 
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 rounded-lg bg-charcoal-800 flex items-center justify-center text-brand-400">
+                      <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-emerald-600">
                         <Icon name="star" className="text-sm text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
                       <div>
-                        <div className="text-gray-400">Learner Rating</div>
-                        <div className="font-bold text-white">5.0 ★★★★★ (48)</div>
+                        <div className="text-gray-500">Learner Rating</div>
+                        <div className="font-bold text-gray-900">5.0 ★★★★★ (48)</div>
                       </div>
                     </div>
 
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 rounded-lg bg-charcoal-800 flex items-center justify-center text-brand-400">
+                      <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-emerald-600">
                         <Icon name="chalkboard-user" className="text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
                       <div>
-                        <div className="text-gray-400">Lead Trainer</div>
-                        <div className="font-bold text-white">Sonia Ali</div>
+                        <div className="text-gray-500">Lead Trainer</div>
+                        <div className="font-bold text-gray-900">Sonia Ali</div>
                       </div>
                     </div>
                   </div>
 
                   {/* Hero Action Buttons */}
                   <div className="flex flex-wrap items-center gap-3 pt-2">
-                    <button onClick={() => { openModal('English for Professional Success') }} className="bg-brand-500 hover:bg-brand-600 text-white font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-brand-500/30 transition duration-200 text-sm flex items-center cursor-pointer">
+                    <button onClick={() => { openModal('English for Professional Success') }} className="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-brand-500/30 transition duration-200 text-sm flex items-center cursor-pointer">
                       <Icon name="bolt" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Enrol in Next Cohort
                     </button>
-                    <button onClick={() => { downloadSyllabus() }} className="bg-charcoal-800 hover:bg-charcoal-700 text-gray-200 border border-charcoal-700 font-bold px-5 py-3 rounded-xl transition duration-200 text-sm flex items-center cursor-pointer" id="syllabusBtn">
-                      <Icon name="file-arrow-down" className="mr-2 text-brand-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Download Syllabus PDF
+                    <button onClick={() => { downloadSyllabus() }} className="bg-white hover:bg-charcoal-700 text-gray-700 border border-gray-200 font-semibold px-5 py-3 rounded-xl transition duration-200 text-sm flex items-center cursor-pointer" id="syllabusBtn">
+                      <Icon name="file-arrow-down" className="mr-2 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Download Syllabus PDF
                     </button>
                   </div>
                 </div>
 
                 {/* Hero Right Preview Card */}
                 <div className="lg:col-span-4 hidden lg:block">
-                  <div className="bg-charcoal-900 border border-charcoal-800 rounded-2xl p-5 shadow-2xl relative overflow-hidden">
-                    <div className="on-ink relative aspect-video rounded-xl overflow-hidden mb-4 group cursor-pointer bg-charcoal-800 ill-stage ill-stage--bare p-3" onClick={() => { openModal('English for Professional Success') }}>
+                  <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm relative overflow-hidden">
+                    <div className="relative aspect-video rounded-xl overflow-hidden mb-4 group cursor-pointer bg-white ill-stage ill-stage--bare p-3" onClick={() => { openModal('English for Professional Success') }}>
                       <Illustration src="/illustrations/12-goals-outcomes.svg" alt="Illustration: a professional ticking off a checklist beside a target struck in the centre" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
-                      <div className="absolute inset-0 bg-charcoal-950/20 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-white/10 flex items-center justify-center">
                         <div className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                           <Icon name="play" className="text-sm ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </div>
                       </div>
                     </div>
                     <div className="text-center">
-                      <span className="text-xs text-brand-400 font-extrabold uppercase tracking-wider block mb-1">Executive Studio Pass</span>
-                      <p className="text-xs text-gray-400">Cohort 14 • Starting October 14 • Only 4 Executive Seats Remaining</p>
+                      <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider block mb-1">Executive Studio Pass</span>
+                      <p className="text-xs text-gray-500">Cohort 14 • Starting October 14 • Only 4 Executive Seats Remaining</p>
                     </div>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function CoursePage() {
                 <div className="lg:col-span-8 space-y-8">
 
                   {/* Eduma Style Course Navigation Tabs */}
-                  <div className="bg-white rounded-2xl p-2 border border-gray-200 shadow-sm flex flex-wrap gap-2 text-xs sm:text-sm font-bold">
+                  <div className="bg-white rounded-2xl p-2 border border-gray-200 shadow-sm flex flex-wrap gap-2 text-xs sm:text-sm font-semibold">
                     <button onClick={() => { switchCourseTab('overview') }} id="cTab-overview" className="course-tab-btn flex-1 py-3 px-4 rounded-xl transition bg-brand-500 text-white shadow-sm text-center cursor-pointer">
                       <Icon name="circle-info" className="mr-1.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Overview
                     </button>
@@ -155,10 +155,10 @@ export default function CoursePage() {
                     {/* The Challenge & Desired Outcome Card */}
                     <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm space-y-6">
                       <div>
-                        <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
+                        <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                           The Problem We Solve
                         </span>
-                        <h3 className="text-2xl font-extrabold text-charcoal-900 mt-3">
+                        <h3 className="text-2xl font-bold text-charcoal-900 mt-3">
                           The Silent Barrier to C-Suite Progression
                         </h3>
                         <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
@@ -168,7 +168,7 @@ export default function CoursePage() {
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                         <div className="bg-charcoal-100 border border-charcoal-200 rounded-xl p-4">
-                          <div className="text-xs font-extrabold text-charcoal-700 uppercase tracking-wider flex items-center mb-2">
+                          <div className="text-xs font-semibold text-charcoal-700 uppercase tracking-wider flex items-center mb-2">
                             <Icon name="circle-xmark" className="mr-2 text-charcoal-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />The Common Frustration
                           </div>
                           <ul className="text-xs text-gray-700 space-y-2">
@@ -180,7 +180,7 @@ export default function CoursePage() {
                         </div>
 
                         <div className="bg-brand-50/70 border border-brand-200 rounded-xl p-4">
-                          <div className="text-xs font-extrabold text-brand-800 uppercase tracking-wider flex items-center mb-2">
+                          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider flex items-center mb-2">
                             <Icon name="circle-check" className="mr-2 text-brand-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Your Desired Transformation
                           </div>
                           <ul className="text-xs text-gray-700 space-y-2">
@@ -195,10 +195,10 @@ export default function CoursePage() {
 
                     {/* Who It Is For */}
                     <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm">
-                      <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
+                      <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                         Target Audience
                       </span>
-                      <h3 className="text-2xl font-extrabold text-charcoal-900 mt-3 mb-4">
+                      <h3 className="text-2xl font-bold text-charcoal-900 mt-3 mb-4">
                         Who This Accelerator Is Designed For
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -206,7 +206,7 @@ export default function CoursePage() {
                           <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
                             <Icon name="briefcase" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
-                          <h4 className="font-bold text-sm text-charcoal-900">C-Suite & VP Executives</h4>
+                          <h4 className="font-semibold text-sm text-charcoal-900">C-Suite & VP Executives</h4>
                           <p className="text-xs text-gray-600 mt-1 leading-relaxed">Leading international expansions, cross-border M&A discussions, or global investor relations.</p>
                         </div>
 
@@ -214,7 +214,7 @@ export default function CoursePage() {
                           <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
                             <Icon name="users-gear" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
-                          <h4 className="font-bold text-sm text-charcoal-900">Senior Technical Directors</h4>
+                          <h4 className="font-semibold text-sm text-charcoal-900">Senior Technical Directors</h4>
                           <p className="text-xs text-gray-600 mt-1 leading-relaxed">Transitioning from functional leadership to strategic enterprise representation.</p>
                         </div>
 
@@ -222,7 +222,7 @@ export default function CoursePage() {
                           <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
                             <Icon name="earth-americas" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
-                          <h4 className="font-bold text-sm text-charcoal-900">Multinational Consultants</h4>
+                          <h4 className="font-semibold text-sm text-charcoal-900">Multinational Consultants</h4>
                           <p className="text-xs text-gray-600 mt-1 leading-relaxed">Advising global clients where nuance, brevity, and diplomatic tact drive contract wins.</p>
                         </div>
                       </div>
@@ -230,10 +230,10 @@ export default function CoursePage() {
 
                     {/* What You Will Develop (4 Pillar Grid) */}
                     <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm">
-                      <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
+                      <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                         Competency Outcomes
                       </span>
-                      <h3 className="text-2xl font-extrabold text-charcoal-900 mt-3 mb-6">
+                      <h3 className="text-2xl font-bold text-charcoal-900 mt-3 mb-6">
                         Key Skills You Will Master
                       </h3>
 
@@ -243,7 +243,7 @@ export default function CoursePage() {
                             <Icon name="bullhorn" className="text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <div>
-                            <h4 className="font-bold text-sm text-charcoal-900">High-Stakes Boardroom Articulation</h4>
+                            <h4 className="font-semibold text-sm text-charcoal-900">High-Stakes Boardroom Articulation</h4>
                             <p className="text-xs text-gray-600 mt-1 leading-relaxed">Speak in clear, punchy executive cadences. Learn how to open meetings with authority and frame complex agendas concisely.</p>
                           </div>
                         </div>
@@ -253,7 +253,7 @@ export default function CoursePage() {
                             <Icon name="handshake-simple" className="text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <div>
-                            <h4 className="font-bold text-sm text-charcoal-900">Cross-Cultural Diplomatic Nuance</h4>
+                            <h4 className="font-semibold text-sm text-charcoal-900">Cross-Cultural Diplomatic Nuance</h4>
                             <p className="text-xs text-gray-600 mt-1 leading-relaxed">Navigate indirect vs. direct communication cultures. Soften firm objections without weakening your bargaining leverage.</p>
                           </div>
                         </div>
@@ -263,7 +263,7 @@ export default function CoursePage() {
                             <Icon name="bolt" className="text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <div>
-                            <h4 className="font-bold text-sm text-charcoal-900">Impromptu Debate & Counter-Arguments</h4>
+                            <h4 className="font-semibold text-sm text-charcoal-900">Impromptu Debate & Counter-Arguments</h4>
                             <p className="text-xs text-gray-600 mt-1 leading-relaxed">Stop freezing when put on the spot. Master structural formulas (PREP, SCQA) to deliver brilliant answers under pressure.</p>
                           </div>
                         </div>
@@ -273,7 +273,7 @@ export default function CoursePage() {
                             <Icon name="microphone-lines" className="text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <div>
-                            <h4 className="font-bold text-sm text-charcoal-900">Vocal Pacing, Resonance & Gravitas</h4>
+                            <h4 className="font-semibold text-sm text-charcoal-900">Vocal Pacing, Resonance & Gravitas</h4>
                             <p className="text-xs text-gray-600 mt-1 leading-relaxed">Receive private acoustic vocal audits to correct nervous pitch spikes, rush-pacing, and breath dissipation under stress.</p>
                           </div>
                         </div>
@@ -287,10 +287,10 @@ export default function CoursePage() {
                     <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm">
                       <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
                         <div>
-                          <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
+                          <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                             LearnPress LMS Curriculum
                           </span>
-                          <h3 className="text-2xl font-extrabold text-charcoal-900 mt-2">
+                          <h3 className="text-2xl font-bold text-charcoal-900 mt-2">
                             8-Week Masterclass Architecture
                           </h3>
                         </div>
@@ -304,9 +304,9 @@ export default function CoursePage() {
 
                         {/* Module 1 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleLmsModule(1) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-bold text-sm text-charcoal-900 transition">
+                          <button onClick={() => { toggleLmsModule(1) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-semibold text-sm text-charcoal-900 transition">
                             <div className="flex items-center space-x-3">
-                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-extrabold">1</span>
+                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-semibold">1</span>
                               <span>Module 1: Foundations of Executive Voice & Somatic Presence (Weeks 1–2)</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -348,9 +348,9 @@ export default function CoursePage() {
 
                         {/* Module 2 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleLmsModule(2) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-bold text-sm text-charcoal-900 transition">
+                          <button onClick={() => { toggleLmsModule(2) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-semibold text-sm text-charcoal-900 transition">
                             <div className="flex items-center space-x-3">
-                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-extrabold">2</span>
+                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-semibold">2</span>
                               <span>Module 2: Strategic Brevity & Boardroom-Ready Articulation (Weeks 3–4)</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -392,9 +392,9 @@ export default function CoursePage() {
 
                         {/* Module 3 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleLmsModule(3) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-bold text-sm text-charcoal-900 transition">
+                          <button onClick={() => { toggleLmsModule(3) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-semibold text-sm text-charcoal-900 transition">
                             <div className="flex items-center space-x-3">
-                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-extrabold">3</span>
+                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-semibold">3</span>
                               <span>Module 3: Cross-Cultural Negotiation & Diplomatic Nuance (Weeks 5–6)</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -436,9 +436,9 @@ export default function CoursePage() {
 
                         {/* Module 4 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleLmsModule(4) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-bold text-sm text-charcoal-900 transition">
+                          <button onClick={() => { toggleLmsModule(4) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-semibold text-sm text-charcoal-900 transition">
                             <div className="flex items-center space-x-3">
-                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-extrabold">4</span>
+                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-semibold">4</span>
                               <span>Module 4: Capstone Boardroom Simulation & 1:1 Vocal Audit (Weeks 7–8)</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -489,10 +489,10 @@ export default function CoursePage() {
                         <div className="md:col-span-4">
                           <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border-2 border-slate-100 bg-gradient-to-br from-[#FAFAFA] via-[#FAFAFA] to-[#F2F2F2] p-5 flex flex-col justify-between relative">
                             <div className="flex items-center justify-between">
-                              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-white/90 px-2.5 py-1 rounded-full border border-emerald-200">
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500 bg-white/90 px-2.5 py-1 rounded-full border border-emerald-200">
                                 Lead Coach
                               </span>
-                              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs">
+                              <div className="w-6 h-6 rounded-full bg-emerald-100 text-gray-600 flex items-center justify-center text-xs">
                                 <Icon name="seedling" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                               </div>
                             </div>
@@ -503,7 +503,7 @@ export default function CoursePage() {
                             </div>
 
                             <div className="bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-gray-100 shadow-xs text-center">
-                              <div className="text-xs font-bold text-gray-900">Sonia Ali, MA</div>
+                              <div className="text-xs font-semibold text-gray-900">Sonia Ali, MA</div>
                               <div className="text-[11px] text-emerald-700 font-semibold">EMCC Senior Coach</div>
                             </div>
                           </div>
@@ -511,18 +511,18 @@ export default function CoursePage() {
 
                         <div className="md:col-span-8 space-y-4">
                           <div className="flex flex-wrap items-center gap-2">
-                            <span className="text-xs font-extrabold uppercase tracking-widest text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full">
+                            <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                               Lead Programme Director
                             </span>
-                            <span className="text-xs font-bold text-gray-500 bg-slate-100 px-2.5 py-1 rounded-full">
+                            <span className="text-xs font-semibold text-gray-500 bg-slate-100 px-2.5 py-1 rounded-full">
                               EMCC Accredited Senior Coach
                             </span>
                           </div>
 
-                          <h3 className="text-2xl font-extrabold text-charcoal-900">
+                          <h3 className="text-2xl font-bold text-charcoal-900">
                             Sonia Ali
                           </h3>
-                          <p className="text-xs font-bold text-brand-600 uppercase tracking-wider">
+                          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                             Founder, Start SAH • Executive Speech & Organisational Psychologist
                           </p>
 
@@ -542,11 +542,11 @@ export default function CoursePage() {
                                   <Icon name="play" className="text-xs ml-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 </div>
                                 <div>
-                                  <div className="text-xs font-bold text-charcoal-900">Watch: Sonia Introduces the Course Methodology</div>
+                                  <div className="text-xs font-semibold text-charcoal-900">Watch: Sonia Introduces the Course Methodology</div>
                                   <div className="text-[11px] text-gray-500">3-Minute Video Breakdown of Learning Labs</div>
                                 </div>
                               </div>
-                              <button onClick={() => { openModal('English for Professional Success') }} className="text-xs font-bold text-brand-600 hover:text-brand-700 cursor-pointer">
+                              <button onClick={() => { openModal('English for Professional Success') }} className="text-xs font-semibold text-brand-600 hover:text-brand-700 cursor-pointer">
                                 Watch Preview
                               </button>
                             </div>
@@ -561,25 +561,25 @@ export default function CoursePage() {
 
                     {/* Verified Alumni Reviews */}
                     <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm">
-                      <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
+                      <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                         Verified Executive Transformations
                       </span>
-                      <h3 className="text-2xl font-extrabold text-charcoal-900 mt-2 mb-6">
+                      <h3 className="text-2xl font-bold text-charcoal-900 mt-2 mb-6">
                         Hear From Previous Cohort Participants
                       </h3>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                           <div>
-                            <div className="text-emerald-600 text-xs mb-2">★★★★★ 5.0</div>
+                            <div className="text-gray-600 text-xs mb-2">★★★★★ 5.0</div>
                             <p className="text-xs text-gray-700 italic leading-relaxed mb-4">
                               "Before this course, I dreaded board meetings in London because English was my second language. Sonia's acoustic feedback and the SCQA method completely changed how I command attention. I was promoted to Regional Managing Director 3 months after graduation."
                             </p>
                           </div>
                           <div className="flex items-center space-x-3 pt-3 border-t border-slate-200">
-                            <div className="w-9 h-9 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 font-bold text-xs flex items-center justify-center">ER</div>
+                            <div className="w-9 h-9 rounded-full bg-emerald-100 border border-emerald-300 text-gray-600 font-semibold text-xs flex items-center justify-center">ER</div>
                             <div>
-                              <div className="text-xs font-bold text-charcoal-900">Elena Rostova</div>
+                              <div className="text-xs font-semibold text-charcoal-900">Elena Rostova</div>
                               <div className="text-[11px] text-gray-500">Managing Director, Global FinTech</div>
                             </div>
                           </div>
@@ -587,15 +587,15 @@ export default function CoursePage() {
 
                         <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                           <div>
-                            <div className="text-emerald-600 text-xs mb-2">★★★★★ 5.0</div>
+                            <div className="text-gray-600 text-xs mb-2">★★★★★ 5.0</div>
                             <p className="text-xs text-gray-700 italic leading-relaxed mb-4">
                               "The small cohort size (12 people) makes all the difference. You cannot hide—you are in the hot seat every single lab. Sonia's direct, compassionate feedback is the highest-ROI executive coaching I have ever received."
                             </p>
                           </div>
                           <div className="flex items-center space-x-3 pt-3 border-t border-slate-200">
-                            <div className="w-9 h-9 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 font-bold text-xs flex items-center justify-center">KM</div>
+                            <div className="w-9 h-9 rounded-full bg-emerald-100 border border-emerald-300 text-gray-600 font-semibold text-xs flex items-center justify-center">KM</div>
                             <div>
-                              <div className="text-xs font-bold text-charcoal-900">Karim Mansour</div>
+                              <div className="text-xs font-semibold text-charcoal-900">Karim Mansour</div>
                               <div className="text-[11px] text-gray-500">VP Operations, Supply Chain Logistics</div>
                             </div>
                           </div>
@@ -605,17 +605,17 @@ export default function CoursePage() {
 
                     {/* Interactive Accordion FAQs */}
                     <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm">
-                      <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
+                      <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                         Frequently Asked Questions
                       </span>
-                      <h3 className="text-2xl font-extrabold text-charcoal-900 mt-2 mb-6">
+                      <h3 className="text-2xl font-bold text-charcoal-900 mt-2 mb-6">
                         Everything You Need to Know
                       </h3>
 
                       <div className="space-y-3">
                         {/* FAQ 1 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleFaq(1) }} className="w-full p-4 text-left font-bold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
+                          <button onClick={() => { toggleFaq(1) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>What is the weekly time commitment required?</span>
                             <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
@@ -626,7 +626,7 @@ export default function CoursePage() {
 
                         {/* FAQ 2 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleFaq(2) }} className="w-full p-4 text-left font-bold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
+                          <button onClick={() => { toggleFaq(2) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>What if I cannot attend a live laboratory due to business travel?</span>
                             <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
@@ -637,7 +637,7 @@ export default function CoursePage() {
 
                         {/* FAQ 3 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleFaq(3) }} className="w-full p-4 text-left font-bold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
+                          <button onClick={() => { toggleFaq(3) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>How do the 1-on-1 sessions with Sonia Ali work?</span>
                             <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
@@ -648,7 +648,7 @@ export default function CoursePage() {
 
                         {/* FAQ 4 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleFaq(4) }} className="w-full p-4 text-left font-bold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
+                          <button onClick={() => { toggleFaq(4) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>Can my organization sponsor or pay via corporate invoice?</span>
                             <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
@@ -659,7 +659,7 @@ export default function CoursePage() {
 
                         {/* FAQ 5 */}
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
-                          <button onClick={() => { toggleFaq(5) }} className="w-full p-4 text-left font-bold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
+                          <button onClick={() => { toggleFaq(5) }} className="w-full p-4 text-left font-semibold text-xs sm:text-sm text-charcoal-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition">
                             <span>Will I receive an accredited certification upon completion?</span>
                             <Icon name="chevron-down" className="text-xs text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </button>
@@ -685,39 +685,39 @@ export default function CoursePage() {
 
                       {/* Status & Availability Badge */}
                       <div className="flex items-center justify-between mb-4">
-                        <span className="text-[11px] font-extrabold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200 px-3 py-1 rounded-full">
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-gray-500 bg-brand-50 border border-brand-200 px-3 py-1 rounded-full">
                           Cohort 14 • Enrolment Open
                         </span>
-                        <span className="text-xs text-emerald-600 font-bold flex items-center">
+                        <span className="text-xs text-gray-600 font-semibold flex items-center">
                           <Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0
                         </span>
                       </div>
 
                       <div className="mb-5">
                         <div className="text-xs text-gray-400 font-medium">Cohort Availability</div>
-                        <div className="text-xl font-extrabold text-charcoal-900 mt-0.5">
+                        <div className="text-xl font-bold text-charcoal-900 mt-0.5">
                           Only 4 Seats Left
                         </div>
-                        <div className="text-xs text-brand-600 font-semibold mt-1">
+                        <div className="text-xs text-gray-600 font-semibold mt-1">
                           <Icon name="calendar-check" className="mr-1.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Starts Monday, October 14, 2026
                         </div>
                       </div>
 
                       {/* Action Buttons */}
                       <div className="space-y-3 mb-6">
-                        <button onClick={() => { openModal('English for Professional Success') }} className="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition duration-200 text-sm flex items-center justify-center cursor-pointer">
+                        <button onClick={() => { openModal('English for Professional Success') }} className="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition duration-200 text-sm flex items-center justify-center cursor-pointer">
                           <span>Apply / Enrol in Cohort</span>
                           <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </button>
 
-                        <button onClick={() => { openModal('Corporate Invoice: English for Professional Success') }} className="w-full bg-slate-100 hover:bg-slate-200 text-charcoal-900 font-bold py-3 px-6 rounded-xl transition duration-200 text-xs text-center cursor-pointer">
+                        <button onClick={() => { openModal('Corporate Invoice: English for Professional Success') }} className="w-full bg-slate-100 hover:bg-slate-200 text-charcoal-900 font-semibold py-3 px-6 rounded-xl transition duration-200 text-xs text-center cursor-pointer">
                           Request Corporate Invoice & Quote
                         </button>
                       </div>
 
                       {/* Course Highlights Checklist */}
                       <div className="border-t border-gray-100 pt-5">
-                        <h4 className="text-xs font-extrabold text-charcoal-900 uppercase tracking-wider mb-3.5">
+                        <h4 className="text-xs font-semibold text-charcoal-900 uppercase tracking-wider mb-3.5">
                           What This Accelerator Includes:
                         </h4>
                         <ul className="space-y-2.5 text-xs text-gray-600 font-medium">
@@ -746,10 +746,10 @@ export default function CoursePage() {
                     </div>
 
                     {/* Need Assistance Callout Card */}
-                    <div className="bg-charcoal-900 rounded-2xl p-5 text-white text-xs border border-charcoal-800">
+                    <div className="bg-emerald-50/60 rounded-2xl p-5 text-gray-700 text-xs border border-emerald-100">
                       <div className="flex items-center space-x-3 mb-2">
                         <Icon name="headset" className="text-brand-400 text-base inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
-                        <span className="font-bold text-sm">Need Corporate Guidance?</span>
+                        <span className="font-semibold text-sm">Need Corporate Guidance?</span>
                       </div>
                       <p className="text-gray-400 mb-3 leading-relaxed">
                         Have questions about aligning this cohort with your corporate L&D framework?

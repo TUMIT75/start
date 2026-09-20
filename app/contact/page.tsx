@@ -25,10 +25,10 @@ export default function ContactPage() {
 
                 {/* Contact Info (5 cols) */}
                 <div className="lg:col-span-5 space-y-6">
-                  <div className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60">
+                  <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60">
                     Get in Touch
                   </div>
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight">
                     Connect with Start SAH.
                   </h1>
                   <p className="text-base text-gray-600 leading-relaxed">
@@ -37,41 +37,41 @@ export default function ContactPage() {
 
                   <div className="space-y-4 pt-4 text-xs sm:text-sm text-gray-600">
                     <div className="flex items-start space-x-3.5 p-4 rounded-xl border border-gray-200/80 bg-slate-50/50">
-                      <div className="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 text-sm">
+                      <div className="w-9 h-9 rounded-lg bg-emerald-50 text-gray-600 flex items-center justify-center shrink-0 text-sm">
                         <Icon name="location-dot" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
                       <div>
-                        <strong className="text-gray-900 block text-xs uppercase tracking-wider font-bold">London Headquarters</strong>
+                        <strong className="text-gray-900 block text-xs uppercase tracking-wider font-semibold">London Headquarters</strong>
                         <span className="text-gray-600 text-xs">Berkeley Square, Mayfair, London W1J 6BD, UK</span>
                       </div>
                     </div>
 
                     <div className="flex items-start space-x-3.5 p-4 rounded-xl border border-gray-200/80 bg-slate-50/50">
-                      <div className="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 text-sm">
+                      <div className="w-9 h-9 rounded-lg bg-emerald-50 text-gray-600 flex items-center justify-center shrink-0 text-sm">
                         <Icon name="globe" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
                       <div>
-                        <strong className="text-gray-900 block text-xs uppercase tracking-wider font-bold">Global Delivery</strong>
+                        <strong className="text-gray-900 block text-xs uppercase tracking-wider font-semibold">Global Delivery</strong>
                         <span className="text-gray-600 text-xs">Virtual delivery across UK, Europe, GCC, and North American timezones</span>
                       </div>
                     </div>
 
                     <div className="flex items-start space-x-3.5 p-4 rounded-xl border border-gray-200/80 bg-slate-50/50">
-                      <div className="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 text-sm">
+                      <div className="w-9 h-9 rounded-lg bg-emerald-50 text-gray-600 flex items-center justify-center shrink-0 text-sm">
                         <Icon name="envelope" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
                       <div>
-                        <strong className="text-gray-900 block text-xs uppercase tracking-wider font-bold">Executive Inquiries</strong>
+                        <strong className="text-gray-900 block text-xs uppercase tracking-wider font-semibold">Executive Inquiries</strong>
                         <span className="text-gray-600 text-xs">contact@startsah.com</span>
                       </div>
                     </div>
 
                     <div className="flex items-start space-x-3.5 p-4 rounded-xl border border-gray-200/80 bg-slate-50/50">
-                      <div className="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 text-sm">
+                      <div className="w-9 h-9 rounded-lg bg-emerald-50 text-gray-600 flex items-center justify-center shrink-0 text-sm">
                         <Icon name="phone" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
                       <div>
-                        <strong className="text-gray-900 block text-xs uppercase tracking-wider font-bold">Advisory Desk</strong>
+                        <strong className="text-gray-900 block text-xs uppercase tracking-wider font-semibold">Advisory Desk</strong>
                         <span className="text-gray-600 text-xs">+44 (0) 20 7946 0912 (Mon - Fri, 08:30 - 18:00 GMT)</span>
                       </div>
                     </div>

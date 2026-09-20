@@ -1,18 +1,18 @@
-import type { MetadataRoute } from 'next';
+﻿import type { MetadataRoute } from 'next';
 
 const BASE = 'https://start-two-nu.vercel.app';
 
 const ROUTES = [
   '',
   '/about',
-  '/programmes',
-  '/programmes/english-for-professional-success',
   '/coaching',
-  '/organisational-development',
-  '/start-your-development',
+  '/courses',
+  '/courses/english-for-professional-success',
+  '/for-organisations',
   '/resources',
   '/contact',
   '/insights',
+  '/start-your-development',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

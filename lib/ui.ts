@@ -25,10 +25,10 @@ export function setNavigator(fn: (href: string) => void) {
 export const ROUTES: Record<string, string> = {
   "homepage": "/",
   "about": "/about",
-  "programmes": "/programmes",
-  "course": "/programmes/english-for-professional-success",
+  "programmes": "/courses",
+  "course": "/courses/english-for-professional-success",
   "coaching": "/coaching",
-  "organisational": "/organisational-development",
+  "organisational": "/for-organisations",
   "development": "/start-your-development",
   "resources": "/resources",
   "contact": "/contact",
@@ -957,14 +957,16 @@ export function playReplayVideo(title: any) {
 const NAV_FOR_PATH: Array<[RegExp, string]> = [
   [/^\/about/, 'nav-about'],
   [/^\/coaching/, 'nav-coaching'],
-  [/^\/organisational-development/, 'nav-organisational'],
-  [/^\/insights/, 'nav-podcast'],
+  [/^\/courses/, 'nav-courses'],
+  [/^\/for-organisations/, 'nav-organisations'],
+  [/^\/resources/, 'nav-resources'],
   [/^\/contact/, 'nav-contact'],
-  [/^\/dashboard/, 'loginLink'],
   [/^\/$/, 'nav-home'],
 ];
 
-const ACTIVE = ['text-brand-600', 'font-bold', 'bg-brand-50', 'rounded-full'];
+/* The mock-up marks the current page with green text over a short rule, not a
+   filled pill. */
+const ACTIVE = ['text-emerald-700', 'font-semibold', 'border-b-2', 'border-emerald-600'];
 
 /** Mirrors the old switcher's highlighting, driven by the URL instead. */
 export function setActiveNav(pathname: string) {

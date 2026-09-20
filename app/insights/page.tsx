@@ -23,10 +23,10 @@ export default function InsightsPage() {
           {/* Editorial Header with Generous Whitespace */}
           <section className="py-16 sm:py-24 bg-white border-b border-gray-100">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <span className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60 mb-5">
+              <span className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60 mb-5">
                 Evidence-Based Insights & Podcasts
               </span>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-tight">
                 Communicate with <span className="text-emerald-600">Authority.</span>
               </h1>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mt-4 mb-8">
@@ -35,22 +35,22 @@ export default function InsightsPage() {
 
               {/* Topic Filter Pills */}
               <div className="flex flex-wrap items-center justify-center gap-2 pt-2" id="insightsFilterBar">
-                <button onClick={() => { filterInsightsCategory('all') }} id="filter-all" className="insight-pill px-4 py-2 rounded-full text-xs font-bold transition bg-emerald-600 text-white cursor-pointer shadow-sm">
+                <button onClick={() => { filterInsightsCategory('all') }} id="filter-all" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-emerald-600 text-white cursor-pointer shadow-sm">
                   All Insights
                 </button>
-                <button onClick={() => { filterInsightsCategory('research') }} id="filter-research" className="insight-pill px-4 py-2 rounded-full text-xs font-bold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
+                <button onClick={() => { filterInsightsCategory('research') }} id="filter-research" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
                   Original Research
                 </button>
-                <button onClick={() => { filterInsightsCategory('presence') }} id="filter-presence" className="insight-pill px-4 py-2 rounded-full text-xs font-bold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
+                <button onClick={() => { filterInsightsCategory('presence') }} id="filter-presence" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
                   Executive Presence
                 </button>
-                <button onClick={() => { filterInsightsCategory('communication') }} id="filter-communication" className="insight-pill px-4 py-2 rounded-full text-xs font-bold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
+                <button onClick={() => { filterInsightsCategory('communication') }} id="filter-communication" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
                   Communication Skills
                 </button>
-                <button onClick={() => { filterInsightsCategory('career') }} id="filter-career" className="insight-pill px-4 py-2 rounded-full text-xs font-bold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
+                <button onClick={() => { filterInsightsCategory('career') }} id="filter-career" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
                   Career Strategy
                 </button>
-                <button onClick={() => { filterInsightsCategory('podcast') }} id="filter-podcast" className="insight-pill px-4 py-2 rounded-full text-xs font-bold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
+                <button onClick={() => { filterInsightsCategory('podcast') }} id="filter-podcast" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
                   Podcast Episodes
                 </button>
               </div>
@@ -61,7 +61,7 @@ export default function InsightsPage() {
           <div className="py-6 bg-slate-50/50 border-b border-gray-150">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <p className="text-[11px] uppercase tracking-widest text-gray-400 font-semibold text-center mb-4">Research Cited Across Global Publications & Advisory Boards</p>
-              <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14 text-gray-400 font-bold text-xs sm:text-sm tracking-wider">
+              <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14 text-gray-400 font-semibold text-xs sm:text-sm tracking-wider">
                 <span className="hover:text-gray-800 transition">BBC NEWS</span>
                 <span className="hover:text-gray-800 transition">FINANCIAL TIMES</span>
                 <span className="hover:text-gray-800 transition">THE TIMES</span>
@@ -76,27 +76,27 @@ export default function InsightsPage() {
           <section className="py-16 sm:py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center max-w-2xl mx-auto mb-12">
-                <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">Quantifiable Outcomes</span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight mt-3">The Science Behind Relational Gravitas</h2>
+                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3 py-1 rounded-full">Quantifiable Outcomes</span>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight mt-3">The Science Behind Relational Gravitas</h2>
                 <p className="text-sm text-gray-500 mt-2">Executive presence is not an innate mystery. It is a measurable communication science.</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-slate-50/50 p-8 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200">
-                  <div className="text-4xl font-extrabold text-emerald-600 mb-3 tracking-tight">2.4×</div>
+                  <div className="text-4xl font-bold text-emerald-600 mb-3 tracking-tight">2.4×</div>
                   <h3 className="text-base font-bold text-gray-900 mb-2">Career Velocity</h3>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     Professionals combining technical skill with vocal gravitas and diplomatic agility advance 2.4× faster to director appointments.
                   </p>
                 </div>
                 <div className="bg-slate-50/50 p-8 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200">
-                  <div className="text-4xl font-extrabold text-emerald-600 mb-3 tracking-tight">34%</div>
+                  <div className="text-4xl font-bold text-emerald-600 mb-3 tracking-tight">34%</div>
                   <h3 className="text-base font-bold text-gray-900 mb-2">Boardroom Retention</h3>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     Stakeholders retain 34% more key proposal metrics when presenters employ deliberate pauses and controlled pacing.
                   </p>
                 </div>
                 <div className="bg-slate-50/50 p-8 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200">
-                  <div className="text-4xl font-extrabold text-emerald-600 mb-3 tracking-tight">50%</div>
+                  <div className="text-4xl font-bold text-emerald-600 mb-3 tracking-tight">50%</div>
                   <h3 className="text-base font-bold text-gray-900 mb-2">Conflict Reduction</h3>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     Leaders trained in diplomatic linguistic framing resolve cross-functional deadlocks in half the time without relational tension.
@@ -112,10 +112,10 @@ export default function InsightsPage() {
 
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
                 <div>
-                  <span className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
+                  <span className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3 py-1 rounded-full">
                     The Start SAH Executive Podcast
                   </span>
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2 tracking-tight">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2 tracking-tight">
                     Listen & Calibrate: Audio Masterclasses
                   </h2>
                   <p className="text-xs sm:text-sm text-gray-500 mt-1 max-w-xl">
@@ -210,7 +210,7 @@ export default function InsightsPage() {
               {/* Recent Keynote & Media Appearances */}
               <div className="mt-12">
                 <div className="mb-6">
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight">Recent Keynote & Media Appearances</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">Recent Keynote & Media Appearances</h3>
                   <p className="text-xs sm:text-sm text-gray-500 mt-1">Interviews, guest panels, and recorded workshops with Sonia Ali.</p>
                 </div>
 
@@ -218,43 +218,43 @@ export default function InsightsPage() {
 
                   {/* Appearance 1 */}
                   <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
-                    <div className="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
+                    <div className="aspect-video band-off rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
                       <Illustration src="/illustrations/17-insights-analysis.svg" alt="Illustration: a presenter talking a seated group through charts" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('On Purpose with Jay Shetty', 'Unlocking Quiet Executive Presence Under Pressure') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
                       <span className="absolute bottom-2.5 right-2.5 bg-black/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">42:18</span>
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700">On Purpose Media</span>
-                    <h4 className="font-bold text-sm text-gray-900 mt-1 group-hover:text-emerald-600 transition">Unlocking Quiet Executive Presence Under Pressure</h4>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500">On Purpose Media</span>
+                    <h4 className="font-semibold text-sm text-gray-900 mt-1 group-hover:text-emerald-600 transition">Unlocking Quiet Executive Presence Under Pressure</h4>
                     <p className="text-xs text-gray-500 mt-1.5 line-clamp-2">How analytical leaders lead the room with calm conviction rather than volume.</p>
                   </div>
 
                   {/* Appearance 2 */}
                   <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
-                    <div className="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
+                    <div className="aspect-video band-off rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
                       <Illustration src="/illustrations/04-training-delivery.svg" alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('The Diary of a CEO Masterclass', 'The Science of Non-Verbal Gravitas & Executive Presence') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
                       <span className="absolute bottom-2.5 right-2.5 bg-black/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">55:40</span>
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700">Executive Masterclass</span>
-                    <h4 className="font-bold text-sm text-gray-900 mt-1 group-hover:text-emerald-600 transition">The Science of Non-Verbal Gravitas & Executive Presence</h4>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500">Executive Masterclass</span>
+                    <h4 className="font-semibold text-sm text-gray-900 mt-1 group-hover:text-emerald-600 transition">The Science of Non-Verbal Gravitas & Executive Presence</h4>
                     <p className="text-xs text-gray-500 mt-1.5 line-clamp-2">The micro-behaviours that signal authority in the first 7 seconds of any senior meeting.</p>
                   </div>
 
                   {/* Appearance 3 */}
                   <div className="bg-white rounded-2xl p-5 border border-gray-200 hover:border-emerald-500 transition duration-200 shadow-xs group">
-                    <div className="on-ink aspect-video bg-charcoal-800 rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
+                    <div className="aspect-video band-off rounded-xl mb-4 relative overflow-hidden ill-stage ill-stage--bare p-4">
                       <Illustration src="/illustrations/08-learning.svg" alt="Illustration: a learner working on a laptop on a stack of books beneath a graduation cap" className="ill w-full h-auto object-contain group-hover:scale-105 transition duration-500" />
                       <button onClick={() => { playAppearanceVideo('BBC World Service Business', 'Breaking the Non-Native English Ceiling') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
                       <span className="absolute bottom-2.5 right-2.5 bg-black/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">28:10</span>
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700">BBC Radio 4 Business</span>
-                    <h4 className="font-bold text-sm text-gray-900 mt-1 group-hover:text-emerald-600 transition">Breaking the Non-Native English Ceiling in Global Boardrooms</h4>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500">BBC Radio 4 Business</span>
+                    <h4 className="font-semibold text-sm text-gray-900 mt-1 group-hover:text-emerald-600 transition">Breaking the Non-Native English Ceiling in Global Boardrooms</h4>
                     <p className="text-xs text-gray-500 mt-1.5 line-clamp-2">Why linguistic simplicity and precise pacing build higher trust than complex idioms.</p>
                   </div>
 
@@ -269,11 +269,11 @@ export default function InsightsPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10">
                 <div>
-                  <span className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full mb-2">Editorial Desk</span>
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">Latest Articles & Research Guides</h2>
+                  <span className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3 py-1 rounded-full mb-2">Editorial Desk</span>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Latest Articles & Research Guides</h2>
                   <p className="text-xs sm:text-sm text-gray-500 mt-1">Concise frameworks to sharpen your boardroom communication toolkit.</p>
                 </div>
-                <span className="text-xs text-emerald-600 font-bold mt-2 sm:mt-0">6 Peer-Reviewed Guides</span>
+                <span className="text-xs text-gray-600 font-semibold mt-2 sm:mt-0">6 Peer-Reviewed Guides</span>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="insightsGrid">
@@ -282,7 +282,7 @@ export default function InsightsPage() {
                 <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="research">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">
+                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
                         ORIGINAL RESEARCH
                       </span>
                       <span className="text-xs text-gray-400 font-medium">7 min read</span>
@@ -299,7 +299,7 @@ export default function InsightsPage() {
                       <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[10px] font-bold">SA</div>
                       <span className="text-xs text-gray-500 font-medium">Sonia Ali</span>
                     </div>
-                    <button onClick={() => { openArticleReader(0) }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { openArticleReader(0) }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Read Article</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -327,7 +327,7 @@ export default function InsightsPage() {
                       <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[10px] font-bold">SA</div>
                       <span className="text-xs text-gray-500 font-medium">Sonia Ali</span>
                     </div>
-                    <button onClick={() => { openArticleReader(1) }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { openArticleReader(1) }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Read Article</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -338,7 +338,7 @@ export default function InsightsPage() {
                 <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="presence">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">
+                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
                         EXECUTIVE PRESENCE
                       </span>
                       <span className="text-xs text-gray-400 font-medium">11 min read</span>
@@ -355,7 +355,7 @@ export default function InsightsPage() {
                       <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[10px] font-bold">SA</div>
                       <span className="text-xs text-gray-500 font-medium">Faculty Desk</span>
                     </div>
-                    <button onClick={() => { openArticleReader(2) }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { openArticleReader(2) }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Read Article</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -366,7 +366,7 @@ export default function InsightsPage() {
                 <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="career">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800">
+                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
                         CAREER STRATEGY
                       </span>
                       <span className="text-xs text-gray-400 font-medium">8 min read</span>
@@ -383,7 +383,7 @@ export default function InsightsPage() {
                       <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[10px] font-bold">SA</div>
                       <span className="text-xs text-gray-500 font-medium">Sonia Ali</span>
                     </div>
-                    <button onClick={() => { openArticleReader(3) }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { openArticleReader(3) }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Read Article</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -394,7 +394,7 @@ export default function InsightsPage() {
                 <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="career">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800">
+                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
                         CAREER STRATEGY
                       </span>
                       <span className="text-xs text-gray-400 font-medium">10 min read</span>
@@ -411,7 +411,7 @@ export default function InsightsPage() {
                       <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[10px] font-bold">SA</div>
                       <span className="text-xs text-gray-500 font-medium">Advisory Desk</span>
                     </div>
-                    <button onClick={() => { openArticleReader(4) }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { openArticleReader(4) }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Read Article</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -422,7 +422,7 @@ export default function InsightsPage() {
                 <div className="insight-card group bg-white border border-gray-200 hover:border-emerald-500 rounded-2xl p-7 flex flex-col justify-between transition-all duration-200 shadow-xs hover:shadow-md" data-category="presence">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">
+                      <span className="text-[11px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500">
                         EXECUTIVE PRESENCE
                       </span>
                       <span className="text-xs text-gray-400 font-medium">6 min read</span>
@@ -439,7 +439,7 @@ export default function InsightsPage() {
                       <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[10px] font-bold">SA</div>
                       <span className="text-xs text-gray-500 font-medium">Sonia Ali</span>
                     </div>
-                    <button onClick={() => { openArticleReader(5) }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { openArticleReader(5) }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Read Article</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -453,8 +453,8 @@ export default function InsightsPage() {
           {/* Executive Newsletter Signup Banner with Airy Spacing */}
           <section className="py-16 sm:py-20 bg-slate-50/50 border-t border-gray-200">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <span className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full mb-3">Weekly Memorandum</span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900">Join 18,000+ Leaders Receiving Weekly Insights</h3>
+              <span className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3 py-1 rounded-full mb-3">Weekly Memorandum</span>
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">Join 18,000+ Leaders Receiving Weekly Insights</h3>
               <p className="text-xs sm:text-sm text-gray-600 max-w-lg mx-auto mt-2 mb-6 leading-relaxed">
                 Every Sunday morning, Sonia Ali shares one actionable communication tactic and one research breakdown. Direct and concise.
               </p>

@@ -15,26 +15,26 @@ export default function Overlays() {
             </button>
 
             <div className="text-left mb-6">
-              <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full">
+              <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                 Get Started
               </span>
-              <h3 className="text-2xl font-extrabold text-charcoal-900 mt-2">Book Your Discovery Call</h3>
+              <h3 className="text-2xl font-bold text-charcoal-900 mt-2">Book Your Discovery Call</h3>
               <p className="text-xs text-gray-600 mt-1">Speak directly with our team to explore your coaching or organisational needs.</p>
             </div>
 
             <form id="discoveryForm" onSubmit={(event) => { handleDiscoverySubmit(event) }} className="space-y-4 text-left">
               <div>
-                <label className="block text-xs font-bold text-charcoal-900 mb-1">Full Name *</label>
+                <label className="block text-xs font-semibold text-charcoal-900 mb-1">Full Name *</label>
                 <input type="text" required placeholder="e.g. Alex Morgan" className="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-charcoal-900 mb-1">Email Address *</label>
+                <label className="block text-xs font-semibold text-charcoal-900 mb-1">Email Address *</label>
                 <input type="email" required placeholder="alex@company.com" className="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-charcoal-900 mb-1">Area of Focus *</label>
+                <label className="block text-xs font-semibold text-charcoal-900 mb-1">Area of Focus *</label>
                 <select id="modalFocusSelect" className="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none bg-white">
                   <option value="Individual Executive Coaching">Individual Executive Coaching</option>
                   <option value="English for Professional Success">English for Professional Success</option>
@@ -44,11 +44,11 @@ export default function Overlays() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-charcoal-900 mb-1">How can we help? (Optional)</label>
+                <label className="block text-xs font-semibold text-charcoal-900 mb-1">How can we help? (Optional)</label>
                 <textarea rows={3} placeholder="Tell us about your current challenge or goals..." className="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none"></textarea>
               </div>
 
-              <button type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-3.5 rounded-xl shadow transition duration-200 text-sm">
+              <button type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3.5 rounded-xl shadow transition duration-200 text-sm">
                 Confirm & Schedule Discovery
               </button>
             </form>
@@ -59,7 +59,7 @@ export default function Overlays() {
               </div>
               <h4 className="text-lg font-bold text-charcoal-900">Thank You!</h4>
               <p className="text-xs text-gray-600 mt-1">We have received your discovery request. Sonia Ali or our senior advisor will contact you within 24 hours.</p>
-              <button onClick={() => { closeModal() }} className="mt-4 px-5 py-2 bg-charcoal-900 text-white rounded-lg text-xs font-bold">Close</button>
+              <button onClick={() => { closeModal() }} className="mt-4 px-5 py-2 bg-charcoal-900 text-white rounded-lg text-xs font-semibold">Close</button>
             </div>
 
           </div>
@@ -73,16 +73,16 @@ export default function Overlays() {
             </button>
 
             <div className="flex items-center space-x-2.5 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-brand-500 text-white flex items-center justify-center font-extrabold text-sm">
+              <div className="w-8 h-8 rounded-lg bg-brand-500 text-white flex items-center justify-center font-semibold text-sm">
                 S
               </div>
               <div>
-                <span className="font-extrabold text-sm text-charcoal-900 tracking-tight">START SAH</span>
+                <span className="font-semibold text-sm text-charcoal-900 tracking-tight">START SAH</span>
                 <span className="block text-[10px] text-gray-500 -mt-0.5">LearnPress LMS Portal</span>
               </div>
             </div>
 
-            <h3 className="text-xl font-extrabold text-charcoal-900 mb-1">
+            <h3 className="text-xl font-bold text-charcoal-900 mb-1">
               Sign in to My Learning
             </h3>
             <p className="text-xs text-gray-500 mb-6">
@@ -91,13 +91,13 @@ export default function Overlays() {
 
             <form id="lmsLoginForm" onSubmit={(event) => { handleLoginSubmit(event) }} className="space-y-4">
               <div>
-                <label className="block text-xs font-bold text-gray-700 mb-1">Work or Learner Email</label>
+                <label className="block text-xs font-semibold text-gray-700 mb-1">Work or Learner Email</label>
                 <input type="email" required placeholder="executive@company.com" className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-500 text-sm outline-none" id="loginEmail" value="executive@client.com" />
               </div>
 
               <div>
                 <div className="flex justify-between items-center mb-1">
-                  <label className="block text-xs font-bold text-gray-700">Password</label>
+                  <label className="block text-xs font-semibold text-gray-700">Password</label>
                   <a className="text-[11px] text-brand-600 hover:underline">Forgot password?</a>
                 </div>
                 <input type="password" required placeholder="••••••••" className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-500 text-sm outline-none" id="loginPassword" value="password123" />
@@ -111,7 +111,7 @@ export default function Overlays() {
                 <span className="text-gray-400">SSL 256-bit</span>
               </div>
 
-              <button type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-3.5 rounded-xl shadow transition duration-200 text-sm flex items-center justify-center cursor-pointer" id="loginSubmitBtn">
+              <button type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3.5 rounded-xl shadow transition duration-200 text-sm flex items-center justify-center cursor-pointer" id="loginSubmitBtn">
                 <span>Log In to Dashboard</span>
                 <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
               </button>
@@ -123,7 +123,7 @@ export default function Overlays() {
               </div>
               <h4 className="font-bold text-base text-charcoal-900">Welcome Back, Sarah!</h4>
               <p className="text-xs text-gray-500 mt-1 mb-4">Redirecting to your Eduma Student LMS Dashboard...</p>
-              <button onClick={() => { closeLoginModal(); navigateTo('dashboard') }} className="w-full bg-charcoal-900 hover:bg-charcoal-800 text-white text-xs font-bold py-2.5 rounded-xl transition">
+              <button onClick={() => { closeLoginModal(); navigateTo('dashboard') }} className="w-full bg-charcoal-900 hover:bg-charcoal-800 text-white text-xs font-semibold py-2.5 rounded-xl transition">
                 Open Student Dashboard Now
               </button>
             </div>
@@ -145,7 +145,7 @@ export default function Overlays() {
             </button>
 
             <div className="flex items-center space-x-3 mb-6">
-              <span id="articleCategoryBadge" className="text-xs font-bold px-3 py-1 bg-brand-50 text-brand-700 rounded-full">Executive Communication</span>
+              <span id="articleCategoryBadge" className="text-xs font-semibold px-3 py-1 bg-brand-50 text-gray-600 rounded-full">Executive Communication</span>
               <span className="text-xs text-gray-400">•</span>
               <span id="articleReadTime" className="text-xs text-gray-500 font-medium"><Icon name="clock" className="mr-1 text-gray-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />6 min read</span>
               <span className="text-xs text-gray-400">•</span>
@@ -158,11 +158,11 @@ export default function Overlays() {
 
             {/* Author Card */}
             <div className="flex items-center space-x-3 pb-6 border-b border-gray-100 mb-8">
-              <div className="w-11 h-11 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm ring-2 ring-brand-100">
+              <div className="w-11 h-11 rounded-full bg-brand-600 text-white font-semibold flex items-center justify-center text-sm ring-2 ring-brand-100">
                 SAH
               </div>
               <div>
-                <div className="text-xs font-bold text-charcoal-900">Dr. Sarah Al-Haddad, PhD</div>
+                <div className="text-xs font-semibold text-charcoal-900">Dr. Sarah Al-Haddad, PhD</div>
                 <div className="text-[11px] text-gray-500">Founder & Principal Executive Coach • Start SAH Ltd London</div>
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function Overlays() {
 
             {/* Key Takeaways Box */}
             <div className="my-8 p-6 bg-brand-50/70 rounded-2xl border border-brand-200/60">
-              <div className="flex items-center space-x-2 text-brand-800 font-bold text-sm mb-3">
+              <div className="flex items-center space-x-2 text-gray-600 font-semibold text-sm mb-3">
                 <Icon name="lightbulb" className="text-brand-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 <span>Executive Takeaways for Immediate Application</span>
               </div>
@@ -193,7 +193,7 @@ export default function Overlays() {
                   <Icon name="linkedin-in" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </button>
               </div>
-              <button onClick={() => { closeArticleReader(); navigateTo('coaching') }} className="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center cursor-pointer">
+              <button onClick={() => { closeArticleReader(); navigateTo('coaching') }} className="text-xs font-semibold text-brand-600 hover:text-brand-700 flex items-center cursor-pointer">
                 <span>Explore 1:1 Executive Coaching on this topic</span>
                 <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
               </button>
@@ -238,8 +238,8 @@ export default function Overlays() {
             </button>
 
             <div className="flex items-center space-x-3 mb-4">
-              <span className="text-xs font-bold px-3 py-1 bg-brand-50 text-brand-700 rounded-full">Diagnostic Report</span>
-              <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full"><Icon name="check-circle" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Score: 94 / 100</span>
+              <span className="text-xs font-semibold px-3 py-1 bg-brand-50 text-gray-600 rounded-full">Diagnostic Report</span>
+              <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full"><Icon name="check-circle" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Score: 94 / 100</span>
             </div>
 
             <h3 className="font-serif text-2xl font-bold text-charcoal-900 mb-2">Executive Speech & Clarity Diagnostic</h3>
@@ -281,10 +281,10 @@ export default function Overlays() {
 
             <div className="p-4 bg-brand-50/60 rounded-2xl border border-brand-200/60 flex items-center justify-between">
               <div>
-                <div className="text-xs font-bold text-brand-900">Lead Coach Summary</div>
+                <div className="text-xs font-semibold text-gray-600">Lead Coach Summary</div>
                 <div className="text-[11px] text-brand-700">"Ready for C-suite keynote engagements and multinational committee chairs."</div>
               </div>
-              <button onClick={() => { showToast('Diagnostic PDF Exported', 'Full 4-page diagnostic report generated with phonetic spectrogram.') }} className="px-3.5 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-bold transition flex items-center shrink-0 cursor-pointer">
+              <button onClick={() => { showToast('Diagnostic PDF Exported', 'Full 4-page diagnostic report generated with phonetic spectrogram.') }} className="px-3.5 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-semibold transition flex items-center shrink-0 cursor-pointer">
                 <Icon name="file-arrow-down" className="mr-1.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Export Report
               </button>
             </div>
@@ -300,11 +300,11 @@ export default function Overlays() {
 
             <div className="flex items-center justify-between pb-6 border-b border-gray-100 mb-6">
               <div>
-                <div className="font-serif text-xl font-extrabold text-charcoal-900">START <span className="text-brand-500">SAH</span></div>
+                <div className="font-serif text-xl font-bold text-charcoal-900">START <span className="text-brand-500">SAH</span></div>
                 <div className="text-[10px] text-gray-400 uppercase tracking-widest mt-0.5">Start SAH Ltd • London, UK</div>
               </div>
               <div className="text-right">
-                <span className="text-xs font-bold px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-full">PAID IN FULL</span>
+                <span className="text-xs font-semibold px-2.5 py-1 bg-emerald-50 text-gray-600 rounded-full">PAID IN FULL</span>
                 <div className="text-[11px] text-gray-400 mt-1">Invoice #SAH-2026-8841</div>
               </div>
             </div>
@@ -347,7 +347,7 @@ export default function Overlays() {
                   <td className="py-2 text-gray-500">UK Standard VAT (20.0%)</td>
                   <td className="py-2 text-right">£149.17</td>
                 </tr>
-                <tr className="font-bold text-sm text-charcoal-900">
+                <tr className="font-semibold text-sm text-charcoal-900">
                   <td className="py-3">Total Paid (GBP)</td>
                   <td className="py-3 text-right text-brand-600">£895.00</td>
                 </tr>
@@ -355,10 +355,10 @@ export default function Overlays() {
             </table>
 
             <div className="flex items-center justify-between">
-              <button onClick={() => { window.print() }} className="px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-bold text-charcoal-700 hover:bg-gray-50 transition flex items-center cursor-pointer">
+              <button onClick={() => { window.print() }} className="px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-charcoal-700 hover:bg-gray-50 transition flex items-center cursor-pointer">
                 <Icon name="print" className="mr-2 text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Print Receipt
               </button>
-              <button onClick={() => { showToast('Invoice Downloaded', 'Official VAT Tax Invoice PDF downloaded.'); closeVatInvoiceModal() }} className="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs font-bold shadow-sm transition flex items-center cursor-pointer">
+              <button onClick={() => { showToast('Invoice Downloaded', 'Official VAT Tax Invoice PDF downloaded.'); closeVatInvoiceModal() }} className="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs font-semibold shadow-sm transition flex items-center cursor-pointer">
                 <Icon name="file-arrow-down" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Download Official VAT PDF
               </button>
             </div>
@@ -393,7 +393,7 @@ export default function Overlays() {
                   <option>Complete Start SAH Corporate Prospectus 2026/27</option>
                 </select>
               </div>
-              <button type="submit" className="w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow transition text-sm flex items-center justify-center cursor-pointer">
+              <button type="submit" className="w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl shadow transition text-sm flex items-center justify-center cursor-pointer">
                 <Icon name="cloud-arrow-down" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Download Master PDF Now
               </button>
             </form>
@@ -406,7 +406,7 @@ export default function Overlays() {
             <Icon name="circle-check" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
           </div>
           <div className="flex-1 min-w-0">
-            <div id="toastTitle" className="text-xs font-bold text-white">Action Completed</div>
+            <div id="toastTitle" className="text-xs font-semibold text-white">Action Completed</div>
             <div id="toastMsg" className="text-[11px] text-gray-300 truncate">Operation executed successfully.</div>
           </div>
           <button onClick={() => { dismissToast() }} className="text-gray-400 hover:text-white text-xs p-1">

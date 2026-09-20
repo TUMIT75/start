@@ -17,12 +17,12 @@ export default function OrganisationalPage() {
                 <div className="lg:col-span-7 space-y-6 text-left">
                   <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 px-3.5 py-1.5 rounded-full">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-700">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">
                       Workforce & Organisational Capability
                     </span>
                   </div>
 
-                  <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                  <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-tight leading-tight">
                     Developing Your People. <br /><span className="text-emerald-600">Unlocking Team Potential.</span>
                   </h1>
 
@@ -31,11 +31,11 @@ export default function OrganisationalPage() {
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 pt-2">
-                    <a onClick={() => { document.getElementById('b2bLeadSection')?.scrollIntoView({behavior:'smooth'}) }} className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-3.5 rounded-full shadow-xs transition duration-200 text-sm flex items-center cursor-pointer">
+                    <a onClick={() => { document.getElementById('b2bLeadSection')?.scrollIntoView({behavior:'smooth'}) }} className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-7 py-3.5 rounded-full shadow-xs transition duration-200 text-sm flex items-center cursor-pointer">
                       <span>Discuss Your Team's Needs</span>
                       <Icon name="arrow-down" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </a>
-                    <button onClick={() => { downloadCorporateBrochure() }} className="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 font-bold px-6 py-3.5 rounded-full transition duration-200 text-sm flex items-center cursor-pointer shadow-2xs" id="corpBrochureBtn">
+                    <button onClick={() => { downloadCorporateBrochure() }} className="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 font-semibold px-6 py-3.5 rounded-full transition duration-200 text-sm flex items-center cursor-pointer shadow-2xs" id="corpBrochureBtn">
                       <Icon name="file-pdf" className="mr-2 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Download Solutions Guide
                     </button>
                   </div>
@@ -43,15 +43,15 @@ export default function OrganisationalPage() {
                   {/* Enterprise Trust Metrics */}
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-6 border-t border-gray-100">
                     <div>
-                      <div className="text-2xl sm:text-3xl font-extrabold text-emerald-600">94%</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-emerald-600">94%</div>
                       <div className="text-xs text-gray-500 mt-1">Reported Better Team Collaboration</div>
                     </div>
                     <div>
-                      <div className="text-2xl sm:text-3xl font-extrabold text-gray-900">100%</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-gray-900">100%</div>
                       <div className="text-xs text-gray-500 mt-1">CPD UK Certified Outcomes</div>
                     </div>
                     <div>
-                      <div className="text-2xl sm:text-3xl font-extrabold text-emerald-600">3.4x</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-emerald-600">3.4x</div>
                       <div className="text-xs text-gray-500 mt-1">Retention of Emerging Talent</div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@ export default function OrganisationalPage() {
                     </div>
 
                     <div className="mt-8">
-                      <span className="text-xs uppercase font-bold tracking-widest text-emerald-700 block mb-2">Tailored to your team</span>
+                      <span className="text-xs uppercase font-semibold tracking-widest text-gray-500 block mb-2">Tailored to your team</span>
                       <h3 className="text-xl font-bold text-gray-900 tracking-tight">Interactive, practical and actionable</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-3">
                         No passive slide decks. We engage your employees and managers in real workplace scenarios, constructive peer sparring, and communication habits that stick.
@@ -89,10 +89,10 @@ export default function OrganisationalPage() {
           <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">
+                <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-3 py-1 rounded-full">
                   Corporate Solutions
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-charcoal-900 mt-3 tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-900 mt-3 tracking-tight">
                   Comprehensive Organisational Development Solutions
                 </h2>
                 <p className="text-gray-600 text-sm sm:text-base mt-2">
@@ -121,7 +121,7 @@ export default function OrganisationalPage() {
                     </ul>
                   </div>
                   <div className="pt-6 border-t border-gray-200/60 mt-6">
-                    <button onClick={() => { populateB2BNeed('Training Needs Analysis (TNA)') }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { populateB2BNeed('Training Needs Analysis (TNA)') }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Enquire about TNA</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -147,7 +147,7 @@ export default function OrganisationalPage() {
                     </ul>
                   </div>
                   <div className="pt-6 border-t border-gray-200/60 mt-6">
-                    <button onClick={() => { populateB2BNeed('Executive & Workplace Communication') }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { populateB2BNeed('Executive & Workplace Communication') }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Enquire about Communication</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -173,7 +173,7 @@ export default function OrganisationalPage() {
                     </ul>
                   </div>
                   <div className="pt-6 border-t border-gray-200/60 mt-6">
-                    <button onClick={() => { populateB2BNeed('Soft Skills, Gravitas & Presence') }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { populateB2BNeed('Soft Skills, Gravitas & Presence') }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Enquire about Presence</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -199,7 +199,7 @@ export default function OrganisationalPage() {
                     </ul>
                   </div>
                   <div className="pt-6 border-t border-gray-200/60 mt-6">
-                    <button onClick={() => { populateB2BNeed('Leadership Academies') }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { populateB2BNeed('Leadership Academies') }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Enquire about Academies</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -225,7 +225,7 @@ export default function OrganisationalPage() {
                     </ul>
                   </div>
                   <div className="pt-6 border-t border-gray-200/60 mt-6">
-                    <button onClick={() => { populateB2BNeed('Bespoke Corporate Programmes') }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { populateB2BNeed('Bespoke Corporate Programmes') }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Enquire about Custom Retreats</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -251,7 +251,7 @@ export default function OrganisationalPage() {
                     </ul>
                   </div>
                   <div className="pt-6 border-t border-gray-200/60 mt-6">
-                    <button onClick={() => { populateB2BNeed('Train the Trainer (TOT)') }} className="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
+                    <button onClick={() => { populateB2BNeed('Train the Trainer (TOT)') }} className="text-xs font-semibold text-emerald-600 hover:text-emerald-700 flex items-center cursor-pointer">
                       <span>Enquire about TOT</span>
                       <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </button>
@@ -266,10 +266,10 @@ export default function OrganisationalPage() {
           <section className="py-20 bg-slate-50 border-y border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full shadow-sm">
+                <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full shadow-sm">
                   Our Enterprise Methodology
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 tracking-tight">
                   The 5-Stage Diagnostic & Delivery Process
                 </h2>
                 <p className="text-gray-600 text-sm sm:text-base mt-2">
@@ -280,50 +280,50 @@ export default function OrganisationalPage() {
               <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
 
                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
-                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center mb-4 shadow-sm">
+                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center mb-4 shadow-sm">
                     01
                   </div>
-                  <h4 className="font-extrabold text-sm text-gray-900 mb-2">Discovery & Strategic Alignment</h4>
+                  <h4 className="font-semibold text-sm text-gray-900 mb-2">Discovery & Strategic Alignment</h4>
                   <p className="text-xs text-gray-600 leading-relaxed">
                     We align with C-Suite and HR heads to understand strategic growth targets, team friction points, and culture priorities.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
-                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center mb-4 shadow-sm">
+                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center mb-4 shadow-sm">
                     02
                   </div>
-                  <h4 className="font-extrabold text-sm text-gray-900 mb-2">Diagnostic TNA Assessment</h4>
+                  <h4 className="font-semibold text-sm text-gray-900 mb-2">Diagnostic TNA Assessment</h4>
                   <p className="text-xs text-gray-600 leading-relaxed">
                     Conducting quantitative skills audits and confidential cohort interviews to establish true baseline capability scores.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
-                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center mb-4 shadow-sm">
+                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center mb-4 shadow-sm">
                     03
                   </div>
-                  <h4 className="font-extrabold text-sm text-gray-900 mb-2">Bespoke Architecture</h4>
+                  <h4 className="font-semibold text-sm text-gray-900 mb-2">Bespoke Architecture</h4>
                   <p className="text-xs text-gray-600 leading-relaxed">
                     Engineering a tailored syllabus incorporating your company's actual real-world case studies, templates, and corporate dialects.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
-                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center mb-4 shadow-sm">
+                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center mb-4 shadow-sm">
                     04
                   </div>
-                  <h4 className="font-extrabold text-sm text-gray-900 mb-2">Experiential Blended Delivery</h4>
+                  <h4 className="font-semibold text-sm text-gray-900 mb-2">Experiential Blended Delivery</h4>
                   <p className="text-xs text-gray-600 leading-relaxed">
                     High-immersion live labs, peer simulation studios, and 1:1 acoustic/coaching checkpoints led by Sonia Ali and senior faculty.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
-                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center mb-4 shadow-sm">
+                  <div className="w-9 h-9 rounded-full bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center mb-4 shadow-sm">
                     05
                   </div>
-                  <h4 className="font-extrabold text-sm text-gray-900 mb-2">ROI Measurement & Reporting</h4>
+                  <h4 className="font-semibold text-sm text-gray-900 mb-2">ROI Measurement & Reporting</h4>
                   <p className="text-xs text-gray-600 leading-relaxed">
                     Delivering executive board reports with post-training capability audits, participant feedback, and measurable business impact.
                   </p>
@@ -336,13 +336,13 @@ export default function OrganisationalPage() {
           {/* B2B LEAD FORM SECTION */}
           <section className="py-20 bg-white" id="b2bLeadSection">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-charcoal-900 rounded-3xl p-8 sm:p-12 shadow-2xl border border-slate-800 text-white relative overflow-hidden">
+              <div className="bg-emerald-50/60 rounded-3xl p-8 sm:p-12 shadow-2xl border border-slate-800 text-white relative overflow-hidden">
 
                 <div className="text-center max-w-2xl mx-auto mb-10">
-                  <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-400 bg-slate-800 px-3.5 py-1.5 rounded-full border border-slate-700">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-slate-800 px-3.5 py-1.5 rounded-full border border-slate-700">
                     Corporate Consultation
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-extrabold text-white mt-3.5 tracking-tight">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-white mt-3.5 tracking-tight">
                     Discuss Your Training Needs
                   </h2>
                   <p className="text-gray-300 text-xs sm:text-sm mt-2 leading-relaxed">
@@ -353,31 +353,31 @@ export default function OrganisationalPage() {
                 <form id="b2bForm" onSubmit={(event) => { handleB2BSubmit(event) }} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-bold text-gray-200 mb-1.5">Full Name *</label>
+                      <label className="block text-xs font-semibold text-gray-600 mb-1.5">Full Name *</label>
                       <input type="text" required placeholder="e.g. Sarah Jenkins" className="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-gray-400 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none" id="b2bName" />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-gray-200 mb-1.5">Corporate Work Email *</label>
+                      <label className="block text-xs font-semibold text-gray-600 mb-1.5">Corporate Work Email *</label>
                       <input type="email" required placeholder="s.jenkins@company.com" className="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-gray-400 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none" id="b2bEmail" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-bold text-gray-200 mb-1.5">Organisation / Company Name *</label>
+                      <label className="block text-xs font-semibold text-gray-600 mb-1.5">Organisation / Company Name *</label>
                       <input type="text" required placeholder="e.g. Deloitte, Standard Chartered, Scale-up Ltd" className="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-gray-400 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none" id="b2bCompany" />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-gray-200 mb-1.5">Your Job Title / Department *</label>
+                      <label className="block text-xs font-semibold text-gray-600 mb-1.5">Your Job Title / Department *</label>
                       <input type="text" required placeholder="e.g. Head of People / VP Human Resources" className="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-gray-400 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none" id="b2bRole" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-bold text-gray-200 mb-1.5">Team / Organisation Size</label>
+                      <label className="block text-xs font-semibold text-gray-600 mb-1.5">Team / Organisation Size</label>
                       <select className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm focus:ring-2 focus:ring-emerald-500 outline-none" id="b2bSize">
                         <option value="10-50 Employees">10 - 50 Employees</option>
                         <option value="50-200 Employees" selected>50 - 200 Employees</option>
@@ -387,7 +387,7 @@ export default function OrganisationalPage() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-gray-200 mb-1.5">Estimated Timeline</label>
+                      <label className="block text-xs font-semibold text-gray-600 mb-1.5">Estimated Timeline</label>
                       <select className="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm focus:ring-2 focus:ring-emerald-500 outline-none" id="b2bTimeline">
                         <option value="Immediate (This Quarter)">Immediate (This Quarter)</option>
                         <option value="Next Quarter">Next Quarter</option>
@@ -397,41 +397,41 @@ export default function OrganisationalPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-gray-200 mb-2">Priority Focus Areas (Select All That Apply):</label>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-gray-200">
+                    <label className="block text-xs font-semibold text-gray-600 mb-2">Priority Focus Areas (Select All That Apply):</label>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-gray-600">
                       <label className="flex items-center space-x-2 bg-slate-800/90 p-2.5 rounded-xl border border-slate-700 hover:border-emerald-500 cursor-pointer">
                         <input type="checkbox" name="focus" value="TNA Audit" className="rounded accent-emerald-500 text-emerald-600 focus:ring-emerald-500" checked id="chk-tna" />
-                        <span className="text-gray-100 font-medium">Training Needs Analysis</span>
+                        <span className="text-gray-600 font-medium">Training Needs Analysis</span>
                       </label>
                       <label className="flex items-center space-x-2 bg-slate-800/90 p-2.5 rounded-xl border border-slate-700 hover:border-emerald-500 cursor-pointer">
                         <input type="checkbox" name="focus" value="Communication" className="rounded accent-emerald-500 text-emerald-600 focus:ring-emerald-500" checked id="chk-comm" />
-                        <span className="text-gray-100 font-medium">Workplace Communication</span>
+                        <span className="text-gray-600 font-medium">Workplace Communication</span>
                       </label>
                       <label className="flex items-center space-x-2 bg-slate-800/90 p-2.5 rounded-xl border border-slate-700 hover:border-emerald-500 cursor-pointer">
                         <input type="checkbox" name="focus" value="Soft Skills" className="rounded accent-emerald-500 text-emerald-600 focus:ring-emerald-500" id="chk-soft" />
-                        <span className="text-gray-100 font-medium">Gravitas & Soft Skills</span>
+                        <span className="text-gray-600 font-medium">Gravitas & Soft Skills</span>
                       </label>
                       <label className="flex items-center space-x-2 bg-slate-800/90 p-2.5 rounded-xl border border-slate-700 hover:border-emerald-500 cursor-pointer">
                         <input type="checkbox" name="focus" value="Leadership Academy" className="rounded accent-emerald-500 text-emerald-600 focus:ring-emerald-500" id="chk-lead" />
-                        <span className="text-gray-100 font-medium">Leadership Academies</span>
+                        <span className="text-gray-600 font-medium">Leadership Academies</span>
                       </label>
                       <label className="flex items-center space-x-2 bg-slate-800/90 p-2.5 rounded-xl border border-slate-700 hover:border-emerald-500 cursor-pointer">
                         <input type="checkbox" name="focus" value="Bespoke Programme" className="rounded accent-emerald-500 text-emerald-600 focus:ring-emerald-500" id="chk-bespoke" />
-                        <span className="text-gray-100 font-medium">Bespoke Programmes</span>
+                        <span className="text-gray-600 font-medium">Bespoke Programmes</span>
                       </label>
                       <label className="flex items-center space-x-2 bg-slate-800/90 p-2.5 rounded-xl border border-slate-700 hover:border-emerald-500 cursor-pointer">
                         <input type="checkbox" name="focus" value="Train the Trainer" className="rounded accent-emerald-500 text-emerald-600 focus:ring-emerald-500" id="chk-tot" />
-                        <span className="text-gray-100 font-medium">Train the Trainer (TOT)</span>
+                        <span className="text-gray-600 font-medium">Train the Trainer (TOT)</span>
                       </label>
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-gray-200 mb-1.5">Specific Challenges or Objectives</label>
+                    <label className="block text-xs font-semibold text-gray-600 mb-1.5">Specific Challenges or Objectives</label>
                     <textarea rows={3} placeholder="Tell us briefly about the capability gaps you are solving, target group, or custom cohort size..." className="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-gray-400 text-sm focus:ring-2 focus:ring-emerald-500 outline-none" id="b2bMessage"></textarea>
                   </div>
 
-                  <button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-emerald-600/30 transition duration-200 text-sm cursor-pointer" id="b2bSubmitBtn">
+                  <button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-emerald-600/30 transition duration-200 text-sm cursor-pointer" id="b2bSubmitBtn">
                     Submit Request for Corporate Consultation & Proposal
                   </button>
                 </form>
@@ -446,10 +446,10 @@ export default function OrganisationalPage() {
                     Thank you for considering Start SAH for your organizational development. Sonia Ali or our enterprise partnership director will review your brief and contact you within 24 hours with an initial capability assessment plan.
                   </p>
                   <div className="mt-6 flex justify-center space-x-3">
-                    <button onClick={() => { resetB2BForm() }} className="px-5 py-2.5 bg-charcoal-800 text-gray-200 rounded-xl text-xs font-bold hover:bg-charcoal-700">
+                    <button onClick={() => { resetB2BForm() }} className="px-5 py-2.5 bg-charcoal-800 text-gray-200 rounded-xl text-xs font-semibold hover:bg-charcoal-700">
                       Submit Another Request
                     </button>
-                    <button onClick={() => { navigateTo('homepage') }} className="px-5 py-2.5 bg-brand-500 text-white rounded-xl text-xs font-bold hover:bg-brand-600">
+                    <button onClick={() => { navigateTo('homepage') }} className="px-5 py-2.5 bg-brand-500 text-white rounded-xl text-xs font-semibold hover:bg-brand-600">
                       Return to Homepage
                     </button>
                   </div>

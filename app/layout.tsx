@@ -1,17 +1,19 @@
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans } from 'next/font/google';
+import { Manrope } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Overlays from '@/components/Overlays';
 import './globals.css';
 
-/* Self-hosted by Next at build time, so there is no render-blocking request to
-   Google and no flash of fallback text. */
-const jakarta = Plus_Jakarta_Sans({
+/* Manrope, per the 20 September note: Plus Jakarta Sans read rounded and heavy,
+   and made every heading feel bulky. Self-hosted by Next at build time, so
+   there is no render-blocking request to Google and no flash of fallback text.
+   800 is deliberately not loaded — hierarchy comes from size and spacing. */
+const manrope = Manrope({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
-  variable: '--font-jakarta',
+  variable: '--font-sans',
 });
 
 const description =
@@ -34,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${jakarta.variable} scroll-smooth`}>
+    <html lang="en" className={`${manrope.variable} scroll-smooth`}>
       <body className="bg-white text-charcoal-800 antialiased selection:bg-brand-500 selection:text-white font-sans">
         <Header />
         <main>{children}</main>

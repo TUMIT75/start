@@ -24,11 +24,11 @@ export default function StartYourDevelopmentPage() {
           {/* Development Header Banner */}
           <section className="py-10 sm:py-14 bg-white border-b border-gray-100">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <span className="inline-flex items-center space-x-1.5 bg-emerald-50 border border-emerald-200/60 text-emerald-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-2.5">
+              <span className="inline-flex items-center space-x-1.5 bg-emerald-50 border border-emerald-200/60 text-gray-500 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
                 <span>Admissions & Intake</span>
               </span>
-              <h1 className="text-2xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+              <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 tracking-tight">
                 Start Your Development
               </h1>
               <p className="text-sm sm:text-base text-gray-500 mt-2 max-w-xl mx-auto">
@@ -191,14 +191,14 @@ export default function StartYourDevelopmentPage() {
                   {/* Summary Box */}
                   <div className="bg-white rounded-xl p-5 sm:p-6 border border-gray-200/80 shadow-xs text-left">
                     <div className="flex items-center justify-between pb-3 mb-4 border-b border-gray-100">
-                      <h3 className="font-bold text-gray-900 text-sm">Programme Overview</h3>
+                      <h3 className="font-semibold text-gray-900 text-sm">Programme Overview</h3>
                       <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200/60">Active Intake</span>
                     </div>
 
                     <div className="space-y-3 text-xs text-gray-600">
                       <div>
                         <span className="text-[10px] font-bold text-gray-400 uppercase block mb-0.5">Selected Track</span>
-                        <span className="font-bold text-gray-900 text-sm" id="summaryFocusName">English for Professional Success</span>
+                        <span className="font-semibold text-gray-900 text-sm" id="summaryFocusName">English for Professional Success</span>
                       </div>
                       <div>
                         <span className="text-[10px] font-bold text-gray-400 uppercase block mb-0.5">Faculty Lead</span>
@@ -210,7 +210,7 @@ export default function StartYourDevelopmentPage() {
                       </div>
                       <div>
                         <span className="text-[10px] font-bold text-gray-400 uppercase block mb-0.5">Accreditation</span>
-                        <span className="inline-flex items-center text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded text-xs">
+                        <span className="inline-flex items-center text-gray-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded text-xs">
                           <Icon name="award" className="mr-1 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> CPD UK Certified (24 Hrs)
                         </span>
                       </div>
@@ -228,7 +228,7 @@ export default function StartYourDevelopmentPage() {
 
                   {/* Guarantee Box */}
                   <div className="bg-white rounded-xl p-5 border border-gray-200/80 shadow-xs text-left">
-                    <div className="flex items-center space-x-2 text-emerald-700 font-bold text-xs mb-2">
+                    <div className="flex items-center space-x-2 text-gray-600 font-semibold text-xs mb-2">
                       <Icon name="shield-halved" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       <span>Confidential Consultation</span>
                     </div>

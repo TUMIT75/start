@@ -29,13 +29,13 @@ export default function Footer() {
 
               {/* Col 2: Navigation Links (2 cols) */}
               <div className="lg:col-span-2 space-y-3">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-white">Navigation</h4>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-white">Navigation</h4>
                 <ul className="space-y-2 text-xs text-gray-400">
                   <li><Link href="/" className="hover:text-emerald-400 transition">Home</Link></li>
                   <li><Link href="/about" className="hover:text-emerald-400 transition">About Sonia Ali</Link></li>
-                  <li><Link href="/programmes" className="hover:text-emerald-400 transition">All Programmes</Link></li>
+                  <li><Link href="/courses" className="hover:text-emerald-400 transition">All Courses</Link></li>
                   <li><Link href="/coaching" className="hover:text-emerald-400 transition">1:1 Coaching</Link></li>
-                  <li><Link href="/organisational-development" className="hover:text-emerald-400 transition">Organisational Dev</Link></li>
+                  <li><Link href="/for-organisations" className="hover:text-emerald-400 transition">For Organisations</Link></li>
                   <li><Link href="/insights" className="hover:text-emerald-400 transition">Insights / Podcast</Link></li>
                   <li><Link href="/contact" className="hover:text-emerald-400 transition">Contact</Link></li>
                 </ul>
@@ -43,10 +43,10 @@ export default function Footer() {
 
               {/* Col 3: Student Learning LMS (3 cols) */}
               <div className="lg:col-span-3 space-y-3">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-white">Student & LMS</h4>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-white">Student & LMS</h4>
                 <ul className="space-y-2 text-xs text-gray-400">
                   <li><Link href="/dashboard" className="hover:text-emerald-400 transition flex items-center font-semibold text-emerald-400"><Icon name="graduation-cap" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Student LMS Dashboard</Link></li>
-                  <li><Link href="/programmes/english-for-professional-success" className="hover:text-emerald-400 transition">English for Professional Success</Link></li>
+                  <li><Link href="/courses/english-for-professional-success" className="hover:text-emerald-400 transition">English for Professional Success</Link></li>
                   <li><Link href="/dashboard?focus=dash-certificates" className="hover:text-emerald-400 transition">CPD Certificates</Link></li>
                   <li><Link href="/dashboard?focus=dash-quizzes" className="hover:text-emerald-400 transition">Quizzes & Diagnostics</Link></li>
                   <li><Link href="/dashboard" className="hover:text-emerald-400 transition flex items-center"><Icon name="user" className="mr-1.5 text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Learner Login (Direct)</Link></li>
@@ -55,7 +55,7 @@ export default function Footer() {
 
               {/* Col 4: Contact & Accreditation (3 cols) */}
               <div className="lg:col-span-3 space-y-3 text-xs text-gray-400">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-white">Contact & Standards</h4>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-white">Contact & Standards</h4>
                 <p><Icon name="location-dot" className="text-emerald-500 mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />London, United Kingdom • Global Virtual Delivery</p>
                 <p><Icon name="envelope" className="text-emerald-500 mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />contact@startsah.com</p>
                 <p><Icon name="phone" className="text-emerald-500 mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />+44 (0) 20 7946 0912</p>

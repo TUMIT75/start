@@ -17,11 +17,11 @@ export default function HomePage() {
 
               {/* Left Content */}
               <div className="lg:col-span-7 space-y-6 text-left">
-                <div className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full">
+                <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full">
                   Human potential, made possible
                 </div>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.12]">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-[1.12]">
                   Developing People.<br />
                   <span className="text-emerald-600">Unlocking Potential.</span>
                 </h1>
@@ -36,7 +36,7 @@ export default function HomePage() {
                     <span>Start Your Development</span>
                     <Icon name="arrow-right" className="ml-2.5 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
-                  <Link href="/programmes" className="border border-gray-300 hover:border-gray-900 text-gray-800 font-semibold px-7 py-3.5 rounded-full transition duration-200 text-center flex items-center justify-center cursor-pointer" id="heroSecondaryCta">
+                  <Link href="/courses" className="border border-gray-300 hover:border-gray-900 text-gray-800 font-semibold px-7 py-3.5 rounded-full transition duration-200 text-center flex items-center justify-center cursor-pointer" id="heroSecondaryCta">
                     Explore Training & Coaching
                   </Link>
                 </div>
@@ -64,7 +64,7 @@ export default function HomePage() {
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
                 <span>Accredited 1-on-1 Coaching • Signature Academies • Custom Workforce Solutions</span>
               </div>
-              <div className="flex items-center space-x-6 text-xs font-bold text-emerald-700">
+              <div className="flex items-center space-x-6 text-xs font-semibold text-gray-600">
                 <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> No Generic Lectures</span>
                 <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Real Rehearsal</span>
                 <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> UK & GCC Recognition</span>
@@ -84,11 +84,11 @@ export default function HomePage() {
             <div className="max-w-3xl mb-16 text-left">
               <div className="inline-flex items-center space-x-2 bg-emerald-100/70 border border-emerald-200 px-3.5 py-1.5 rounded-full mb-3">
                 <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-800">
+                <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">
                   Core Development Architecture
                 </span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2E2E2E] tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2E2E2E] tracking-tight leading-tight">
                 Five dimensions of real growth. <br /><span className="text-emerald-600">Grounded in human reality.</span>
               </h2>
               <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
@@ -114,12 +114,12 @@ export default function HomePage() {
 
                   {/* Right: Context, Methodology & Outcomes */}
                   <div className="lg:col-span-6 space-y-5 order-1 lg:order-2 text-left">
-                    <div className="inline-flex items-center space-x-2 bg-emerald-50 px-3 py-1 rounded-full text-xs font-bold text-emerald-800 border border-emerald-200">
+                    <div className="inline-flex items-center space-x-2 bg-emerald-50 px-3 py-1 rounded-full text-xs font-semibold text-gray-600 border border-emerald-200">
                       <span>Dimension 01</span>
                       <span>•</span>
                       <span>Direction & Clarity</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2E2E2E] tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#2E2E2E] tracking-tight">
                       Career & Employability
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -131,22 +131,22 @@ export default function HomePage() {
                       <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
                         <Icon name="compass" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-gray-900">Trajectory Mapping</div>
+                          <div className="text-xs font-semibold text-gray-900">Trajectory Mapping</div>
                           <div className="text-[11px] text-gray-500">Uncover your true career leverage</div>
                         </div>
                       </div>
                       <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
                         <Icon name="file-contract" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-gray-900">Executive Narrative</div>
+                          <div className="text-xs font-semibold text-gray-900">Executive Narrative</div>
                           <div className="text-[11px] text-gray-500">CV, LinkedIn & Board profile alignment</div>
                         </div>
                       </div>
                     </div>
 
                     <div className="pt-3 flex items-center space-x-4">
-                      <Link href="/programmes?focus=Career%20%26%20Employability" className="inline-flex items-center text-sm font-bold text-emerald-700 hover:text-emerald-800 group">
-                        <span>Explore Career Coaching & Academies</span>
+                      <Link href="/courses?focus=Career%20%26%20Employability" className="inline-flex items-center text-sm font-semibold text-emerald-700 hover:text-emerald-800 group">
+                        <span>Explore career coaching</span>
                         <Icon name="arrow-right" className="ml-2 text-xs group-hover:translate-x-1 transition duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </Link>
                     </div>
@@ -157,47 +157,48 @@ export default function HomePage() {
 
               {/* =================================================================== */}
               {/* DIMENSION 2: COMMUNICATION (Metaphor: Two people interacting) */}
-              {/* Confident Palette: Rich Charcoal Band with Radiant Emerald & White */}
+              {/* A mint band rather than charcoal: the 20 September note asks for
+                   white space and subtle mint transitions in place of solid blocks. */}
               {/* =================================================================== */}
-              <div className="on-ink relative bg-[#2E2E2E] text-white rounded-[2.5rem] px-8 sm:px-14 py-14 sm:py-16 overflow-hidden">
+              <div className="relative bg-emerald-50/60 rounded-[2.5rem] px-8 sm:px-14 py-14 sm:py-16">
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
 
                   {/* Left: Text & Methodology */}
                   <div className="lg:col-span-6 space-y-5 text-left">
-                    <div className="inline-flex items-center space-x-2 bg-charcoal-800/60 border border-charcoal-700 px-3 py-1 rounded-full text-xs font-bold text-emerald-300">
+                    <div className="inline-flex items-center space-x-2 text-xs font-semibold text-gray-500 uppercase tracking-widest">
                       <span>Dimension 02</span>
                       <span>•</span>
                       <span>Active Connection</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                      Communication & Professional English
+                    <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
+                      Communication & <span className="text-emerald-600">Professional English</span>
                     </h3>
-                    <p className="text-base text-gray-300 leading-relaxed">
+                    <p className="text-base text-gray-600 leading-relaxed">
                       Beyond grammar: speaking with authority, navigating difficult boardroom conversations, and articulating complex ideas across cultural and linguistic boundaries.
                     </p>
 
                     {/* Core Pillars List */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                      <div className="flex items-start space-x-2.5 bg-white/5 p-3 rounded-xl border border-white/10">
-                        <Icon name="comments" className="text-emerald-400 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 pt-2">
+                      <div className="flex items-start space-x-2.5">
+                        <Icon name="comments" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-white">Boardroom Rehearsal</div>
-                          <div className="text-[11px] text-gray-400">High-stakes simulation & debate</div>
+                          <div className="text-xs font-semibold text-gray-900">Boardroom Rehearsal</div>
+                          <div className="text-[11px] text-gray-500">High-stakes simulation & debate</div>
                         </div>
                       </div>
-                      <div className="flex items-start space-x-2.5 bg-white/5 p-3 rounded-xl border border-white/10">
-                        <Icon name="globe" className="text-emerald-400 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
+                      <div className="flex items-start space-x-2.5">
+                        <Icon name="globe" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-white">Global Business Fluency</div>
-                          <div className="text-[11px] text-gray-400">Cross-cultural executive tone</div>
+                          <div className="text-xs font-semibold text-gray-900">Global Business Fluency</div>
+                          <div className="text-[11px] text-gray-500">Cross-cultural executive tone</div>
                         </div>
                       </div>
                     </div>
 
                     <div className="pt-3 flex items-center space-x-4">
-                      <Link href="/programmes?focus=Communication" className="inline-flex items-center text-sm font-bold text-emerald-300 hover:text-emerald-200 group">
-                        <span>View Communication Programmes</span>
+                      <Link href="/courses?focus=Communication" className="inline-flex items-center text-sm font-semibold text-emerald-700 hover:text-emerald-800 group">
+                        <span>View communication courses</span>
                         <Icon name="arrow-right" className="ml-2 text-xs group-hover:translate-x-1 transition duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </Link>
                     </div>
@@ -228,12 +229,12 @@ export default function HomePage() {
 
                   {/* Right: Content & Outcomes */}
                   <div className="lg:col-span-6 space-y-5 order-1 lg:order-2 text-left">
-                    <div className="inline-flex items-center space-x-2 bg-emerald-50 px-3 py-1 rounded-full text-xs font-bold text-emerald-800 border border-emerald-200">
+                    <div className="inline-flex items-center space-x-2 bg-emerald-50 px-3 py-1 rounded-full text-xs font-semibold text-gray-600 border border-emerald-200">
                       <span>Dimension 03</span>
                       <span>•</span>
                       <span>Self-Mastery & Presence</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2E2E2E] tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#2E2E2E] tracking-tight">
                       Personal Development & Executive Presence
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -245,22 +246,22 @@ export default function HomePage() {
                       <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
                         <Icon name="mountain" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-gray-900">Barrier Dismantling</div>
+                          <div className="text-xs font-semibold text-gray-900">Barrier Dismantling</div>
                           <div className="text-[11px] text-gray-500">Transform internal friction into momentum</div>
                         </div>
                       </div>
                       <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
                         <Icon name="shield-halved" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-gray-900">Gravitas & Presence</div>
+                          <div className="text-xs font-semibold text-gray-900">Gravitas & Presence</div>
                           <div className="text-[11px] text-gray-500">Composed authority in high-stakes environments</div>
                         </div>
                       </div>
                     </div>
 
                     <div className="pt-3 flex items-center space-x-4">
-                      <Link href="/coaching" className="inline-flex items-center text-sm font-bold text-emerald-700 hover:text-emerald-800 group">
-                        <span>Explore Personal Development Coaching</span>
+                      <Link href="/coaching" className="inline-flex items-center text-sm font-semibold text-emerald-700 hover:text-emerald-800 group">
+                        <span>Explore personal development</span>
                         <Icon name="arrow-right" className="ml-2 text-xs group-hover:translate-x-1 transition duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </Link>
                     </div>
@@ -277,12 +278,12 @@ export default function HomePage() {
 
                   {/* Left: Text & Methodology */}
                   <div className="lg:col-span-6 space-y-5 text-left">
-                    <div className="inline-flex items-center space-x-2 bg-emerald-100/80 px-3 py-1 rounded-full text-xs font-bold text-emerald-800 border border-emerald-300">
+                    <div className="inline-flex items-center space-x-2 bg-emerald-100/80 px-3 py-1 rounded-full text-xs font-semibold text-gray-600 border border-emerald-300">
                       <span>Dimension 04</span>
                       <span>•</span>
                       <span>Multiplication of Others</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2E2E2E] tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#2E2E2E] tracking-tight">
                       Leadership & Influence
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -294,22 +295,22 @@ export default function HomePage() {
                       <div className="flex items-start space-x-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-2xs">
                         <Icon name="hands-holding" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-gray-900">Coaching-Style Leadership</div>
+                          <div className="text-xs font-semibold text-gray-900">Coaching-Style Leadership</div>
                           <div className="text-[11px] text-gray-500">Ask powerful questions instead of prescribing</div>
                         </div>
                       </div>
                       <div className="flex items-start space-x-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-2xs">
                         <Icon name="award" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-gray-900">Talent Elevation</div>
+                          <div className="text-xs font-semibold text-gray-900">Talent Elevation</div>
                           <div className="text-[11px] text-gray-500">Succession readiness and peer empowerment</div>
                         </div>
                       </div>
                     </div>
 
                     <div className="pt-3 flex items-center space-x-4">
-                      <Link href="/programmes?focus=Leadership" className="inline-flex items-center text-sm font-bold text-emerald-700 hover:text-emerald-800 group">
-                        <span>Explore Leadership Modules</span>
+                      <Link href="/courses?focus=Leadership" className="inline-flex items-center text-sm font-semibold text-emerald-700 hover:text-emerald-800 group">
+                        <span>Explore leadership courses</span>
                         <Icon name="arrow-right" className="ml-2 text-xs group-hover:translate-x-1 transition duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </Link>
                     </div>
@@ -340,12 +341,12 @@ export default function HomePage() {
 
                   {/* Right: Content & Outcomes */}
                   <div className="lg:col-span-6 space-y-5 order-1 lg:order-2 text-left">
-                    <div className="inline-flex items-center space-x-2 bg-emerald-50 px-3 py-1 rounded-full text-xs font-bold text-emerald-800 border border-emerald-200">
+                    <div className="inline-flex items-center space-x-2 bg-emerald-50 px-3 py-1 rounded-full text-xs font-semibold text-gray-600 border border-emerald-200">
                       <span>Dimension 05</span>
                       <span>•</span>
                       <span>Systemic Team Alignment</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2E2E2E] tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#2E2E2E] tracking-tight">
                       Organisational Development
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -357,22 +358,22 @@ export default function HomePage() {
                       <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
                         <Icon name="people-group" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-gray-900">Cohort Academies</div>
+                          <div className="text-xs font-semibold text-gray-900">Cohort Academies</div>
                           <div className="text-[11px] text-gray-500">Shared language and cross-functional synergy</div>
                         </div>
                       </div>
                       <div className="flex items-start space-x-2.5 bg-[#FAFAFA] p-3 rounded-xl border border-gray-100">
                         <Icon name="bullseye" className="text-emerald-600 text-sm mt-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         <div>
-                          <div className="text-xs font-bold text-gray-900">Cultural Cohesion</div>
+                          <div className="text-xs font-semibold text-gray-900">Cultural Cohesion</div>
                           <div className="text-[11px] text-gray-500">Accountability, empathy, and psychological safety</div>
                         </div>
                       </div>
                     </div>
 
                     <div className="pt-3 flex items-center space-x-4">
-                      <button onClick={() => { navigateTo('organisational') }} className="inline-flex items-center text-sm font-bold text-emerald-700 hover:text-emerald-800 group">
-                        <span>Explore Organisational Capabilities</span>
+                      <button onClick={() => { navigateTo('organisational') }} className="inline-flex items-center text-sm font-semibold text-emerald-700 hover:text-emerald-800 group">
+                        <span>Explore organisational development</span>
                         <Icon name="arrow-right" className="ml-2 text-xs group-hover:translate-x-1 transition duration-200 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
                     </div>
@@ -395,11 +396,11 @@ export default function HomePage() {
 
             {/* Section Header */}
             <div className="max-w-3xl mb-16">
-              <div className="inline-flex items-center space-x-2 bg-emerald-100/70 border border-emerald-300/60 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-emerald-800 mb-3 shadow-2xs">
+              <div className="inline-flex items-center space-x-2 bg-emerald-100/70 border border-emerald-300/60 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3 shadow-2xs">
                 <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
                 <span>The Growth Catalyst</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight">
                 Why people seek development
               </h2>
               <p className="text-base sm:text-lg text-gray-600 mt-3 font-normal leading-relaxed">
@@ -431,10 +432,10 @@ export default function HomePage() {
                   {/* Milestone 1: Career Stagnation */}
                   <div className="relative pl-14 group">
                     <div className="absolute left-4 top-1.5 w-4 h-4 rounded-full bg-white border-2 border-emerald-600 group-hover:scale-125 transition duration-200"></div>
-                    <Link href="/programmes?focus=Career%20%26%20Employability" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
+                    <Link href="/courses?focus=Career%20%26%20Employability" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
                       <div className="flex items-center justify-between mb-1.5">
                         <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-800 transition">Career Stagnation</h3>
-                        <span className="text-xs font-bold text-emerald-700 flex items-center">
+                        <span className="text-xs font-semibold text-gray-600 flex items-center">
                           Clarify Direction <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </span>
                       </div>
@@ -447,10 +448,10 @@ export default function HomePage() {
                   {/* Milestone 2: Communication Barriers */}
                   <div className="relative pl-14 group">
                     <div className="absolute left-4 top-1.5 w-4 h-4 rounded-full bg-white border-2 border-emerald-600 group-hover:scale-125 transition duration-200"></div>
-                    <Link href="/programmes/english-for-professional-success" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
+                    <Link href="/courses/english-for-professional-success" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
                       <div className="flex items-center justify-between mb-1.5">
                         <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-800 transition">Communication Barriers</h3>
-                        <span className="text-xs font-bold text-emerald-700 flex items-center">
+                        <span className="text-xs font-semibold text-gray-600 flex items-center">
                           Master Expression <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </span>
                       </div>
@@ -466,7 +467,7 @@ export default function HomePage() {
                     <Link href="/coaching" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
                       <div className="flex items-center justify-between mb-1.5">
                         <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-800 transition">Workplace Confidence</h3>
-                        <span className="text-xs font-bold text-emerald-700 flex items-center">
+                        <span className="text-xs font-semibold text-gray-600 flex items-center">
                           Build Conviction <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </span>
                       </div>
@@ -479,10 +480,10 @@ export default function HomePage() {
                   {/* Milestone 4: Emerging Leadership */}
                   <div className="relative pl-14 group">
                     <div className="absolute left-4 top-1.5 w-4 h-4 rounded-full bg-white border-2 border-emerald-600 group-hover:scale-125 transition duration-200"></div>
-                    <Link href="/programmes?focus=Leadership" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
+                    <Link href="/courses?focus=Leadership" className="bg-slate-50/80 hover:bg-emerald-50/40 p-5 rounded-2xl border border-gray-200/80 hover:border-emerald-300 transition duration-200 cursor-pointer">
                       <div className="flex items-center justify-between mb-1.5">
                         <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-800 transition">Emerging Leadership</h3>
-                        <span className="text-xs font-bold text-emerald-700 flex items-center">
+                        <span className="text-xs font-semibold text-gray-600 flex items-center">
                           Lead With Impact <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </span>
                       </div>
@@ -503,22 +504,22 @@ export default function HomePage() {
         {/* ========================================================================= */}
         {/* 4. GET TO KNOW STARTSAH CLOSER (TeachFlex Signature Asymmetrical Bento Grid) */}
         {/* ========================================================================= */}
-        <section className="py-24 bg-[#242424] text-white relative overflow-hidden" id="pillars">
+        <section className="py-24 band-off relative overflow-hidden" id="pillars">
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
             {/* Section Header */}
             <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
               <div className="max-w-2xl">
-                <div className="inline-flex items-center space-x-2 bg-charcoal-900/90 border border-emerald-700/80 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-emerald-300 mb-3 shadow-2xs">
+                <div className="inline-flex items-center space-x-2 bg-white border border-emerald-200 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3 shadow-2xs">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                   <span>Get To Know Start SAH Closer</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight">
                   Development built around real life.
                 </h2>
               </div>
-              <p className="text-base sm:text-lg text-emerald-100/80 max-w-md leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-600 max-w-md leading-relaxed">
                 Whether you are navigating high-stakes change, leading others, or strengthening a whole workforce, our programmes turn insight into practical, daily progress.
               </p>
             </div>
@@ -527,25 +528,25 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
               {/* Large Showcase Feature Panel (7 cols): Collaborative Workshop Art */}
-              <div className="lg:col-span-7 bg-charcoal-900/60 rounded-3xl p-8 sm:p-10 border border-charcoal-700 shadow-2xl flex flex-col justify-between relative overflow-hidden group">
+              <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-gray-200 shadow-sm flex flex-col justify-between relative overflow-hidden group">
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <span className="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-charcoal-800/80 px-3.5 py-1.5 rounded-full border border-emerald-700/80">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-white px-3.5 py-1.5 rounded-full border border-emerald-200">
                       The Startsah Method
                     </span>
-                    <span className="text-xs text-emerald-300 font-semibold">Vision 2030 & Global Standards</span>
+                    <span className="text-xs text-gray-600 font-semibold">Vision 2030 & Global Standards</span>
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
                     Hands-on capability building without generic corporate fluff.
                   </h3>
-                  <p className="text-emerald-100/75 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
+                  <p className="text-gray-600/75 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
                     We bridge academic rigor and real-world execution. Every cohort and 1-on-1 advisory session blends diagnostic self-reflection with active rehearsal and scenario simulation.
                   </p>
                 </div>
 
                 {/* Large-Scale Hand-Drawn Workshop SVG Illustration */}
-                <div className="on-ink ill-stage ill-stage--bare mt-4">
+                <div className="ill-stage ill-stage--bare mt-4">
                   <Illustration src="/illustrations/topic-training-development.svg" alt="Illustration: a trainer in thobe and ghutra presenting results to a seated group" className="ill w-full h-auto" />
                 </div>
               </div>
@@ -554,44 +555,44 @@ export default function HomePage() {
               <div className="lg:col-span-5 flex flex-col gap-6">
 
                 {/* Card A: 94% Measurable Growth Metric */}
-                <div className="bg-gradient-to-br from-[#2E2E2E] to-[#242424] rounded-3xl p-7 border border-emerald-700/80 shadow-lg flex items-center justify-between">
+                <div className="bg-white rounded-3xl p-7 border border-gray-200 shadow-sm flex items-center justify-between">
                   <div>
-                    <div className="text-4xl sm:text-5xl font-extrabold text-emerald-400 tracking-tight">94%</div>
-                    <div className="text-base font-bold text-white mt-1">Promotion & Placement Confidence</div>
-                    <p className="text-xs sm:text-sm text-emerald-200/70 mt-1 leading-relaxed">
+                    <div className="text-4xl sm:text-5xl font-bold text-emerald-600 tracking-tight">94%</div>
+                    <div className="text-base font-bold text-gray-900 mt-1">Promotion & Placement Confidence</div>
+                    <p className="text-xs sm:text-sm text-gray-600 mt-1 leading-relaxed">
                       Participants report measurable self-assurance, vocal presence, and career momentum within 8 weeks.
                     </p>
                   </div>
-                  <div className="w-14 h-14 rounded-2xl bg-charcoal-800/60 border border-charcoal-700 flex items-center justify-center text-emerald-400 text-2xl shrink-0 ml-4">
+                  <div className="w-14 h-14 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-emerald-600 text-2xl shrink-0 ml-4">
                     <Icon name="chart-line" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </div>
                 </div>
 
                 {/* Card B: Dual Accreditation & Standards */}
-                <div className="bg-gradient-to-br from-[#2E2E2E] to-[#242424] rounded-3xl p-7 border border-emerald-700/80 shadow-lg">
+                <div className="bg-white rounded-3xl p-7 border border-gray-200 shadow-sm">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-charcoal-900 px-3 py-1 rounded-full border border-charcoal-700">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-white px-3 py-1 rounded-full border border-gray-200">
                       Rigorous Frameworks
                     </span>
-                    <span className="text-xs text-emerald-300 font-semibold">EMCC & CPD Certified</span>
+                    <span className="text-xs text-gray-600 font-semibold">EMCC & CPD Certified</span>
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-2">Accredited by Global Bodies</h4>
-                  <p className="text-xs sm:text-sm text-emerald-200/75 leading-relaxed mb-4">
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Accredited by Global Bodies</h4>
+                  <p className="text-xs sm:text-sm text-gray-600/75 leading-relaxed mb-4">
                     All coaching hours, modules, and diagnostic rubrics align with EMCC Global Code of Ethics and internationally recognized CPD standards.
                   </p>
-                  <div className="flex items-center gap-3 pt-3 border-t border-charcoal-700 text-xs font-bold text-emerald-300">
-                    <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Evidence-Based</span>
-                    <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Confidential</span>
-                    <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-400 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Culturally Nuanced</span>
+                  <div className="flex items-center gap-3 pt-3 border-t border-gray-200 text-xs font-semibold text-gray-600">
+                    <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Evidence-Based</span>
+                    <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Confidential</span>
+                    <span className="flex items-center"><Icon name="check" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Culturally Nuanced</span>
                   </div>
                 </div>
 
                 {/* Card C: Direct Pathway Selector Action */}
-                <Link href="/programmes" className="bg-emerald-600 hover:bg-emerald-500 transition duration-300 rounded-3xl p-7 text-white shadow-xl cursor-pointer flex items-center justify-between group">
+                <Link href="/courses" className="bg-emerald-600 hover:bg-emerald-500 transition duration-300 rounded-3xl p-7 text-white shadow-xl cursor-pointer flex items-center justify-between group">
                   <div>
-                    <span className="text-xs font-bold uppercase tracking-widest text-emerald-100 block mb-1">Interactive Catalog</span>
-                    <div className="text-xl font-extrabold text-white">Find your developmental fit</div>
-                    <div className="text-xs text-emerald-100/90 mt-1">6 Curriculums • 1-on-1 Coaching • Team Academies</div>
+                    <span className="text-xs font-semibold uppercase tracking-widest text-white/80 block mb-1">Interactive Catalog</span>
+                    <div className="text-xl font-bold text-white">Find your developmental fit</div>
+                    <div className="text-xs text-white/80 mt-1">6 Curriculums • 1-on-1 Coaching • Team Academies</div>
                   </div>
                   <div className="w-12 h-12 rounded-full bg-white text-emerald-800 flex items-center justify-center font-bold shadow group-hover:translate-x-1 transition duration-200 shrink-0 ml-4">
                     <Icon name="arrow-right" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
@@ -611,10 +612,10 @@ export default function HomePage() {
 
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+                <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">
                   Featured Programmes
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 tracking-tight">
                   Learning that moves you forward
                 </h2>
                 <p className="text-base text-gray-600 mt-2 max-w-xl">
@@ -622,8 +623,8 @@ export default function HomePage() {
                 </p>
               </div>
               <div>
-                <Link href="/programmes" className="inline-flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-700 cursor-pointer">
-                  <span>View all programmes</span>
+                <Link href="/courses" className="inline-flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-700 cursor-pointer">
+                  <span>View all courses</span>
                   <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </Link>
               </div>
@@ -636,16 +637,16 @@ export default function HomePage() {
               <div className="bg-white rounded-3xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
                 <div>
                   {/* Hand-Drawn Illustration Banner */}
-                  <Link href="/programmes/english-for-professional-success" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
+                  <Link href="/courses/english-for-professional-success" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
                     <Illustration src="/illustrations/19-global-english.svg" alt="Illustration: a professional at a laptop sending work out into the wider world" className="ill w-full h-auto object-contain" />
 
-                    <span className="absolute top-4 left-4 bg-[#242424] text-emerald-300 px-3 py-1 rounded-full text-xs font-bold border border-charcoal-700">
+                    <span className="absolute top-4 left-4 bg-emerald-50 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold border border-emerald-100">
                       Communication
                     </span>
                   </Link>
 
                   <div className="p-6">
-                    <Link href="/programmes/english-for-professional-success" className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
+                    <Link href="/courses/english-for-professional-success" className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
                       English for Professional Success
                     </Link>
 
@@ -662,8 +663,8 @@ export default function HomePage() {
                 </div>
 
                 <div className="px-6 pb-6 pt-0 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-emerald-600">Enrolment open</span>
-                  <Link href="/programmes/english-for-professional-success" className="text-xs font-bold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
+                  <span className="text-xs font-semibold text-gray-600">Enrolment open</span>
+                  <Link href="/courses/english-for-professional-success" className="text-xs font-semibold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
                     <span>Explore Curriculum</span>
                     <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -677,7 +678,7 @@ export default function HomePage() {
                   <Link href="/coaching" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
                     <Illustration src="/illustrations/07-coaching-mentoring.svg" alt="Illustration: a mentor in thobe and ghutra guiding a colleague at her laptop" className="ill w-full h-auto object-contain" />
 
-                    <span className="absolute top-4 left-4 bg-[#242424] text-emerald-300 px-3 py-1 rounded-full text-xs font-bold border border-charcoal-700">
+                    <span className="absolute top-4 left-4 bg-emerald-50 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold border border-emerald-100">
                       1-on-1 Coaching
                     </span>
                   </Link>
@@ -701,7 +702,7 @@ export default function HomePage() {
 
                 <div className="px-6 pb-6 pt-0 flex items-center justify-between">
                   <span className="text-xs font-semibold text-gray-500">By application</span>
-                  <Link href="/coaching" className="text-xs font-bold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
+                  <Link href="/coaching" className="text-xs font-semibold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
                     <span>Learn More</span>
                     <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -712,16 +713,16 @@ export default function HomePage() {
               <div className="bg-white rounded-3xl overflow-hidden border border-gray-200/80 hover:border-emerald-400 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
                 <div>
                   {/* Hand-Drawn Illustration Banner */}
-                  <Link href="/programmes?focus=Leadership" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
+                  <Link href="/courses?focus=Leadership" className="relative aspect-[16/10] bg-gradient-to-br from-[#FAFAFA] to-[#FAFAFA] p-4 flex items-center justify-center border-b border-gray-100 cursor-pointer">
                     <Illustration src="/illustrations/14-idea-leadership.svg" alt="Illustration: a professional holding up a lit idea" className="ill w-full h-auto object-contain" />
 
-                    <span className="absolute top-4 left-4 bg-[#242424] text-emerald-300 px-3 py-1 rounded-full text-xs font-bold border border-charcoal-700">
+                    <span className="absolute top-4 left-4 bg-emerald-50 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold border border-emerald-100">
                       Leadership
                     </span>
                   </Link>
 
                   <div className="p-6">
-                    <Link href="/programmes?focus=Leadership" className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
+                    <Link href="/courses?focus=Leadership" className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
                       Leadership & Presence Development
                     </Link>
 
@@ -739,7 +740,7 @@ export default function HomePage() {
 
                 <div className="px-6 pb-6 pt-0 flex items-center justify-between">
                   <span className="text-xs font-semibold text-gray-500">Next cohort soon</span>
-                  <Link href="/programmes?focus=Leadership" className="text-xs font-bold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
+                  <Link href="/courses?focus=Leadership" className="text-xs font-semibold text-gray-900 hover:text-emerald-600 flex items-center cursor-pointer">
                     <span>Learn More</span>
                     <Icon name="arrow-right" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -768,10 +769,10 @@ export default function HomePage() {
                   <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl border-2 border-white bg-gradient-to-b from-[#FAFAFA] via-[#FAFAFA] to-[#F2F2F2] p-6 flex flex-col justify-between z-10">
 
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-white/90 backdrop-blur-xs px-3 py-1 rounded-full border border-emerald-200">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500 bg-white/90 backdrop-blur-xs px-3 py-1 rounded-full border border-emerald-200">
                         Lead Coach • EMCC Practitioner
                       </span>
-                      <span className="text-xs text-emerald-700 font-bold">12+ Years Experience</span>
+                      <span className="text-xs text-gray-600 font-semibold">12+ Years Experience</span>
                     </div>
 
                     {/* Large TeachFlex Coach & Mentee Interactive Dialogue SVG */}
@@ -782,7 +783,7 @@ export default function HomePage() {
                     {/* Clean Overlay Badge */}
                     <div className="bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-md border border-gray-100 text-left flex items-center justify-between">
                       <div>
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 block">Founder & Lead Coach</span>
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500 block">Founder & Lead Coach</span>
                         <div className="text-base font-bold text-gray-900 mt-0.5">Sonia Ali</div>
                       </div>
                       <div className="text-right">
@@ -796,17 +797,17 @@ export default function HomePage() {
               </div>
 
               {/* Right: Dark Forest Green Card */}
-              <div className="lg:col-span-7 bg-[#242424] p-8 sm:p-12 rounded-3xl text-white shadow-xl relative overflow-hidden">
+              <div className="lg:col-span-7 bg-emerald-50/60 p-8 sm:p-12 rounded-3xl relative overflow-hidden">
 
-                <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-4">
+                <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 block mb-4">
                   Meet Your Coach
                 </span>
 
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-snug mb-6">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-snug mb-6">
                   “Potential grows when people feel seen, supported and challenged.”
                 </h2>
 
-                <div className="space-y-4 text-sm sm:text-base text-gray-300 leading-relaxed">
+                <div className="space-y-4 text-sm sm:text-base text-gray-600 leading-relaxed">
                   <p>
                     With over a decade of experience supporting graduates, professionals, managers, and senior leaders, Sonia Ali founded Start SAH to offer genuine developmental coaching that respects where you are starting from.
                   </p>
@@ -820,7 +821,7 @@ export default function HomePage() {
                     <span>Meet Your Coach / Trainer</span>
                     <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
-                  <Link href="/coaching" className="border border-emerald-700/80 hover:border-emerald-400 text-emerald-200 font-semibold px-6 py-3.5 rounded-full text-sm transition duration-200 inline-flex items-center cursor-pointer">
+                  <Link href="/coaching" className="border border-emerald-200 hover:border-emerald-400 text-gray-600 font-semibold px-6 py-3.5 rounded-full text-sm transition duration-200 inline-flex items-center cursor-pointer">
                     <span>How 1-on-1 Coaching Works</span>
                   </Link>
                 </div>
@@ -837,8 +838,8 @@ export default function HomePage() {
 
             {/* Section Header */}
             <div className="text-center max-w-2xl mx-auto mb-14">
-              <span className="text-xs font-bold uppercase tracking-widest text-emerald-600">Tailored Pathways</span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 tracking-tight">Two distinct ways to grow with Start SAH</h2>
+              <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">Tailored Pathways</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 tracking-tight">Two distinct ways to grow with Start SAH</h2>
               <p className="text-base text-gray-600 mt-2">Whether you are an individual shaping your career or an organisation building human capability.</p>
             </div>
 
@@ -849,13 +850,13 @@ export default function HomePage() {
               <div className="bg-[#FAFAFA] border border-emerald-200/80 rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col justify-between group hover:shadow-md transition duration-300">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-white px-3 py-1 rounded-full border border-emerald-200">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-white px-3 py-1 rounded-full border border-emerald-200">
                       For Individuals
                     </span>
-                    <span className="text-xs font-semibold text-emerald-600">Graduates • Professionals • Leaders</span>
+                    <span className="text-xs font-semibold text-gray-600">Graduates • Professionals • Leaders</span>
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2 mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2 mb-3">
                     Where are you now?<br />Where do you want to be?
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -869,7 +870,7 @@ export default function HomePage() {
                 </div>
 
                 <div>
-                  <Link href="/coaching" className="w-full sm:w-auto bg-white hover:bg-emerald-600 text-gray-900 hover:text-white border border-gray-200 font-semibold py-3.5 px-8 rounded-full shadow-sm transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
+                  <Link href="/coaching" className="w-full sm:w-auto bg-white hover:bg-emerald-600 text-white hover:text-white border border-gray-200 font-semibold py-3.5 px-8 rounded-full shadow-sm transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
                     <span>Explore Individual Coaching</span>
                     <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -877,30 +878,30 @@ export default function HomePage() {
               </div>
 
               {/* Right: For Organisations (Dark Forest Green Card with Collaborative Team Illustration) */}
-              <div className="bg-[#242424] text-white rounded-3xl p-8 sm:p-10 shadow-md flex flex-col justify-between group hover:shadow-xl transition duration-300" id="organisational">
+              <div className="bg-emerald-50/60 rounded-3xl p-8 sm:p-10 flex flex-col justify-between group transition duration-300" id="organisational">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-charcoal-900/80 px-3 py-1 rounded-full border border-charcoal-700">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-white px-3 py-1 rounded-full border border-gray-200">
                       For Organisations
                     </span>
-                    <span className="text-xs font-semibold text-emerald-300">Teams • Managers • Workforces</span>
+                    <span className="text-xs font-semibold text-gray-600">Teams • Managers • Workforces</span>
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-2 mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2 mb-3">
                     Develop your workforce, teams<br />& leadership.
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                  <p className="text-gray-600 text-sm leading-relaxed mb-6">
                     Create tailored learning that responds to your people, culture, and strategic goals with CPD-accredited programmes.
                   </p>
 
                   {/* Hand-drawn Illustration: Collaborative Team around Table */}
-                  <div className="on-ink ill-stage ill-stage--bare mb-8">
+                  <div className="ill-stage ill-stage--bare mb-8">
                     <Illustration src="/illustrations/topic-teamwork-culture.svg" alt="Illustration: a team working side by side around a shared table" className="ill w-full h-auto max-h-44" />
                   </div>
                 </div>
 
                 <div>
-                  <Link href="/organisational-development" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 px-8 rounded-full shadow transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
+                  <Link href="/for-organisations" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 px-8 rounded-full shadow transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
                     <span>Discuss Your Training Needs</span>
                     <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -922,11 +923,11 @@ export default function HomePage() {
                   <Icon name="seedling" className="text-emerald-600 text-3xl inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </div>
 
-                <span className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+                <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">
                   Free Development Resource
                 </span>
 
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2 tracking-tight">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2 tracking-tight">
                   Unlock Your Growth Potential
                 </h2>
 
@@ -942,7 +943,7 @@ export default function HomePage() {
                   </button>
                 </form>
 
-                <div id="leadSuccessMsg" className="hidden mt-4 p-3 bg-emerald-50 text-emerald-800 rounded-2xl text-xs font-medium border border-emerald-200">
+                <div id="leadSuccessMsg" className="hidden mt-4 p-3 bg-emerald-50 text-gray-600 rounded-2xl text-xs font-medium border border-emerald-200">
                   <Icon name="check" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Thank you! Your development guide has been sent to your email.
                 </div>
               </div>
@@ -956,10 +957,10 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div className="text-left mb-14">
-              <span className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+              <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">
                 Transformation Stories
               </span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 tracking-tight">
                 Real growth. Meaningful outcomes.
               </h2>
             </div>
@@ -970,7 +971,7 @@ export default function HomePage() {
               {/* Story 1 */}
               <div className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="flex text-emerald-500 text-xs">
+                  <div className="flex text-gray-600 text-xs">
                     <Icon name="star" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </div>
                   <p className="text-sm text-gray-700 leading-relaxed font-normal">
@@ -978,7 +979,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="pt-6 border-t border-gray-100 mt-6">
-                  <div className="font-bold text-gray-900 text-sm">Karim M.</div>
+                  <div className="font-semibold text-gray-900 text-sm">Karim M.</div>
                   <div className="text-xs text-gray-500 mt-0.5">VP of Technology, London</div>
                 </div>
               </div>
@@ -986,7 +987,7 @@ export default function HomePage() {
               {/* Story 2 */}
               <div className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="flex text-emerald-500 text-xs">
+                  <div className="flex text-gray-600 text-xs">
                     <Icon name="star" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </div>
                   <p className="text-sm text-gray-700 leading-relaxed font-normal">
@@ -994,7 +995,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="pt-6 border-t border-gray-100 mt-6">
-                  <div className="font-bold text-gray-900 text-sm">Elena R.</div>
+                  <div className="font-semibold text-gray-900 text-sm">Elena R.</div>
                   <div className="text-xs text-gray-500 mt-0.5">Global Operations Director, Zurich</div>
                 </div>
               </div>
@@ -1002,7 +1003,7 @@ export default function HomePage() {
               {/* Story 3 */}
               <div className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="flex text-emerald-500 text-xs">
+                  <div className="flex text-gray-600 text-xs">
                     <Icon name="star" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><Icon name="star" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </div>
                   <p className="text-sm text-gray-700 leading-relaxed font-normal">
@@ -1010,7 +1011,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="pt-6 border-t border-gray-100 mt-6">
-                  <div className="font-bold text-gray-900 text-sm">Marcus L.</div>
+                  <div className="font-semibold text-gray-900 text-sm">Marcus L.</div>
                   <div className="text-xs text-gray-500 mt-0.5">Scale-Up Managing Director</div>
                 </div>
               </div>
@@ -1025,10 +1026,10 @@ export default function HomePage() {
 
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+                <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">
                   Ideas For Growth
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 tracking-tight">
                   Insights & conversations
                 </h2>
               </div>
@@ -1047,7 +1048,7 @@ export default function HomePage() {
               <Link href="/insights" className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between group cursor-pointer">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">Article</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-2.5 py-1 rounded-full">Article</span>
                     <span className="text-xs text-gray-400">5 min read</span>
                   </div>
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
@@ -1058,7 +1059,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="pt-6 border-t border-gray-100 mt-6 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-emerald-600 group-hover:underline">Read Article</span>
+                  <span className="text-xs font-semibold text-gray-600 group-hover:underline">Read Article</span>
                   <Icon name="arrow-right" className="text-xs text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </div>
               </Link>
@@ -1067,7 +1068,7 @@ export default function HomePage() {
               <Link href="/insights" className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between group cursor-pointer">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">Podcast • Ep. 24</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-2.5 py-1 rounded-full">Podcast • Ep. 24</span>
                     <span className="text-xs text-gray-400">28 min</span>
                   </div>
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
@@ -1078,7 +1079,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="pt-6 border-t border-gray-100 mt-6 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-emerald-600 group-hover:underline">Listen Episode</span>
+                  <span className="text-xs font-semibold text-gray-600 group-hover:underline">Listen Episode</span>
                   <Icon name="play" className="text-xs text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </div>
               </Link>
@@ -1087,7 +1088,7 @@ export default function HomePage() {
               <Link href="/insights" className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-emerald-300 shadow-sm transition duration-200 flex flex-col justify-between group cursor-pointer">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">Article</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-2.5 py-1 rounded-full">Article</span>
                     <span className="text-xs text-gray-400">7 min read</span>
                   </div>
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
@@ -1098,7 +1099,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="pt-6 border-t border-gray-100 mt-6 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-emerald-600 group-hover:underline">Read Article</span>
+                  <span className="text-xs font-semibold text-gray-600 group-hover:underline">Read Article</span>
                   <Icon name="arrow-right" className="text-xs text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </div>
               </Link>
@@ -1108,7 +1109,7 @@ export default function HomePage() {
         </section>
 
         {/* 11. PRE-FOOTER CALL TO ACTION BANNER (Dark Forest Green with Hand-Drawn Progression Element) */}
-        <section className="py-20 bg-[#242424] text-center text-white relative overflow-hidden">
+        <section className="py-20 band-off text-center relative overflow-hidden">
 
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Hand-drawn Duo Stepping Forward Illustration */}
@@ -1116,17 +1117,17 @@ export default function HomePage() {
               <Illustration src="/illustrations/18-next-step.svg" alt="Illustration: a professional stepping up onto the next block towards the one after it" className="ill w-full h-auto max-h-36" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-4">
               Your Development Starts Here.
             </h2>
-            <p className="text-base sm:text-lg text-gray-300 max-w-xl mx-auto leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-gray-600 max-w-xl mx-auto leading-relaxed mb-8">
               Choose the pathway that fits where you are today—or start a conversation and we will shape it together.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/programmes" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3.5 rounded-full shadow transition duration-200 cursor-pointer text-sm">
+              <Link href="/courses" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3.5 rounded-full shadow transition duration-200 cursor-pointer text-sm">
                 Explore Programmes
               </Link>
-              <Link href="/contact" className="w-full sm:w-auto border border-emerald-700/80 hover:border-white text-white font-semibold px-8 py-3.5 rounded-full transition duration-200 cursor-pointer text-sm">
+              <Link href="/contact" className="w-full sm:w-auto border border-emerald-200 hover:border-white text-gray-900 font-semibold px-8 py-3.5 rounded-full transition duration-200 cursor-pointer text-sm">
                 Book a Discovery Call
               </Link>
             </div>
