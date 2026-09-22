@@ -48,7 +48,7 @@ export default function CoachingPage() {
                     </div>
                   </div>
                   <div className="pt-4 flex flex-wrap gap-4">
-                    <Link href="/start-your-development?focus=1%3A1%20Coaching%20with%20Sonia%20Ali" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3.5 rounded-full shadow-xs transition text-sm cursor-pointer">
+                    <Link href="/start-your-development?focus=1%3A1%20Coaching%20with%20Sonia%20Ali" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-3.5 rounded-full shadow-xs transition text-sm cursor-pointer">
                       Book a 1-on-1 Discovery Chat
                     </Link>
                     <Link href="/resources" className="border border-gray-200 hover:border-gray-900 text-gray-800 font-semibold px-6 py-3.5 rounded-full transition text-sm cursor-pointer">
@@ -61,7 +61,7 @@ export default function CoachingPage() {
                 <div className="lg:col-span-6 lg:-mr-8 xl:-mr-14">
                   <div className="mx-auto">
                     <div className="ill-stage ill-stage--bare">
-                      <Illustration src="/illustrations/new-33-thobe-casual-colleague.svg" alt="Illustration: a mentor in thobe and ghutra talking a younger colleague through his work" className="ill ill-hero" />
+                      <Illustration src="/illustrations/new-47-scene-coaching-support.svg" alt="Illustration: a coach in abaya taking a young colleague through a chart" className="ill ill-hero" />
                     </div>
 
                     <div className="mt-8">
@@ -321,7 +321,7 @@ export default function CoachingPage() {
                 Twenty minutes, no cost, and an honest answer about whether coaching is what you need.
               </p>
               <div className="mt-10 flex flex-wrap gap-4 justify-center">
-                <Link href="/start-your-development?focus=1%3A1%20Coaching%20with%20Sonia%20Ali" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3.5 rounded-full transition text-sm cursor-pointer">
+                <Link href="/start-your-development?focus=1%3A1%20Coaching%20with%20Sonia%20Ali" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-3.5 rounded-full transition text-sm cursor-pointer">
                   Book a discovery chat
                 </Link>
                 <Link href="/for-organisations" className="border border-charcoal-300 hover:border-charcoal-800 text-gray-800 font-semibold px-7 py-3.5 rounded-full transition text-sm cursor-pointer">

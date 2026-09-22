@@ -35,7 +35,7 @@ export default function InsightsPage() {
 
               {/* Topic Filter Pills */}
               <div className="flex flex-wrap items-center justify-center gap-2 pt-2" id="insightsFilterBar">
-                <button onClick={() => { filterInsightsCategory('all') }} id="filter-all" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-emerald-600 text-white cursor-pointer shadow-sm">
+                <button onClick={() => { filterInsightsCategory('all') }} id="filter-all" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-emerald-700 text-white cursor-pointer shadow-sm">
                   All Insights
                 </button>
                 <button onClick={() => { filterInsightsCategory('research') }} id="filter-research" className="insight-pill px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer">
@@ -139,7 +139,7 @@ export default function InsightsPage() {
                   {/* Episode Info (7 cols) */}
                   <div className="lg:col-span-7 space-y-4">
                     <div className="flex items-center space-x-3">
-                      <span className="bg-emerald-600 text-white text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                      <span className="bg-emerald-700 text-white text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
                         Featured Episode 28
                       </span>
                       <span className="text-xs text-gray-400 font-medium">34 min • Released this week</span>
@@ -186,7 +186,7 @@ export default function InsightsPage() {
                       <button onClick={() => { rewindAudio(15) }} className="text-gray-400 hover:text-white transition p-2 cursor-pointer" title="Rewind 15s">
                         <Icon name="rotate-left" className="text-lg inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
-                      <button onClick={(event) => { toggleDedicatedPodcast(event.currentTarget) }} id="podcastPlayMasterBtn" className="w-16 h-16 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg transition transform hover:scale-105 cursor-pointer">
+                      <button onClick={(event) => { toggleDedicatedPodcast(event.currentTarget) }} id="podcastPlayMasterBtn" className="w-16 h-16 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white flex items-center justify-center shadow-lg transition transform hover:scale-105 cursor-pointer">
                         <Icon name="play" className="text-xl ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
                       <button onClick={() => { forwardAudio(30) }} className="text-gray-400 hover:text-white transition p-2 cursor-pointer" title="Fast Forward 30s">
@@ -197,7 +197,7 @@ export default function InsightsPage() {
                     {/* Speed & Quality Pills */}
                     <div className="flex items-center space-x-3 text-xs">
                       <span className="text-gray-400 text-[11px]">Speed:</span>
-                      <button onClick={(event) => { setAudioSpeed(1, event.currentTarget) }} className="audio-speed-btn px-2.5 py-1 rounded-md bg-emerald-600 text-white font-semibold text-[11px] cursor-pointer">1.0x</button>
+                      <button onClick={(event) => { setAudioSpeed(1, event.currentTarget) }} className="audio-speed-btn px-2.5 py-1 rounded-md bg-emerald-700 text-white font-semibold text-[11px] cursor-pointer">1.0x</button>
                       <button onClick={(event) => { setAudioSpeed(1.25, event.currentTarget) }} className="audio-speed-btn px-2.5 py-1 rounded-md bg-slate-700 text-gray-300 font-semibold text-[11px] hover:bg-slate-600 cursor-pointer">1.25x</button>
                       <button onClick={(event) => { setAudioSpeed(1.5, event.currentTarget) }} className="audio-speed-btn px-2.5 py-1 rounded-md bg-slate-700 text-gray-300 font-semibold text-[11px] hover:bg-slate-600 cursor-pointer">1.5x</button>
                     </div>
@@ -219,8 +219,8 @@ export default function InsightsPage() {
                   {/* Appearance 1 */}
                   <div className="group">
                     <div className="mb-4 relative ill-stage ill-stage--bare">
-                      <Illustration src="/illustrations/new-18-abaya-document.svg" alt="Illustration: a professional in abaya holding a document" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <button onClick={() => { playAppearanceVideo('On Purpose with Jay Shetty', 'Unlocking Quiet Executive Presence Under Pressure') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
+                      <Illustration src="/illustrations/new-44-young-woman-professional.svg" alt="Illustration: a young professional woman in a blazer and hijab holding a folder" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <button onClick={() => { playAppearanceVideo('On Purpose with Jay Shetty', 'Unlocking Quiet Executive Presence Under Pressure') }} className="w-12 h-12 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
                       <span className="absolute bottom-2.5 right-2.5 bg-black/80 text-white text-[10px] font-semibold px-2 py-0.5 rounded">42:18</span>
@@ -233,8 +233,8 @@ export default function InsightsPage() {
                   {/* Appearance 2 */}
                   <div className="group">
                     <div className="mb-4 relative ill-stage ill-stage--bare">
-                      <Illustration src="/illustrations/new-12-thobe-city-outlook.svg" alt="Illustration: a professional in thobe and ghutra looking out over the city" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <button onClick={() => { playAppearanceVideo('The Diary of a CEO Masterclass', 'The Science of Non-Verbal Gravitas & Executive Presence') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
+                      <Illustration src="/illustrations/new-39-young-man-thobe-tablet.svg" alt="Illustration: a young man in thobe and ghutra reading on a tablet" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <button onClick={() => { playAppearanceVideo('The Diary of a CEO Masterclass', 'The Science of Non-Verbal Gravitas & Executive Presence') }} className="w-12 h-12 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
                       <span className="absolute bottom-2.5 right-2.5 bg-black/80 text-white text-[10px] font-semibold px-2 py-0.5 rounded">55:40</span>
@@ -248,7 +248,7 @@ export default function InsightsPage() {
                   <div className="group">
                     <div className="mb-4 relative ill-stage ill-stage--bare">
                       <Illustration src="/illustrations/new-06-abaya-goal-flag.svg" alt="Illustration: a professional in abaya pointing to a flag at the top of a climb" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <button onClick={() => { playAppearanceVideo('BBC World Service Business', 'Breaking the Non-Native English Ceiling') }} className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
+                      <button onClick={() => { playAppearanceVideo('BBC World Service Business', 'Breaking the Non-Native English Ceiling') }} className="w-12 h-12 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white flex items-center justify-center shadow-lg relative z-10 transition cursor-pointer">
                         <Icon name="play" className="ml-1 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </button>
                       <span className="absolute bottom-2.5 right-2.5 bg-black/80 text-white text-[10px] font-semibold px-2 py-0.5 rounded">28:10</span>
@@ -460,7 +460,7 @@ export default function InsightsPage() {
               </p>
               <form onSubmit={(event) => { handleInsightsSubscribe(event) }} className="max-w-md mx-auto flex flex-col sm:flex-row gap-2.5">
                 <input type="email" id="insightsEmailInput" required placeholder="Enter your work email address" className="flex-1 px-4 py-3 rounded-full border border-gray-300 text-xs focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white" />
-                <button type="submit" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-6 py-3 rounded-full transition shadow-xs cursor-pointer whitespace-nowrap">
+                <button type="submit" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs px-6 py-3 rounded-full transition shadow-xs cursor-pointer whitespace-nowrap">
                   Subscribe Free
                 </button>
               </form>

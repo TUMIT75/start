@@ -68,7 +68,7 @@ export default function ResourcesPage() {
                     <p className="text-xs text-gray-600 mt-1">Focusing on acoustic breath support, pausing technique, and boardroom persuasion.</p>
                   </div>
                   <div className="mt-8 flex justify-center space-x-4">
-                    <Link href="/start-your-development?focus=English%20for%20Professional%20Success" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-full shadow-xs text-xs cursor-pointer">
+                    <Link href="/start-your-development?focus=English%20for%20Professional%20Success" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-6 py-3 rounded-full shadow-xs text-xs cursor-pointer">
                       Start Recommended Development
                     </Link>
                     <button onClick={() => { restartQuiz() }} className="px-5 py-3 border border-gray-200 text-gray-700 font-semibold rounded-full text-xs hover:border-gray-900 cursor-pointer">

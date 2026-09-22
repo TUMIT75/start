@@ -110,7 +110,7 @@ export default function ContactPage() {
                         <textarea rows={4} required placeholder="Tell us how we can assist your executive development..." className="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs sm:text-sm bg-white focus:ring-2 focus:ring-emerald-500 focus:outline-none"></textarea>
                       </div>
 
-                      <button type="submit" id="contactSubmitBtn" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 px-6 rounded-full shadow-xs transition duration-200 text-sm cursor-pointer">
+                      <button type="submit" id="contactSubmitBtn" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3.5 px-6 rounded-full shadow-xs transition duration-200 text-sm cursor-pointer">
                         Send Message
                       </button>
                     </form>

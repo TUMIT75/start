@@ -126,7 +126,7 @@ export default function AboutPage() {
               </div>
 
               <div className="mt-12 text-center flex flex-wrap justify-center gap-4">
-                <Link href="/courses" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3.5 rounded-full shadow-xs transition text-sm cursor-pointer">
+                <Link href="/courses" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-3.5 rounded-full shadow-xs transition text-sm cursor-pointer">
                   <span>Explore All Courses</span>
                   <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </Link>

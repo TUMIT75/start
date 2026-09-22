@@ -7,7 +7,7 @@ import { showToast } from '@/lib/ui';
 export default function Footer() {
   return (
     <>
-        <footer className="bg-[#1A1A1A] text-white pt-16 pb-12 border-t border-emerald-950/60" id="siteFooter">
+        <footer className="bg-charcoal-950 text-white pt-16 pb-12 border-t border-emerald-950/60" id="siteFooter">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
@@ -21,9 +21,9 @@ export default function Footer() {
                   Developing People. Unlocking Potential. Start SAH delivers executive coaching, vocal gravitas, and organisational training aligned with UK CPD standards.
                 </p>
                 <div className="flex items-center space-x-3 text-gray-400 pt-1">
-                  <a href="https://linkedin.com" target="_blank" rel="noopener" className="w-8 h-8 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><Icon name="linkedin-in" className="text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /></a>
-                  <a href="https://spotify.com" target="_blank" rel="noopener" className="w-8 h-8 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><Icon name="spotify" className="text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /></a>
-                  <a href="https://youtube.com" target="_blank" rel="noopener" className="w-8 h-8 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><Icon name="youtube" className="text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /></a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener" className="w-8 h-8 rounded-full bg-white/5 hover:bg-emerald-700 hover:text-white flex items-center justify-center transition"><Icon name="linkedin-in" className="text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /></a>
+                  <a href="https://spotify.com" target="_blank" rel="noopener" className="w-8 h-8 rounded-full bg-white/5 hover:bg-emerald-700 hover:text-white flex items-center justify-center transition"><Icon name="spotify" className="text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /></a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener" className="w-8 h-8 rounded-full bg-white/5 hover:bg-emerald-700 hover:text-white flex items-center justify-center transition"><Icon name="youtube" className="text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /></a>
                 </div>
               </div>
 

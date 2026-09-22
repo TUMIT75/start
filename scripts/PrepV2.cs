@@ -48,6 +48,23 @@ namespace StartSah
         /// </summary>
         public static double ForestCeiling = 82;
 
+        /// <summary>
+        /// How much greener than red (and than blue) a pixel must be to count as
+        /// green at all. 18/8 suits the first two sheets. The 23 September sheet
+        /// paints its discs and a sage blazer in a paler, greyer green that sits
+        /// right on that line, so half their pixels fell to grey and they came
+        /// out blotched; that sheet is cut with a lower bias.
+        /// </summary>
+        public static int GreenBiasR = 18;
+        public static int GreenBiasB = 8;
+
+        /// <summary>
+        /// Settle paper, light grey and mint by majority, for the 23 September
+        /// sheet: its pale clothes and tablet screens sit on the line between
+        /// paper and grey (or paper and mint) and came out mottled.
+        /// </summary>
+        public static bool SettleLights = false;
+
         /// <summary>What FitDisc did to the last illustration, for the build log.</summary>
         public static string LastDisc = "";
 
@@ -87,6 +104,7 @@ namespace StartSah
                     GreenMode(big, 6, 2);
                     AbsorbForestRim(big, 3);
                     AbsorbMintFringe(big, 6);
+                    if (SettleLights) LightMode(big, 5, 2);
                     OpenReassign(big, 0x00, 0x7A, 0x31, 3);
                     Despeckle(big, 900);
                     FitDisc(big);
@@ -155,7 +173,7 @@ namespace StartSah
             {
                 int b = buf[i], g = buf[i + 1], r = buf[i + 2];
                 double lum = 0.299 * r + 0.587 * g + 0.114 * b;
-                bool greenish = g > r + 18 && g > b + 8 && g > 60;
+                bool greenish = g > r + GreenBiasR && g > b + GreenBiasB && g > 60;
 
                 int nr, ng, nb;
                 if (greenish && lum >= MintFloor) { nr = 0xE6; ng = 0xF6; nb = 0xEE; }
@@ -614,6 +632,66 @@ namespace StartSah
                         }
                     if (forest && open) { buf[i] = 0x31; buf[i + 1] = 0x7A; buf[i + 2] = 0x00; }
                 }
+
+            Marshal.Copy(buf, 0, bd.Scan0, len);
+            bmp.UnlockBits(bd);
+        }
+
+        /// <summary>
+        /// Majority vote among the three light classes — paper, light grey and
+        /// mint — so a pale shape comes out as one of them rather than a mottle
+        /// of all three. Darker colours neither vote nor change.
+        /// </summary>
+        static void LightMode(Bitmap bmp, int radius, int passes)
+        {
+            int w = bmp.Width, h = bmp.Height;
+            var bd = bmp.LockBits(new Rectangle(0, 0, w, h), ImageLockMode.ReadWrite, PixelFormat.Format32bppArgb);
+            int stride = bd.Stride, len = stride * h;
+            var buf = new byte[len];
+            Marshal.Copy(bd.Scan0, buf, 0, len);
+
+            // 0 paper, 1 grey, 2 mint, -1 anything else
+            Func<byte[], int, int> cls = (b, i) =>
+                b[i + 3] == 0 ? 0 : Is(b, i, 0xE6, 0xE6, 0xE6) ? 1 : Is(b, i, 0xE6, 0xF6, 0xEE) ? 2 : -1;
+
+            for (int pass = 0; pass < passes; pass++)
+            {
+                var sat = new int[3][];
+                for (int k = 0; k < 3; k++) sat[k] = new int[(w + 1) * (h + 1)];
+                for (int y = 0; y < h; y++)
+                {
+                    int r0 = 0, r1 = 0, r2 = 0;
+                    for (int x = 0; x < w; x++)
+                    {
+                        int c = cls(buf, y * stride + x * 4);
+                        if (c == 0) r0++; else if (c == 1) r1++; else if (c == 2) r2++;
+                        int o = (y + 1) * (w + 1) + x + 1, u = y * (w + 1) + x + 1;
+                        sat[0][o] = sat[0][u] + r0; sat[1][o] = sat[1][u] + r1; sat[2][o] = sat[2][u] + r2;
+                    }
+                }
+
+                var src = (byte[])buf.Clone();
+                for (int y = 0; y < h; y++)
+                    for (int x = 0; x < w; x++)
+                    {
+                        int i = y * stride + x * 4;
+                        int c = cls(src, i);
+                        if (c < 0) continue;
+                        int x0 = Math.Max(0, x - radius), x1 = Math.Min(w, x + radius + 1);
+                        int y0 = Math.Max(0, y - radius), y1 = Math.Min(h, y + radius + 1);
+                        int best = c, bestN = -1;
+                        for (int k = 0; k < 3; k++)
+                        {
+                            var s = sat[k];
+                            int n = s[y1 * (w + 1) + x1] - s[y0 * (w + 1) + x1] - s[y1 * (w + 1) + x0] + s[y0 * (w + 1) + x0];
+                            if (n > bestN || (n == bestN && k == c)) { bestN = n; best = k; }
+                        }
+                        if (best == c) continue;
+                        if (best == 0) { buf[i] = 255; buf[i + 1] = 255; buf[i + 2] = 255; buf[i + 3] = 0; }
+                        else if (best == 1) { buf[i] = 0xE6; buf[i + 1] = 0xE6; buf[i + 2] = 0xE6; buf[i + 3] = 255; }
+                        else { buf[i] = 0xEE; buf[i + 1] = 0xF6; buf[i + 2] = 0xE6; buf[i + 3] = 255; }
+                    }
+            }
 
             Marshal.Copy(buf, 0, bd.Scan0, len);
             bmp.UnlockBits(bd);

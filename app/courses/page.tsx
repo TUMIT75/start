@@ -70,7 +70,7 @@ export default function ProgrammesPage() {
 
               {/* Filter Pills */}
               <div className="flex flex-wrap gap-2 mt-6 pt-6 border-t border-gray-100" id="progFilterTabs">
-                <button onClick={() => { filterProgrammes('all') }} className="prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-emerald-600 text-white cursor-pointer shadow-xs whitespace-nowrap" data-cat="all">All Programmes (6)</button>
+                <button onClick={() => { filterProgrammes('all') }} className="prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-emerald-700 text-white cursor-pointer shadow-xs whitespace-nowrap" data-cat="all">All Programmes (6)</button>
                 <button onClick={() => { filterProgrammes('Communication') }} className="prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer whitespace-nowrap" data-cat="Communication">Communication & English</button>
                 <button onClick={() => { filterProgrammes('Career & Employability') }} className="prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer whitespace-nowrap" data-cat="Career & Employability">Career & Employability</button>
                 <button onClick={() => { filterProgrammes('Leadership') }} className="prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer whitespace-nowrap" data-cat="Leadership">Leadership & Presence</button>
@@ -90,7 +90,7 @@ export default function ProgrammesPage() {
                     <Link href="/courses/english-for-professional-success" className="relative cursor-pointer ill-stage p-4">
                       <Illustration src="/illustrations/new-23-global-reach.svg" alt="Illustration: a professional in thobe and ghutra with a tablet, working across borders" className="ill ill-card group-hover:scale-105 transition duration-500" />
                       <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">Communication</span>
-                      <span className="absolute bottom-3 right-3 bg-emerald-600 text-white px-2.5 py-0.5 rounded-full text-xs font-semibold shadow-xs">Featured LMS</span>
+                      <span className="absolute bottom-3 right-3 bg-emerald-700 text-white px-2.5 py-0.5 rounded-full text-xs font-semibold shadow-xs">Featured LMS</span>
                     </Link>
                     <div className="pt-5">
                       <div className="flex items-center space-x-2 mb-2 text-xs text-gray-500">
@@ -114,7 +114,7 @@ export default function ProgrammesPage() {
                     <div className="text-sm font-semibold text-gray-900">£1,450 <span className="text-xs font-normal text-gray-500">/ cohort</span></div>
                     <div className="flex space-x-2">
                       <Link href="/courses/english-for-professional-success" className="px-3.5 py-2 border border-gray-200 text-xs font-semibold text-gray-700 rounded-full hover:border-gray-900 cursor-pointer">Details</Link>
-                      <Link href="/start-your-development?focus=English%20for%20Professional%20Success" className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
+                      <Link href="/start-your-development?focus=English%20for%20Professional%20Success" className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
                     </div>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export default function ProgrammesPage() {
                   <div className="pt-4 flex items-center justify-between border-t hairline mt-auto">
                     <div className="text-sm font-semibold text-gray-900">£1,250 <span className="text-xs font-normal text-gray-500">/ cohort</span></div>
                     <div className="flex space-x-2">
-                      <Link href="/start-your-development?focus=Executive%20Presence%20%26%20Vocal%20Resonance" className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
+                      <Link href="/start-your-development?focus=Executive%20Presence%20%26%20Vocal%20Resonance" className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
                     </div>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function ProgrammesPage() {
                 <div className="programme-card flex flex-col justify-between group" data-category="Career & Employability">
                   <div>
                     <div className="relative ill-stage ill-stage--bare p-4">
-                      <Illustration src="/illustrations/new-21-casual-city-view.svg" alt="Illustration: a young professional in smart casual looking out over the city" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/new-41-young-man-suit-bag.svg" alt="Illustration: a young professional in a suit and tie with a work bag" className="ill ill-card group-hover:scale-105 transition duration-500" />
                       <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">Career</span>
                     </div>
                     <div className="pt-5">
@@ -180,7 +180,7 @@ export default function ProgrammesPage() {
                   <div className="pt-4 flex items-center justify-between border-t hairline mt-auto">
                     <div className="text-sm font-semibold text-gray-900">£950 <span className="text-xs font-normal text-gray-500">/ learner</span></div>
                     <div className="flex space-x-2">
-                      <Link href="/start-your-development?focus=Executive%20Career%20%26%20Headhunter%20Mastery" className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
+                      <Link href="/start-your-development?focus=Executive%20Career%20%26%20Headhunter%20Mastery" className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
                     </div>
                   </div>
                 </div>
@@ -213,7 +213,7 @@ export default function ProgrammesPage() {
                   <div className="pt-4 flex items-center justify-between border-t hairline mt-auto">
                     <div className="text-sm font-semibold text-gray-900">£1,150 <span className="text-xs font-normal text-gray-500">/ cohort</span></div>
                     <div className="flex space-x-2">
-                      <Link href="/start-your-development?focus=High-Stakes%20Negotiation" className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
+                      <Link href="/start-your-development?focus=High-Stakes%20Negotiation" className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
                     </div>
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default function ProgrammesPage() {
                   <div className="pt-4 flex items-center justify-between border-t hairline mt-auto">
                     <div className="text-sm font-semibold text-gray-900">£1,100 <span className="text-xs font-normal text-gray-500">/ cohort</span></div>
                     <div className="flex space-x-2">
-                      <Link href="/start-your-development?focus=Workplace%20Emotional%20Intelligence" className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
+                      <Link href="/start-your-development?focus=Workplace%20Emotional%20Intelligence" className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Enrol</Link>
                     </div>
                   </div>
                 </div>
@@ -280,7 +280,7 @@ export default function ProgrammesPage() {
                     <div className="text-sm font-semibold text-gray-900">Custom <span className="text-xs font-normal text-gray-500">/ Proposal</span></div>
                     <div className="flex space-x-2">
                       <Link href="/for-organisations" className="px-3.5 py-2 border border-gray-200 text-xs font-semibold text-gray-700 rounded-full hover:border-gray-900 cursor-pointer">B2B Page</Link>
-                      <Link href="/start-your-development?focus=Corporate%20Organisational%20Academy" className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Inquire</Link>
+                      <Link href="/start-your-development?focus=Corporate%20Organisational%20Academy" className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold rounded-full shadow-xs cursor-pointer">Inquire</Link>
                     </div>
                   </div>
                 </div>

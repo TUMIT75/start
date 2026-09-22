@@ -48,7 +48,7 @@ export default function Overlays() {
                 <textarea rows={3} placeholder="Tell us about your current challenge or goals..." className="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none"></textarea>
               </div>
 
-              <button type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3.5 rounded-xl shadow transition duration-200 text-sm">
+              <button type="submit" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3.5 rounded-xl shadow transition duration-200 text-sm">
                 Confirm & Schedule Discovery
               </button>
             </form>
@@ -73,7 +73,7 @@ export default function Overlays() {
             </button>
 
             <div className="flex items-center space-x-2.5 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-brand-500 text-white flex items-center justify-center font-semibold text-sm">
+              <div className="w-8 h-8 rounded-lg bg-emerald-700 text-white flex items-center justify-center font-semibold text-sm">
                 S
               </div>
               <div>
@@ -111,7 +111,7 @@ export default function Overlays() {
                 <span className="text-gray-400">SSL 256-bit</span>
               </div>
 
-              <button type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3.5 rounded-xl shadow transition duration-200 text-sm flex items-center justify-center cursor-pointer" id="loginSubmitBtn">
+              <button type="submit" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3.5 rounded-xl shadow transition duration-200 text-sm flex items-center justify-center cursor-pointer" id="loginSubmitBtn">
                 <span>Log In to Dashboard</span>
                 <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
               </button>
@@ -158,7 +158,7 @@ export default function Overlays() {
 
             {/* Author Card */}
             <div className="flex items-center space-x-3 pb-6 border-b border-gray-100 mb-8">
-              <div className="w-11 h-11 rounded-full bg-brand-600 text-white font-semibold flex items-center justify-center text-sm ring-2 ring-brand-100">
+              <div className="w-11 h-11 rounded-full bg-emerald-700 text-white font-semibold flex items-center justify-center text-sm ring-2 ring-brand-100">
                 SAH
               </div>
               <div>
@@ -284,7 +284,7 @@ export default function Overlays() {
                 <div className="text-xs font-semibold text-gray-600">Lead Coach Summary</div>
                 <div className="text-[11px] text-brand-700">"Ready for C-suite keynote engagements and multinational committee chairs."</div>
               </div>
-              <button onClick={() => { showToast('Diagnostic PDF Exported', 'Full 4-page diagnostic report generated with phonetic spectrogram.') }} className="px-3.5 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-semibold transition flex items-center shrink-0 cursor-pointer">
+              <button onClick={() => { showToast('Diagnostic PDF Exported', 'Full 4-page diagnostic report generated with phonetic spectrogram.') }} className="px-3.5 py-2 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl text-xs font-semibold transition flex items-center shrink-0 cursor-pointer">
                 <Icon name="file-arrow-down" className="mr-1.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Export Report
               </button>
             </div>
@@ -358,7 +358,7 @@ export default function Overlays() {
               <button onClick={() => { window.print() }} className="px-4 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-charcoal-700 hover:bg-gray-50 transition flex items-center cursor-pointer">
                 <Icon name="print" className="mr-2 text-gray-500 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Print Receipt
               </button>
-              <button onClick={() => { showToast('Invoice Downloaded', 'Official VAT Tax Invoice PDF downloaded.'); closeVatInvoiceModal() }} className="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs font-semibold shadow-sm transition flex items-center cursor-pointer">
+              <button onClick={() => { showToast('Invoice Downloaded', 'Official VAT Tax Invoice PDF downloaded.'); closeVatInvoiceModal() }} className="px-5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold shadow-sm transition flex items-center cursor-pointer">
                 <Icon name="file-arrow-down" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Download Official VAT PDF
               </button>
             </div>
@@ -393,7 +393,7 @@ export default function Overlays() {
                   <option>Complete Start SAH Corporate Prospectus 2026/27</option>
                 </select>
               </div>
-              <button type="submit" className="w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl shadow transition text-sm flex items-center justify-center cursor-pointer">
+              <button type="submit" className="w-full py-3.5 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-xl shadow transition text-sm flex items-center justify-center cursor-pointer">
                 <Icon name="cloud-arrow-down" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Download Master PDF Now
               </button>
             </form>

@@ -44,7 +44,7 @@ export default function Header() {
               </nav>
 
               <div className="hidden lg:flex items-center shrink-0">
-                <Link href="/start-your-development" className="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold pl-5 pr-4 py-2.5 rounded-full transition inline-flex items-center gap-2 whitespace-nowrap" id="headerCtaBtn">
+                <Link href="/start-your-development" className="bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold pl-5 pr-4 py-2.5 rounded-full transition inline-flex items-center gap-2 whitespace-nowrap" id="headerCtaBtn">
                   Get Started
                   <Icon name="arrow-right" className="text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </Link>
@@ -70,7 +70,7 @@ export default function Header() {
               <Link href="/dashboard" onClick={() => toggleMobileMenu()} className="text-center py-2.5 text-xs font-semibold text-gray-800 bg-gray-50 rounded-xl flex items-center justify-center">
                 <Icon name="user" className="mr-2 text-emerald-700 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Login / My Learning
               </Link>
-              <Link href="/start-your-development" onClick={() => toggleMobileMenu()} className="w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-full text-sm">
+              <Link href="/start-your-development" onClick={() => toggleMobileMenu()} className="w-full text-center bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3 rounded-full text-sm">
                 Get Started
               </Link>
             </div>

@@ -32,7 +32,7 @@ export default function HomePage() {
 
                 {/* Dual CTAs: Clean Pill Buttons */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 pt-2">
-                  <Link href="/start-your-development" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-7 py-3.5 rounded-full shadow-sm hover:shadow transition duration-200 flex items-center justify-center cursor-pointer" id="heroPrimaryCta">
+                  <Link href="/start-your-development" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-7 py-3.5 rounded-full shadow-sm hover:shadow transition duration-200 flex items-center justify-center cursor-pointer" id="heroPrimaryCta">
                     <span>Start Your Development</span>
                     <Icon name="arrow-right" className="ml-2.5 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -92,7 +92,7 @@ export default function HomePage() {
                   Core Development Architecture
                 </span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#2E2E2E] tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
                 Five dimensions of real growth. <br />Grounded in <span className="text-emerald-600">human reality.</span>
               </h2>
               <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
@@ -112,7 +112,7 @@ export default function HomePage() {
                   {/* Left: Large Prominent Visual Storytelling (Person Considering Different Pathways) */}
                   <div className="lg:col-span-6 order-2 lg:order-1">
                     <div className="ill-stage">
-                      <Illustration src="/illustrations/new-35-casual-hoodie-career.svg" alt="Illustration: a young man in a hoodie with a backpack and laptop, the Riyadh skyline behind him" className="ill ill-section" />
+                      <Illustration src="/illustrations/new-48-scene-career-growth.svg" alt="Illustration: a young man with a backpack looking out over the Riyadh skyline, a path winding ahead" className="ill ill-section" />
                     </div>
                   </div>
 
@@ -123,7 +123,7 @@ export default function HomePage() {
                       <span>•</span>
                       <span>Direction & Clarity</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-[#2E2E2E] tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
                       Career & Employability
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -211,7 +211,7 @@ export default function HomePage() {
                   {/* Right: Large Prominent Visual Storytelling (Two People Interacting) */}
                   <div className="lg:col-span-6">
                     <div className="ill-stage ill-stage--bare">
-                      <Illustration src="/illustrations/new-11-mixed-conversation.svg" alt="Illustration: two colleagues in conversation, one speech bubble answering another" className="ill ill-section" />
+                      <Illustration src="/illustrations/new-49-scene-collaborate.svg" alt="Illustration: a colleague in thobe and ghutra and a colleague in abaya talking an idea through at their laptops" className="ill ill-section" />
                     </div>
                   </div>
 
@@ -238,7 +238,7 @@ export default function HomePage() {
                       <span>•</span>
                       <span>Self-Mastery & Presence</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-[#2E2E2E] tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
                       Personal Development & Executive Presence
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -287,7 +287,7 @@ export default function HomePage() {
                       <span>•</span>
                       <span>Multiplication of Others</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-[#2E2E2E] tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
                       Leadership & Influence
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -350,7 +350,7 @@ export default function HomePage() {
                       <span>•</span>
                       <span>Systemic Team Alignment</span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-[#2E2E2E] tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
                       Organisational Development
                     </h3>
                     <p className="text-base text-gray-600 leading-relaxed">
@@ -551,7 +551,7 @@ export default function HomePage() {
 
                 {/* Large-Scale Hand-Drawn Workshop SVG Illustration */}
                 <div className="ill-stage ill-stage--bare mt-4">
-                  <Illustration src="/illustrations/new-07-team-laptops.svg" alt="Illustration: three colleagues working together at their laptops" className="ill ill-large" />
+                  <Illustration src="/illustrations/new-46-scene-learning-together.svg" alt="Illustration: a trainer in thobe and ghutra working with a young man and a young woman at their laptops" className="ill ill-large" />
                 </div>
               </div>
 
@@ -598,7 +598,7 @@ export default function HomePage() {
                     <div className="text-xl font-semibold text-gray-900 group-hover:text-emerald-700 transition">Find your developmental fit</div>
                     <div className="text-xs text-gray-600 mt-1">6 Curriculums • 1-on-1 Coaching • Team Academies</div>
                   </div>
-                  <div className="w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-center font-semibold group-hover:translate-x-1 transition duration-200 shrink-0 ml-4">
+                  <div className="w-12 h-12 rounded-full bg-emerald-700 text-white flex items-center justify-center font-semibold group-hover:translate-x-1 transition duration-200 shrink-0 ml-4">
                     <Icon name="arrow-right" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </div>
                 </Link>
@@ -821,7 +821,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="pt-8 flex flex-wrap gap-4 items-center">
-                  <Link href="/about" className="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-7 py-3.5 rounded-full text-sm shadow transition duration-200 inline-flex items-center cursor-pointer">
+                  <Link href="/about" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-7 py-3.5 rounded-full text-sm shadow transition duration-200 inline-flex items-center cursor-pointer">
                     <span>Meet Your Coach / Trainer</span>
                     <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -874,7 +874,7 @@ export default function HomePage() {
                 </div>
 
                 <div>
-                  <Link href="/coaching" className="w-full sm:w-auto bg-white hover:bg-emerald-600 text-gray-900 hover:text-white border border-gray-200 font-semibold py-3.5 px-8 rounded-full shadow-sm transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
+                  <Link href="/coaching" className="w-full sm:w-auto bg-white hover:bg-emerald-700 text-gray-900 hover:text-white border border-gray-200 font-semibold py-3.5 px-8 rounded-full shadow-sm transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
                     <span>Explore Individual Coaching</span>
                     <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -905,7 +905,7 @@ export default function HomePage() {
                 </div>
 
                 <div>
-                  <Link href="/for-organisations" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 px-8 rounded-full shadow transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
+                  <Link href="/for-organisations" className="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3.5 px-8 rounded-full shadow transition duration-200 text-center inline-flex items-center justify-center cursor-pointer text-sm">
                     <span>Discuss Your Training Needs</span>
                     <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </Link>
@@ -942,7 +942,7 @@ export default function HomePage() {
                 {/* Clean Inline Form */}
                 <form id="leadMagnetForm" onSubmit={(event) => { handleLeadMagnetSubmit(event) }} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 max-w-lg mx-auto">
                   <input type="email" required placeholder="Enter your email address" className="w-full px-5 py-3.5 rounded-full border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 text-sm outline-none transition bg-white" id="leadEmail" />
-                  <button type="submit" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-7 py-3.5 rounded-full shadow-sm hover:shadow transition duration-200 whitespace-nowrap text-sm cursor-pointer" id="leadSubmitBtn">
+                  <button type="submit" className="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-7 py-3.5 rounded-full shadow-sm hover:shadow transition duration-200 whitespace-nowrap text-sm cursor-pointer" id="leadSubmitBtn">
                     Send My Guide
                   </button>
                 </form>
@@ -1128,7 +1128,7 @@ export default function HomePage() {
               Choose the pathway that fits where you are today—or start a conversation and we will shape it together.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/courses" className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3.5 rounded-full shadow transition duration-200 cursor-pointer text-sm">
+              <Link href="/courses" className="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-3.5 rounded-full shadow transition duration-200 cursor-pointer text-sm">
                 Explore Programmes
               </Link>
               <Link href="/contact" className="w-full sm:w-auto border border-emerald-200 hover:border-white text-gray-900 font-semibold px-8 py-3.5 rounded-full transition duration-200 cursor-pointer text-sm">

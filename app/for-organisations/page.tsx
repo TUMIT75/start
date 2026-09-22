@@ -31,7 +31,7 @@ export default function OrganisationalPage() {
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 pt-2">
-                    <a onClick={() => { document.getElementById('b2bLeadSection')?.scrollIntoView({behavior:'smooth'}) }} className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-7 py-3.5 rounded-full shadow-xs transition duration-200 text-sm flex items-center cursor-pointer">
+                    <a onClick={() => { document.getElementById('b2bLeadSection')?.scrollIntoView({behavior:'smooth'}) }} className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-7 py-3.5 rounded-full shadow-xs transition duration-200 text-sm flex items-center cursor-pointer">
                       <span>Discuss Your Team's Needs</span>
                       <Icon name="arrow-down" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </a>
@@ -105,7 +105,7 @@ export default function OrganisationalPage() {
                 {/* B2B Service 1 */}
                 <div className="flex flex-col justify-between group">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
+                    <div className="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="magnifying-glass-chart" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -131,7 +131,7 @@ export default function OrganisationalPage() {
                 {/* B2B Service 2 */}
                 <div className="flex flex-col justify-between group">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
+                    <div className="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="comments" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -157,7 +157,7 @@ export default function OrganisationalPage() {
                 {/* B2B Service 3 */}
                 <div className="flex flex-col justify-between group">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
+                    <div className="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="user-shield" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -183,7 +183,7 @@ export default function OrganisationalPage() {
                 {/* B2B Service 4 */}
                 <div className="flex flex-col justify-between group">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
+                    <div className="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="sitemap" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -209,7 +209,7 @@ export default function OrganisationalPage() {
                 {/* B2B Service 5 */}
                 <div className="flex flex-col justify-between group">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
+                    <div className="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="compass-drafting" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -235,7 +235,7 @@ export default function OrganisationalPage() {
                 {/* B2B Service 6 */}
                 <div className="flex flex-col justify-between group">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
+                    <div className="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="chalkboard-user" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -431,7 +431,7 @@ export default function OrganisationalPage() {
                     <textarea rows={3} placeholder="Tell us briefly about the capability gaps you are solving, target group, or custom cohort size..." className="w-full px-4 py-3 rounded-xl bg-white border hairline text-gray-900 placeholder-gray-400 text-sm focus:ring-2 focus:ring-emerald-500 outline-none" id="b2bMessage"></textarea>
                   </div>
 
-                  <button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-emerald-600/30 transition duration-200 text-sm cursor-pointer" id="b2bSubmitBtn">
+                  <button type="submit" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-emerald-600/30 transition duration-200 text-sm cursor-pointer" id="b2bSubmitBtn">
                     Submit Request for Corporate Consultation & Proposal
                   </button>
                 </form>
@@ -449,7 +449,7 @@ export default function OrganisationalPage() {
                     <button onClick={() => { resetB2BForm() }} className="px-5 py-2.5 border hairline text-gray-800 rounded-xl text-xs font-semibold hover:border-gray-900">
                       Submit Another Request
                     </button>
-                    <button onClick={() => { navigateTo('homepage') }} className="px-5 py-2.5 bg-brand-500 text-white rounded-xl text-xs font-semibold hover:bg-brand-600">
+                    <button onClick={() => { navigateTo('homepage') }} className="px-5 py-2.5 bg-emerald-700 text-white rounded-xl text-xs font-semibold hover:bg-emerald-800">
                       Return to Homepage
                     </button>
                   </div>

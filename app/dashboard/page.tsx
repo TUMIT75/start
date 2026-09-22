@@ -57,7 +57,7 @@ export default function DashboardPage() {
 
                 {/* Quick Actions */}
                 <div className="flex flex-wrap items-center gap-3">
-                  <Link href="/courses/english-for-professional-success" className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-5 py-2.5 rounded-full shadow-xs transition flex items-center cursor-pointer">
+                  <Link href="/courses/english-for-professional-success" className="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold px-5 py-2.5 rounded-full shadow-xs transition flex items-center cursor-pointer">
                     <Icon name="circle-play" className="mr-2 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     <span>Resume Active Lesson</span>
                   </Link>
@@ -146,7 +146,7 @@ export default function DashboardPage() {
                     </p>
                   </div>
                   <div className="shrink-0 flex items-center gap-3">
-                    <Link href="/courses/english-for-professional-success" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-5 py-2.5 rounded-full shadow-xs transition flex items-center cursor-pointer">
+                    <Link href="/courses/english-for-professional-success" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs px-5 py-2.5 rounded-full shadow-xs transition flex items-center cursor-pointer">
                       <span>Resume Lesson 3.2</span>
                       <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </Link>
@@ -199,7 +199,7 @@ export default function DashboardPage() {
                     </div>
                   </div>
                   <div className="pt-6 mt-6 border-t border-gray-100 flex flex-wrap items-center gap-3">
-                    <button onClick={() => { joinCohortZoom() }} className="bg-emerald-600 hover:bg-emerald-600 text-white font-semibold text-xs px-5 py-2.5 rounded-full shadow-xs transition flex items-center cursor-pointer">
+                    <button onClick={() => { joinCohortZoom() }} className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs px-5 py-2.5 rounded-full shadow-xs transition flex items-center cursor-pointer">
                       <Icon name="video" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Join Live Zoom Room
                     </button>
                     <button onClick={() => { addToCalendar() }} className="border border-gray-200 hover:bg-gray-50 text-gray-800 font-semibold text-xs px-4 py-2.5 rounded-full transition flex items-center bg-white cursor-pointer">
@@ -229,7 +229,7 @@ export default function DashboardPage() {
                     {/* Interactive Voice Note Audio Player */}
                     <div className="bg-slate-900 rounded-xl p-4 text-white flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <button onClick={(event) => { toggleCoachVoiceNote(event.currentTarget) }} id="coachAudioBtn" className="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-500 transition cursor-pointer">
+                        <button onClick={(event) => { toggleCoachVoiceNote(event.currentTarget) }} id="coachAudioBtn" className="w-10 h-10 rounded-full bg-emerald-700 text-white flex items-center justify-center hover:bg-emerald-800 transition cursor-pointer">
                           <Icon name="play" className="ml-0.5 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </button>
                         <div>
@@ -262,7 +262,7 @@ export default function DashboardPage() {
                   <p className="text-xs text-gray-500">Access your active learning materials, quizzes, and completed certifications.</p>
                 </div>
                 <div className="flex items-center space-x-2 text-xs">
-                  <button onClick={(event) => { filterDashboardCourses('all', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-emerald-600 text-white cursor-pointer shadow-xs">All (3)</button>
+                  <button onClick={(event) => { filterDashboardCourses('all', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-emerald-700 text-white cursor-pointer shadow-xs">All (3)</button>
                   <button onClick={(event) => { filterDashboardCourses('active', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer">In Progress (1)</button>
                   <button onClick={(event) => { filterDashboardCourses('completed', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer">Finished (2)</button>
                 </div>
@@ -275,7 +275,7 @@ export default function DashboardPage() {
                   <div>
                     <div className="relative ill-stage p-3">
                       <Illustration src="/illustrations/new-15-thobe-window-work.svg" alt="Illustration: a professional in thobe and ghutra working at a laptop by a city window" className="ill ill-card" />
-                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
+                      <span className="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
                         In Progress
                       </span>
                       <span className="absolute bottom-3 right-3 bg-black/80 text-white text-[11px] font-semibold px-2 py-0.5 rounded">
@@ -296,7 +296,7 @@ export default function DashboardPage() {
                     </div>
                   </div>
                   <div className="p-6 pt-0">
-                    <Link href="/courses/english-for-professional-success" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs py-2.5 rounded-full transition flex items-center justify-center cursor-pointer shadow-xs">
+                    <Link href="/courses/english-for-professional-success" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs py-2.5 rounded-full transition flex items-center justify-center cursor-pointer shadow-xs">
                       <span>Continue Learning</span>
                       <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </Link>
@@ -308,10 +308,10 @@ export default function DashboardPage() {
                   <div>
                     <div className="relative ill-stage p-3">
                       <Illustration src="/illustrations/new-29-abaya-career-path.svg" alt="Illustration: a young professional in abaya setting out along a winding path" className="ill ill-card" />
-                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
+                      <span className="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
                         Completed (Grade: 96%)
                       </span>
-                      <span className="absolute bottom-3 right-3 bg-emerald-500 text-white text-[11px] font-semibold px-2 py-0.5 rounded">
+                      <span className="absolute bottom-3 right-3 bg-emerald-700 text-white text-[11px] font-semibold px-2 py-0.5 rounded">
                         <Icon name="award" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />CPD Ready
                       </span>
                     </div>
@@ -332,7 +332,7 @@ export default function DashboardPage() {
                     <Link href="/courses/english-for-professional-success" className="flex-1 border border-gray-200 hover:bg-gray-50 text-gray-800 font-semibold text-xs py-2 rounded-full transition text-center cursor-pointer">
                       Review Lessons
                     </Link>
-                    <button onClick={() => { switchStudentDashboardTab('dash-certificates') }} className="bg-emerald-500 hover:bg-emerald-500 text-white font-semibold text-xs px-4 py-2 rounded-full transition flex items-center cursor-pointer">
+                    <button onClick={() => { switchStudentDashboardTab('dash-certificates') }} className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs px-4 py-2 rounded-full transition flex items-center cursor-pointer">
                       <Icon name="award" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Certificate
                     </button>
                   </div>
@@ -343,10 +343,10 @@ export default function DashboardPage() {
                   <div>
                     <div className="relative ill-stage p-3">
                       <Illustration src="/illustrations/new-27-casual-armchair-work.svg" alt="Illustration: a young professional in smart casual working from an armchair" className="ill ill-card" />
-                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
+                      <span className="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
                         Completed (Grade: 92%)
                       </span>
-                      <span className="absolute bottom-3 right-3 bg-emerald-500 text-white text-[11px] font-semibold px-2 py-0.5 rounded">
+                      <span className="absolute bottom-3 right-3 bg-emerald-700 text-white text-[11px] font-semibold px-2 py-0.5 rounded">
                         <Icon name="award" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />CPD Ready
                       </span>
                     </div>
@@ -367,7 +367,7 @@ export default function DashboardPage() {
                     <Link href="/courses/english-for-professional-success" className="flex-1 border border-gray-200 hover:bg-gray-50 text-gray-800 font-semibold text-xs py-2 rounded-full transition text-center cursor-pointer">
                       Review Lessons
                     </Link>
-                    <button onClick={() => { switchStudentDashboardTab('dash-certificates') }} className="bg-emerald-500 hover:bg-emerald-500 text-white font-semibold text-xs px-4 py-2 rounded-full transition flex items-center cursor-pointer">
+                    <button onClick={() => { switchStudentDashboardTab('dash-certificates') }} className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs px-4 py-2 rounded-full transition flex items-center cursor-pointer">
                       <Icon name="award" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Certificate
                     </button>
                   </div>
@@ -465,7 +465,7 @@ export default function DashboardPage() {
                   <div>
                     <div className="flex items-center justify-between mb-6">
                       <div className="flex items-center space-x-2">
-                        <div className="w-8 h-8 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-semibold text-sm">
+                        <div className="w-8 h-8 rounded-lg bg-emerald-700 text-white flex items-center justify-center font-semibold text-sm">
                           <Icon name="award" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </div>
                         <div>
@@ -509,7 +509,7 @@ export default function DashboardPage() {
                   <div>
                     <div className="flex items-center justify-between mb-6">
                       <div className="flex items-center space-x-2">
-                        <div className="w-8 h-8 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-semibold text-sm">
+                        <div className="w-8 h-8 rounded-lg bg-emerald-700 text-white flex items-center justify-center font-semibold text-sm">
                           <Icon name="award" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </div>
                         <div>
@@ -569,7 +569,7 @@ export default function DashboardPage() {
                     <p className="text-xs text-gray-600">Breakout verbal drills followed by live individual critiques from Sonia Ali.</p>
                   </div>
                   <div className="shrink-0 flex items-center gap-3">
-                    <button onClick={() => { joinCohortZoom() }} className="bg-emerald-600 hover:bg-emerald-600 text-white font-semibold text-xs px-5 py-2.5 rounded-full transition cursor-pointer shadow-xs">
+                    <button onClick={() => { joinCohortZoom() }} className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs px-5 py-2.5 rounded-full transition cursor-pointer shadow-xs">
                       <Icon name="video" className="mr-1.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Join Zoom Call
                     </button>
                   </div>
@@ -692,7 +692,7 @@ export default function DashboardPage() {
                   </div>
 
                   <div className="pt-4 flex items-center justify-between border-t border-gray-100">
-                    <button type="submit" id="profileSaveBtn" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-6 py-2.5 rounded-full shadow-xs transition cursor-pointer">
+                    <button type="submit" id="profileSaveBtn" className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs px-6 py-2.5 rounded-full shadow-xs transition cursor-pointer">
                       Save Profile Changes
                     </button>
                     <span id="profileSaveMsg" className="hidden text-xs text-gray-600 font-semibold">

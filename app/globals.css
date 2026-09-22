@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --sah-green: #00c853;
-  --sah-ink: #2e2e2e;
+  --sah-green: #00b050;
+  --sah-ink: #1f2937;
   --sah-off: #fafafa;
-  --sah-grey: #e6e6e6;
+  --sah-grey: #e5e7eb;
 }
 
 body {
@@ -81,7 +81,7 @@ th {
   padding-bottom: 86%;
   transform: translate(-50%, -50%);
   border-radius: 9999px;
-  background: radial-gradient(circle, #E6F6EE 0%, #E6F6EE 58%, rgba(230, 246, 238, 0) 72%);
+  background: radial-gradient(circle, #EAF7EE 0%, #EAF7EE 58%, rgba(234, 247, 238, 0) 72%);
   z-index: 0;
 }
 .ill-stage--green > * { position: relative; z-index: 1; }
@@ -115,10 +115,10 @@ th {
    subtle mint transition, white space, illustration", and lists section
    transitions as one of the three places light green belongs.
 
-   It is the same #E6F6EE the illustrations use for their discs, deliberately:
+   It is the same #EAF7EE the illustrations use for their discs, deliberately:
    the note asks us not to introduce several different greens, so the whole
    site runs on the logo green and this one lighter tint of it. */
-.band-mint { background: #E6F6EE; }
+.band-mint { background: #EAF7EE; }
 .band-ink { background: var(--sah-ink); color: #fff; }
 .band-ink h1,
 .band-ink h2,

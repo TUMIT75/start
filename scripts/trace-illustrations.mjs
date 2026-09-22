@@ -47,6 +47,14 @@ const CONFIG = {
  *  discs behind its figures and a skyline in muted teal. #007A31 is the darker
  *  tint the forest-green shapes (chart bars, hillsides) now keep. */
 const PALETTE = ['#FFFFFF', '#E6F6EE', '#E6E6E6', '#A9DCC5', '#B4B4B4', '#2E2E2E', '#00C853', '#007A31'];
+/** Prep colours -> the brand's. The prep quantises to fixed working colours;
+ *  this is where they become the client's palette, so a change of brand green
+ *  is one line here (and the matching step in tailwind.config.ts). */
+const BRAND = {
+  '#00C853': '#00B050', // primary green
+  '#E6F6EE': '#EAF7EE', // light tint
+};
+
 const hexToRgb = (h) => [
   parseInt(h.slice(1, 3), 16),
   parseInt(h.slice(3, 5), 16),
@@ -77,7 +85,10 @@ async function trace(buf, hierarchical) {
   const w = Number((svg.match(/width="(\d+)"/) || [])[1]);
   const h = Number((svg.match(/height="(\d+)"/) || [])[1]);
 
-  svg = svg.replace(/fill="(#[0-9A-Fa-f]{3,6})"/g, (_m, hex) => `fill="${snap(hex)}"`);
+  svg = svg.replace(/fill="(#[0-9A-Fa-f]{3,6})"/g, (_m, hex) => {
+    const c = snap(hex);
+    return `fill="${BRAND[c] ?? c}"`;
+  });
   // the sheet's paper is transparent in the source; drop anything traced for it
   svg = svg.replace(/<path[^>]*fill="#FFFFFF"[^>]*\/>\s*/g, '');
   svg = svg

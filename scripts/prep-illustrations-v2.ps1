@@ -1,4 +1,4 @@
-# Builds the quantised sources for the 20 and 21 September illustration sheets.
+# Builds the quantised sources for the 20, 21 and 23 September illustration sheets.
 #
 # Sheet A (20 September) is six columns by five rows, each drawing inside a thin
 # grey frame. The bands come from SheetGrid.cs, which finds those frames; an
@@ -80,6 +80,37 @@ Cut $sheetB `
   @(@(28, 305), @(311, 592), @(598, 885), @(891, 1175)) `
   0 $namesB 31
 $sheetB.Dispose()
+
+# ---- sheet C: 23 September, the "Startsah Colour Palette" sheet -------------
+# Its lower half is two rows of drawings: seven young Saudi professionals, one
+# figure each (the young women in professional and student wear the client
+# asked for among them), then four wide scenes "on the website". Columns are
+# split by thin rules, captions sit underneath. The rules SheetProfile also
+# reports at x 142 and 492 are a lamp cord and a board edge inside the scenes.
+$namesC = @(
+  'young-man-thobe-tablet', 'young-man-casual-hoodie', 'young-man-suit-bag', 'young-woman-abaya-tablet',
+  'young-woman-open-abaya', 'young-woman-professional', 'young-woman-student'
+)
+$namesD = @('scene-learning-together', 'scene-coaching-support', 'scene-career-growth', 'scene-collaborate')
+$sheetC = [System.Drawing.Bitmap]::FromFile("$IMAGES\9.png")
+# its discs and the sage blazer are a paler, greyer green than the other sheets
+[StartSah.PrepV2]::GreenBiasR = 10
+[StartSah.PrepV2]::GreenBiasB = 4
+# and its pale clothes and screens sit between paper and grey
+[StartSah.PrepV2]::SettleLights = $true
+# rows end at the blank band above each caption (y 549-560 and 868-877)
+Cut $sheetC `
+  @(, @(338, 552)) `
+  @(@(10, 230), @(236, 443), @(449, 655), @(662, 869), @(875, 1084), @(1091, 1304), @(1310, 1525)) `
+  0 $namesC 39
+Cut $sheetC `
+  @(, @(698, 870)) `
+  @(@(4, 410), @(416, 769), @(775, 1158), @(1164, 1522)) `
+  0 $namesD 46
+[StartSah.PrepV2]::GreenBiasR = 18
+[StartSah.PrepV2]::GreenBiasB = 8
+[StartSah.PrepV2]::SettleLights = $false
+$sheetC.Dispose()
 
 $files = Get-ChildItem $Out -Filter *.png
 Write-Output ("`n{0} quantised sources at {1}x -> {2}" -f $files.Count, $Scale, $Out)

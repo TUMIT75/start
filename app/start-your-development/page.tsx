@@ -144,7 +144,7 @@ export default function StartYourDevelopmentPage() {
 
                       {/* Submit Button */}
                       <div className="pt-2">
-                        <button type="submit" id="devSubmitBtn" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-lg shadow-xs transition duration-200 text-sm flex items-center justify-center cursor-pointer">
+                        <button type="submit" id="devSubmitBtn" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3 rounded-lg shadow-xs transition duration-200 text-sm flex items-center justify-center cursor-pointer">
                           <span>Submit Application & Schedule Consultation</span>
                           <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </button>
@@ -158,7 +158,7 @@ export default function StartYourDevelopmentPage() {
                     <div id="devVoucherState" className="hidden text-left py-2">
                       <div className="bg-emerald-50/80 border border-emerald-200/80 rounded-xl p-6 sm:p-8">
                         <div className="flex items-center space-x-3 mb-4">
-                          <div className="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-lg">
+                          <div className="w-10 h-10 rounded-lg bg-emerald-700 text-white flex items-center justify-center text-lg">
                             <Icon name="check" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <div>
@@ -172,7 +172,7 @@ export default function StartYourDevelopmentPage() {
                         </p>
 
                         <div className="flex flex-wrap items-center gap-3">
-                          <Link href="/dashboard" className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition cursor-pointer">
+                          <Link href="/dashboard" className="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition cursor-pointer">
                             <span>View Learner Dashboard</span>
                           </Link>
                           <button onClick={() => { resetDevelopmentForm() }} className="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 text-xs font-semibold px-4 py-2.5 rounded-lg transition cursor-pointer">

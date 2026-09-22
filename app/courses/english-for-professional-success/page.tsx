@@ -24,13 +24,13 @@ export default function CoursePage() {
 
           {/* Course Hero Section */}
           <section className="band-mint pt-12 pb-16 relative overflow-hidden">
-            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#00C853_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#00B050_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
                 <div className="lg:col-span-8 space-y-5">
                   <div className="flex flex-wrap items-center gap-2.5">
-                    <span className="bg-brand-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                    <span className="bg-emerald-700 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
                       LearnPress LMS • Executive Cohort
                     </span>
                     <span className="bg-white text-gray-600 border border-gray-200 text-xs font-semibold px-3 py-1 rounded-full">
@@ -94,7 +94,7 @@ export default function CoursePage() {
 
                   {/* Hero Action Buttons */}
                   <div className="flex flex-wrap items-center gap-3 pt-2">
-                    <button onClick={() => { openModal('English for Professional Success') }} className="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-brand-500/30 transition duration-200 text-sm flex items-center cursor-pointer">
+                    <button onClick={() => { openModal('English for Professional Success') }} className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-brand-500/30 transition duration-200 text-sm flex items-center cursor-pointer">
                       <Icon name="bolt" className="mr-2 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Enrol in Next Cohort
                     </button>
                     <button onClick={() => { downloadSyllabus() }} className="bg-white hover:bg-charcoal-700 text-gray-700 border border-gray-200 font-semibold px-5 py-3 rounded-xl transition duration-200 text-sm flex items-center cursor-pointer" id="syllabusBtn">
@@ -107,9 +107,9 @@ export default function CoursePage() {
                 <div className="lg:col-span-4 hidden lg:block">
                   <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm relative overflow-hidden">
                     <div className="relative rounded-xl mb-4 group cursor-pointer bg-white ill-stage ill-stage--bare p-3" onClick={() => { openModal('English for Professional Success') }}>
-                      <Illustration src="/illustrations/new-22-abaya-study.svg" alt="Illustration: a young professional in abaya studying at a laptop on a stack of books" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/new-45-young-woman-student.svg" alt="Illustration: a young woman student with a backpack, carrying her books" className="ill ill-card group-hover:scale-105 transition duration-500" />
                       <div className="absolute inset-0 bg-white/10 flex items-center justify-center">
-                        <div className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
+                        <div className="w-12 h-12 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                           <Icon name="play" className="text-sm ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </div>
                       </div>
@@ -135,7 +135,7 @@ export default function CoursePage() {
 
                   {/* Eduma Style Course Navigation Tabs */}
                   <div className="bg-white rounded-2xl p-2 border border-gray-200 shadow-sm flex flex-wrap gap-2 text-xs sm:text-sm font-semibold">
-                    <button onClick={() => { switchCourseTab('overview') }} id="cTab-overview" className="course-tab-btn flex-1 py-3 px-4 rounded-xl transition bg-brand-500 text-white shadow-sm text-center cursor-pointer">
+                    <button onClick={() => { switchCourseTab('overview') }} id="cTab-overview" className="course-tab-btn flex-1 py-3 px-4 rounded-xl transition bg-emerald-700 text-white shadow-sm text-center cursor-pointer">
                       <Icon name="circle-info" className="mr-1.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Overview
                     </button>
                     <button onClick={() => { switchCourseTab('curriculum') }} id="cTab-curriculum" className="course-tab-btn flex-1 py-3 px-4 rounded-xl transition text-charcoal-700 hover:bg-gray-100 text-center cursor-pointer">
@@ -203,7 +203,7 @@ export default function CoursePage() {
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                         <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                          <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
+                          <div className="w-8 h-8 rounded-lg bg-emerald-700 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
                             <Icon name="briefcase" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <h4 className="font-semibold text-sm text-charcoal-900">C-Suite & VP Executives</h4>
@@ -211,7 +211,7 @@ export default function CoursePage() {
                         </div>
 
                         <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                          <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
+                          <div className="w-8 h-8 rounded-lg bg-emerald-700 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
                             <Icon name="users-gear" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <h4 className="font-semibold text-sm text-charcoal-900">Senior Technical Directors</h4>
@@ -219,7 +219,7 @@ export default function CoursePage() {
                         </div>
 
                         <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                          <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
+                          <div className="w-8 h-8 rounded-lg bg-emerald-700 text-white flex items-center justify-center text-sm mb-3 shadow-xs">
                             <Icon name="earth-americas" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <h4 className="font-semibold text-sm text-charcoal-900">Multinational Consultants</h4>
@@ -306,7 +306,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleLmsModule(1) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-semibold text-sm text-charcoal-900 transition">
                             <div className="flex items-center space-x-3">
-                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-semibold">1</span>
+                              <span className="w-6 h-6 rounded-md bg-emerald-700 text-white text-xs flex items-center justify-center font-semibold">1</span>
                               <span>Module 1: Foundations of Executive Voice & Somatic Presence (Weeks 1–2)</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -350,7 +350,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleLmsModule(2) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-semibold text-sm text-charcoal-900 transition">
                             <div className="flex items-center space-x-3">
-                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-semibold">2</span>
+                              <span className="w-6 h-6 rounded-md bg-emerald-700 text-white text-xs flex items-center justify-center font-semibold">2</span>
                               <span>Module 2: Strategic Brevity & Boardroom-Ready Articulation (Weeks 3–4)</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -394,7 +394,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleLmsModule(3) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-semibold text-sm text-charcoal-900 transition">
                             <div className="flex items-center space-x-3">
-                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-semibold">3</span>
+                              <span className="w-6 h-6 rounded-md bg-emerald-700 text-white text-xs flex items-center justify-center font-semibold">3</span>
                               <span>Module 3: Cross-Cultural Negotiation & Diplomatic Nuance (Weeks 5–6)</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -438,7 +438,7 @@ export default function CoursePage() {
                         <div className="border border-gray-200 rounded-xl overflow-hidden">
                           <button onClick={() => { toggleLmsModule(4) }} className="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left flex items-center justify-between font-semibold text-sm text-charcoal-900 transition">
                             <div className="flex items-center space-x-3">
-                              <span className="w-6 h-6 rounded-md bg-brand-500 text-white text-xs flex items-center justify-center font-semibold">4</span>
+                              <span className="w-6 h-6 rounded-md bg-emerald-700 text-white text-xs flex items-center justify-center font-semibold">4</span>
                               <span>Module 4: Capstone Boardroom Simulation & 1:1 Vocal Audit (Weeks 7–8)</span>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -538,7 +538,7 @@ export default function CoursePage() {
                           <div className="pt-2">
                             <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-between">
                               <div className="flex items-center space-x-3">
-                                <div className="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center shadow-xs">
+                                <div className="w-9 h-9 rounded-lg bg-emerald-700 text-white flex items-center justify-center shadow-xs">
                                   <Icon name="play" className="text-xs ml-0.5 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 </div>
                                 <div>
@@ -705,7 +705,7 @@ export default function CoursePage() {
 
                       {/* Action Buttons */}
                       <div className="space-y-3 mb-6">
-                        <button onClick={() => { openModal('English for Professional Success') }} className="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition duration-200 text-sm flex items-center justify-center cursor-pointer">
+                        <button onClick={() => { openModal('English for Professional Success') }} className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition duration-200 text-sm flex items-center justify-center cursor-pointer">
                           <span>Apply / Enrol in Cohort</span>
                           <Icon name="arrow-right" className="ml-2 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </button>

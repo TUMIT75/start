@@ -77,7 +77,7 @@ export function switchCourseTab(tabKey: any) {
         
         if (t === tabKey) {
           if (btn) {
-            btn.className = 'course-tab-btn flex-1 py-3 px-4 rounded-xl transition bg-brand-500 text-white shadow-sm text-center cursor-pointer';
+            btn.className = 'course-tab-btn flex-1 py-3 px-4 rounded-xl transition bg-emerald-700 text-white shadow-sm text-center cursor-pointer';
           }
           if (pane) pane.classList.remove('hidden');
         } else {
@@ -267,7 +267,7 @@ export function filterProgrammes(category: any) {
       // Update active filter button
       buttons.forEach((btn: any) => {
         if (btn.getAttribute('data-cat') === category) {
-          btn.className = 'prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-emerald-600 text-white shadow-xs cursor-pointer whitespace-nowrap';
+          btn.className = 'prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-emerald-700 text-white shadow-xs cursor-pointer whitespace-nowrap';
         } else {
           btn.className = 'prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer whitespace-nowrap';
         }
@@ -666,7 +666,7 @@ export function filterInsightsCategory(cat: any) {
 
       buttons.forEach((btn: any) => {
         if (btn.getAttribute('data-cat') === cat) {
-          btn.className = 'insight-filter-btn px-4 py-2 rounded-xl text-xs font-semibold transition bg-brand-500 text-white shadow-sm cursor-pointer whitespace-nowrap';
+          btn.className = 'insight-filter-btn px-4 py-2 rounded-xl text-xs font-semibold transition bg-emerald-700 text-white shadow-sm cursor-pointer whitespace-nowrap';
         } else {
           btn.className = 'insight-filter-btn px-4 py-2 rounded-xl text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-charcoal-700 cursor-pointer whitespace-nowrap';
         }
@@ -781,7 +781,7 @@ export function setAudioSpeed(speed: any, btn: any) {
       allBtns.forEach((b: any) => {
         b.className = 'audio-speed-btn px-2.5 py-1 rounded-lg text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-charcoal-700 cursor-pointer';
       });
-      btn.className = 'audio-speed-btn px-2.5 py-1 rounded-lg text-xs font-semibold transition bg-brand-500 text-white cursor-pointer';
+      btn.className = 'audio-speed-btn px-2.5 py-1 rounded-lg text-xs font-semibold transition bg-emerald-700 text-white cursor-pointer';
       showToast('Playback Speed', 'Set audio speed to ' + speed + 'x');
     }
 
@@ -841,7 +841,7 @@ export function filterDashboardCourses(status: any, btn: any) {
         b.className = 'course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer';
       });
       if (btn) {
-        btn.className = 'course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-emerald-600 text-white cursor-pointer shadow-xs';
+        btn.className = 'course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-emerald-700 text-white cursor-pointer shadow-xs';
       }
 
       cards.forEach((c: any) => {
