@@ -28,14 +28,14 @@ export default function ProgrammesPage() {
           </div>
 
           {/* Catalog Hero */}
-          <section className="py-12 sm:py-16 bg-white">
+          <section className="py-12 sm:py-16 lg:py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div className="space-y-3">
                   <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60">
                     CPD UK Accredited Catalog
                   </div>
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                     Learning That Moves You Forward
                   </h1>
                   <p className="text-sm sm:text-base text-gray-600 max-w-2xl leading-relaxed">
@@ -88,16 +88,16 @@ export default function ProgrammesPage() {
                 <div className="programme-card flex flex-col justify-between group" data-category="Communication">
                   <div>
                     <Link href="/courses/english-for-professional-success" className="relative cursor-pointer ill-stage p-4">
-                      <Illustration src="/illustrations/new-23-global-reach.svg" alt="Illustration: a professional with a tablet, working across borders" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Communication</span>
+                      <Illustration src="/illustrations/new-23-global-reach.svg" alt="Illustration: a professional in thobe and ghutra with a tablet, working across borders" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">Communication</span>
                       <span className="absolute bottom-3 right-3 bg-emerald-600 text-white px-2.5 py-0.5 rounded-full text-xs font-semibold shadow-xs">Featured LMS</span>
                     </Link>
                     <div className="pt-5">
                       <div className="flex items-center space-x-2 mb-2 text-xs text-gray-500">
                         <span className="font-semibold text-gray-900">Sonia Ali (Lead Coach)</span>
-                        <span className="ml-auto text-emerald-600 font-bold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0 (48)</span>
+                        <span className="ml-auto text-emerald-600 font-semibold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0 (48)</span>
                       </div>
-                      <Link href="/courses/english-for-professional-success" className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
+                      <Link href="/courses/english-for-professional-success" className="text-lg font-semibold text-gray-900 group-hover:text-emerald-600 transition mb-2 cursor-pointer">
                         English for Professional Success
                       </Link>
                       <p className="text-xs text-gray-600 leading-relaxed mb-4">
@@ -122,16 +122,16 @@ export default function ProgrammesPage() {
                 {/* Card 2: Executive Presence & Vocal Resonance */}
                 <div className="programme-card flex flex-col justify-between group" data-category="Leadership">
                   <div>
-                    <div className="relative ill-stage ill-stage--green p-4">
-                      <Illustration src="/illustrations/03-communication.svg" alt="Illustration: two colleagues talking across a table, one speech bubble answering another" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Leadership</span>
+                    <div className="relative ill-stage ill-stage--bare p-4">
+                      <Illustration src="/illustrations/new-16-women-shared-idea.svg" alt="Illustration: two colleagues in abaya sharing an idea over a tablet" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">Leadership</span>
                     </div>
                     <div className="pt-5">
                       <div className="flex items-center space-x-2 mb-2 text-xs text-gray-500">
                         <span className="font-semibold text-gray-900">Sonia Ali (Lead Coach)</span>
-                        <span className="ml-auto text-emerald-600 font-bold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />4.9 (36)</span>
+                        <span className="ml-auto text-emerald-600 font-semibold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />4.9 (36)</span>
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900 group-hover:text-emerald-600 transition mb-2">
                         Executive Presence & Vocal Resonance
                       </h3>
                       <p className="text-xs text-gray-600 leading-relaxed mb-4">
@@ -155,16 +155,16 @@ export default function ProgrammesPage() {
                 {/* Card 3: Career Transition & Executive Search */}
                 <div className="programme-card flex flex-col justify-between group" data-category="Career & Employability">
                   <div>
-                    <div className="relative ill-stage ill-stage--green p-4">
-                      <Illustration src="/illustrations/02-career-pathways.svg" alt="Illustration: a professional pausing at a signpost, weighing which direction to take" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Career</span>
+                    <div className="relative ill-stage ill-stage--bare p-4">
+                      <Illustration src="/illustrations/new-21-casual-city-view.svg" alt="Illustration: a young professional in smart casual looking out over the city" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">Career</span>
                     </div>
                     <div className="pt-5">
                       <div className="flex items-center space-x-2 mb-2 text-xs text-gray-500">
                         <span className="font-semibold text-gray-900">Start SAH Advisory</span>
-                        <span className="ml-auto text-emerald-600 font-bold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0 (42)</span>
+                        <span className="ml-auto text-emerald-600 font-semibold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0 (42)</span>
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900 group-hover:text-emerald-600 transition mb-2">
                         Executive Career & Headhunter Mastery
                       </h3>
                       <p className="text-xs text-gray-600 leading-relaxed mb-4">
@@ -188,16 +188,16 @@ export default function ProgrammesPage() {
                 {/* Card 4: Boardroom Negotiation & Conflict */}
                 <div className="programme-card flex flex-col justify-between group" data-category="Communication">
                   <div>
-                    <div className="relative ill-stage ill-stage--green p-4">
-                      <Illustration src="/illustrations/16-partnership.svg" alt="Illustration: two colleagues in abaya shaking hands over an agreement" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Communication</span>
+                    <div className="relative ill-stage ill-stage--bare p-4">
+                      <Illustration src="/illustrations/new-03-thobe-shirt-discussion.svg" alt="Illustration: a colleague in thobe and ghutra talking something through with a colleague holding a tablet" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">Communication</span>
                     </div>
                     <div className="pt-5">
                       <div className="flex items-center space-x-2 mb-2 text-xs text-gray-500">
                         <span className="font-semibold text-gray-900">Sonia Ali & Panel</span>
-                        <span className="ml-auto text-emerald-600 font-bold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />4.9 (29)</span>
+                        <span className="ml-auto text-emerald-600 font-semibold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />4.9 (29)</span>
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900 group-hover:text-emerald-600 transition mb-2">
                         High-Stakes Negotiation & Diplomatic Influence
                       </h3>
                       <p className="text-xs text-gray-600 leading-relaxed mb-4">
@@ -223,14 +223,14 @@ export default function ProgrammesPage() {
                   <div>
                     <div className="relative ill-stage p-4">
                       <Illustration src="/illustrations/new-25-abaya-notes.svg" alt="Illustration: a professional in abaya taking notes" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Leadership</span>
+                      <span className="absolute top-3 left-3 bg-gray-900/90 text-white px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">Leadership</span>
                     </div>
                     <div className="pt-5">
                       <div className="flex items-center space-x-2 mb-2 text-xs text-gray-500">
                         <span className="font-semibold text-gray-900">Start SAH Faculty</span>
-                        <span className="ml-auto text-emerald-600 font-bold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0 (51)</span>
+                        <span className="ml-auto text-emerald-600 font-semibold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0 (51)</span>
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900 group-hover:text-emerald-600 transition mb-2">
                         Workplace Emotional Intelligence & Gravitas
                       </h3>
                       <p className="text-xs text-gray-600 leading-relaxed mb-4">
@@ -256,14 +256,14 @@ export default function ProgrammesPage() {
                   <div>
                     <div className="relative ill-stage p-4">
                       <Illustration src="/illustrations/new-20-team-systems.svg" alt="Illustration: three colleagues working on a shared system" className="ill ill-card group-hover:scale-105 transition duration-500" />
-                      <span className="absolute top-3 left-3 bg-emerald-700 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Enterprise B2B</span>
+                      <span className="absolute top-3 left-3 bg-emerald-700 text-white px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">Enterprise B2B</span>
                     </div>
                     <div className="pt-5">
                       <div className="flex items-center space-x-2 mb-2 text-xs text-gray-500">
                         <span className="font-semibold text-gray-900">Sonia Ali & Corporate Advisory</span>
-                        <span className="ml-auto text-emerald-600 font-bold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0 (22)</span>
+                        <span className="ml-auto text-emerald-600 font-semibold"><Icon name="star" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />5.0 (22)</span>
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900 group-hover:text-emerald-600 transition mb-2">
                         Custom Organisational Leadership Academy
                       </h3>
                       <p className="text-xs text-gray-600 leading-relaxed mb-4">

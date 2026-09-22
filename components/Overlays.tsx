@@ -18,7 +18,7 @@ export default function Overlays() {
               <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                 Get Started
               </span>
-              <h3 className="text-2xl font-bold text-charcoal-900 mt-2">Book Your Discovery Call</h3>
+              <h3 className="text-2xl font-semibold text-charcoal-900 mt-2">Book Your Discovery Call</h3>
               <p className="text-xs text-gray-600 mt-1">Speak directly with our team to explore your coaching or organisational needs.</p>
             </div>
 
@@ -57,7 +57,7 @@ export default function Overlays() {
               <div className="w-14 h-14 bg-brand-50 text-brand-600 rounded-full flex items-center justify-center mx-auto text-2xl mb-3">
                 <Icon name="check" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
               </div>
-              <h4 className="text-lg font-bold text-charcoal-900">Thank You!</h4>
+              <h4 className="text-lg font-semibold text-charcoal-900">Thank You!</h4>
               <p className="text-xs text-gray-600 mt-1">We have received your discovery request. Sonia Ali or our senior advisor will contact you within 24 hours.</p>
               <button onClick={() => { closeModal() }} className="mt-4 px-5 py-2 bg-charcoal-900 text-white rounded-lg text-xs font-semibold">Close</button>
             </div>
@@ -82,7 +82,7 @@ export default function Overlays() {
               </div>
             </div>
 
-            <h3 className="text-xl font-bold text-charcoal-900 mb-1">
+            <h3 className="text-xl font-semibold text-charcoal-900 mb-1">
               Sign in to My Learning
             </h3>
             <p className="text-xs text-gray-500 mb-6">
@@ -121,7 +121,7 @@ export default function Overlays() {
               <div className="w-12 h-12 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center mx-auto text-xl mb-3">
                 <Icon name="check" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
               </div>
-              <h4 className="font-bold text-base text-charcoal-900">Welcome Back, Sarah!</h4>
+              <h4 className="font-semibold text-base text-charcoal-900">Welcome Back, Sarah!</h4>
               <p className="text-xs text-gray-500 mt-1 mb-4">Redirecting to your Eduma Student LMS Dashboard...</p>
               <button onClick={() => { closeLoginModal(); navigateTo('dashboard') }} className="w-full bg-charcoal-900 hover:bg-charcoal-800 text-white text-xs font-semibold py-2.5 rounded-xl transition">
                 Open Student Dashboard Now
@@ -130,7 +130,7 @@ export default function Overlays() {
 
             <div className="mt-6 pt-5 border-t border-gray-100 text-center text-xs text-gray-500">
               New to Start SAH? 
-              <a onClick={() => { closeLoginModal(); navigateTo('homepage'); setTimeout(() => document.getElementById('programmes')?.scrollIntoView({behavior:'smooth'}), 200) }} className="text-brand-600 font-bold hover:underline">
+              <a onClick={() => { closeLoginModal(); navigateTo('homepage'); setTimeout(() => document.getElementById('programmes')?.scrollIntoView({behavior:'smooth'}), 200) }} className="text-brand-600 font-semibold hover:underline">
                 Explore Programmes & Enrol
               </a>
             </div>
@@ -152,7 +152,7 @@ export default function Overlays() {
               <span id="articleDate" className="text-xs text-gray-500 font-medium">Published September 2026</span>
             </div>
 
-            <h2 id="articleModalTitle" className="font-serif text-2xl md:text-3xl lg:text-4xl text-charcoal-900 font-bold leading-tight mb-6">
+            <h2 id="articleModalTitle" className="font-serif text-2xl md:text-3xl lg:text-4xl text-charcoal-900 font-semibold leading-tight mb-6">
               Executive Gravitas: The Subtle Nuances of Communicating in Multinational Boardrooms
             </h2>
 
@@ -213,7 +213,7 @@ export default function Overlays() {
                 <div className="w-16 h-16 rounded-full bg-brand-500/90 text-white flex items-center justify-center text-xl mx-auto mb-3 shadow-lg shadow-brand-500/20 animate-pulse cursor-pointer" onClick={() => { showToast('Video Stream Active', 'Playing BBC World Service broadcast master recording...') }}>
                   <Icon name="play" className="ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                 </div>
-                <div id="videoShowTitle" className="font-serif font-bold text-lg text-white">BBC World Business Report</div>
+                <div id="videoShowTitle" className="font-serif font-semibold text-lg text-white">BBC World Business Report</div>
                 <div id="videoTopicTitle" className="text-xs text-gray-400 mt-1">Cross-Cultural Leadership & Nuanced Negotiation in Global Hubs</div>
                 <div className="inline-flex items-center text-[10px] text-brand-400 mt-2 bg-brand-500/10 px-2.5 py-1 rounded-full border border-brand-500/20">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-ping"></span> Live Master Recording • 1080p HD
@@ -223,7 +223,7 @@ export default function Overlays() {
 
             <div className="flex items-center justify-between text-xs text-gray-400 pt-2 border-t border-white/10">
               <span>Speaker: Dr. Sarah Al-Haddad</span>
-              <button onClick={() => { showToast('Transcript Downloaded', 'Official BBC broadcast transcript downloaded in PDF format.') }} className="text-brand-400 hover:text-brand-300 font-bold flex items-center cursor-pointer">
+              <button onClick={() => { showToast('Transcript Downloaded', 'Official BBC broadcast transcript downloaded in PDF format.') }} className="text-brand-400 hover:text-brand-300 font-semibold flex items-center cursor-pointer">
                 <Icon name="download" className="mr-1.5 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Download Verbatim Transcript (PDF)
               </button>
             </div>
@@ -242,38 +242,38 @@ export default function Overlays() {
               <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full"><Icon name="check-circle" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />Score: 94 / 100</span>
             </div>
 
-            <h3 className="font-serif text-2xl font-bold text-charcoal-900 mb-2">Executive Speech & Clarity Diagnostic</h3>
+            <h3 className="font-serif text-2xl font-semibold text-charcoal-900 mb-2">Executive Speech & Clarity Diagnostic</h3>
             <p className="text-xs text-gray-500 mb-6">Completed on 14 August 2026 • Certified by Lead Speech Diagnostic Coach</p>
 
             <div className="space-y-4 text-xs text-charcoal-700 mb-6">
               <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                <div className="font-bold text-charcoal-900 mb-1 flex justify-between">
+                <div className="font-semibold text-charcoal-900 mb-1 flex justify-between">
                   <span>1. Articulation & Pace Control under Pressure</span>
-                  <span className="text-brand-600 font-bold">24 / 25 pts</span>
+                  <span className="text-brand-600 font-semibold">24 / 25 pts</span>
                 </div>
                 <p className="text-gray-500 leading-relaxed">Exceptional speech cadence. Average presentation cadence clocked at 138 words/minute, within the optimal executive delivery bracket (130–150 wpm).</p>
               </div>
 
               <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                <div className="font-bold text-charcoal-900 mb-1 flex justify-between">
+                <div className="font-semibold text-charcoal-900 mb-1 flex justify-between">
                   <span>2. Strategic Framing (SCQA Model)</span>
-                  <span className="text-brand-600 font-bold">25 / 25 pts</span>
+                  <span className="text-brand-600 font-semibold">25 / 25 pts</span>
                 </div>
                 <p className="text-gray-500 leading-relaxed">Flawless demonstration of Situation-Complication-Question-Answer framing in the boardroom executive simulation.</p>
               </div>
 
               <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                <div className="font-bold text-charcoal-900 mb-1 flex justify-between">
+                <div className="font-semibold text-charcoal-900 mb-1 flex justify-between">
                   <span>3. Cross-Cultural Diplomatic Nuance</span>
-                  <span className="text-brand-600 font-bold">22 / 25 pts</span>
+                  <span className="text-brand-600 font-semibold">22 / 25 pts</span>
                 </div>
                 <p className="text-gray-500 leading-relaxed">High emotional intelligence in disarming hostile pushback. Recommended refinement: subtle pause buffering before responding to direct challenge.</p>
               </div>
 
               <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                <div className="font-bold text-charcoal-900 mb-1 flex justify-between">
+                <div className="font-semibold text-charcoal-900 mb-1 flex justify-between">
                   <span>4. Non-Verbal Eye Contact & Gravitas</span>
-                  <span className="text-brand-600 font-bold">23 / 25 pts</span>
+                  <span className="text-brand-600 font-semibold">23 / 25 pts</span>
                 </div>
                 <p className="text-gray-500 leading-relaxed">Solid posture, deliberate hand gestures without repetitive fidgeting. Eye engagement sustained across multiple camera focal points.</p>
               </div>
@@ -300,7 +300,7 @@ export default function Overlays() {
 
             <div className="flex items-center justify-between pb-6 border-b border-gray-100 mb-6">
               <div>
-                <div className="font-serif text-xl font-bold text-charcoal-900">START <span className="text-brand-500">SAH</span></div>
+                <div className="font-serif text-xl font-semibold text-charcoal-900">START <span className="text-brand-500">SAH</span></div>
                 <div className="text-[10px] text-gray-400 uppercase tracking-widest mt-0.5">Start SAH Ltd • London, UK</div>
               </div>
               <div className="text-right">
@@ -311,13 +311,13 @@ export default function Overlays() {
 
             <div className="grid grid-cols-2 gap-4 text-xs mb-6 text-gray-600">
               <div>
-                <span className="text-[10px] font-bold text-gray-400 uppercase block">Billed To:</span>
+                <span className="text-[10px] font-semibold text-gray-400 uppercase block">Billed To:</span>
                 <strong className="text-charcoal-900">Sarah Jenkins</strong><br />
                 Senior VP, Product Operations<br />
                 sarah.jenkins@enterprise.com
               </div>
               <div>
-                <span className="text-[10px] font-bold text-gray-400 uppercase block">Issuer Details:</span>
+                <span className="text-[10px] font-semibold text-gray-400 uppercase block">Issuer Details:</span>
                 <strong className="text-charcoal-900">Start SAH Ltd</strong><br />
                 Mayfair Executive Suite, London W1K<br />
                 UK VAT Reg: GB 892 4110 32
@@ -327,8 +327,8 @@ export default function Overlays() {
             <table className="w-full text-xs text-left mb-6 border-y border-gray-100">
               <thead>
                 <tr className="text-gray-400 text-[10px] uppercase border-b border-gray-100">
-                  <th className="py-2.5 font-bold">Item Description</th>
-                  <th className="py-2.5 font-bold text-right">Amount</th>
+                  <th className="py-2.5 font-semibold">Item Description</th>
+                  <th className="py-2.5 font-semibold text-right">Amount</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-50 text-charcoal-700">
@@ -337,7 +337,7 @@ export default function Overlays() {
                     <strong>English for Professional Success</strong><br />
                     <span className="text-gray-400 text-[11px]">8-Week Executive Cohort + 1:1 Diagnostic Lab</span>
                   </td>
-                  <td className="py-3 text-right font-bold">£745.83</td>
+                  <td className="py-3 text-right font-semibold">£745.83</td>
                 </tr>
                 <tr>
                   <td className="py-2 text-gray-500">Subtotal</td>
@@ -376,16 +376,16 @@ export default function Overlays() {
               <Icon name="file-pdf" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
             </div>
 
-            <h3 className="font-serif text-2xl font-bold text-charcoal-900 mb-2">Download Programme Syllabus</h3>
+            <h3 className="font-serif text-2xl font-semibold text-charcoal-900 mb-2">Download Programme Syllabus</h3>
             <p className="text-xs text-gray-500 mb-6">Complete week-by-week curriculum, learning outcomes, diagnostic criteria, and accreditation details.</p>
 
             <form onSubmit={(event) => { handleSyllabusSubmit(event) }} className="space-y-4 text-xs">
               <div>
-                <label className="block font-bold text-gray-700 mb-1">Corporate or Personal Email</label>
+                <label className="block font-semibold text-gray-700 mb-1">Corporate or Personal Email</label>
                 <input type="email" required placeholder="executive@company.com" className="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none" value="executive@enterprise.com" />
               </div>
               <div>
-                <label className="block font-bold text-gray-700 mb-1">Select Curriculum Format</label>
+                <label className="block font-semibold text-gray-700 mb-1">Select Curriculum Format</label>
                 <select className="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-brand-500 outline-none">
                   <option>English for Professional Success (Full 8-Week Syllabus)</option>
                   <option>Workplace Soft Skills Masterclass (Executive Syllabus)</option>

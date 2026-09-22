@@ -20,7 +20,7 @@ export default function AboutPage() {
           </div>
 
           {/* About Hero (Mixing Photography with Hand-Drawn Elements) */}
-          <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+          <section className="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
             {/* Subtle organic background doodle accents */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -28,8 +28,8 @@ export default function AboutPage() {
                   <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60">
                     Our Story & Human Philosophy
                   </div>
-                  <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-tight leading-tight">
-                    Developing People. Unlocking Potential. <span className="text-emerald-600">At Every Stage.</span>
+                  <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
+                    Developing People. Unlocking Potential. At <span className="text-emerald-600">Every Stage.</span>
                   </h1>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                     Start SAH was founded on a simple conviction: meaningful growth doesn't come from rigid corporate lectures. It comes when people feel genuinely seen, psychologically safe, and practically equipped to overcome daily challenges.
@@ -39,15 +39,15 @@ export default function AboutPage() {
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-4 border-t border-gray-100">
                     <div>
-                      <span className="text-3xl font-bold text-gray-900">14+</span>
+                      <span className="text-3xl font-semibold text-gray-900">14+</span>
                       <span className="block text-xs font-medium text-gray-500 mt-1">Years Mentoring & Coaching</span>
                     </div>
                     <div>
-                      <span className="text-3xl font-bold text-emerald-600">1,200+</span>
+                      <span className="text-3xl font-semibold text-emerald-600">1,200+</span>
                       <span className="block text-xs font-medium text-gray-500 mt-1">People & Teams Supported</span>
                     </div>
                     <div>
-                      <span className="text-3xl font-bold text-gray-900">100%</span>
+                      <span className="text-3xl font-semibold text-gray-900">100%</span>
                       <span className="block text-xs font-medium text-gray-500 mt-1">CPD UK & EMCC Aligned</span>
                     </div>
                   </div>
@@ -58,7 +58,7 @@ export default function AboutPage() {
                 <div className="lg:col-span-6 lg:-mr-8 xl:-mr-14">
                   <div className="mx-auto">
                     <div className="ill-stage ill-stage--bare">
-                      <Illustration src="/illustrations/new-02-abaya-tablet-review.svg" alt="Illustration: a professional in abaya reading on a tablet" className="ill ill-hero" />
+                      <Illustration src="/illustrations/new-32-abaya-tablet-confidence.svg" alt="Illustration: a young professional in abaya reading on a tablet" className="ill ill-hero" />
                     </div>
                     <div className="mt-6 flex items-center justify-between gap-4 border-t hairline pt-5">
                       <div>
@@ -81,42 +81,42 @@ export default function AboutPage() {
 
                 <div className="lg:col-span-5">
                   <div className="ill-stage ill-stage--bare">
-                    <Illustration src="/illustrations/new-14-stepping-up-growth.svg" alt="Illustration: a professional stepping up a rising chart" className="ill ill-section" />
+                    <Illustration src="/illustrations/new-36-abaya-thobe-solving.svg" alt="Illustration: a colleague in abaya and a colleague in thobe working a problem through together at one laptop" className="ill ill-section" />
                   </div>
                 </div>
 
                 <div className="lg:col-span-7">
                   <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">How Progression Happens</span>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 tracking-tight">The four stages of human progression</h2>
+                  <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mt-3 tracking-tight">The four stages of human progression</h2>
                   <p className="text-gray-600 mt-3 leading-relaxed max-w-xl">A thoughtful, proven cycle designed to take you from uncertain hesitation to lasting capability.</p>
                   <div className="rule-green mt-6"></div>
 
                   <ol className="mt-10 space-y-8">
                     <li className="flex gap-5">
-                      <span className="shrink-0 text-2xl font-bold text-emerald-600 leading-none w-10">01</span>
+                      <span className="shrink-0 text-2xl font-semibold text-emerald-600 leading-none w-10">01</span>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg">Clarify the gap</h3>
+                        <h3 className="font-semibold text-gray-900 text-lg">Clarify the gap</h3>
                         <p className="text-sm text-gray-600 leading-relaxed mt-1 max-w-lg">Understanding where you are, pinpointing the specific communication or mindset roadblocks holding you back.</p>
                       </div>
                     </li>
                     <li className="flex gap-5">
-                      <span className="shrink-0 text-2xl font-bold text-emerald-600 leading-none w-10">02</span>
+                      <span className="shrink-0 text-2xl font-semibold text-emerald-600 leading-none w-10">02</span>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg">Find your voice</h3>
+                        <h3 className="font-semibold text-gray-900 text-lg">Find your voice</h3>
                         <p className="text-sm text-gray-600 leading-relaxed mt-1 max-w-lg">Developing calm vocal control, clear phrasing, and unlearning the fear of speaking up in demanding rooms.</p>
                       </div>
                     </li>
                     <li className="flex gap-5">
-                      <span className="shrink-0 text-2xl font-bold text-emerald-600 leading-none w-10">03</span>
+                      <span className="shrink-0 text-2xl font-semibold text-emerald-600 leading-none w-10">03</span>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg">Practise it for real</h3>
+                        <h3 className="font-semibold text-gray-900 text-lg">Practise it for real</h3>
                         <p className="text-sm text-gray-600 leading-relaxed mt-1 max-w-lg">Real scenarios, role-plays, and constructive feedback in a safe space with zero judgment and instant coaching.</p>
                       </div>
                     </li>
                     <li className="flex gap-5">
-                      <span className="shrink-0 text-2xl font-bold text-emerald-600 leading-none w-10">04</span>
+                      <span className="shrink-0 text-2xl font-semibold text-emerald-600 leading-none w-10">04</span>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg">Make the progress stick</h3>
+                        <h3 className="font-semibold text-gray-900 text-lg">Make the progress stick</h3>
                         <p className="text-sm text-gray-600 leading-relaxed mt-1 max-w-lg">Embodying new habits naturally, stepping forward with genuine self-assurance, and sustaining long-term momentum.</p>
                       </div>
                     </li>

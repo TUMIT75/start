@@ -19,7 +19,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <section className="py-16 sm:py-24 bg-white">
+          <section className="py-16 sm:py-24 lg:py-32 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
@@ -28,7 +28,7 @@ export default function ContactPage() {
                   <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60">
                     Get in Touch
                   </div>
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight">
                     Connect with Start SAH.
                   </h1>
                   <p className="text-base text-gray-600 leading-relaxed">
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 {/* Contact Form (7 cols) */}
                 <div className="lg:col-span-7">
                   <div className="bg-slate-50/70 p-6 sm:p-10 rounded-2xl border border-gray-200/80 shadow-xs">
-                    <h3 className="text-xl font-bold text-gray-900 mb-6">Send an Inquiry to Our Senior Team</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-6">Send an Inquiry to Our Senior Team</h3>
 
                     <form id="generalContactForm" onSubmit={(event) => { handleContactSubmit(event) }} className="space-y-4">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -119,7 +119,7 @@ export default function ContactPage() {
                       <div className="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto text-xl mb-3 border border-emerald-200">
                         <Icon name="check" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </div>
-                      <h4 className="font-bold text-gray-900 text-base">Message Sent Successfully</h4>
+                      <h4 className="font-semibold text-gray-900 text-base">Message Sent Successfully</h4>
                       <p className="text-xs text-gray-600 mt-1">Thank you. An executive advisor will reply to your inquiry within 24 business hours.</p>
                     </div>
 

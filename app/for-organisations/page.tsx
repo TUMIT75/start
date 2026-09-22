@@ -22,8 +22,8 @@ export default function OrganisationalPage() {
                     </span>
                   </div>
 
-                  <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-tight leading-tight">
-                    Developing Your People. <br /><span className="text-emerald-600">Unlocking Team Potential.</span>
+                  <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
+                    Developing Your People. <br />Unlocking <span className="text-emerald-600">Team Potential.</span>
                   </h1>
 
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
@@ -43,15 +43,15 @@ export default function OrganisationalPage() {
                   {/* Enterprise Trust Metrics */}
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-6 border-t border-gray-100">
                     <div>
-                      <div className="text-2xl sm:text-3xl font-bold text-emerald-600">94%</div>
+                      <div className="text-2xl sm:text-3xl font-semibold text-emerald-600">94%</div>
                       <div className="text-xs text-gray-500 mt-1">Reported Better Team Collaboration</div>
                     </div>
                     <div>
-                      <div className="text-2xl sm:text-3xl font-bold text-gray-900">100%</div>
+                      <div className="text-2xl sm:text-3xl font-semibold text-gray-900">100%</div>
                       <div className="text-xs text-gray-500 mt-1">CPD UK Certified Outcomes</div>
                     </div>
                     <div>
-                      <div className="text-2xl sm:text-3xl font-bold text-emerald-600">3.4x</div>
+                      <div className="text-2xl sm:text-3xl font-semibold text-emerald-600">3.4x</div>
                       <div className="text-xs text-gray-500 mt-1">Retention of Emerging Talent</div>
                     </div>
                   </div>
@@ -66,7 +66,7 @@ export default function OrganisationalPage() {
 
                     <div className="mt-8">
                       <span className="text-xs uppercase font-semibold tracking-widest text-gray-500 block mb-2">Tailored to your team</span>
-                      <h3 className="text-xl font-bold text-gray-900 tracking-tight">Interactive, practical and actionable</h3>
+                      <h3 className="text-xl font-semibold text-gray-900 tracking-tight">Interactive, practical and actionable</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-3">
                         No passive slide decks. We engage your employees and managers in real workplace scenarios, constructive peer sparring, and communication habits that stick.
                       </p>
@@ -76,7 +76,7 @@ export default function OrganisationalPage() {
                       <span className="text-gray-700 font-semibold flex items-center">
                         <Icon name="users" className="mr-1.5 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Cohorts: 8 &ndash; 30+ people
                       </span>
-                      <span className="text-emerald-700 font-bold">Virtual or in-person</span>
+                      <span className="text-emerald-700 font-semibold">Virtual or in-person</span>
                     </div>
                   </div>
                 </div>
@@ -86,13 +86,13 @@ export default function OrganisationalPage() {
           </section>
 
           {/* 6 Core B2B Services Grid */}
-          <section className="py-20 bg-white">
+          <section className="py-20 lg:py-28 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-3 py-1 rounded-full">
                   Corporate Solutions
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-900 mt-3 tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-semibold text-charcoal-900 mt-3 tracking-tight">
                   Comprehensive Organisational Development Solutions
                 </h2>
                 <p className="text-gray-600 text-sm sm:text-base mt-2">
@@ -108,7 +108,7 @@ export default function OrganisationalPage() {
                     <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="magnifying-glass-chart" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
                       1. Training Needs Analysis (TNA)
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
@@ -134,7 +134,7 @@ export default function OrganisationalPage() {
                     <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="comments" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
                       2. Executive & Workplace Communication
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
@@ -160,7 +160,7 @@ export default function OrganisationalPage() {
                     <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="user-shield" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
                       3. Soft Skills, Gravitas & Presence
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
@@ -186,7 +186,7 @@ export default function OrganisationalPage() {
                     <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="sitemap" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
                       4. Human-Centric Leadership Academies
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
@@ -212,7 +212,7 @@ export default function OrganisationalPage() {
                     <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="compass-drafting" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
                       5. Bespoke Corporate Programmes & Retreats
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
@@ -238,7 +238,7 @@ export default function OrganisationalPage() {
                     <div className="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-5 shadow-sm group-hover:scale-105 transition">
                       <Icon name="chalkboard-user" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
                       6. Train the Trainer (TOT)
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
@@ -263,13 +263,13 @@ export default function OrganisationalPage() {
           </section>
 
           {/* The 5-Stage B2B Enterprise Impact Process */}
-          <section className="py-20 bg-slate-50">
+          <section className="py-20 lg:py-28 bg-slate-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full shadow-sm">
                   Our Enterprise Methodology
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mt-3 tracking-tight">
                   The 5-Stage Diagnostic & Delivery Process
                 </h2>
                 <p className="text-gray-600 text-sm sm:text-base mt-2">
@@ -334,7 +334,7 @@ export default function OrganisationalPage() {
           </section>
 
           {/* B2B LEAD FORM SECTION */}
-          <section className="py-20 bg-white" id="b2bLeadSection">
+          <section className="py-20 lg:py-28 bg-white" id="b2bLeadSection">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="bg-emerald-50/60 rounded-3xl p-8 sm:p-12 relative">
 
@@ -342,7 +342,7 @@ export default function OrganisationalPage() {
                   <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">
                     Corporate Consultation
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3.5 tracking-tight">
+                  <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mt-3.5 tracking-tight">
                     Discuss Your Training Needs
                   </h2>
                   <p className="text-gray-600 text-xs sm:text-sm mt-2 leading-relaxed">
@@ -441,7 +441,7 @@ export default function OrganisationalPage() {
                   <div className="w-16 h-16 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto text-3xl mb-4">
                     <Icon name="check" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Proposal Request Received</h3>
+                  <h3 className="text-2xl font-semibold text-gray-900">Proposal Request Received</h3>
                   <p className="text-gray-600 text-xs sm:text-sm mt-2 max-w-md mx-auto leading-relaxed">
                     Thank you for considering Start SAH for your organizational development. Sonia Ali or our enterprise partnership director will review your brief and contact you within 24 hours with an initial capability assessment plan.
                   </p>

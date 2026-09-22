@@ -8,10 +8,11 @@ import './globals.css';
 /* Manrope, per the 20 September note: Plus Jakarta Sans read rounded and heavy,
    and made every heading feel bulky. Self-hosted by Next at build time, so
    there is no render-blocking request to Google and no flash of fallback text.
-   800 is deliberately not loaded — hierarchy comes from size and spacing. */
+   Regular, Medium and Semibold only — the three weights on the 21 September
+   spec sheet. Nothing is bold; hierarchy comes from size and spacing. */
 const manrope = Manrope({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600'],
   display: 'swap',
   variable: '--font-sans',
 });

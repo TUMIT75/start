@@ -21,7 +21,9 @@ for (const f of fs.readdirSync(DIR).sort()) {
 
   if (f.endsWith('.svg')) {
     const svg = fs.readFileSync(full, 'utf8');
-    const vb = svg.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/);
+    // the origin is not always 0 0: pad-illustrations.mjs widens the canvas
+    // round the drawing, so the box can start at a negative offset
+    const vb = svg.match(/viewBox="[-\d.]+ [-\d.]+ ([\d.]+) ([\d.]+)"/);
     if (vb) {
       out[`/illustrations/${f}`] = { w: Math.round(+vb[1]), h: Math.round(+vb[2]) };
       continue;

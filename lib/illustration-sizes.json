@@ -1,242 +1,274 @@
 {
   "/illustrations/01-growth-momentum.svg": {
-    "w": 1060,
-    "h": 892
+    "w": 1257,
+    "h": 1058
   },
   "/illustrations/02-career-pathways.svg": {
-    "w": 1032,
-    "h": 892
+    "w": 1242,
+    "h": 1073
   },
   "/illustrations/03-communication.svg": {
-    "w": 1048,
-    "h": 892
+    "w": 1263,
+    "h": 1075
   },
   "/illustrations/04-training-delivery.svg": {
-    "w": 1064,
-    "h": 892
+    "w": 1282,
+    "h": 1075
   },
   "/illustrations/05-new-ideas.svg": {
-    "w": 1056,
-    "h": 892
+    "w": 1273,
+    "h": 1075
   },
   "/illustrations/06-teamwork.svg": {
-    "w": 1060,
-    "h": 824
+    "w": 1277,
+    "h": 993
   },
   "/illustrations/07-coaching-mentoring.svg": {
-    "w": 1032,
-    "h": 824
+    "w": 1237,
+    "h": 988
   },
   "/illustrations/08-learning.svg": {
-    "w": 1048,
-    "h": 824
+    "w": 1263,
+    "h": 993
   },
   "/illustrations/09-problem-solving.svg": {
-    "w": 1064,
-    "h": 824
+    "w": 1283,
+    "h": 994
   },
   "/illustrations/10-career-progression.svg": {
-    "w": 1056,
-    "h": 824
+    "w": 1215,
+    "h": 948
   },
   "/illustrations/11-time-focus.svg": {
-    "w": 1060,
-    "h": 788
+    "w": 1247,
+    "h": 927
   },
   "/illustrations/12-goals-outcomes.svg": {
-    "w": 1032,
-    "h": 788
+    "w": 1243,
+    "h": 949
   },
   "/illustrations/13-network-community.svg": {
-    "w": 1048,
-    "h": 788
+    "w": 1259,
+    "h": 947
   },
   "/illustrations/14-idea-leadership.svg": {
-    "w": 1064,
-    "h": 788
+    "w": 1281,
+    "h": 949
   },
   "/illustrations/15-balance-wellbeing.svg": {
-    "w": 1056,
-    "h": 788
+    "w": 1213,
+    "h": 905
   },
   "/illustrations/16-partnership.svg": {
-    "w": 1060,
-    "h": 780
+    "w": 1258,
+    "h": 926
   },
   "/illustrations/17-insights-analysis.svg": {
-    "w": 1032,
-    "h": 780
+    "w": 1242,
+    "h": 939
   },
   "/illustrations/18-next-step.svg": {
-    "w": 1048,
-    "h": 780
+    "w": 1264,
+    "h": 941
   },
   "/illustrations/19-global-english.svg": {
-    "w": 1064,
-    "h": 780
+    "w": 1227,
+    "h": 900
   },
   "/illustrations/20-vision-direction.svg": {
-    "w": 1056,
-    "h": 780
+    "w": 1262,
+    "h": 932
   },
   "/illustrations/new-01-city-professional-thobe.svg": {
-    "w": 1185,
-    "h": 920
+    "w": 1342,
+    "h": 1042
   },
   "/illustrations/new-02-abaya-tablet-review.svg": {
-    "w": 1140,
-    "h": 920
+    "w": 1174,
+    "h": 948
   },
   "/illustrations/new-03-thobe-shirt-discussion.svg": {
-    "w": 1160,
-    "h": 920
+    "w": 1330,
+    "h": 1055
   },
   "/illustrations/new-04-abaya-checklist.svg": {
-    "w": 1160,
-    "h": 920
+    "w": 1367,
+    "h": 1084
   },
   "/illustrations/new-05-suit-portrait.svg": {
     "w": 1145,
     "h": 920
   },
   "/illustrations/new-06-abaya-goal-flag.svg": {
-    "w": 1180,
-    "h": 920
+    "w": 1422,
+    "h": 1108
   },
   "/illustrations/new-07-team-laptops.svg": {
-    "w": 1185,
-    "h": 855
+    "w": 1421,
+    "h": 1025
   },
   "/illustrations/new-08-thobe-presenting-chart.svg": {
-    "w": 1140,
-    "h": 855
+    "w": 1264,
+    "h": 948
   },
   "/illustrations/new-09-casual-focus-desk.svg": {
-    "w": 1160,
-    "h": 855
+    "w": 1374,
+    "h": 1013
   },
   "/illustrations/new-10-abaya-armchair-reading.svg": {
-    "w": 1160,
-    "h": 855
+    "w": 1283,
+    "h": 946
   },
   "/illustrations/new-11-mixed-conversation.svg": {
-    "w": 1145,
-    "h": 855
+    "w": 1278,
+    "h": 954
   },
   "/illustrations/new-12-thobe-city-outlook.svg": {
-    "w": 1180,
-    "h": 855
+    "w": 1422,
+    "h": 1030
   },
   "/illustrations/new-13-abaya-flowchart.svg": {
-    "w": 1185,
-    "h": 860
+    "w": 1387,
+    "h": 1007
   },
   "/illustrations/new-14-stepping-up-growth.svg": {
-    "w": 1140,
-    "h": 860
+    "w": 1232,
+    "h": 929
   },
   "/illustrations/new-15-thobe-window-work.svg": {
-    "w": 1160,
-    "h": 860
+    "w": 1398,
+    "h": 1037
   },
   "/illustrations/new-16-women-shared-idea.svg": {
-    "w": 1160,
-    "h": 860
+    "w": 1381,
+    "h": 1024
   },
   "/illustrations/new-17-suit-desk-clock.svg": {
-    "w": 1145,
-    "h": 860
+    "w": 1368,
+    "h": 1028
   },
   "/illustrations/new-18-abaya-document.svg": {
-    "w": 1180,
-    "h": 860
+    "w": 1304,
+    "h": 950
   },
   "/illustrations/new-19-thobe-desk-work.svg": {
-    "w": 1185,
-    "h": 860
+    "w": 1426,
+    "h": 1035
   },
   "/illustrations/new-20-team-systems.svg": {
-    "w": 1140,
-    "h": 860
+    "w": 1362,
+    "h": 1028
   },
   "/illustrations/new-21-casual-city-view.svg": {
-    "w": 1160,
-    "h": 860
+    "w": 1398,
+    "h": 1037
   },
   "/illustrations/new-22-abaya-study.svg": {
-    "w": 1160,
-    "h": 860
+    "w": 1372,
+    "h": 1017
   },
   "/illustrations/new-23-global-reach.svg": {
-    "w": 1145,
-    "h": 860
+    "w": 1255,
+    "h": 943
   },
   "/illustrations/new-24-thobe-mentoring.svg": {
-    "w": 1180,
-    "h": 860
+    "w": 1369,
+    "h": 998
   },
   "/illustrations/new-25-abaya-notes.svg": {
-    "w": 1185,
-    "h": 910
+    "w": 1352,
+    "h": 1038
   },
   "/illustrations/new-26-suit-confident.svg": {
-    "w": 1140,
-    "h": 910
+    "w": 1270,
+    "h": 1014
   },
   "/illustrations/new-27-casual-armchair-work.svg": {
-    "w": 1160,
-    "h": 910
+    "w": 1337,
+    "h": 1049
   },
   "/illustrations/new-28-group-agreement.svg": {
-    "w": 1160,
-    "h": 910
+    "w": 1346,
+    "h": 1056
   },
   "/illustrations/new-29-abaya-career-path.svg": {
-    "w": 1145,
-    "h": 910
+    "w": 1306,
+    "h": 1038
   },
   "/illustrations/new-30-thobe-vision.svg": {
-    "w": 1180,
-    "h": 910
+    "w": 1422,
+    "h": 1096
+  },
+  "/illustrations/new-31-thobe-learning-laptop.svg": {
+    "w": 1592,
+    "h": 1666
+  },
+  "/illustrations/new-32-abaya-tablet-confidence.svg": {
+    "w": 1602,
+    "h": 1654
+  },
+  "/illustrations/new-33-thobe-casual-colleague.svg": {
+    "w": 1709,
+    "h": 1726
+  },
+  "/illustrations/new-34-open-abaya-presenting.svg": {
+    "w": 1665,
+    "h": 1700
+  },
+  "/illustrations/new-35-casual-hoodie-career.svg": {
+    "w": 1667,
+    "h": 1697
+  },
+  "/illustrations/new-36-abaya-thobe-solving.svg": {
+    "w": 1625,
+    "h": 1631
+  },
+  "/illustrations/new-37-abaya-laptop-balance.svg": {
+    "w": 1713,
+    "h": 1683
+  },
+  "/illustrations/new-38-thobe-goal-mountain.svg": {
+    "w": 1697,
+    "h": 1685
   },
   "/illustrations/topic-career-employability.svg": {
-    "w": 1424,
-    "h": 1256
+    "w": 1547,
+    "h": 1364
   },
   "/illustrations/topic-coaching-mentoring-topic.svg": {
-    "w": 1340,
-    "h": 1092
+    "w": 1563,
+    "h": 1274
   },
   "/illustrations/topic-communication-english.svg": {
-    "w": 1340,
-    "h": 1256
+    "w": 1615,
+    "h": 1513
   },
   "/illustrations/topic-human-development.svg": {
-    "w": 1224,
-    "h": 1256
+    "w": 1450,
+    "h": 1488
   },
   "/illustrations/topic-leadership-workplace.svg": {
-    "w": 1224,
-    "h": 1092
+    "w": 1475,
+    "h": 1316
   },
   "/illustrations/topic-organisational-development.svg": {
-    "w": 1120,
-    "h": 1092
+    "w": 1318,
+    "h": 1285
   },
   "/illustrations/topic-personal-development.svg": {
-    "w": 1120,
-    "h": 1256
+    "w": 1349,
+    "h": 1513
   },
   "/illustrations/topic-teamwork-culture.svg": {
-    "w": 1224,
-    "h": 1008
+    "w": 1470,
+    "h": 1210
   },
   "/illustrations/topic-train-the-trainer.svg": {
-    "w": 1424,
-    "h": 1008
+    "w": 1704,
+    "h": 1206
   },
   "/illustrations/topic-training-development.svg": {
-    "w": 1424,
-    "h": 1092
+    "w": 1484,
+    "h": 1138
   }
 }

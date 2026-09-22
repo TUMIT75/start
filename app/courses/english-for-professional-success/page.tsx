@@ -41,7 +41,7 @@ export default function CoursePage() {
                     </span>
                   </div>
 
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
                     English for Professional Success
                   </h1>
 
@@ -57,7 +57,7 @@ export default function CoursePage() {
                       </div>
                       <div>
                         <div className="text-gray-500">Duration</div>
-                        <div className="font-bold text-gray-900">8 Weeks (16 Labs)</div>
+                        <div className="font-semibold text-gray-900">8 Weeks (16 Labs)</div>
                       </div>
                     </div>
 
@@ -67,7 +67,7 @@ export default function CoursePage() {
                       </div>
                       <div>
                         <div className="text-gray-500">Delivery Mode</div>
-                        <div className="font-bold text-gray-900">Live Virtual & 1:1 Clinics</div>
+                        <div className="font-semibold text-gray-900">Live Virtual & 1:1 Clinics</div>
                       </div>
                     </div>
 
@@ -77,7 +77,7 @@ export default function CoursePage() {
                       </div>
                       <div>
                         <div className="text-gray-500">Learner Rating</div>
-                        <div className="font-bold text-gray-900">5.0 ★★★★★ (48)</div>
+                        <div className="font-semibold text-gray-900">5.0 ★★★★★ (48)</div>
                       </div>
                     </div>
 
@@ -87,7 +87,7 @@ export default function CoursePage() {
                       </div>
                       <div>
                         <div className="text-gray-500">Lead Trainer</div>
-                        <div className="font-bold text-gray-900">Sonia Ali</div>
+                        <div className="font-semibold text-gray-900">Sonia Ali</div>
                       </div>
                     </div>
                   </div>
@@ -107,7 +107,7 @@ export default function CoursePage() {
                 <div className="lg:col-span-4 hidden lg:block">
                   <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm relative overflow-hidden">
                     <div className="relative rounded-xl mb-4 group cursor-pointer bg-white ill-stage ill-stage--bare p-3" onClick={() => { openModal('English for Professional Success') }}>
-                      <Illustration src="/illustrations/new-04-abaya-checklist.svg" alt="Illustration: a professional in abaya at a laptop, working through a checklist" className="ill ill-card group-hover:scale-105 transition duration-500" />
+                      <Illustration src="/illustrations/new-22-abaya-study.svg" alt="Illustration: a young professional in abaya studying at a laptop on a stack of books" className="ill ill-card group-hover:scale-105 transition duration-500" />
                       <div className="absolute inset-0 bg-white/10 flex items-center justify-center">
                         <div className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                           <Icon name="play" className="text-sm ml-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
@@ -158,7 +158,7 @@ export default function CoursePage() {
                         <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                           The Problem We Solve
                         </span>
-                        <h3 className="text-2xl font-bold text-charcoal-900 mt-3">
+                        <h3 className="text-2xl font-semibold text-charcoal-900 mt-3">
                           The Silent Barrier to C-Suite Progression
                         </h3>
                         <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
@@ -198,7 +198,7 @@ export default function CoursePage() {
                       <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                         Target Audience
                       </span>
-                      <h3 className="text-2xl font-bold text-charcoal-900 mt-3 mb-4">
+                      <h3 className="text-2xl font-semibold text-charcoal-900 mt-3 mb-4">
                         Who This Accelerator Is Designed For
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -233,7 +233,7 @@ export default function CoursePage() {
                       <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                         Competency Outcomes
                       </span>
-                      <h3 className="text-2xl font-bold text-charcoal-900 mt-3 mb-6">
+                      <h3 className="text-2xl font-semibold text-charcoal-900 mt-3 mb-6">
                         Key Skills You Will Master
                       </h3>
 
@@ -290,12 +290,12 @@ export default function CoursePage() {
                           <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                             LearnPress LMS Curriculum
                           </span>
-                          <h3 className="text-2xl font-bold text-charcoal-900 mt-2">
+                          <h3 className="text-2xl font-semibold text-charcoal-900 mt-2">
                             8-Week Masterclass Architecture
                           </h3>
                         </div>
                         <div className="text-xs text-gray-500">
-                          <span className="font-bold text-charcoal-900">4 Modules</span> • 16 Live Labs • 24 CPD Accredited Hours
+                          <span className="font-semibold text-charcoal-900">4 Modules</span> • 16 Live Labs • 24 CPD Accredited Hours
                         </div>
                       </div>
 
@@ -320,7 +320,7 @@ export default function CoursePage() {
                                 <Icon name="circle-play" className="text-brand-500 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">1.1 The Anatomy of Executive Gravitas & Somatic Breath</span>
                               </div>
-                              <span className="bg-brand-50 text-brand-700 font-bold px-2 py-0.5 rounded text-[10px]">Preview Available</span>
+                              <span className="bg-brand-50 text-brand-700 font-semibold px-2 py-0.5 rounded text-[10px]">Preview Available</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
@@ -466,14 +466,14 @@ export default function CoursePage() {
                                 <Icon name="user-doctor" className="text-brand-600 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">4.3 1-on-1 Clinical Acoustic & Linguistic Audit with Sonia Ali</span>
                               </div>
-                              <span className="bg-brand-100 text-brand-800 font-bold px-2 py-0.5 rounded text-[10px]">Private 1:1</span>
+                              <span className="bg-brand-100 text-brand-800 font-semibold px-2 py-0.5 rounded text-[10px]">Private 1:1</span>
                             </div>
                             <div className="flex items-center justify-between p-2.5 rounded-lg hover:bg-slate-50 transition">
                               <div className="flex items-center space-x-3">
                                 <Icon name="award" className="text-emerald-600 text-sm inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                                 <span className="font-semibold text-charcoal-800">4.4 Lifelong Executive Development Blueprint & CPD UK Certification</span>
                               </div>
-                              <span className="text-brand-600 font-bold">Graduation</span>
+                              <span className="text-brand-600 font-semibold">Graduation</span>
                             </div>
                           </div>
                         </div>
@@ -489,7 +489,7 @@ export default function CoursePage() {
                         <div className="md:col-span-4">
                           <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border-2 border-slate-100 bg-gradient-to-br from-[#FAFAFA] via-[#FAFAFA] to-[#F2F2F2] p-5 flex flex-col justify-between relative">
                             <div className="flex items-center justify-between">
-                              <span className="text-[10px] font-bold uppercase tracking-wider text-gray-500 bg-white/90 px-2.5 py-1 rounded-full border border-emerald-200">
+                              <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-500 bg-white/90 px-2.5 py-1 rounded-full border border-emerald-200">
                                 Lead Coach
                               </span>
                               <div className="w-6 h-6 rounded-full bg-emerald-100 text-gray-600 flex items-center justify-center text-xs">
@@ -519,7 +519,7 @@ export default function CoursePage() {
                             </span>
                           </div>
 
-                          <h3 className="text-2xl font-bold text-charcoal-900">
+                          <h3 className="text-2xl font-semibold text-charcoal-900">
                             Sonia Ali
                           </h3>
                           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
@@ -564,7 +564,7 @@ export default function CoursePage() {
                       <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                         Verified Executive Transformations
                       </span>
-                      <h3 className="text-2xl font-bold text-charcoal-900 mt-2 mb-6">
+                      <h3 className="text-2xl font-semibold text-charcoal-900 mt-2 mb-6">
                         Hear From Previous Cohort Participants
                       </h3>
 
@@ -608,7 +608,7 @@ export default function CoursePage() {
                       <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-brand-50 px-2.5 py-1 rounded-full">
                         Frequently Asked Questions
                       </span>
-                      <h3 className="text-2xl font-bold text-charcoal-900 mt-2 mb-6">
+                      <h3 className="text-2xl font-semibold text-charcoal-900 mt-2 mb-6">
                         Everything You Need to Know
                       </h3>
 
@@ -685,7 +685,7 @@ export default function CoursePage() {
 
                       {/* Status & Availability Badge */}
                       <div className="flex items-center justify-between mb-4">
-                        <span className="text-[11px] font-bold uppercase tracking-wider text-gray-500 bg-brand-50 border border-brand-200 px-3 py-1 rounded-full">
+                        <span className="text-[11px] font-semibold uppercase tracking-wider text-gray-500 bg-brand-50 border border-brand-200 px-3 py-1 rounded-full">
                           Cohort 14 • Enrolment Open
                         </span>
                         <span className="text-xs text-gray-600 font-semibold flex items-center">
@@ -695,7 +695,7 @@ export default function CoursePage() {
 
                       <div className="mb-5">
                         <div className="text-xs text-gray-500 font-medium">Cohort Availability</div>
-                        <div className="text-xl font-bold text-charcoal-900 mt-0.5">
+                        <div className="text-xl font-semibold text-charcoal-900 mt-0.5">
                           Only 4 Seats Left
                         </div>
                         <div className="text-xs text-gray-600 font-semibold mt-1">
@@ -738,7 +738,7 @@ export default function CoursePage() {
                           <Icon name="shield-halved" className="text-brand-600 text-lg inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </div>
                         <div className="text-[11px] text-gray-500 leading-tight">
-                          <span className="font-bold text-charcoal-900 block">100% Development Guarantee</span>
+                          <span className="font-semibold text-charcoal-900 block">100% Development Guarantee</span>
                           Comprehensive executive transformation or full cohort reassignment.
                         </div>
                       </div>
@@ -754,7 +754,7 @@ export default function CoursePage() {
                       <p className="text-gray-500 mb-3 leading-relaxed">
                         Have questions about aligning this cohort with your corporate L&D framework?
                       </p>
-                      <a href="mailto:contact@startsah.com" className="text-emerald-700 font-bold hover:underline flex items-center">
+                      <a href="mailto:contact@startsah.com" className="text-emerald-700 font-semibold hover:underline flex items-center">
                         <span>contact@startsah.com</span>
                         <Icon name="arrow-up-right-from-square" className="ml-1.5 text-[10px] inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                       </a>

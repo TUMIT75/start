@@ -28,7 +28,7 @@ export default function StartYourDevelopmentPage() {
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
                 <span>Admissions & Intake</span>
               </span>
-              <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+              <h1 className="text-2xl sm:text-4xl font-semibold text-gray-900 tracking-tight">
                 Start Your Development
               </h1>
               <p className="text-sm sm:text-base text-gray-500 mt-2 max-w-xl mx-auto">
@@ -162,8 +162,8 @@ export default function StartYourDevelopmentPage() {
                             <Icon name="check" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                           </div>
                           <div>
-                            <h3 className="text-lg font-bold text-gray-900">Application Submitted</h3>
-                            <p className="text-xs text-gray-500">Admissions Reference: <span className="font-mono font-bold text-emerald-700" id="voucherRefCode">SAH-2026-9182</span></p>
+                            <h3 className="text-lg font-semibold text-gray-900">Application Submitted</h3>
+                            <p className="text-xs text-gray-500">Admissions Reference: <span className="font-mono font-semibold text-emerald-700" id="voucherRefCode">SAH-2026-9182</span></p>
                           </div>
                         </div>
 
@@ -197,19 +197,19 @@ export default function StartYourDevelopmentPage() {
 
                     <div className="space-y-3 text-xs text-gray-600">
                       <div>
-                        <span className="text-[10px] font-bold text-gray-500 uppercase block mb-0.5">Selected Track</span>
+                        <span className="text-[10px] font-semibold text-gray-500 uppercase block mb-0.5">Selected Track</span>
                         <span className="font-semibold text-gray-900 text-sm" id="summaryFocusName">English for Professional Success</span>
                       </div>
                       <div>
-                        <span className="text-[10px] font-bold text-gray-500 uppercase block mb-0.5">Faculty Lead</span>
+                        <span className="text-[10px] font-semibold text-gray-500 uppercase block mb-0.5">Faculty Lead</span>
                         <span className="font-medium text-gray-800">Sonia Ali (EMCC Senior Coach)</span>
                       </div>
                       <div>
-                        <span className="text-[10px] font-bold text-gray-500 uppercase block mb-0.5">Format</span>
+                        <span className="text-[10px] font-semibold text-gray-500 uppercase block mb-0.5">Format</span>
                         <span className="text-gray-800">8 Weeks Virtual Live Cohort + 1:1 Speech Clinic</span>
                       </div>
                       <div>
-                        <span className="text-[10px] font-bold text-gray-500 uppercase block mb-0.5">Accreditation</span>
+                        <span className="text-[10px] font-semibold text-gray-500 uppercase block mb-0.5">Accreditation</span>
                         <span className="inline-flex items-center text-gray-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded text-xs">
                           <Icon name="award" className="mr-1 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> CPD UK Certified (24 Hrs)
                         </span>
@@ -218,9 +218,9 @@ export default function StartYourDevelopmentPage() {
 
                     {/* Assistance */}
                     <div className="mt-5 pt-4 border-t border-gray-100 text-xs">
-                      <span className="font-bold text-gray-900 block mb-1">Direct Admissions Inquiries</span>
+                      <span className="font-semibold text-gray-900 block mb-1">Direct Admissions Inquiries</span>
                       <p className="text-gray-500 mb-2">Prefer to speak with an admissions advisor first?</p>
-                      <a href="tel:+442079460912" className="font-bold text-emerald-700 hover:underline flex items-center">
+                      <a href="tel:+442079460912" className="font-semibold text-emerald-700 hover:underline flex items-center">
                         <Icon name="phone" className="mr-1.5 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> +44 (0) 20 7946 0912
                       </a>
                     </div>

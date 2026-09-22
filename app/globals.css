@@ -14,6 +14,15 @@ body {
   background: #fff;
 }
 
+/* 700 is not loaded (the spec sheet lists Regular, Medium and Semibold), so a
+   browser asked for bold would fake it by smearing the 600. Pin the defaults
+   that ask for bold to the heaviest weight that actually exists. */
+b,
+strong,
+th {
+  font-weight: 600;
+}
+
 /* ---- Illustration system -------------------------------------------------
    The artwork is the client-approved set in public/illustrations/. The sheet's
    white background is keyed out, so each file drops onto any light section
@@ -131,7 +140,7 @@ body {
   align-items: center;
   gap: 0.35rem;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }

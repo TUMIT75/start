@@ -267,9 +267,9 @@ export function filterProgrammes(category: any) {
       // Update active filter button
       buttons.forEach((btn: any) => {
         if (btn.getAttribute('data-cat') === category) {
-          btn.className = 'prog-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-emerald-600 text-white shadow-xs cursor-pointer whitespace-nowrap';
+          btn.className = 'prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-emerald-600 text-white shadow-xs cursor-pointer whitespace-nowrap';
         } else {
-          btn.className = 'prog-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer whitespace-nowrap';
+          btn.className = 'prog-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer whitespace-nowrap';
         }
       });
 
@@ -369,7 +369,7 @@ export function renderQuizStep() {
       if (indicator) indicator.innerText = 'Question ' + (quizStep + 1) + ' of ' + SPEECH_DIAGNOSTIC.length;
 
       box.innerHTML =
-        '<h3 class="text-lg sm:text-xl font-bold text-gray-900">' + item.q + '</h3>' +
+        '<h3 class="text-lg sm:text-xl font-semibold text-gray-900">' + item.q + '</h3>' +
         '<div class="space-y-3">' +
         item.options
           .map(
@@ -666,9 +666,9 @@ export function filterInsightsCategory(cat: any) {
 
       buttons.forEach((btn: any) => {
         if (btn.getAttribute('data-cat') === cat) {
-          btn.className = 'insight-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-brand-500 text-white shadow-sm cursor-pointer whitespace-nowrap';
+          btn.className = 'insight-filter-btn px-4 py-2 rounded-xl text-xs font-semibold transition bg-brand-500 text-white shadow-sm cursor-pointer whitespace-nowrap';
         } else {
-          btn.className = 'insight-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-gray-100 hover:bg-gray-200 text-charcoal-700 cursor-pointer whitespace-nowrap';
+          btn.className = 'insight-filter-btn px-4 py-2 rounded-xl text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-charcoal-700 cursor-pointer whitespace-nowrap';
         }
       });
 
@@ -779,9 +779,9 @@ export function setAudioSpeed(speed: any, btn: any) {
       currentPlaybackRate = speed;
       const allBtns = qsa('.audio-speed-btn');
       allBtns.forEach((b: any) => {
-        b.className = 'audio-speed-btn px-2.5 py-1 rounded-lg text-xs font-bold transition bg-gray-100 hover:bg-gray-200 text-charcoal-700 cursor-pointer';
+        b.className = 'audio-speed-btn px-2.5 py-1 rounded-lg text-xs font-semibold transition bg-gray-100 hover:bg-gray-200 text-charcoal-700 cursor-pointer';
       });
-      btn.className = 'audio-speed-btn px-2.5 py-1 rounded-lg text-xs font-bold transition bg-brand-500 text-white cursor-pointer';
+      btn.className = 'audio-speed-btn px-2.5 py-1 rounded-lg text-xs font-semibold transition bg-brand-500 text-white cursor-pointer';
       showToast('Playback Speed', 'Set audio speed to ' + speed + 'x');
     }
 
@@ -816,7 +816,7 @@ export function switchStudentDashboardTab(tabId: any) {
         
         if (t === targetKey) {
           if (btn) {
-            btn.className = 'student-dash-tab-btn px-4 py-3 border-b-2 border-emerald-600 text-emerald-700 font-bold transition flex items-center cursor-pointer';
+            btn.className = 'student-dash-tab-btn px-4 py-3 border-b-2 border-emerald-600 text-emerald-700 font-semibold transition flex items-center cursor-pointer';
           }
           if (pane) pane.classList.remove('hidden');
         } else {
@@ -838,10 +838,10 @@ export function filterDashboardCourses(status: any, btn: any) {
       const buttons = qsa('.course-filter-btn');
 
       buttons.forEach((b: any) => {
-        b.className = 'course-filter-btn px-3 py-1.5 rounded-full font-bold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer';
+        b.className = 'course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer';
       });
       if (btn) {
-        btn.className = 'course-filter-btn px-3 py-1.5 rounded-full font-bold bg-emerald-600 text-white cursor-pointer shadow-xs';
+        btn.className = 'course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-emerald-600 text-white cursor-pointer shadow-xs';
       }
 
       cards.forEach((c: any) => {

@@ -20,14 +20,14 @@ export default function CoachingPage() {
           </div>
 
           {/* 1:1 Coaching Hero */}
-          <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+          <section className="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div className="lg:col-span-6 space-y-6">
                   <div className="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-gray-500 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200/60">
                     Personalised Growth
                   </div>
-                  <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-tight leading-tight">
+                  <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
                     One-on-One Mentorship Tailored to <span className="text-emerald-600">Your Progression</span>.
                   </h1>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
@@ -61,12 +61,12 @@ export default function CoachingPage() {
                 <div className="lg:col-span-6 lg:-mr-8 xl:-mr-14">
                   <div className="mx-auto">
                     <div className="ill-stage ill-stage--bare">
-                      <Illustration src="/illustrations/new-03-thobe-shirt-discussion.svg" alt="Illustration: a colleague in thobe and ghutra talking something through with a colleague holding a laptop" className="ill ill-hero" />
+                      <Illustration src="/illustrations/new-33-thobe-casual-colleague.svg" alt="Illustration: a mentor in thobe and ghutra talking a younger colleague through his work" className="ill ill-hero" />
                     </div>
 
                     <div className="mt-8">
                       <span className="text-xs uppercase font-semibold tracking-widest text-gray-500 block mb-2">Human-centred approach</span>
-                      <h3 className="text-xl font-bold text-gray-900 tracking-tight">Support built around you</h3>
+                      <h3 className="text-xl font-semibold text-gray-900 tracking-tight">Support built around you</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-3">
                         No cookie-cutter scripts. We look at your exact context, your workplace dynamics, and your natural style &mdash; helping you overcome nerves and develop genuine, lasting confidence.
                       </p>
@@ -74,11 +74,11 @@ export default function CoachingPage() {
 
                     <dl className="grid grid-cols-2 gap-6 pt-5 mt-5 border-t hairline">
                       <div>
-                        <dt className="text-base font-bold text-gray-900">45 &ndash; 60 min</dt>
+                        <dt className="text-base font-semibold text-gray-900">45 &ndash; 60 min</dt>
                         <dd className="text-xs text-gray-500 font-medium mt-0.5">Focused sessions</dd>
                       </div>
                       <div>
-                        <dt className="text-base font-bold text-emerald-700">100% custom</dt>
+                        <dt className="text-base font-semibold text-emerald-700">100% custom</dt>
                         <dd className="text-xs text-gray-500 font-medium mt-0.5">Built around your role</dd>
                       </div>
                     </dl>
@@ -93,7 +93,7 @@ export default function CoachingPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-3xl">
                 <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">Who this is for</span>
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 tracking-tight">Coaching meets you where you are</h2>
+                <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mt-3 tracking-tight">Coaching meets you where you are</h2>
                 <div className="rule-green mt-6"></div>
                 <p className="text-gray-600 mt-6 leading-relaxed">
                   The same conversation looks different at every career stage. What stays constant is starting from where you actually are, not from a syllabus.
@@ -102,23 +102,23 @@ export default function CoachingPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12 mt-16">
                 <div>
-                  <span className="text-2xl font-bold text-emerald-600">01</span>
-                  <h3 className="font-bold text-gray-900 text-lg mt-3">Graduates</h3>
+                  <span className="text-2xl font-semibold text-emerald-600">01</span>
+                  <h3 className="font-semibold text-gray-900 text-lg mt-3">Graduates</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mt-2">Entering the workplace, translating study into professional language, and getting through interviews without shrinking.</p>
                 </div>
                 <div>
-                  <span className="text-2xl font-bold text-emerald-600">02</span>
-                  <h3 className="font-bold text-gray-900 text-lg mt-3">Professionals</h3>
+                  <span className="text-2xl font-semibold text-emerald-600">02</span>
+                  <h3 className="font-semibold text-gray-900 text-lg mt-3">Professionals</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mt-2">Doing strong work that is not landing, and needing the vocabulary and presence to make it visible.</p>
                 </div>
                 <div>
-                  <span className="text-2xl font-bold text-emerald-600">03</span>
-                  <h3 className="font-bold text-gray-900 text-lg mt-3">Emerging leaders</h3>
+                  <span className="text-2xl font-semibold text-emerald-600">03</span>
+                  <h3 className="font-semibold text-gray-900 text-lg mt-3">Emerging leaders</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mt-2">Stepping into a first team, learning to delegate, and handling the conversations that come with it.</p>
                 </div>
                 <div>
-                  <span className="text-2xl font-bold text-emerald-600">04</span>
-                  <h3 className="font-bold text-gray-900 text-lg mt-3">Senior managers</h3>
+                  <span className="text-2xl font-semibold text-emerald-600">04</span>
+                  <h3 className="font-semibold text-gray-900 text-lg mt-3">Senior managers</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mt-2">Holding the room in board settings, in a second language, across cultures, under real pressure.</p>
                 </div>
               </div>
@@ -132,35 +132,35 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-7 order-2 lg:order-1">
                   <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">How it runs</span>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 tracking-tight">A working session, not a lecture</h2>
+                  <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mt-3 tracking-tight">A working session, not a lecture</h2>
                   <div className="rule-green mt-6"></div>
 
                   <ol className="mt-10 space-y-8">
                     <li className="flex gap-5">
-                      <span className="shrink-0 text-2xl font-bold text-emerald-600 leading-none w-10">01</span>
+                      <span className="shrink-0 text-2xl font-semibold text-emerald-600 leading-none w-10">01</span>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg">Discovery chat</h3>
+                        <h3 className="font-semibold text-gray-900 text-lg">Discovery chat</h3>
                         <p className="text-sm text-gray-600 leading-relaxed mt-1 max-w-lg">A free 20-minute conversation to understand your situation and agree whether coaching is the right answer at all.</p>
                       </div>
                     </li>
                     <li className="flex gap-5">
-                      <span className="shrink-0 text-2xl font-bold text-emerald-600 leading-none w-10">02</span>
+                      <span className="shrink-0 text-2xl font-semibold text-emerald-600 leading-none w-10">02</span>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg">Set the target</h3>
+                        <h3 className="font-semibold text-gray-900 text-lg">Set the target</h3>
                         <p className="text-sm text-gray-600 leading-relaxed mt-1 max-w-lg">We name the specific outcome &mdash; the presentation, the interview, the team you are about to lead &mdash; and what changing it would be worth.</p>
                       </div>
                     </li>
                     <li className="flex gap-5">
-                      <span className="shrink-0 text-2xl font-bold text-emerald-600 leading-none w-10">03</span>
+                      <span className="shrink-0 text-2xl font-semibold text-emerald-600 leading-none w-10">03</span>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg">Rehearse it for real</h3>
+                        <h3 className="font-semibold text-gray-900 text-lg">Rehearse it for real</h3>
                         <p className="text-sm text-gray-600 leading-relaxed mt-1 max-w-lg">You practise the actual conversation, with feedback in the moment, until it stops feeling like a performance.</p>
                       </div>
                     </li>
                     <li className="flex gap-5">
-                      <span className="shrink-0 text-2xl font-bold text-emerald-600 leading-none w-10">04</span>
+                      <span className="shrink-0 text-2xl font-semibold text-emerald-600 leading-none w-10">04</span>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg">Review what happened</h3>
+                        <h3 className="font-semibold text-gray-900 text-lg">Review what happened</h3>
                         <p className="text-sm text-gray-600 leading-relaxed mt-1 max-w-lg">After the real event we look at what worked, what did not, and what to carry into the next one.</p>
                       </div>
                     </li>
@@ -169,7 +169,7 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-5 order-1 lg:order-2">
                   <div className="ill-stage">
-                    <Illustration src="/illustrations/new-17-suit-desk-clock.svg" alt="Illustration: a professional in a suit working to time at a laptop" className="ill ill-section" />
+                    <Illustration src="/illustrations/new-04-abaya-checklist.svg" alt="Illustration: a professional in abaya at a laptop, working through a checklist" className="ill ill-section" />
                   </div>
                 </div>
 
@@ -184,38 +184,38 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-5">
                   <div className="ill-stage ill-stage--bare">
-                    <Illustration src="/illustrations/new-16-women-shared-idea.svg" alt="Illustration: two colleagues in abaya sharing an idea over a tablet" className="ill ill-section" />
+                    <Illustration src="/illustrations/new-09-casual-focus-desk.svg" alt="Illustration: a young professional in smart casual working at a laptop" className="ill ill-section" />
                   </div>
                 </div>
 
                 <div className="lg:col-span-7">
                   <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">What you develop</span>
-                  <h2 className="text-3xl sm:text-4xl font-bold mt-3 tracking-tight">Capability you can use on Monday</h2>
+                  <h2 className="text-3xl sm:text-4xl font-semibold mt-3 tracking-tight">Capability you can use on Monday</h2>
                   <div className="rule-green mt-6"></div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8 mt-10">
                     <div>
-                      <h3 className="font-bold text-gray-900 text-base">Speaking with authority</h3>
+                      <h3 className="font-semibold text-gray-900 text-base">Speaking with authority</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-1.5">Pace, pause and phrasing that hold a room without raising your voice.</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 text-base">Difficult conversations</h3>
+                      <h3 className="font-semibold text-gray-900 text-base">Difficult conversations</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-1.5">Disagreeing upward, giving feedback, and staying composed when pushed.</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 text-base">Professional English</h3>
+                      <h3 className="font-semibold text-gray-900 text-base">Professional English</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-1.5">The register, idiom and directness that international workplaces expect.</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 text-base">Self-awareness</h3>
+                      <h3 className="font-semibold text-gray-900 text-base">Self-awareness</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-1.5">Recognising your own patterns early enough to choose a different one.</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 text-base">Career direction</h3>
+                      <h3 className="font-semibold text-gray-900 text-base">Career direction</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-1.5">Naming what you are actually working towards, and what to say no to.</p>
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 text-base">Leading others</h3>
+                      <h3 className="font-semibold text-gray-900 text-base">Leading others</h3>
                       <p className="text-sm text-gray-600 leading-relaxed mt-1.5">Delegating, coaching your own team, and holding people to a standard kindly.</p>
                     </div>
                   </div>
@@ -230,13 +230,13 @@ export default function CoachingPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-3xl">
                 <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">Formats</span>
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 tracking-tight">Three ways to work together</h2>
+                <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mt-3 tracking-tight">Three ways to work together</h2>
                 <div className="rule-green mt-6"></div>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14 mt-16">
                 <div className="border-t-2 border-charcoal-800 pt-6">
-                  <h3 className="font-bold text-gray-900 text-xl">Single session</h3>
+                  <h3 className="font-semibold text-gray-900 text-xl">Single session</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mt-3">One 60-minute session ahead of a specific event &mdash; an interview, a panel, a board presentation.</p>
                   <ul className="mt-6 space-y-2.5 text-sm text-gray-700">
                     <li className="flex gap-2.5"><Icon name="check" className="text-emerald-600 mt-1 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><span>Online or in person</span></li>
@@ -247,8 +247,8 @@ export default function CoachingPage() {
                 </div>
 
                 <div className="border-t-2 border-emerald-600 pt-6">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-gray-500">Most chosen</span>
-                  <h3 className="font-bold text-gray-900 text-xl mt-1">Six-session programme</h3>
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-gray-500">Most chosen</span>
+                  <h3 className="font-semibold text-gray-900 text-xl mt-1">Six-session programme</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mt-3">Fortnightly sessions over three months, built around one goal you want to have reached by the end.</p>
                   <ul className="mt-6 space-y-2.5 text-sm text-gray-700">
                     <li className="flex gap-2.5"><Icon name="check" className="text-emerald-600 mt-1 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><span>Agreed outcome and review points</span></li>
@@ -259,7 +259,7 @@ export default function CoachingPage() {
                 </div>
 
                 <div className="border-t-2 border-charcoal-800 pt-6">
-                  <h3 className="font-bold text-gray-900 text-xl">Sponsored by your employer</h3>
+                  <h3 className="font-semibold text-gray-900 text-xl">Sponsored by your employer</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mt-3">Coaching arranged and paid for by your organisation, for one person or a small group of managers.</p>
                   <ul className="mt-6 space-y-2.5 text-sm text-gray-700">
                     <li className="flex gap-2.5"><Icon name="check" className="text-emerald-600 mt-1 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /><span>Objectives agreed with HR</span></li>
@@ -279,7 +279,7 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-4">
                   <span className="text-xs font-semibold uppercase tracking-widest text-gray-500">Common questions</span>
-                  <h2 className="text-3xl font-bold text-gray-900 mt-3 tracking-tight">Before you book</h2>
+                  <h2 className="text-3xl font-semibold text-gray-900 mt-3 tracking-tight">Before you book</h2>
                   <div className="rule-green mt-6"></div>
                   <p className="text-sm text-gray-600 leading-relaxed mt-6">
                     If your question is not here, the discovery chat is free and there is no obligation at the end of it.
@@ -288,23 +288,23 @@ export default function CoachingPage() {
 
                 <div className="lg:col-span-8 divide-y divide-charcoal-200">
                   <div className="py-6">
-                    <h3 className="font-bold text-gray-900">Is coaching only for people with a problem?</h3>
+                    <h3 className="font-semibold text-gray-900">Is coaching only for people with a problem?</h3>
                     <p className="text-sm text-gray-600 leading-relaxed mt-2">No. Most people arrive because something specific is coming up &mdash; a promotion, a move abroad, a first management role &mdash; and they want to meet it well rather than recover from it afterwards.</p>
                   </div>
                   <div className="py-6">
-                    <h3 className="font-bold text-gray-900">Does my English need to be at a certain level?</h3>
+                    <h3 className="font-semibold text-gray-900">Does my English need to be at a certain level?</h3>
                     <p className="text-sm text-gray-600 leading-relaxed mt-2">If you can hold a working conversation, you are ready. Coaching works on how you use the English you already have under pressure, which is usually the real gap.</p>
                   </div>
                   <div className="py-6">
-                    <h3 className="font-bold text-gray-900">Is it online or face to face?</h3>
+                    <h3 className="font-semibold text-gray-900">Is it online or face to face?</h3>
                     <p className="text-sm text-gray-600 leading-relaxed mt-2">Either. Most sessions run online, which suits people working across time zones. In-person sessions are available in Saudi Arabia and the UK by arrangement.</p>
                   </div>
                   <div className="py-6">
-                    <h3 className="font-bold text-gray-900">What if my employer is paying?</h3>
+                    <h3 className="font-semibold text-gray-900">What if my employer is paying?</h3>
                     <p className="text-sm text-gray-600 leading-relaxed mt-2">We agree the objectives with whoever is sponsoring it, then report on progress against those objectives only. What is said in the sessions stays in the sessions.</p>
                   </div>
                   <div className="py-6">
-                    <h3 className="font-bold text-gray-900">Can we work in Arabic?</h3>
+                    <h3 className="font-semibold text-gray-900">Can we work in Arabic?</h3>
                     <p className="text-sm text-gray-600 leading-relaxed mt-2">Sessions run in English, which is usually the point. Arabic-language programmes are on the roadmap &mdash; ask and we will tell you where that has got to.</p>
                   </div>
                 </div>
@@ -316,7 +316,7 @@ export default function CoachingPage() {
           {/* Closing CTA ======================================================= */}
           <section className="py-20 lg:py-28 band-mint border-t hairline">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Start with a conversation</h2>
+              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 tracking-tight">Start with a conversation</h2>
               <p className="text-gray-600 mt-4 leading-relaxed">
                 Twenty minutes, no cost, and an honest answer about whether coaching is what you need.
               </p>

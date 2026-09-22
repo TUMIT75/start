@@ -30,15 +30,15 @@ export default function DashboardPage() {
                 {/* Student Avatar & Credentials */}
                 <div className="flex items-center space-x-5">
                   <div className="relative">
-                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-tr from-emerald-700 to-emerald-500 text-white flex items-center justify-center text-2xl sm:text-3xl font-bold shadow-sm border border-emerald-600/30">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-tr from-emerald-700 to-emerald-500 text-white flex items-center justify-center text-2xl sm:text-3xl font-semibold shadow-sm border border-emerald-600/30">
                       MV
                     </div>
                     <span className="absolute bottom-0 right-0 w-5 h-5 bg-emerald-500 border-2 border-white rounded-full" title="Active Online"></span>
                   </div>
                   <div>
                     <div className="flex flex-wrap items-center gap-2 mb-1">
-                      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Marcus Vance</h1>
-                      <span className="bg-emerald-50 text-gray-500 border border-emerald-200/80 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                      <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">Marcus Vance</h1>
+                      <span className="bg-emerald-50 text-gray-500 border border-emerald-200/80 text-[10px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                         CPD Verified Learner
                       </span>
                     </div>
@@ -72,23 +72,23 @@ export default function DashboardPage() {
               {/* 4 Clean Metric Cards (Lovable AI Style) */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8 pt-8 border-t border-gray-100">
                 <div className="bg-slate-50/60 p-5 rounded-2xl border border-gray-200/80">
-                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Enrolled Programmes</span>
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1">3</div>
+                  <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Enrolled Programmes</span>
+                  <div className="text-2xl sm:text-3xl font-semibold text-gray-900 mt-1">3</div>
                   <span className="text-[11px] text-emerald-600 font-semibold">1 Active Cohort</span>
                 </div>
                 <div className="bg-slate-50/60 p-5 rounded-2xl border border-gray-200/80">
-                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Active Progress</span>
-                  <div className="text-2xl sm:text-3xl font-bold text-emerald-600 mt-1">64%</div>
+                  <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Active Progress</span>
+                  <div className="text-2xl sm:text-3xl font-semibold text-emerald-600 mt-1">64%</div>
                   <span className="text-[11px] text-gray-500 font-semibold">14 of 22 Lessons Completed</span>
                 </div>
                 <div className="bg-slate-50/60 p-5 rounded-2xl border border-gray-200/80">
-                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Completed & Passed</span>
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1">2</div>
+                  <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Completed & Passed</span>
+                  <div className="text-2xl sm:text-3xl font-semibold text-gray-900 mt-1">2</div>
                   <span className="text-[11px] text-emerald-600 font-semibold">Average Grade: 94%</span>
                 </div>
                 <div className="bg-slate-50/60 p-5 rounded-2xl border border-gray-200/80">
-                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-wider">CPD Certificates</span>
-                  <div className="text-2xl sm:text-3xl font-bold text-emerald-600 mt-1">2</div>
+                  <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">CPD Certificates</span>
+                  <div className="text-2xl sm:text-3xl font-semibold text-emerald-600 mt-1">2</div>
                   <span className="text-[11px] text-gray-500 font-semibold">UK Standards Accredited</span>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function DashboardPage() {
           <div className="bg-white border-b border-gray-150 sticky top-16 sm:top-20 z-20 shadow-xs">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-auto no-scrollbar">
               <div className="flex space-x-1 sm:space-x-4 text-xs sm:text-sm font-semibold whitespace-nowrap py-1">
-                <button onClick={() => { switchStudentDashboardTab('dash-overview') }} id="tabBtn-dash-overview" className="student-dash-tab-btn px-4 py-3 border-b-2 border-emerald-600 text-emerald-700 font-bold transition flex items-center cursor-pointer">
+                <button onClick={() => { switchStudentDashboardTab('dash-overview') }} id="tabBtn-dash-overview" className="student-dash-tab-btn px-4 py-3 border-b-2 border-emerald-600 text-emerald-700 font-semibold transition flex items-center cursor-pointer">
                   <Icon name="chart-pie" className="mr-2 text-emerald-600 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Dashboard Overview
                 </button>
                 <button onClick={() => { switchStudentDashboardTab('dash-courses') }} id="tabBtn-dash-courses" className="student-dash-tab-btn px-4 py-3 border-b-2 border-transparent text-gray-500 hover:text-gray-900 transition flex items-center cursor-pointer">
@@ -135,10 +135,10 @@ export default function DashboardPage() {
               <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200/90 shadow-xs">
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-gray-100">
                   <div>
-                    <span className="text-[10px] font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 border border-emerald-200/60">
+                    <span className="text-[10px] font-semibold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 border border-emerald-200/60">
                       Current Active Programme
                     </span>
-                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-3">
+                    <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-3">
                       English for Professional Success: Cross-Cultural Leadership
                     </h2>
                     <p className="text-xs sm:text-sm text-gray-500 mt-1">
@@ -160,7 +160,7 @@ export default function DashboardPage() {
                 <div className="pt-6">
                   <div className="flex items-center justify-between text-xs font-semibold mb-2">
                     <span className="text-gray-800">Overall Course Completion: 64%</span>
-                    <span className="text-emerald-600 font-bold">14 of 22 Lessons Finished</span>
+                    <span className="text-emerald-600 font-semibold">14 of 22 Lessons Finished</span>
                   </div>
                   <div className="w-full bg-gray-100 h-2.5 rounded-full overflow-hidden">
                     <div className="bg-emerald-500 h-full w-[64%] rounded-full transition-all duration-500"></div>
@@ -186,14 +186,14 @@ export default function DashboardPage() {
                       </span>
                       <span className="text-xs font-semibold text-gray-500 bg-gray-50 px-2.5 py-1 rounded-md border border-gray-150">Thursday, 18:00 GMT</span>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 leading-snug">
+                    <h3 className="text-lg font-semibold text-gray-900 leading-snug">
                       Executive Hot-Seat Practice: Pitching to Hostile & Sceptical Stakeholders
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 mt-2 leading-relaxed">
                       Join Sonia Ali and your cohort for live verbal simulation. Breakout verbal drills followed by live individual feedback.
                     </p>
                     <div className="mt-4 p-4 bg-slate-50/60 rounded-xl border border-gray-200 text-xs text-gray-800 space-y-1">
-                      <div className="font-bold text-gray-900">Pre-Session Preparation:</div>
+                      <div className="font-semibold text-gray-900">Pre-Session Preparation:</div>
                       <div className="text-gray-500">• Review Module 3, Lesson 3.1 Framework on 3-second strategic pauses.</div>
                       <div className="text-gray-500">• Prepare your 90-second proposal defense summary.</div>
                     </div>
@@ -258,13 +258,13 @@ export default function DashboardPage() {
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-gray-150">
                 <div>
-                  <h2 className="text-xl font-bold text-gray-900">Enrolled LearnPress Courses</h2>
+                  <h2 className="text-xl font-semibold text-gray-900">Enrolled LearnPress Courses</h2>
                   <p className="text-xs text-gray-500">Access your active learning materials, quizzes, and completed certifications.</p>
                 </div>
                 <div className="flex items-center space-x-2 text-xs">
-                  <button onClick={(event) => { filterDashboardCourses('all', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-bold bg-emerald-600 text-white cursor-pointer shadow-xs">All (3)</button>
-                  <button onClick={(event) => { filterDashboardCourses('active', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-bold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer">In Progress (1)</button>
-                  <button onClick={(event) => { filterDashboardCourses('completed', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-bold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer">Finished (2)</button>
+                  <button onClick={(event) => { filterDashboardCourses('all', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-emerald-600 text-white cursor-pointer shadow-xs">All (3)</button>
+                  <button onClick={(event) => { filterDashboardCourses('active', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer">In Progress (1)</button>
+                  <button onClick={(event) => { filterDashboardCourses('completed', event.currentTarget) }} className="course-filter-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer">Finished (2)</button>
                 </div>
               </div>
 
@@ -275,23 +275,23 @@ export default function DashboardPage() {
                   <div>
                     <div className="relative ill-stage p-3">
                       <Illustration src="/illustrations/new-15-thobe-window-work.svg" alt="Illustration: a professional in thobe and ghutra working at a laptop by a city window" className="ill ill-card" />
-                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
                         In Progress
                       </span>
-                      <span className="absolute bottom-3 right-3 bg-black/80 text-white text-[11px] font-bold px-2 py-0.5 rounded">
+                      <span className="absolute bottom-3 right-3 bg-black/80 text-white text-[11px] font-semibold px-2 py-0.5 rounded">
                         64% Complete
                       </span>
                     </div>
                     <div className="p-6">
-                      <span className="text-[11px] font-bold uppercase text-gray-500">Executive Communication</span>
-                      <h3 className="text-base font-bold text-gray-900 mt-1 mb-2">English for Professional Success</h3>
+                      <span className="text-[11px] font-semibold uppercase text-gray-500">Executive Communication</span>
+                      <h3 className="text-base font-semibold text-gray-900 mt-1 mb-2">English for Professional Success</h3>
                       <p className="text-xs text-gray-500 leading-relaxed mb-4">Master boardroom persuasion, cross-cultural diplomacy, and strategic vocabulary.</p>
                       <div className="w-full bg-gray-100 h-2 rounded-full overflow-hidden mb-2">
                         <div className="bg-emerald-500 h-full w-[64%]"></div>
                       </div>
                       <div className="flex justify-between text-[11px] text-gray-500">
                         <span>14 / 22 Lessons</span>
-                        <span className="text-emerald-600 font-bold">Passing Grade: 80%</span>
+                        <span className="text-emerald-600 font-semibold">Passing Grade: 80%</span>
                       </div>
                     </div>
                   </div>
@@ -307,24 +307,24 @@ export default function DashboardPage() {
                 <div className="dash-course-card flex flex-col justify-between" data-status="completed">
                   <div>
                     <div className="relative ill-stage p-3">
-                      <Illustration src="/illustrations/new-22-abaya-study.svg" alt="Illustration: a professional in abaya studying at a laptop on a stack of books" className="ill ill-card" />
-                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                      <Illustration src="/illustrations/new-29-abaya-career-path.svg" alt="Illustration: a young professional in abaya setting out along a winding path" className="ill ill-card" />
+                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
                         Completed (Grade: 96%)
                       </span>
-                      <span className="absolute bottom-3 right-3 bg-emerald-500 text-white text-[11px] font-bold px-2 py-0.5 rounded">
+                      <span className="absolute bottom-3 right-3 bg-emerald-500 text-white text-[11px] font-semibold px-2 py-0.5 rounded">
                         <Icon name="award" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />CPD Ready
                       </span>
                     </div>
                     <div className="p-6">
-                      <span className="text-[11px] font-bold uppercase text-gray-500">Presence & Voice</span>
-                      <h3 className="text-base font-bold text-gray-900 mt-1 mb-2">Workplace Gravitas & Vocal Presence</h3>
+                      <span className="text-[11px] font-semibold uppercase text-gray-500">Presence & Voice</span>
+                      <h3 className="text-base font-semibold text-gray-900 mt-1 mb-2">Workplace Gravitas & Vocal Presence</h3>
                       <p className="text-xs text-gray-500 leading-relaxed mb-4">Eliminating upward inflection, managing boardroom silence, and physiological authority.</p>
                       <div className="w-full bg-emerald-100 h-2 rounded-full overflow-hidden mb-2">
                         <div className="bg-emerald-500 h-full w-full"></div>
                       </div>
                       <div className="flex justify-between text-[11px] text-gray-500">
                         <span>18 / 18 Lessons Finished</span>
-                        <span className="text-emerald-600 font-bold">Passed with Distinction</span>
+                        <span className="text-emerald-600 font-semibold">Passed with Distinction</span>
                       </div>
                     </div>
                   </div>
@@ -342,24 +342,24 @@ export default function DashboardPage() {
                 <div className="dash-course-card flex flex-col justify-between" data-status="completed">
                   <div>
                     <div className="relative ill-stage p-3">
-                      <Illustration src="/illustrations/new-09-casual-focus-desk.svg" alt="Illustration: a professional in smart casual working at a laptop" className="ill ill-card" />
-                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                      <Illustration src="/illustrations/new-27-casual-armchair-work.svg" alt="Illustration: a young professional in smart casual working from an armchair" className="ill ill-card" />
+                      <span className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase">
                         Completed (Grade: 92%)
                       </span>
-                      <span className="absolute bottom-3 right-3 bg-emerald-500 text-white text-[11px] font-bold px-2 py-0.5 rounded">
+                      <span className="absolute bottom-3 right-3 bg-emerald-500 text-white text-[11px] font-semibold px-2 py-0.5 rounded">
                         <Icon name="award" className="mr-1 inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />CPD Ready
                       </span>
                     </div>
                     <div className="p-6">
-                      <span className="text-[11px] font-bold uppercase text-gray-500">Career Architecture</span>
-                      <h3 className="text-base font-bold text-gray-900 mt-1 mb-2">Executive Speech & Stakeholder Influence</h3>
+                      <span className="text-[11px] font-semibold uppercase text-gray-500">Career Architecture</span>
+                      <h3 className="text-base font-semibold text-gray-900 mt-1 mb-2">Executive Speech & Stakeholder Influence</h3>
                       <p className="text-xs text-gray-500 leading-relaxed mb-4">Strategic positioning, salary renegotiation dynamics, and director-level visibility.</p>
                       <div className="w-full bg-emerald-100 h-2 rounded-full overflow-hidden mb-2">
                         <div className="bg-emerald-500 h-full w-full"></div>
                       </div>
                       <div className="flex justify-between text-[11px] text-gray-500">
                         <span>12 / 12 Lessons Finished</span>
-                        <span className="text-emerald-600 font-bold">Passed</span>
+                        <span className="text-emerald-600 font-semibold">Passed</span>
                       </div>
                     </div>
                   </div>
@@ -380,14 +380,14 @@ export default function DashboardPage() {
             {/* TAB 3: QUIZZES & DIAGNOSTICS */}
             <div id="dashPane-dash-quizzes" className="student-dash-pane hidden space-y-6">
               <div className="pb-2 border-b border-gray-150">
-                <h2 className="text-xl font-bold text-gray-900">LearnPress Quizzes & Diagnostics Log</h2>
+                <h2 className="text-xl font-semibold text-gray-900">LearnPress Quizzes & Diagnostics Log</h2>
                 <p className="text-xs text-gray-500">View graded assignments, diagnostic scores, and passing benchmark status.</p>
               </div>
 
               <div className="bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs">
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-xs">
-                    <thead className="bg-slate-50/70 text-gray-800 border-b border-gray-200 uppercase font-bold text-[11px] tracking-wider">
+                    <thead className="bg-slate-50/70 text-gray-800 border-b border-gray-200 uppercase font-semibold text-[11px] tracking-wider">
                       <tr>
                         <th className="py-4 px-6">Quiz / Assessment Name</th>
                         <th className="py-4 px-6">Course</th>
@@ -399,46 +399,46 @@ export default function DashboardPage() {
                     </thead>
                     <tbody className="divide-y divide-gray-100 text-gray-600">
                       <tr className="hover:bg-slate-50/50 transition">
-                        <td className="py-4 px-6 font-bold text-gray-900">
+                        <td className="py-4 px-6 font-semibold text-gray-900">
                           Boardroom Articulation & Diplomatic Phrasing
                         </td>
                         <td className="py-4 px-6">English for Professional Success</td>
-                        <td className="py-4 px-6 font-mono font-bold text-emerald-600">94 / 100</td>
+                        <td className="py-4 px-6 font-mono font-semibold text-emerald-600">94 / 100</td>
                         <td className="py-4 px-6 font-mono">80 / 100</td>
                         <td className="py-4 px-6">
-                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-bold text-[10px] uppercase border border-emerald-200/60">Passed</span>
+                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-semibold text-[10px] uppercase border border-emerald-200/60">Passed</span>
                         </td>
                         <td className="py-4 px-6 text-right">
-                          <button onClick={() => { viewQuizBreakdown(1) }} className="text-emerald-600 hover:text-emerald-700 font-bold cursor-pointer">
+                          <button onClick={() => { viewQuizBreakdown(1) }} className="text-emerald-600 hover:text-emerald-700 font-semibold cursor-pointer">
                             Review Questions
                           </button>
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition">
-                        <td className="py-4 px-6 font-bold text-gray-900">
+                        <td className="py-4 px-6 font-semibold text-gray-900">
                           Vocal Cadence & Strategic Pause Acoustic Test
                         </td>
                         <td className="py-4 px-6">Workplace Gravitas</td>
-                        <td className="py-4 px-6 font-mono font-bold text-emerald-600">96 / 100</td>
+                        <td className="py-4 px-6 font-mono font-semibold text-emerald-600">96 / 100</td>
                         <td className="py-4 px-6 font-mono">80 / 100</td>
                         <td className="py-4 px-6">
-                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-bold text-[10px] uppercase border border-emerald-200/60">Passed</span>
+                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-semibold text-[10px] uppercase border border-emerald-200/60">Passed</span>
                         </td>
                         <td className="py-4 px-6 text-right">
-                          <button onClick={() => { viewQuizBreakdown(2) }} className="text-emerald-600 hover:text-emerald-700 font-bold cursor-pointer">
+                          <button onClick={() => { viewQuizBreakdown(2) }} className="text-emerald-600 hover:text-emerald-700 font-semibold cursor-pointer">
                             Review Questions
                           </button>
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition">
-                        <td className="py-4 px-6 font-bold text-gray-900">
+                        <td className="py-4 px-6 font-semibold text-gray-900">
                           C-Suite Stakeholder Objections Simulation
                         </td>
                         <td className="py-4 px-6">English for Professional Success</td>
-                        <td className="py-4 px-6 font-mono font-bold text-emerald-600">Pending Review</td>
+                        <td className="py-4 px-6 font-mono font-semibold text-emerald-600">Pending Review</td>
                         <td className="py-4 px-6 font-mono">80 / 100</td>
                         <td className="py-4 px-6">
-                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-bold text-[10px] uppercase border border-emerald-200">Submitted</span>
+                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-semibold text-[10px] uppercase border border-emerald-200">Submitted</span>
                         </td>
                         <td className="py-4 px-6 text-right">
                           <span className="text-gray-500">Under Review</span>
@@ -453,7 +453,7 @@ export default function DashboardPage() {
             {/* TAB 4: CPD CERTIFICATES */}
             <div id="dashPane-dash-certificates" className="student-dash-pane hidden space-y-6">
               <div className="pb-2 border-b border-gray-150">
-                <h2 className="text-xl font-bold text-gray-900">Verified CPD UK Accreditations</h2>
+                <h2 className="text-xl font-semibold text-gray-900">Verified CPD UK Accreditations</h2>
                 <p className="text-xs text-gray-500">Official, verifiable credentials issued by Start SAH under UK CPD Accreditation Standards.</p>
               </div>
 
@@ -469,20 +469,20 @@ export default function DashboardPage() {
                           <Icon name="award" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </div>
                         <div>
-                          <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500 block">The CPD Certification Service</span>
+                          <span className="text-[10px] font-semibold uppercase tracking-widest text-gray-500 block">The CPD Certification Service</span>
                           <span className="text-xs text-gray-500 font-mono">Provider #78291</span>
                         </div>
                       </div>
-                      <span className="text-[10px] font-bold bg-emerald-50 text-gray-500 px-2.5 py-1 rounded-full uppercase border border-emerald-200/60">
+                      <span className="text-[10px] font-semibold bg-emerald-50 text-gray-500 px-2.5 py-1 rounded-full uppercase border border-emerald-200/60">
                         Verified Active
                       </span>
                     </div>
 
                     <div className="text-center py-4 border-y border-emerald-200 my-4">
                       <p className="text-[11px] uppercase tracking-wider text-gray-500">This is to certify that</p>
-                      <h3 className="text-2xl font-serif font-bold text-gray-900 mt-1 mb-1">Marcus Vance</h3>
+                      <h3 className="text-2xl font-serif font-semibold text-gray-900 mt-1 mb-1">Marcus Vance</h3>
                       <p className="text-xs text-gray-600">has successfully completed all competencies and assessments for:</p>
-                      <h4 className="text-base font-bold text-emerald-700 mt-1">Workplace Gravitas & Vocal Presence</h4>
+                      <h4 className="text-base font-semibold text-emerald-700 mt-1">Workplace Gravitas & Vocal Presence</h4>
                       <p className="text-[11px] text-gray-500 mt-1">Awarded 24 CPD Continuing Professional Development Credits</p>
                     </div>
 
@@ -513,20 +513,20 @@ export default function DashboardPage() {
                           <Icon name="award" className="inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" />
                         </div>
                         <div>
-                          <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500 block">The CPD Certification Service</span>
+                          <span className="text-[10px] font-semibold uppercase tracking-widest text-gray-500 block">The CPD Certification Service</span>
                           <span className="text-xs text-gray-500 font-mono">Provider #78291</span>
                         </div>
                       </div>
-                      <span className="text-[10px] font-bold bg-emerald-50 text-gray-500 px-2.5 py-1 rounded-full uppercase border border-emerald-200/60">
+                      <span className="text-[10px] font-semibold bg-emerald-50 text-gray-500 px-2.5 py-1 rounded-full uppercase border border-emerald-200/60">
                         Verified Active
                       </span>
                     </div>
 
                     <div className="text-center py-4 border-y border-emerald-200 my-4">
                       <p className="text-[11px] uppercase tracking-wider text-gray-500">This is to certify that</p>
-                      <h3 className="text-2xl font-serif font-bold text-gray-900 mt-1 mb-1">Marcus Vance</h3>
+                      <h3 className="text-2xl font-serif font-semibold text-gray-900 mt-1 mb-1">Marcus Vance</h3>
                       <p className="text-xs text-gray-600">has successfully completed all competencies and assessments for:</p>
-                      <h4 className="text-base font-bold text-emerald-700 mt-1">Executive Speech & Stakeholder Influence</h4>
+                      <h4 className="text-base font-semibold text-emerald-700 mt-1">Executive Speech & Stakeholder Influence</h4>
                       <p className="text-[11px] text-gray-500 mt-1">Awarded 18 CPD Continuing Professional Development Credits</p>
                     </div>
 
@@ -553,7 +553,7 @@ export default function DashboardPage() {
             {/* TAB 5: LIVE COHORTS & MASTERCLASSES */}
             <div id="dashPane-dash-live" className="student-dash-pane hidden space-y-6">
               <div className="pb-2 border-b border-gray-150">
-                <h2 className="text-xl font-bold text-gray-900">Live Cohort Coaching Calls with Sonia Ali</h2>
+                <h2 className="text-xl font-semibold text-gray-900">Live Cohort Coaching Calls with Sonia Ali</h2>
                 <p className="text-xs text-gray-500">Upcoming Zoom interactive masterclasses and past recording archives.</p>
               </div>
 
@@ -562,10 +562,10 @@ export default function DashboardPage() {
                 <div className="bg-white rounded-2xl p-6 border border-emerald-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-6">
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
-                      <span className="bg-emerald-50 text-gray-500 font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase border border-emerald-200">Next Live Call</span>
+                      <span className="bg-emerald-50 text-gray-500 font-semibold text-[10px] px-2.5 py-0.5 rounded-full uppercase border border-emerald-200">Next Live Call</span>
                       <span className="text-xs text-gray-500 font-semibold">Thursday, 18:00 - 19:30 GMT</span>
                     </div>
-                    <h3 className="text-base font-bold text-gray-900">Executive Hot-Seat Practice: Pitching to Hostile Stakeholders</h3>
+                    <h3 className="text-base font-semibold text-gray-900">Executive Hot-Seat Practice: Pitching to Hostile Stakeholders</h3>
                     <p className="text-xs text-gray-600">Breakout verbal drills followed by live individual critiques from Sonia Ali.</p>
                   </div>
                   <div className="shrink-0 flex items-center gap-3">
@@ -579,10 +579,10 @@ export default function DashboardPage() {
                 <div className="bg-white rounded-2xl p-6 border border-gray-200/90 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-6">
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
-                      <span className="bg-gray-100 text-gray-700 font-bold text-[10px] px-2.5 py-0.5 rounded-full uppercase">Recording Ready</span>
+                      <span className="bg-gray-100 text-gray-700 font-semibold text-[10px] px-2.5 py-0.5 rounded-full uppercase">Recording Ready</span>
                       <span className="text-xs text-gray-500">Held 2 Weeks Ago</span>
                     </div>
-                    <h3 className="text-base font-bold text-gray-900">Vocal Cadence & Strategic Pause Acoustic Feedback Review</h3>
+                    <h3 className="text-base font-semibold text-gray-900">Vocal Cadence & Strategic Pause Acoustic Feedback Review</h3>
                     <p className="text-xs text-gray-600">Cohort review of submitted audio recordings and pitch deconstructions.</p>
                   </div>
                   <div className="shrink-0 flex items-center gap-3">
@@ -597,14 +597,14 @@ export default function DashboardPage() {
             {/* TAB 6: ORDERS & INVOICES */}
             <div id="dashPane-dash-invoices" className="student-dash-pane hidden space-y-6">
               <div className="pb-2 border-b border-gray-150">
-                <h2 className="text-xl font-bold text-gray-900">Orders & Invoices (LearnPress Billing)</h2>
+                <h2 className="text-xl font-semibold text-gray-900">Orders & Invoices (LearnPress Billing)</h2>
                 <p className="text-xs text-gray-500">Download official VAT receipts and transaction records for corporate expense filing.</p>
               </div>
 
               <div className="bg-white rounded-2xl border border-gray-200/90 overflow-hidden shadow-xs">
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-xs">
-                    <thead className="bg-slate-50/70 text-gray-800 border-b border-gray-200 uppercase font-bold text-[11px] tracking-wider">
+                    <thead className="bg-slate-50/70 text-gray-800 border-b border-gray-200 uppercase font-semibold text-[11px] tracking-wider">
                       <tr>
                         <th className="py-4 px-6">Order ID</th>
                         <th className="py-4 px-6">Programme / Item</th>
@@ -616,29 +616,29 @@ export default function DashboardPage() {
                     </thead>
                     <tbody className="divide-y divide-gray-100 text-gray-600">
                       <tr className="hover:bg-slate-50/50 transition">
-                        <td className="py-4 px-6 font-mono font-bold text-gray-900">#SAH-10492</td>
-                        <td className="py-4 px-6 font-bold text-gray-900">English for Professional Success (Corporate Cohort)</td>
+                        <td className="py-4 px-6 font-mono font-semibold text-gray-900">#SAH-10492</td>
+                        <td className="py-4 px-6 font-semibold text-gray-900">English for Professional Success (Corporate Cohort)</td>
                         <td className="py-4 px-6">02 Oct 2025</td>
-                        <td className="py-4 px-6 font-bold text-gray-900">£1,450.00</td>
+                        <td className="py-4 px-6 font-semibold text-gray-900">£1,450.00</td>
                         <td className="py-4 px-6">
-                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-bold text-[10px] uppercase border border-emerald-200/60">Paid</span>
+                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-semibold text-[10px] uppercase border border-emerald-200/60">Paid</span>
                         </td>
                         <td className="py-4 px-6 text-right">
-                          <button onClick={() => { downloadVatInvoice('SAH-10492') }} className="text-emerald-600 hover:text-emerald-700 font-bold flex items-center justify-end ml-auto cursor-pointer">
+                          <button onClick={() => { downloadVatInvoice('SAH-10492') }} className="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center justify-end ml-auto cursor-pointer">
                             <Icon name="file-invoice" className="mr-1 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Download PDF
                           </button>
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition">
-                        <td className="py-4 px-6 font-mono font-bold text-gray-900">#SAH-09312</td>
-                        <td className="py-4 px-6 font-bold text-gray-900">Workplace Gravitas & Vocal Presence Accelerator</td>
+                        <td className="py-4 px-6 font-mono font-semibold text-gray-900">#SAH-09312</td>
+                        <td className="py-4 px-6 font-semibold text-gray-900">Workplace Gravitas & Vocal Presence Accelerator</td>
                         <td className="py-4 px-6">15 Jul 2025</td>
-                        <td className="py-4 px-6 font-bold text-gray-900">£850.00</td>
+                        <td className="py-4 px-6 font-semibold text-gray-900">£850.00</td>
                         <td className="py-4 px-6">
-                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-bold text-[10px] uppercase border border-emerald-200/60">Paid</span>
+                          <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-gray-500 font-semibold text-[10px] uppercase border border-emerald-200/60">Paid</span>
                         </td>
                         <td className="py-4 px-6 text-right">
-                          <button onClick={() => { downloadVatInvoice('SAH-09312') }} className="text-emerald-600 hover:text-emerald-700 font-bold flex items-center justify-end ml-auto cursor-pointer">
+                          <button onClick={() => { downloadVatInvoice('SAH-09312') }} className="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center justify-end ml-auto cursor-pointer">
                             <Icon name="file-invoice" className="mr-1 text-xs inline-block h-[1em] w-[1em] align-[-0.125em] shrink-0" /> Download PDF
                           </button>
                         </td>
@@ -652,7 +652,7 @@ export default function DashboardPage() {
             {/* TAB 7: PROFILE SETTINGS */}
             <div id="dashPane-dash-settings" className="student-dash-pane hidden space-y-6">
               <div className="pb-2 border-b border-gray-150">
-                <h2 className="text-xl font-bold text-gray-900">Student Profile & Preferences</h2>
+                <h2 className="text-xl font-semibold text-gray-900">Student Profile & Preferences</h2>
                 <p className="text-xs text-gray-500">Manage your learner identity, CPD certificate name spelling, and notification frequency.</p>
               </div>
 
